@@ -1,0 +1,43 @@
+
+TidyPlatesWidgetData = {
+	["UnitClass"] = {
+		["Aggorothor"] = "PALADIN",
+		["Madquaker"] = "PALADIN",
+		["Totemo"] = "SHAMAN",
+		["Deathgripløl"] = "DEATHKNIGHT",
+		["Zilfster"] = "DEATHKNIGHT",
+		["Orstout"] = "MONK",
+		["Scytarska"] = "PRIEST",
+		["Jyngles"] = "SHAMAN",
+		["Gèo"] = "MONK",
+		["Mazer"] = "MONK",
+		["Chopstiks"] = "WARRIOR",
+		["Keeanu"] = "MONK",
+		["Etiana"] = "SHAMAN",
+		["Morterus"] = "DEATHKNIGHT",
+	},
+	["CachedAuraDurations"] = {
+		[128943] = 0,
+	},
+	["UnitDescriptions"] = {
+		["Serenka"] = "First Aid Supplies",
+		["Healer Nan"] = "First Aid",
+		["Taijing the Cyclone"] = "Brews",
+	},
+	["UnitGuild"] = {
+		["Aggorothor"] = "Game Over",
+		["Madquaker"] = "dragon souls",
+		["Totemo"] = "Forsaken Angels",
+		["Deathgripløl"] = "Uniqueness To Go",
+		["Zilfster"] = "Convert to Raid Azuregos",
+		["Orstout"] = "Convert to Raid Nalak",
+		["Scytarska"] = "Wayward Enforcers",
+		["Jyngles"] = "Convert to Raid Galleon",
+		["Gèo"] = "Awkward Silence",
+		["Mazer"] = "Convert to Raid Azuregos",
+		["Chopstiks"] = "Somewhat Serious",
+		["Keeanu"] = "lnsanity",
+		["Etiana"] = "Convert to Raid Mobus",
+		["Morterus"] = "Immortalis",
+	},
+}

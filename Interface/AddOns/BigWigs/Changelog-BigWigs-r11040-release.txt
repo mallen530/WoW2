@@ -1,0 +1,400 @@
+------------------------------------------------------------------------
+r11040 | funkydude | 2013-08-19 18:31:30 +0000 (Mon, 19 Aug 2013) | 1 line
+Changed paths:
+   A /tags/r11040-release (from /trunk:11039)
+
+Tagging as r11040-release
+------------------------------------------------------------------------
+r11039 | funkydude | 2013-08-19 18:26:07 +0000 (Mon, 19 Aug 2013) | 1 line
+Changed paths:
+   M /trunk/ThroneOfThunder/Durumu.lua
+
+Durumu: tweak life drain CD.
+------------------------------------------------------------------------
+r11038 | funkydude | 2013-08-19 15:47:54 +0000 (Mon, 19 Aug 2013) | 1 line
+Changed paths:
+   M /trunk/BigWigs.toc
+   M /trunk/Loader.lua
+
+bump version
+------------------------------------------------------------------------
+r11037 | Wetxius | 2013-08-17 15:20:22 +0000 (Sat, 17 Aug 2013) | 1 line
+Changed paths:
+   M /trunk/SiegeOfOrgrimmar/Locales/ruRU.lua
+
+ruRU update.
+------------------------------------------------------------------------
+r11036 | maat | 2013-08-17 13:44:31 +0000 (Sat, 17 Aug 2013) | 18 lines
+Changed paths:
+   M /trunk/SiegeOfOrgrimmar/GeneralNazgrim.lua
+   M /trunk/SiegeOfOrgrimmar/KorKron.lua
+   M /trunk/SiegeOfOrgrimmar/Malkorok.lua
+   M /trunk/SiegeOfOrgrimmar/ShaOfPride.lua
+
+GeneralNazgrim.lua:
+  shorten stance bar even more
+  confirm berserk
+  reset adds bar on extra wave
+KorKron.lua:
+  reduce the marks used for mist marks
+  add sound for bloodlust
+Malkorok.lua:
+  some cleanup and timer adjustment
+ShaOfPride.lua:
+  add swelling pride counter and sound
+  add titan gift 2nd spellId
+  fix big add icons
+  cancel timers on phase 2 start
+  fix imprison spam
+  don't mark tanks for titan gift
+  some other cleanup
+  
+------------------------------------------------------------------------
+r11035 | Wetxius | 2013-08-16 15:45:57 +0000 (Fri, 16 Aug 2013) | 1 line
+Changed paths:
+   M /trunk/SiegeOfOrgrimmar/Locales/ruRU.lua
+   M /trunk/ThroneOfThunder/Locales/ruRU.lua
+
+ruRU update.
+------------------------------------------------------------------------
+r11034 | maat | 2013-08-16 12:20:10 +0000 (Fri, 16 Aug 2013) | 13 lines
+Changed paths:
+   M /trunk/Plugins/Proximity.lua
+   M /trunk/SiegeOfOrgrimmar/Galakras.lua
+   M /trunk/SiegeOfOrgrimmar/IronJuggernaut.lua
+   M /trunk/SiegeOfOrgrimmar/TheFallenProtectors.lua
+
+Galakras.lua:
+  add tower defender timer instead of tower timer for heroic
+  fix shaman marking
+TheFallenProtectors.lua:
+  only mark initial bane targets and only use 5 marks
+  add another corruption kick spellId
+  fix inferno strike
+  fix corruption shock and corrupted brew message spam
+IronJuggernaut.lua:
+  add custom_off_mine_arks
+  fix phase icons
+Proximity.lua:
+  Add SOO first floor map data from the dbc file
+------------------------------------------------------------------------
+r11033 | ananhaid | 2013-08-16 04:04:34 +0000 (Fri, 16 Aug 2013) | 1 line
+Changed paths:
+   M /trunk/SiegeOfOrgrimmar/Locales/zhCN.lua
+
+- zhCN update.
+------------------------------------------------------------------------
+r11032 | ananhaid | 2013-08-16 01:13:50 +0000 (Fri, 16 Aug 2013) | 1 line
+Changed paths:
+   M /trunk/SiegeOfOrgrimmar/Locales/itIT.lua
+   M /trunk/SiegeOfOrgrimmar/Locales/zhCN.lua
+   M /trunk/SiegeOfOrgrimmar/Locales/zhTW.lua
+
+- zhCN/zhTW update.
+------------------------------------------------------------------------
+r11031 | funkydude | 2013-08-15 18:50:13 +0000 (Thu, 15 Aug 2013) | 1 line
+Changed paths:
+   M /trunk/Plugins/Locales/enUS.lua
+
+Rename "new best kill" > "new best time".
+------------------------------------------------------------------------
+r11030 | nebula169 | 2013-08-13 20:49:16 +0000 (Tue, 13 Aug 2013) | 1 line
+Changed paths:
+   M /trunk/ThroneOfThunder/JiKun.lua
+
+Jikun: add (ADD) to the timer for nest 16+17 in 25H
+------------------------------------------------------------------------
+r11029 | funkydude | 2013-08-13 17:18:38 +0000 (Tue, 13 Aug 2013) | 1 line
+Changed paths:
+   M /trunk/ThroneOfThunder/JiKun.lua
+
+JiKun: test out hardcoded down draft timers.
+------------------------------------------------------------------------
+r11028 | maat | 2013-08-13 16:33:41 +0000 (Tue, 13 Aug 2013) | 21 lines
+Changed paths:
+   M /trunk/SiegeOfOrgrimmar/Immerseus.lua
+   M /trunk/SiegeOfOrgrimmar/Norushen.lua
+   M /trunk/SiegeOfOrgrimmar/ParagonsOfTheKlaxxi.lua
+   M /trunk/SiegeOfOrgrimmar/SpoilsOfPandaria.lua
+   M /trunk/SiegeOfOrgrimmar/Thok.lua
+
+Immerseus.lua:
+  Add Swelling Corruption
+  Fix Sha Bolt spellId
+Norushen.lua:
+  Add pre pull timer
+  fix Look Within
+  fix big add icons
+  fix Fusion message
+ParagonsOfTheKlaxxi.lua:
+  try and tidy up the calculations code, now that we don't need so many localization entries
+  announce EncanseInEmber target
+  throw in a couple of nil checks
+  added some spammy debug code, bare with me
+SpoilsOfPandaria.lua:
+  there are now boss frames, so use proper engage check
+  don't spam mark on the brewmaster
+  fix CL.underyou
+  fix residue
+Thok:
+  fix CL.underyou
+  
+------------------------------------------------------------------------
+r11027 | maat | 2013-08-13 15:27:36 +0000 (Tue, 13 Aug 2013) | 1 line
+Changed paths:
+   M /trunk/SiegeOfOrgrimmar/ShaOfPride.lua
+
+fix typo
+------------------------------------------------------------------------
+r11026 | Wetxius | 2013-08-12 16:32:56 +0000 (Mon, 12 Aug 2013) | 1 line
+Changed paths:
+   M /trunk/EndlessSpring/Locales/ruRU.lua
+   M /trunk/SiegeOfOrgrimmar/Locales/ruRU.lua
+   M /trunk/ThroneOfThunder/Locales/ruRU.lua
+
+ruRU update.
+------------------------------------------------------------------------
+r11025 | _yusaku_ | 2013-08-11 07:59:30 +0000 (Sun, 11 Aug 2013) | 1 line
+Changed paths:
+   M /trunk/SiegeOfOrgrimmar/Locales/itIT.lua
+
+itIT Locale updates
+------------------------------------------------------------------------
+r11024 | Wetxius | 2013-08-10 09:22:41 +0000 (Sat, 10 Aug 2013) | 1 line
+Changed paths:
+   M /trunk/EndlessSpring/Locales/ruRU.lua
+   M /trunk/HeartOfFear/Locales/ruRU.lua
+   M /trunk/Locales/ruRU.lua
+   M /trunk/Plugins/Locales/ruRU.lua
+   M /trunk/ThroneOfThunder/Locales/ruRU.lua
+
+Update ruRU locale and fix spelling.
+------------------------------------------------------------------------
+r11023 | Wetxius | 2013-08-10 07:02:13 +0000 (Sat, 10 Aug 2013) | 1 line
+Changed paths:
+   M /trunk/SiegeOfOrgrimmar/Locales/ruRU.lua
+
+Added ruRu locale (except of trigger) for Blackfuse.
+------------------------------------------------------------------------
+r11022 | Wetxius | 2013-08-10 06:49:39 +0000 (Sat, 10 Aug 2013) | 1 line
+Changed paths:
+   M /trunk/SiegeOfOrgrimmar/Locales/ruRU.lua
+
+Added ruRu locale for Nazgrim and Spoils of Pandaria.
+------------------------------------------------------------------------
+r11021 | Wetxius | 2013-08-09 16:07:50 +0000 (Fri, 09 Aug 2013) | 1 line
+Changed paths:
+   M /trunk/SiegeOfOrgrimmar/Locales/ruRU.lua
+
+Added ruRu locale for The Fallen Protectors and Galakras.
+------------------------------------------------------------------------
+r11020 | funkydude | 2013-08-09 13:21:32 +0000 (Fri, 09 Aug 2013) | 1 line
+Changed paths:
+   M /trunk/Core/Core.lua
+
+Core: Don't engage a module that isn't enabled, fixes a rare "module lacking db" error.
+------------------------------------------------------------------------
+r11019 | jongt23 | 2013-08-08 12:07:40 +0000 (Thu, 08 Aug 2013) | 1 line
+Changed paths:
+   M /trunk/ThroneOfThunder/Locales/esES.lua
+
+esES update
+------------------------------------------------------------------------
+r11018 | maat | 2013-08-07 08:07:12 +0000 (Wed, 07 Aug 2013) | 1 line
+Changed paths:
+   M /trunk/SiegeOfOrgrimmar/Galakras.lua
+   M /trunk/SiegeOfOrgrimmar/GarroshHellscream.lua
+   M /trunk/SiegeOfOrgrimmar/IronJuggernaut.lua
+   M /trunk/SiegeOfOrgrimmar/ParagonsOfTheKlaxxi.lua
+
+fix spelling and other errors of dry coding
+------------------------------------------------------------------------
+r11017 | funkydude | 2013-08-04 20:34:43 +0000 (Sun, 04 Aug 2013) | 1 line
+Changed paths:
+   M /trunk/Loader.lua
+
+Loader: disable the auto adjusting DBM version functionality until the patch. Prevents older versions making us adjust to a non-existent version.
+------------------------------------------------------------------------
+r11016 | funkydude | 2013-08-04 16:40:43 +0000 (Sun, 04 Aug 2013) | 1 line
+Changed paths:
+   M /trunk/Loader.lua
+   M /trunk/Options/Options.lua
+
+Loader: Fix DBM breaking our faker, exploiting an oversight in the way it worked, bump DBM faker version.
+------------------------------------------------------------------------
+r11015 | maat | 2013-08-02 11:39:33 +0000 (Fri, 02 Aug 2013) | 17 lines
+Changed paths:
+   M /trunk/SiegeOfOrgrimmar/Galakras.lua
+   M /trunk/SiegeOfOrgrimmar/GeneralNazgrim.lua
+   M /trunk/SiegeOfOrgrimmar/KorKron.lua
+
+Galakras.lua:
+  add alliance enable mob
+KorKron.lua:
+  add heroic abilities
+  fix toxic mist marks not being removed
+  improve foul geyser warning
+  remove toxic storm sound
+GeneralNazgrim.lua:
+  shorten stance bar text so it hopefully fits
+  add heroic abilities
+  add initial add wave timer
+  add extra wave warning
+  add earth shield target warning and try to mark it ( not trying too hard tho )
+  clean up heroic shockwave spam, our scanning works just fine
+  remove bone cracker sound
+  
+
+------------------------------------------------------------------------
+r11014 | maat | 2013-08-01 17:11:44 +0000 (Thu, 01 Aug 2013) | 1 line
+Changed paths:
+   M /trunk/SiegeOfOrgrimmar/Galakras.lua
+   M /trunk/SiegeOfOrgrimmar/GarroshHellscream.lua
+
+start populating the modules
+------------------------------------------------------------------------
+r11013 | funkydude | 2013-07-31 13:04:54 +0000 (Wed, 31 Jul 2013) | 1 line
+Changed paths:
+   M /trunk/Loader.lua
+   M /trunk/Options/Options.lua
+
+Work around Interface Options display issues by calling the frame to open twice.
+------------------------------------------------------------------------
+r11012 | maat | 2013-07-30 14:42:21 +0000 (Tue, 30 Jul 2013) | 16 lines
+Changed paths:
+   M /trunk/SiegeOfOrgrimmar/Malkorok.lua
+   M /trunk/SiegeOfOrgrimmar/ShaOfPride.lua
+   M /trunk/SiegeOfOrgrimmar/SiegecrafterBlackfuse.lua
+   M /trunk/SiegeOfOrgrimmar/TheFallenProtectors.lua
+
+Malkorok.lua
+  don't double warn displaced energy
+  rest ability countings correctly
+  call seismic slam adds in heroic
+ShaOfPride.lua
+  add some preliminary heroic warnings
+  fix typo
+SiegecrafterBlackfuse.lua
+  try and improve saw blade detection
+  adjust how we handle shockwave missile
+  add bunch of antispam
+  fix pattern recognition over message
+  fix shredder icon
+TheFallenProtectors.lua
+  silence corruption shock message if we got no target, this needs major overhaul
+  try and fix corrupted brew target
+------------------------------------------------------------------------
+r11011 | maat | 2013-07-26 00:08:20 +0000 (Fri, 26 Jul 2013) | 1 line
+Changed paths:
+   M /trunk/SiegeOfOrgrimmar/Malkorok.lua
+
+fix some typos
+------------------------------------------------------------------------
+r11010 | Wetxius | 2013-07-25 12:21:41 +0000 (Thu, 25 Jul 2013) | 1 line
+Changed paths:
+   M /trunk/SiegeOfOrgrimmar/Locales/ruRU.lua
+
+ruRU update for Thok.
+------------------------------------------------------------------------
+r11009 | ananhaid | 2013-07-25 02:02:57 +0000 (Thu, 25 Jul 2013) | 1 line
+Changed paths:
+   M /trunk/SiegeOfOrgrimmar/BigWigs_SiegeOfOrgrimmar.toc
+
+- zhCN update.
+------------------------------------------------------------------------
+r11008 | _yusaku_ | 2013-07-24 20:39:59 +0000 (Wed, 24 Jul 2013) | 1 line
+Changed paths:
+   M /trunk/ThroneOfThunder/Locales/itIT.lua
+
+itIT Locale updates
+------------------------------------------------------------------------
+r11007 | Wetxius | 2013-07-24 14:52:30 +0000 (Wed, 24 Jul 2013) | 1 line
+Changed paths:
+   M /trunk/SiegeOfOrgrimmar/KorKron.lua
+   M /trunk/SiegeOfOrgrimmar/Locales/ruRU.lua
+   M /trunk/SiegeOfOrgrimmar/ShaOfPride.lua
+
+ruRU update.
+------------------------------------------------------------------------
+r11006 | ananhaid | 2013-07-24 02:08:06 +0000 (Wed, 24 Jul 2013) | 2 lines
+Changed paths:
+   M /trunk/EndlessSpring/BigWigs_EndlessSpring.toc
+   M /trunk/HeartOfFear/BigWigs_HeartOfFear.toc
+   M /trunk/Mogushan/BigWigs_Mogushan.toc
+   M /trunk/Pandaria/BigWigs_Pandaria.toc
+   M /trunk/SiegeOfOrgrimmar/BigWigs_SiegeOfOrgrimmar.toc
+   M /trunk/SiegeOfOrgrimmar/Locales/zhCN.lua
+   M /trunk/SiegeOfOrgrimmar/Locales/zhTW.lua
+   M /trunk/ThroneOfThunder/BigWigs_ThroneOfThunder.toc
+   M /trunk/ThroneOfThunder/Locales/zhCN.lua
+   M /trunk/ThroneOfThunder/Locales/zhTW.lua
+
+- zhCN/zhTW update.
+- SoO zhCN/zhTW inital.
+------------------------------------------------------------------------
+r11005 | _yusaku_ | 2013-07-23 20:22:42 +0000 (Tue, 23 Jul 2013) | 1 line
+Changed paths:
+   M /trunk/ThroneOfThunder/Locales/itIT.lua
+
+itIT Locale updates
+------------------------------------------------------------------------
+r11004 | _yusaku_ | 2013-07-23 20:01:19 +0000 (Tue, 23 Jul 2013) | 1 line
+Changed paths:
+   M /trunk/SiegeOfOrgrimmar/BigWigs_SiegeOfOrgrimmar.toc
+   M /trunk/SiegeOfOrgrimmar/Locales/itIT.lua
+
+itIT Locale updates
+------------------------------------------------------------------------
+r11003 | Wetxius | 2013-07-23 15:51:06 +0000 (Tue, 23 Jul 2013) | 1 line
+Changed paths:
+   M /trunk/Locales/common.ruRU.lua
+   M /trunk/SiegeOfOrgrimmar/Locales/ruRU.lua
+   M /trunk/ThroneOfThunder/Locales/ruRU.lua
+
+ruRU update.
+------------------------------------------------------------------------
+r11002 | funkydude | 2013-07-23 15:23:27 +0000 (Tue, 23 Jul 2013) | 1 line
+Changed paths:
+   M /trunk/ThroneOfThunder/JiKun.lua
+   M /trunk/ThroneOfThunder/Locales/deDE.lua
+   M /trunk/ThroneOfThunder/Locales/esES.lua
+   M /trunk/ThroneOfThunder/Locales/frFR.lua
+   M /trunk/ThroneOfThunder/Locales/itIT.lua
+   M /trunk/ThroneOfThunder/Locales/koKR.lua
+   M /trunk/ThroneOfThunder/Locales/ruRU.lua
+   M /trunk/ThroneOfThunder/Locales/zhCN.lua
+   M /trunk/ThroneOfThunder/Locales/zhTW.lua
+
+ThroneOfThunder/JiKun: Some locales (Spanish esES) use a custom emote for the very first nest, support it.
+------------------------------------------------------------------------
+r11001 | ananhaid | 2013-07-23 14:29:44 +0000 (Tue, 23 Jul 2013) | 1 line
+Changed paths:
+   M /trunk/ThroneOfThunder/Locales/zhCN.lua
+
+- zhCN update.
+------------------------------------------------------------------------
+r11000 | maat | 2013-07-22 14:56:15 +0000 (Mon, 22 Jul 2013) | 1 line
+Changed paths:
+   M /trunk/SiegeOfOrgrimmar/SpoilsOfPandaria.lua
+   M /trunk/SiegeOfOrgrimmar/Thok.lua
+
+start populating the modules: SpoilsOfPandaria.lua, Thok.lua
+------------------------------------------------------------------------
+r10999 | mysticalos | 2013-07-20 18:34:47 +0000 (Sat, 20 Jul 2013) | 1 line
+Changed paths:
+   M /trunk/SiegeOfOrgrimmar/Norushen.lua
+
+Fix norushen bug
+------------------------------------------------------------------------
+r10998 | funkydude | 2013-07-20 13:06:44 +0000 (Sat, 20 Jul 2013) | 1 line
+Changed paths:
+   M /trunk/ThroneOfThunder/Locales/zhTW.lua
+
+zhTW fix by chenyuli
+------------------------------------------------------------------------
+r10997 | funkydude | 2013-07-17 13:00:54 +0000 (Wed, 17 Jul 2013) | 1 line
+Changed paths:
+   M /trunk/ThroneOfThunder/Locales/zhTW.lua
+
+zhTW update by chenyuli
+------------------------------------------------------------------------
