@@ -1,6 +1,0 @@
-Colin Stein:
-	- Added borders, masque themes, status bars, and textures. Also added silkscreen font
-	- ignoring useless mac files
-	- added some fonts
-	- nuked readme
-	- hello
