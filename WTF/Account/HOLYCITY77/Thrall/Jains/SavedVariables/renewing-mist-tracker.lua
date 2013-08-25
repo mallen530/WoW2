@@ -1,4 +1,0 @@
-
-ReMTrackerDB = {
-	["mode"] = "standard",
-}
