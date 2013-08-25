@@ -1,0 +1,4 @@
+
+ReMTrackerDB = {
+	["mode"] = "standard",
+}

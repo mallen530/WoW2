@@ -1,0 +1,26 @@
+------------------------------------------------------------------------
+r286 | abija | 2013-05-31 14:01:32 +0000 (Fri, 31 May 2013) | 1 line
+Changed paths:
+   A /tags/v.1.5.30.001 (from /trunk:285)
+
+Tagging as v.1.5.30.001
+------------------------------------------------------------------------
+r285 | abija | 2013-05-31 13:59:39 +0000 (Fri, 31 May 2013) | 1 line
+Changed paths:
+   M /trunk/clcInfo.toc
+   M /trunk/clcInfo_Options/clcInfo_Options.toc
+
+- toc update 50300
+------------------------------------------------------------------------
+r283 | abija | 2013-05-03 17:00:26 +0000 (Fri, 03 May 2013) | 1 line
+Changed paths:
+   M /trunk/retmodule/rotation.lua
+
+- retmodule - action added: cs_n4t15 (cs when 4pt15 not active)
+------------------------------------------------------------------------
+r282 | abija | 2013-04-11 11:47:01 +0000 (Thu, 11 Apr 2013) | 1 line
+Changed paths:
+   M /trunk/retmodule/rotation.lua
+
+- fix tv4aw
+------------------------------------------------------------------------

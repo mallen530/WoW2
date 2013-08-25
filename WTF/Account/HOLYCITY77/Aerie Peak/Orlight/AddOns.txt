@@ -1,0 +1,12 @@
+LibSharedMedia-3.0: enabled
+LibStub: disabled
+CallbackHandler-1.0: disabled
+AceGUI-3.0-SharedMediaWidgets: disabled
+Ace3: disabled
+TouchysMedia: enabled
+clcInfo: disabled
+Auctionator: enabled
+clcInfo_Options: disabled
+clcInfo_Monk: disabled
+TargetCharms: disabled
+Omen: disabled

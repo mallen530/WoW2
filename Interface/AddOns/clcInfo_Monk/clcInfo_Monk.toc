@@ -1,0 +1,28 @@
+## Title: clcInfo_Monk
+## Notes: clcInfo Class Module plugin for Monks. This will suggest what abilities to use to optimize the rotation for Windwalker and Brewmaster monks.
+## Author: Geminior
+## Interface: 50300
+## Version: r86
+## DefaultState: Enabled
+## Dependencies: clcInfo
+## OptionalDeps: LibStub, CallbackHandler-1.0, Ace3, LibSharedMedia-3.0, AceGUISharedMediaWidgets-1.0, clcInfoClassModulePlugin
+## LoadOnDemand: 0
+#@no-lib-strip@
+# ## X-Curse-Packaged-Version: r86
+# ## X-Curse-Project-Name: clcInfo_Monk
+# ## X-Curse-Project-ID: clcinfo_monk
+# ## X-Curse-Repository-ID: wow/clcinfo_monk/mainline
+# ## X-Curse-Packaged-Version: r86
+# ## X-Curse-Project-Name: clcInfo_Monk
+# ## X-Curse-Project-ID: clcinfo_monk
+# ## X-Curse-Repository-ID: wow/clcinfo_monk/mainline
+# embeds.xml
+#@end-no-lib-strip@
+
+locale\locale.xml
+widgets\widgets.xml
+
+clcInfo_Monk.lua
+module_Base.lua
+module_Brewmaster.lua
+module_Windwalker.lua

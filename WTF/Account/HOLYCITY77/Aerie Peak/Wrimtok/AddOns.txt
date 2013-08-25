@@ -1,0 +1,6 @@
+LibSharedMedia-3.0: disabled
+LibStub: disabled
+CallbackHandler-1.0: disabled
+AceGUI-3.0-SharedMediaWidgets: disabled
+Ace3: disabled
+TouchysMedia: disabled
