@@ -1,13 +1,67 @@
 
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
-		"/i calm down asshole", -- [1]
-		"/p oh great healing there", -- [2]
-		"/p oh thanks you are too kind DPSers", -- [3]
-		"/dance", -- [4]
-		"/fart", -- [5]
+		"/g Who plays monks...haha", -- [1]
+		"/g <---this guy", -- [2]
+		"/g my main is a monk", -- [3]
+		"/g and Pyar used to be good at playing a monk too", -- [4]
+		"/g pyar how is that druid coming?", -- [5]
 	},
 	["ChatLog"] = {
+		["1377486534.051"] = {
+			"Who plays monks...haha", -- [1]
+			"Orazzle", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Orazzle", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1426, -- [11]
+			"0x050000000414A2EC", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1377486416.944"] = {
+			"sur i can do 1 or 2", -- [1]
+			"Naprolin", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Naprolin", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1412, -- [11]
+			"0x05000000007BAA94", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1377486392.032"] = {
+			"whats up", -- [1]
+			"Naprolin", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Naprolin", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1405, -- [11]
+			"0x05000000007BAA94", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
 		["1372907720.61"] = {
 			"thats def it", -- [1]
 			"Aimaiatros", -- [2]
@@ -43,24 +97,6 @@ ElvCharacterDB = {
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_INSTANCE_CHAT",
-		},
-		["1372907666.069"] = {
-			"other than needing to fulminate a whole lot more looks spot on", -- [1]
-			"Aimaiatros", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Aimaiatros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			387, -- [11]
-			"0x0500000004444B99", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_OFFICER",
 		},
 		["1372907684.622"] = {
 			"maybe its a gear thing then", -- [1]
@@ -152,41 +188,41 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_OFFICER",
 		},
-		["1372907522.599"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:4846:0500000005C4DFFA:1:7:3:13:4294967295:4294967295:4294967295:4294967295|h[The Stonecore]|h|r!", -- [1]
-			"Felbirttok", -- [2]
+		["1377486083.589"] = {
+			"ok cool brb", -- [1]
+			"Krumn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Felbirttok", -- [5]
+			"Krumn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			353, -- [11]
-			"0x0500000005C4DFFA", -- [12]
+			1311, -- [11]
+			"0x0500000005B87928", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[20] = "CHAT_MSG_WHISPER",
 		},
-		["1372907527.602"] = {
-			"fun*", -- [1]
-			"Aimaiatros", -- [2]
-			"Orcish", -- [3]
+		["1372907960.762"] = {
+			"When are you going to move to the US and get a job here?", -- [1]
+			"|Kf6|k0000000|k", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Aimaiatros", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			357, -- [11]
-			"0x0500000004444B99", -- [12]
-			0, -- [13]
+			472, -- [11]
+			false, -- [12]
+			6, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_OFFICER",
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
 		["1372907628.485"] = {
 			"hows my dps look?", -- [1]
@@ -314,6 +350,42 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
+		["1377486145.479"] = {
+			"thanks :)", -- [1]
+			"Lawlsalot", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Lawlsalot", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1334, -- [11]
+			"0x0500000005B63280", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1377486078.618"] = {
+			"sure just send me a pst", -- [1]
+			"Krumn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Krumn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1308, -- [11]
+			"0x0500000005B87928", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_WHISPER_INFORM",
+		},
 		["1372908437.488"] = {
 			"if I go afk", -- [1]
 			"Vannished-BlackDragonflight", -- [2]
@@ -350,19 +422,19 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_OFFICER",
 		},
-		["1372910690.863"] = {
-			"its lola, quick everyone turn your AC on!", -- [1]
-			"Aimaiatros", -- [2]
+		["1372911065.176"] = {
+			"gratz", -- [1]
+			"Tankums", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Aimaiatros", -- [5]
+			"Tankums", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1040, -- [11]
-			"0x0500000004444B99", -- [12]
+			1165, -- [11]
+			"0x0500000005B7E58A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
@@ -404,78 +476,6 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		},
-		["1372907509.031"] = {
-			"Lust, Stormlash, and Ascend ", -- [1]
-			"Orazzle", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Orazzle", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			350, -- [11]
-			"0x050000000414A2EC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_OFFICER",
-		},
-		["1372907074.059"] = {
-			"thsnkd", -- [1]
-			"Rakarnak-Terokkar", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Rakarnak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			243, -- [11]
-			"0x07000000053F4BB6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
-		},
-		["1372906399.983"] = {
-			"kk", -- [1]
-			"Tankums", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Tankums", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			107, -- [11]
-			"0x0500000005B7E58A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
-		},
-		["1372907541.838"] = {
-			"b/c after that all the fun is over lol", -- [1]
-			"Aimaiatros", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Aimaiatros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			362, -- [11]
-			"0x0500000004444B99", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_OFFICER",
-		},
 		["1372908007.061"] = {
 			"are you the male or the female?", -- [1]
 			"Aimaiatros", -- [2]
@@ -494,23 +494,23 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_PARTY_LEADER",
 		},
-		["1372906404.793"] = {
-			"wtf haha", -- [1]
-			"Aimaiatros", -- [2]
+		["1377486185.424"] = {
+			"yeah i'm just being silly", -- [1]
+			"Orazzle", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Aimaiatros", -- [5]
+			"Orazzle", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			110, -- [11]
-			"0x0500000004444B99", -- [12]
+			1344, -- [11]
+			"0x050000000414A2EC", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+			[20] = "CHAT_MSG_GUILD",
 		},
 		["1372908050.482"] = {
 			"or are we not using that?", -- [1]
@@ -547,6 +547,24 @@ ElvCharacterDB = {
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_OFFICER",
+		},
+		["1377486542.658"] = {
+			"<--this guy", -- [1]
+			"Lawlsalot", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Lawlsalot", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1428, -- [11]
+			"0x0500000005B63280", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
 		},
 		["1372908623.417"] = {
 			"lock you're fucking stupid", -- [1]
@@ -602,6 +620,24 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_OFFICER",
 		},
+		["1377486438.152"] = {
+			"well I'm full Mal MW monk so whichever is fine with me", -- [1]
+			"Lawlsalot", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Lawlsalot", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1414, -- [11]
+			"0x0500000005B63280", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
 		["1372907828.97"] = {
 			"anything that detracts from that drops dps lol", -- [1]
 			"Aimaiatros", -- [2]
@@ -655,6 +691,42 @@ ElvCharacterDB = {
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_PARTY_LEADER",
+		},
+		["1377486167.764"] = {
+			"lol I meant to say I just messaged you on my alt :P", -- [1]
+			"Lawlsalot", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Lawlsalot", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1341, -- [11]
+			"0x0500000005B63280", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1377486388.196"] = {
+			"Yo! sheesh I can't even type", -- [1]
+			"Lawlsalot", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Lawlsalot", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1404, -- [11]
+			"0x0500000005B63280", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
 		},
 		["1372909168.997"] = {
 			"go man", -- [1]
@@ -782,24 +854,6 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_INSTANCE_CHAT",
 		},
-		["1372907127.771"] = {
-			"you guys got to stop standing in stuff", -- [1]
-			"Aimaiatros", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Aimaiatros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			265, -- [11]
-			"0x0500000004444B99", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		},
 		["1372908898.743"] = {
 			"when adds come", -- [1]
 			"Vannished-BlackDragonflight", -- [2]
@@ -836,24 +890,6 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		},
-		["1372906458.358"] = {
-			"Oops lol", -- [1]
-			"Rakarnak-Terokkar", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Rakarnak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			123, -- [11]
-			"0x07000000053F4BB6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
-		},
 		["1372907708.075"] = {
 			"thats prob it then", -- [1]
 			"Aimaiatros", -- [2]
@@ -872,26 +908,26 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_OFFICER",
 		},
-		["1372906460.259"] = {
-			"move", -- [1]
-			"Aimaiatros", -- [2]
+		["1377486316.582"] = {
+			"not even sure if I should try pvp since the resil change :(", -- [1]
+			"Lawlsalot", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Aimaiatros", -- [5]
+			"Lawlsalot", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			124, -- [11]
-			"0x0500000004444B99", -- [12]
+			1369, -- [11]
+			"0x0500000005B63280", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+			[20] = "CHAT_MSG_GUILD",
 		},
-		["1372907493.099"] = {
-			"no bc we weren't grouped", -- [1]
+		["1377486408.655"] = {
+			"Someone wants to PVP, Nap. Grab;em", -- [1]
 			"Orazzle", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
@@ -901,12 +937,12 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			347, -- [11]
+			1409, -- [11]
 			"0x050000000414A2EC", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_OFFICER",
+			[20] = "CHAT_MSG_GUILD",
 		},
 		["1372907887.318"] = {
 			"prob not", -- [1]
@@ -920,42 +956,6 @@ ElvCharacterDB = {
 			"", -- [9]
 			0, -- [10]
 			454, -- [11]
-			"0x050000000414A2EC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_OFFICER",
-		},
-		["1372907526.006"] = {
-			"thats why elemental is fue", -- [1]
-			"Aimaiatros", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Aimaiatros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			356, -- [11]
-			"0x0500000004444B99", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_OFFICER",
-		},
-		["1372907458.584"] = {
-			"all three CDs at once is insane", -- [1]
-			"Orazzle", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Orazzle", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			339, -- [11]
 			"0x050000000414A2EC", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -998,59 +998,23 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_INSTANCE_CHAT",
 		},
-		["1372907896.538"] = {
-			"hmm actually she is watching a movie ", -- [1]
-			"Aimaiatros", -- [2]
-			"Orcish", -- [3]
+		["1372911022.037"] = {
+			"%s has earned the achievement |cffffff00|Hachievement:8028:0500000005BBAC36:1:7:3:13:4294967295:4294967295:4294967295:4294967295|h[Praise the Sun!]|h|r!", -- [1]
+			"Angmokui", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Aimaiatros", -- [5]
+			"Angmokui", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			457, -- [11]
-			"0x0500000004444B99", -- [12]
+			1123, -- [11]
+			"0x0500000005BBAC36", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_OFFICER",
-		},
-		["1372907036.097"] = {
-			"gratz", -- [1]
-			"Tankums", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Tankums", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			233, -- [11]
-			"0x0500000005B7E58A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
-		},
-		["1372906904.625"] = {
-			"make sure to swtich on 6", -- [1]
-			"Aimaiatros", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Aimaiatros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			220, -- [11]
-			"0x0500000004444B99", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		},
 		["1372907724.274"] = {
 			"if your haste is low", -- [1]
@@ -1088,24 +1052,6 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_PARTY_LEADER",
 		},
-		["1372907534.558"] = {
-			"thats also why its not fun for a 10 min fight tho", -- [1]
-			"Aimaiatros", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Aimaiatros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			358, -- [11]
-			"0x0500000004444B99", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_OFFICER",
-		},
 		["1372911511.967"] = {
 			"%s has earned the achievement |cffffff00|Hachievement:4634:0500000005BC8C82:1:7:3:13:4294967295:4294967295:4294967295:4294967295|h[Heroic: The Crimson Hall (25 player)]|h|r!", -- [1]
 			"Minet", -- [2]
@@ -1124,23 +1070,95 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		},
-		["1372907857.821"] = {
-			"idk, im gonna have to go afk for a bit and call meg", -- [1]
-			"Aimaiatros", -- [2]
+		["1372908022.221"] = {
+			"LOLOLOL!", -- [1]
+			"Zahboomahfuu", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Aimaiatros", -- [5]
+			"Zahboomahfuu", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			443, -- [11]
-			"0x0500000004444B99", -- [12]
+			496, -- [11]
+			"0x0500000003CC30D9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_OFFICER",
+			[20] = "CHAT_MSG_PARTY",
+		},
+		["1377486196.097"] = {
+			"yeh I figured :P", -- [1]
+			"Lawlsalot", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Lawlsalot", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1351, -- [11]
+			"0x0500000005B63280", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1377486360.889"] = {
+			"you should go with Nap!", -- [1]
+			"Orazzle", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Orazzle", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1398, -- [11]
+			"0x050000000414A2EC", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1377486592.843"] = {
+			"and Pyar used to be good at playing a monk too", -- [1]
+			"Orazzle", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Orazzle", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1440, -- [11]
+			"0x050000000414A2EC", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1377486659.054"] = {
+			"dang you didn't?", -- [1]
+			"Lawlsalot", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Lawlsalot", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1483, -- [11]
+			"0x0500000005B63280", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
 		},
 		["1372908052.026"] = {
 			"im headed to mumble", -- [1]
@@ -1159,24 +1177,6 @@ ElvCharacterDB = {
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_PARTY_LEADER",
-		},
-		["1372906410.542"] = {
-			"why didnt we all just que together?", -- [1]
-			"Aimaiatros", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Aimaiatros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			111, -- [11]
-			"0x0500000004444B99", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
 		},
 		["1372911050.669"] = {
 			"%s has earned the achievement |cffffff00|Hachievement:4633:0500000005BC8C82:1:7:3:13:4294967295:4294967295:4294967295:4294967295|h[Heroic: The Plagueworks (25 player)]|h|r!", -- [1]
@@ -1250,24 +1250,6 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_INSTANCE_CHAT",
 		},
-		["1372906621.953"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:859:05000000057FD1BA:1:7:3:13:4294967295:4294967295:4294967295:4294967295|h[Explore Eversong Woods]|h|r!", -- [1]
-			"Firejaguar", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Firejaguar", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			159, -- [11]
-			"0x05000000057FD1BA", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		},
 		["1372908043.777"] = {
 			"want me to get on mumble?", -- [1]
 			"Zahboomahfuu", -- [2]
@@ -1285,6 +1267,42 @@ ElvCharacterDB = {
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_PARTY",
+		},
+		["1377486674.258"] = {
+			"pyar how is that druid coming?", -- [1]
+			"Orazzle", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Orazzle", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1499, -- [11]
+			"0x050000000414A2EC", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1377486649.962"] = {
+			"thats wierd keeps droping me from q ", -- [1]
+			"Naprolin", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Naprolin", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1470, -- [11]
+			"0x05000000007BAA94", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
 		},
 		["1372911092.389"] = {
 			"what if i already do...", -- [1]
@@ -1340,6 +1358,60 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_OFFICER",
 		},
+		["1377486143.798"] = {
+			"it is your alt main?", -- [1]
+			"Orazzle", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Orazzle", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1333, -- [11]
+			"0x050000000414A2EC", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1377486625.124"] = {
+			"nope", -- [1]
+			"Pyar", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Pyar", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1455, -- [11]
+			"0x0500000005723E74", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1377486152.571"] = {
+			"haha", -- [1]
+			"Orazzle", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Orazzle", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1338, -- [11]
+			"0x050000000414A2EC", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
 		["1372908881.272"] = {
 			"=> I Interrupted That: Minion of Doubt's |cff71d5ff|Hspell:110099|h[Shadows of Doubt]|h|r.", -- [1]
 			"Vannished-BlackDragonflight", -- [2]
@@ -1358,23 +1430,77 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_SAY",
 		},
-		["1372907258.768"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:8099:0500000005BBAC36:1:7:3:13:4294967295:4294967295:4294967295:4294967295|h[Isle of Thunder]|h|r!", -- [1]
-			"Angmokui", -- [2]
-			"", -- [3]
+		["1372908976.526"] = {
+			"Thanks all!", -- [1]
+			"Vannished-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"Angmokui", -- [5]
+			"Vannished", -- [5]
+			"AFK", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			751, -- [11]
+			"0x0500000005BB45B7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_INSTANCE_CHAT",
+		},
+		["1377486396.949"] = {
+			"bgs?", -- [1]
+			"Lawlsalot", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Lawlsalot", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			283, -- [11]
-			"0x0500000005BBAC36", -- [12]
+			1406, -- [11]
+			"0x0500000005B63280", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1377486380.217"] = {
+			"You Nap!", -- [1]
+			"Lawlsalot", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Lawlsalot", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1403, -- [11]
+			"0x0500000005B63280", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1377486572.377"] = {
+			"my main is a monk", -- [1]
+			"Orazzle", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Orazzle", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1430, -- [11]
+			"0x050000000414A2EC", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
 		},
 		["1372909176.784"] = {
 			"calm down asshole", -- [1]
@@ -1393,6 +1519,42 @@ ElvCharacterDB = {
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_INSTANCE_CHAT",
+		},
+		["1372907876.344"] = {
+			"are you gonna be there for raid tomorrow?", -- [1]
+			"Aimaiatros", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Aimaiatros", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			452, -- [11]
+			"0x0500000004444B99", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_OFFICER",
+		},
+		["1372907732.333"] = {
+			"hast is at 19%", -- [1]
+			"Orazzle", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Orazzle", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			408, -- [11]
+			"0x050000000414A2EC", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_OFFICER",
 		},
 		["1372907787.347"] = {
 			"strange", -- [1]
@@ -1448,19 +1610,37 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_OFFICER",
 		},
-		["1372907876.344"] = {
-			"are you gonna be there for raid tomorrow?", -- [1]
-			"Aimaiatros", -- [2]
-			"Orcish", -- [3]
+		["1377486061.128"] = {
+			"Hey can you invite my main to the guild?", -- [1]
+			"Krumn", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Aimaiatros", -- [5]
+			"Krumn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			452, -- [11]
-			"0x0500000004444B99", -- [12]
+			1297, -- [11]
+			"0x0500000005B87928", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_WHISPER",
+		},
+		["1372907862.72"] = {
+			"boo", -- [1]
+			"Orazzle", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Orazzle", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			445, -- [11]
+			"0x050000000414A2EC", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
@@ -1484,41 +1664,23 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		},
-		["1375412191.355"] = {
-			"Galleon is up if anyone needs him; but people haven't started gathering yet", -- [1]
-			"Vorlaun", -- [2]
+		["1372908055.849"] = {
+			"kk", -- [1]
+			"Zahboomahfuu", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Vorlaun", -- [5]
+			"Zahboomahfuu", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			5293, -- [11]
-			"0x05000000026FB00A", -- [12]
+			515, -- [11]
+			"0x0500000003CC30D9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_GUILD",
-		},
-		["1372906906.686"] = {
-			"start on strife", -- [1]
-			"Aimaiatros", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Aimaiatros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			221, -- [11]
-			"0x0500000004444B99", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+			[20] = "CHAT_MSG_PARTY",
 		},
 		["1372908046.193"] = {
 			"he is in a dungeon", -- [1]
@@ -1538,181 +1700,19 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_PARTY",
 		},
-		["1372906915.315"] = {
-			"kk", -- [1]
-			"Tankums", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Tankums", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			223, -- [11]
-			"0x0500000005B7E58A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
-		},
-		["1372907489.951"] = {
-			"b/c we werent grouped tech lol", -- [1]
-			"Aimaiatros", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Aimaiatros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			345, -- [11]
-			"0x0500000004444B99", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_OFFICER",
-		},
-		["1372908009.378"] = {
-			"ninja invites LOL xD", -- [1]
-			"Zahboomahfuu", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Zahboomahfuu", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			490, -- [11]
-			"0x0500000003CC30D9", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_PARTY",
-		},
-		["1372911065.176"] = {
-			"gratz", -- [1]
-			"Tankums", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Tankums", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1165, -- [11]
-			"0x0500000005B7E58A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_GUILD",
-		},
-		["1372908021.088"] = {
-			"haha", -- [1]
-			"Aimaiatros", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Aimaiatros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			495, -- [11]
-			"0x0500000004444B99", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_PARTY_LEADER",
-		},
-		["1372907844.126"] = {
-			"oh ok", -- [1]
-			"Orazzle", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Orazzle", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			440, -- [11]
-			"0x050000000414A2EC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_OFFICER",
-		},
-		["1372909018.653"] = {
-			"you guys go do one without me", -- [1]
-			"Aimaiatros", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Aimaiatros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			779, -- [11]
-			"0x0500000004444B99", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_PARTY_LEADER",
-		},
-		["1372907538.067"] = {
-			"still not my fav", -- [1]
-			"Orazzle", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Orazzle", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			360, -- [11]
-			"0x050000000414A2EC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_OFFICER",
-		},
-		["1372907862.72"] = {
-			"boo", -- [1]
-			"Orazzle", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Orazzle", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			445, -- [11]
-			"0x050000000414A2EC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_OFFICER",
-		},
-		["1372906510.042"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:731:0500000005C1CE02:1:7:3:13:4294967295:4294967295:4294967295:4294967295|h[Professional Expert]|h|r!", -- [1]
-			"Brutestrngth", -- [2]
+		["1372908542.616"] = {
+			"%s has earned the achievement |cffffff00|Hachievement:776:05000000057FD1BA:1:7:3:13:4294967295:4294967295:4294967295:4294967295|h[Explore Elwynn Forest]|h|r!", -- [1]
+			"Firejaguar", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Brutestrngth", -- [5]
+			"Firejaguar", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			146, -- [11]
-			"0x0500000005C1CE02", -- [12]
+			641, -- [11]
+			"0x05000000057FD1BA", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
@@ -1736,26 +1736,62 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_INSTANCE_CHAT",
 		},
-		["1372907898.635"] = {
-			"so we can do more", -- [1]
-			"Aimaiatros", -- [2]
-			"Orcish", -- [3]
+		["1372910334.983"] = {
+			"%s has earned the achievement |cffffff00|Hachievement:4612:0500000005BC8C82:1:7:3:13:4294967295:4294967295:4294967295:4294967295|h[I'm on a Boat (25 player)]|h|r!", -- [1]
+			"Minet", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Aimaiatros", -- [5]
+			"Minet", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			459, -- [11]
-			"0x0500000004444B99", -- [12]
+			990, -- [11]
+			"0x0500000005BC8C82", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		},
+		["1372907865.357"] = {
+			"them im out", -- [1]
+			"Orazzle", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Orazzle", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			447, -- [11]
+			"0x050000000414A2EC", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_OFFICER",
 		},
-		["1372907515.595"] = {
-			"pretty cool huh", -- [1]
+		["1372908018.889"] = {
+			"A/S/L", -- [1]
+			"Orazzle", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Orazzle", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			493, -- [11]
+			"0x050000000414A2EC", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_PARTY",
+		},
+		["1372909018.653"] = {
+			"you guys go do one without me", -- [1]
 			"Aimaiatros", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
@@ -1765,7 +1801,61 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			351, -- [11]
+			779, -- [11]
+			"0x0500000004444B99", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_PARTY_LEADER",
+		},
+		["1372909974.239"] = {
+			"%s has earned the achievement |cffffff00|Hachievement:774:05000000057FD1BA:1:7:3:13:4294967295:4294967295:4294967295:4294967295|h[Explore Searing Gorge]|h|r!", -- [1]
+			"Firejaguar", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Firejaguar", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			933, -- [11]
+			"0x05000000057FD1BA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		},
+		["1372908037.588"] = {
+			"AGAIN", -- [1]
+			"Orazzle", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Orazzle", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			503, -- [11]
+			"0x050000000414A2EC", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_PARTY",
+		},
+		["1372907666.069"] = {
+			"other than needing to fulminate a whole lot more looks spot on", -- [1]
+			"Aimaiatros", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Aimaiatros", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			387, -- [11]
 			"0x0500000004444B99", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1790,23 +1880,23 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_OFFICER",
 		},
-		["1372911022.037"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:8028:0500000005BBAC36:1:7:3:13:4294967295:4294967295:4294967295:4294967295|h[Praise the Sun!]|h|r!", -- [1]
-			"Angmokui", -- [2]
-			"", -- [3]
+		["1372908724.692"] = {
+			"=> I Interrupted That: Minion of Doubt's |cff71d5ff|Hspell:110125|h[Shattered Resolve]|h|r.", -- [1]
+			"Vannished-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"Angmokui", -- [5]
+			"Vannished", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1123, -- [11]
-			"0x0500000005BBAC36", -- [12]
+			677, -- [11]
+			"0x0500000005BB45B7", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[20] = "CHAT_MSG_SAY",
 		},
 		["1372910886.914"] = {
 			"%s has earned the achievement |cffffff00|Hachievement:4614:0500000005BC8C82:1:7:3:13:4294967295:4294967295:4294967295:4294967295|h[Dances with Oozes (25 player)]|h|r!", -- [1]
@@ -1826,26 +1916,44 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		},
-		["1372907960.762"] = {
-			"When are you going to move to the US and get a job here?", -- [1]
-			"|Kf6|k0000000|k", -- [2]
-			"", -- [3]
+		["1372908002.905"] = {
+			"hi", -- [1]
+			"Aimaiatros", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Aimaiatros", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			472, -- [11]
-			false, -- [12]
-			6, -- [13]
+			485, -- [11]
+			"0x0500000004444B99", -- [12]
+			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[20] = "CHAT_MSG_PARTY_LEADER",
 		},
-		["1372906392.746"] = {
-			"hey Tankums", -- [1]
+		["1372907896.538"] = {
+			"hmm actually she is watching a movie ", -- [1]
+			"Aimaiatros", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Aimaiatros", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			457, -- [11]
+			"0x0500000004444B99", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_OFFICER",
+		},
+		["1372907844.126"] = {
+			"oh ok", -- [1]
 			"Orazzle", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
@@ -1855,33 +1963,15 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			106, -- [11]
+			440, -- [11]
 			"0x050000000414A2EC", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
+			[20] = "CHAT_MSG_OFFICER",
 		},
-		["1372908896.903"] = {
-			"Stack in the middle", -- [1]
-			"Vannished-BlackDragonflight", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Vannished", -- [5]
-			"AFK", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			729, -- [11]
-			"0x0500000005BB45B7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
-		},
-		["1372908022.221"] = {
-			"LOLOLOL!", -- [1]
+		["1372907997.699"] = {
+			"LOL", -- [1]
 			"Zahboomahfuu", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
@@ -1891,33 +1981,33 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			496, -- [11]
+			484, -- [11]
 			"0x0500000003CC30D9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_PARTY",
 		},
-		["1372908976.526"] = {
-			"Thanks all!", -- [1]
-			"Vannished-BlackDragonflight", -- [2]
-			"Orcish", -- [3]
+		["1377486122.838"] = {
+			"Hey this is my alt", -- [1]
+			"Lawlsalot", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Vannished", -- [5]
-			"AFK", -- [6]
+			"Lawlsalot", -- [5]
+			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			751, -- [11]
-			"0x0500000005BB45B7", -- [12]
+			1324, -- [11]
+			"0x0500000005B63280", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
+			[20] = "CHAT_MSG_WHISPER",
 		},
-		["1372907914.172"] = {
-			"inv rachel", -- [1]
+		["1372907923.564"] = {
+			"and devin", -- [1]
 			"Orazzle", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
@@ -1927,26 +2017,116 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			462, -- [11]
+			465, -- [11]
 			"0x050000000414A2EC", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_OFFICER",
 		},
-		["1372906401.054"] = {
-			"hola", -- [1]
-			"Tankums", -- [2]
+		["1372907857.821"] = {
+			"idk, im gonna have to go afk for a bit and call meg", -- [1]
+			"Aimaiatros", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Tankums", -- [5]
+			"Aimaiatros", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			108, -- [11]
-			"0x0500000005B7E58A", -- [12]
+			443, -- [11]
+			"0x0500000004444B99", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_OFFICER",
+		},
+		["1372908021.088"] = {
+			"haha", -- [1]
+			"Aimaiatros", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Aimaiatros", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			495, -- [11]
+			"0x0500000004444B99", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_PARTY_LEADER",
+		},
+		["1377486130.522"] = {
+			"Hey this is my main", -- [1]
+			"Lawlsalot", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Lawlsalot", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1326, -- [11]
+			"0x0500000005B63280", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_WHISPER",
+		},
+		["1372907700.768"] = {
+			"I haven't even looked at gearing/forging/etc", -- [1]
+			"Orazzle", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Orazzle", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			399, -- [11]
+			"0x050000000414A2EC", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_OFFICER",
+		},
+		["1372908030.747"] = {
+			"nice", -- [1]
+			"|Kf6|k0000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			500, -- [11]
+			false, -- [12]
+			6, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1372908434.612"] = {
+			"my pizza man will be here soon", -- [1]
+			"Vannished-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Vannished", -- [5]
+			"AFK", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			600, -- [11]
+			"0x0500000005BB45B7", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
@@ -1970,8 +2150,44 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_OFFICER",
 		},
-		["1372908434.612"] = {
-			"my pizza man will be here soon", -- [1]
+		["1372907914.172"] = {
+			"inv rachel", -- [1]
+			"Orazzle", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Orazzle", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			462, -- [11]
+			"0x050000000414A2EC", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_OFFICER",
+		},
+		["1377486559.573"] = {
+			"<---this guy", -- [1]
+			"Orazzle", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Orazzle", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1429, -- [11]
+			"0x050000000414A2EC", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1372908896.903"] = {
+			"Stack in the middle", -- [1]
 			"Vannished-BlackDragonflight", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
@@ -1981,141 +2197,15 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			600, -- [11]
+			729, -- [11]
 			"0x0500000005BB45B7", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_INSTANCE_CHAT",
 		},
-		["1372908030.747"] = {
-			"nice", -- [1]
-			"|Kf6|k0000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			500, -- [11]
-			false, -- [12]
-			6, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1372907700.768"] = {
-			"I haven't even looked at gearing/forging/etc", -- [1]
-			"Orazzle", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Orazzle", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			399, -- [11]
-			"0x050000000414A2EC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_OFFICER",
-		},
-		["1372907732.333"] = {
-			"hast is at 19%", -- [1]
-			"Orazzle", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Orazzle", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			408, -- [11]
-			"0x050000000414A2EC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_OFFICER",
-		},
-		["1372907923.564"] = {
-			"and devin", -- [1]
-			"Orazzle", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Orazzle", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			465, -- [11]
-			"0x050000000414A2EC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_OFFICER",
-		},
-		["1372906381.846"] = {
-			"why can't  i ever get another dungeon.", -- [1]
-			"Rakarnak-Terokkar", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Rakarnak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			105, -- [11]
-			"0x07000000053F4BB6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
-		},
-		["1372907997.699"] = {
-			"LOL", -- [1]
-			"Zahboomahfuu", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Zahboomahfuu", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			484, -- [11]
-			"0x0500000003CC30D9", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_PARTY",
-		},
-		["1372906403.409"] = {
-			"fancy seeing you here", -- [1]
-			"Orazzle", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Orazzle", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			109, -- [11]
-			"0x050000000414A2EC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
-		},
-		["1372908002.905"] = {
-			"hi", -- [1]
+		["1372910690.863"] = {
+			"its lola, quick everyone turn your AC on!", -- [1]
 			"Aimaiatros", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
@@ -2125,69 +2215,33 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			485, -- [11]
+			1040, -- [11]
 			"0x0500000004444B99", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_PARTY_LEADER",
+			[20] = "CHAT_MSG_GUILD",
 		},
-		["1372908724.692"] = {
-			"=> I Interrupted That: Minion of Doubt's |cff71d5ff|Hspell:110125|h[Shattered Resolve]|h|r.", -- [1]
-			"Vannished-BlackDragonflight", -- [2]
+		["1377486150.23"] = {
+			"no my main", -- [1]
+			"Lawlsalot", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Vannished", -- [5]
+			"Lawlsalot", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			677, -- [11]
-			"0x0500000005BB45B7", -- [12]
+			1336, -- [11]
+			"0x0500000005B63280", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_SAY",
+			[20] = "CHAT_MSG_GUILD",
 		},
-		["1372908037.588"] = {
-			"AGAIN", -- [1]
-			"Orazzle", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Orazzle", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			503, -- [11]
-			"0x050000000414A2EC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_PARTY",
-		},
-		["1372909974.239"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:774:05000000057FD1BA:1:7:3:13:4294967295:4294967295:4294967295:4294967295|h[Explore Searing Gorge]|h|r!", -- [1]
-			"Firejaguar", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Firejaguar", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			933, -- [11]
-			"0x05000000057FD1BA", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		},
-		["1372907483.363"] = {
-			"i guess we didnt get a guild group thing for that", -- [1]
+		["1372907898.635"] = {
+			"so we can do more", -- [1]
 			"Aimaiatros", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
@@ -2197,66 +2251,12 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			343, -- [11]
+			459, -- [11]
 			"0x0500000004444B99", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_OFFICER",
-		},
-		["1372908018.889"] = {
-			"A/S/L", -- [1]
-			"Orazzle", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Orazzle", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			493, -- [11]
-			"0x050000000414A2EC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_PARTY",
-		},
-		["1372907865.357"] = {
-			"them im out", -- [1]
-			"Orazzle", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Orazzle", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			447, -- [11]
-			"0x050000000414A2EC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_OFFICER",
-		},
-		["1372910334.983"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:4612:0500000005BC8C82:1:7:3:13:4294967295:4294967295:4294967295:4294967295|h[I'm on a Boat (25 player)]|h|r!", -- [1]
-			"Minet", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Minet", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			990, -- [11]
-			"0x0500000005BC8C82", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		},
 		["1372907755.991"] = {
 			"and throwing out LB procs", -- [1]
@@ -2276,26 +2276,8 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_OFFICER",
 		},
-		["1372908542.616"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:776:05000000057FD1BA:1:7:3:13:4294967295:4294967295:4294967295:4294967295|h[Explore Elwynn Forest]|h|r!", -- [1]
-			"Firejaguar", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Firejaguar", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			641, -- [11]
-			"0x05000000057FD1BA", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		},
-		["1372908055.849"] = {
-			"kk", -- [1]
+		["1372908009.378"] = {
+			"ninja invites LOL xD", -- [1]
 			"Zahboomahfuu", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
@@ -2305,12 +2287,30 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			515, -- [11]
+			490, -- [11]
 			"0x0500000003CC30D9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_PARTY",
+		},
+		["1375412191.355"] = {
+			"Galleon is up if anyone needs him; but people haven't started gathering yet", -- [1]
+			"Vorlaun", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Vorlaun", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			5293, -- [11]
+			"0x05000000026FB00A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
 		},
 	},
 }

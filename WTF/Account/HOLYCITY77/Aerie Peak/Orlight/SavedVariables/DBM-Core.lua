@@ -2,7 +2,10 @@
 DBM_SavedOptions = {
 	["SpecialWarningFontSize"] = 50,
 	["CountdownVoice2"] = "Kolt",
+	["SpecialWarningFlashAlph2"] = 0.3,
 	["ArrowPosX"] = 0,
+	["SpecialWarningFlashDura3"] = 1,
+	["MovieFilter"] = "Never",
 	["HPFramePoint"] = "CENTER",
 	["UseMasterVolume"] = true,
 	["StatusEnabled"] = true,
@@ -10,17 +13,28 @@ DBM_SavedOptions = {
 	["AutologBosses"] = false,
 	["ShowAdvSWSounds"] = false,
 	["RangeFrameX"] = 50,
+	["SpecialWarningFlashCol3"] = {
+		1, -- [1]
+		0, -- [2]
+		0, -- [3]
+	},
 	["DisableCinematicsOutside"] = false,
 	["AlwaysShowSpeedKillTimer"] = true,
 	["RangeFrameY"] = -50,
 	["FilterSayAndYell"] = false,
 	["EnableModels"] = true,
+	["SpecialWarningFlashAlph3"] = 0.4,
 	["ArrowPoint"] = "TOP",
 	["ModelSoundValue"] = "Short",
 	["SpecialWarningSound2"] = "Sound\\Creature\\AlgalonTheObserver\\UR_Algalon_BHole01.wav",
 	["InfoFramePoint"] = "CENTER",
 	["RangeFrameRadarPoint"] = "CENTER",
 	["SpecialWarningY"] = 75,
+	["SpecialWarningFlashCol2"] = {
+		1, -- [1]
+		0.5, -- [2]
+		0, -- [3]
+	},
 	["RangeFrameUpdates"] = "Average",
 	["SpecialWarningPoint"] = "CENTER",
 	["RaidWarningSound"] = "Sound\\Doodad\\BellTollNightElf.wav",
@@ -47,15 +61,26 @@ DBM_SavedOptions = {
 	["DontSetIcons"] = false,
 	["BigBrotherAnnounceToRaid"] = false,
 	["CountdownVoice"] = "Corsica",
+	["ForumsMessageShown"] = 9413,
+	["RangeFrameRadarX"] = 100,
+	["SpecialWarningFlashCol1"] = {
+		1, -- [1]
+		1, -- [2]
+		0, -- [3]
+	},
 	["InfoFrameY"] = -75,
 	["SpecialWarningSound"] = "Sound\\Spells\\PVPFlagTaken.wav",
 	["WarningIconRight"] = true,
 	["HealthFrameGrowUp"] = false,
+	["SpecialWarningFlashDura1"] = 0.4,
 	["HideBossEmoteFrame"] = false,
 	["ShowCountdownText"] = false,
 	["ShowBigBrotherOnCombatStart"] = false,
-	["ForumsMessageShown"] = 9413,
-	["ChatFrame"] = "DEFAULT_CHAT_FRAME",
+	["SpecialWarningFlashDura2"] = 0.4,
+	["DontSendBossWhispers"] = false,
+	["SpecialWarningFlashAlph1"] = 0.3,
+	["LastRevision"] = 9413,
+	["RangeFrameLocked"] = false,
 	["DontShowRangeFrame"] = false,
 	["ShowEngageMessage"] = true,
 	["InfoFrameShowSelf"] = false,
@@ -63,67 +88,67 @@ DBM_SavedOptions = {
 	["ShowRecoveryMessage"] = true,
 	["WarningColors"] = {
 		{
-			["b"] = 0.94,
-			["g"] = 0.8,
 			["r"] = 0.41,
+			["g"] = 0.8,
+			["b"] = 0.94,
 		}, -- [1]
 		{
-			["b"] = 0,
-			["g"] = 0.95,
 			["r"] = 0.95,
+			["g"] = 0.95,
+			["b"] = 0,
 		}, -- [2]
 		{
-			["b"] = 0,
-			["g"] = 0.5,
 			["r"] = 1,
+			["g"] = 0.5,
+			["b"] = 0,
 		}, -- [3]
 		{
-			["b"] = 0.1,
-			["g"] = 0.1,
 			["r"] = 1,
+			["g"] = 0.1,
+			["b"] = 0.1,
 		}, -- [4]
 	},
 	["AutoRespond"] = true,
 	["ShowFakedRaidWarnings"] = false,
 	["LatencyThreshold"] = 250,
 	["ShowLoadMessage"] = true,
-	["DontShowPTCountdownText"] = false,
+	["DontShowInfoFrame"] = false,
 	["DontShowPT"] = true,
 	["HPFrameMaxEntries"] = 5,
 	["SetPlayerRole"] = true,
 	["ShowSpecialWarnings"] = true,
 	["RangeFramePoint"] = "CENTER",
-	["DontSendBossWhispers"] = false,
-	["DontShowBossAnnounces"] = false,
+	["WarningIconChat"] = true,
+	["HealthFrameLocked"] = false,
 	["ArrowPosY"] = -150,
 	["RangeFrameFrames"] = "radar",
-	["RangeFrameSound2"] = "none",
+	["BlockVersionUpdateNotice"] = false,
 	["ShowPizzaMessage"] = true,
-	["AdvancedAutologBosses"] = false,
+	["RangeFrameSound2"] = "none",
 	["ShowLHFrame"] = true,
+	["RangeFrameRadarY"] = -100,
+	["DontShowPTText"] = false,
+	["Enabled"] = true,
 	["SpecialWarningFontColor"] = {
 		0, -- [1]
 		0, -- [2]
 		1, -- [3]
 	},
-	["RangeFrameRadarX"] = 100,
-	["Enabled"] = true,
-	["RangeFrameRadarY"] = -100,
-	["BlockVersionUpdateNotice"] = false,
+	["AdvancedAutologBosses"] = false,
 	["DisableCinematics"] = false,
 	["MovieFilters"] = {
 	},
-	["HealthFrameLocked"] = false,
+	["DontShowBossAnnounces"] = false,
 	["ShowWipeMessage"] = true,
 	["LogOnlyRaidBosses"] = false,
 	["StripServerName"] = true,
-	["DontShowInfoFrame"] = false,
+	["DontShowPTCountdownText"] = false,
 	["AlwaysShowHealthFrame"] = false,
 	["HPFrameX"] = -50,
 	["ChallengeBest"] = "Realm",
 	["SpamBlockBossWhispers"] = false,
-	["RangeFrameLocked"] = false,
-	["LastRevision"] = 9413,
+	["ChatFrame"] = "DEFAULT_CHAT_FRAME",
+	["ShowFlashFrame"] = true,
 }
 DBT_SavedOptions = {
 	["DBM"] = {

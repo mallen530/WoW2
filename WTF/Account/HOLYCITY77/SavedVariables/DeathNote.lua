@@ -2,18 +2,21 @@
 DeathNoteDB = {
 	["profileKeys"] = {
 		["Orran - Thrall"] = "Orran - Thrall",
-		["Orstout - Aerie Peak"] = "Orstout - Aerie Peak",
 		["Orazzle - Thrall"] = "Orazzle - Thrall",
+		["Orstout - Aerie Peak"] = "Orstout - Aerie Peak",
+		["Cajamarca - Thrall"] = "Cajamarca - Thrall",
 	},
 	["profiles"] = {
 		["Orran - Thrall"] = {
+		},
+		["Orazzle - Thrall"] = {
 		},
 		["Orstout - Aerie Peak"] = {
 			["display"] = {
 				["namelist"] = 2,
 			},
 		},
-		["Orazzle - Thrall"] = {
+		["Cajamarca - Thrall"] = {
 		},
 	},
 }

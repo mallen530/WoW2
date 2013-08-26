@@ -20,17 +20,3 @@ X: 7
 Y: -10
 W: 140
 H: 200
-Frame: ReMTracker
-FrameLevel: 1
-Anchor: CENTER
-X: 0
-Y: 0
-W: 204
-H: 20
-Frame: ReMTrackerCompact
-FrameLevel: 1
-Anchor: CENTER
-X: 0
-Y: 0
-W: 96
-H: 46

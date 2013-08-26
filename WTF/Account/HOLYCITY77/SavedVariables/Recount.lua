@@ -9,12 +9,12 @@ RecountDB = {
 		["Jains - Thrall"] = "Jains - Thrall",
 		["Orranstout - Aerie Peak"] = "Orranstout - Aerie Peak",
 		["Orsun - Aerie Peak"] = "Orsun - Aerie Peak",
-		["Orazzle - Thrall"] = "Orazzle - Thrall",
-		["Orstout - Thrall"] = "Orstout - Thrall",
-		["Orstout - Aerie Peak"] = "Orstout - Aerie Peak",
-		["Eammiran - Thrall"] = "Eammiran - Thrall",
-		["Cajamarca - Thrall"] = "Cajamarca - Thrall",
 		["Orlight - Aerie Peak"] = "Orlight - Aerie Peak",
+		["Cajamarca - Thrall"] = "Cajamarca - Thrall",
+		["Orstout - Thrall"] = "Orstout - Thrall",
+		["Eammiran - Thrall"] = "Eammiran - Thrall",
+		["Orstout - Aerie Peak"] = "Orstout - Aerie Peak",
+		["Orazzle - Thrall"] = "Orazzle - Thrall",
 	},
 	["profiles"] = {
 		["Orran - Thrall"] = {
@@ -38,9 +38,9 @@ RecountDB = {
 			},
 			["DetailWindowY"] = 0,
 			["LastInstanceName"] = "Gate of the Setting Sun",
-			["DetailWindowX"] = 0,
-			["GraphWindowX"] = 0,
 			["CurDataSet"] = "LastFightData",
+			["GraphWindowX"] = 0,
+			["DetailWindowX"] = 0,
 		},
 		["Khanen - Thrall"] = {
 			["GraphWindowY"] = 0,
@@ -61,10 +61,10 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
-			["DetailWindowX"] = 0,
-			["MainWindowVis"] = false,
-			["CurDataSet"] = "OverallData",
 			["GraphWindowX"] = 0,
+			["CurDataSet"] = "OverallData",
+			["MainWindowVis"] = false,
+			["DetailWindowX"] = 0,
 		},
 		["Quitor - Aerie Peak"] = {
 			["GraphWindowY"] = 0,
@@ -87,9 +87,9 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
-			["CurDataSet"] = "OverallData",
-			["GraphWindowX"] = 0,
 			["DetailWindowX"] = 0,
+			["GraphWindowX"] = 0,
+			["CurDataSet"] = "OverallData",
 		},
 		["Wrimtok - Aerie Peak"] = {
 			["GraphWindowY"] = 0,
@@ -112,8 +112,8 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
-			["GraphWindowX"] = 0,
 			["MainWindowVis"] = false,
+			["GraphWindowX"] = 0,
 		},
 		["Brimtok - Thrall"] = {
 			["GraphWindowY"] = 0,
@@ -136,9 +136,9 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
-			["DetailWindowX"] = 0,
-			["GraphWindowX"] = 0,
 			["CurDataSet"] = "OverallData",
+			["GraphWindowX"] = 0,
+			["DetailWindowX"] = 0,
 		},
 		["Jains - Thrall"] = {
 			["GraphWindowY"] = 0,
@@ -164,9 +164,9 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
-			["GraphWindowX"] = 0,
-			["MainWindowWidth"] = 340.0936889648438,
 			["MainWindowHeight"] = 164.0281829833984,
+			["MainWindowWidth"] = 340.0936889648438,
+			["GraphWindowX"] = 0,
 		},
 		["Orranstout - Aerie Peak"] = {
 			["GraphWindowY"] = 0,
@@ -189,9 +189,9 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
-			["CurDataSet"] = "OverallData",
-			["GraphWindowX"] = 0,
 			["DetailWindowX"] = 0,
+			["GraphWindowX"] = 0,
+			["CurDataSet"] = "OverallData",
 		},
 		["Orsun - Aerie Peak"] = {
 			["GraphWindowY"] = 0,
@@ -214,9 +214,143 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
+			["DetailWindowX"] = 0,
+			["GraphWindowX"] = 0,
+			["CurDataSet"] = "OverallData",
+		},
+		["Orlight - Aerie Peak"] = {
+			["GraphWindowY"] = 0,
+			["MainWindow"] = {
+				["Position"] = {
+					["y"] = 438.4075317382813,
+					["x"] = -780.1405639648438,
+					["w"] = 139.9999847412109,
+				},
+			},
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+					["Total Bar"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["DetailWindowY"] = 0,
+			["LastInstanceName"] = "Shadowfang Keep",
 			["CurDataSet"] = "OverallData",
 			["GraphWindowX"] = 0,
 			["DetailWindowX"] = 0,
+		},
+		["Cajamarca - Thrall"] = {
+			["GraphWindowY"] = 0,
+			["MainWindow"] = {
+				["Position"] = {
+					["y"] = -428.5323791503906,
+					["h"] = 192.9999694824219,
+					["w"] = 310.9999084472656,
+					["x"] = 696.8768920898438,
+				},
+			},
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+					["Total Bar"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["DetailWindowY"] = 0,
+			["DetailWindowX"] = 0,
+			["GraphWindowX"] = 0,
+			["LastInstanceName"] = "Mogu'shan Vaults",
+			["CurDataSet"] = "LastFightData",
+			["MainWindowMode"] = 5,
+			["MainWindowWidth"] = 310.8664245605469,
+			["MainWindowHeight"] = 193.2554168701172,
+		},
+		["Orstout - Thrall"] = {
+			["GraphWindowY"] = 0,
+			["MainWindow"] = {
+				["Position"] = {
+					["y"] = -440.1426887512207,
+					["x"] = 714.5716552734375,
+					["w"] = 270.7140808105469,
+					["h"] = 159.1428375244141,
+				},
+			},
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+					["Total Bar"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["DetailWindowY"] = 0,
+			["LastInstanceName"] = "Gate of the Setting Sun",
+			["CurDataSet"] = "LastFightData",
+			["GraphWindowX"] = 0,
+			["DetailWindowX"] = 0,
+		},
+		["Eammiran - Thrall"] = {
+			["GraphWindowY"] = 0,
+			["MainWindow"] = {
+				["Position"] = {
+					["y"] = 382.2015075683594,
+					["h"] = 200.0001220703125,
+					["w"] = 139.9999847412109,
+					["x"] = -746.4168701171875,
+				},
+			},
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+					["Total Bar"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["DetailWindowY"] = 0,
+			["CurDataSet"] = "OverallData",
+			["GraphWindowX"] = 0,
+			["DetailWindowX"] = 0,
+		},
+		["Orstout - Aerie Peak"] = {
+			["GraphWindowY"] = 0,
+			["MainWindow"] = {
+				["Position"] = {
+					["y"] = -481.7905731201172,
+					["x"] = 907.8632202148438,
+					["w"] = 271.31640625,
+					["h"] = 159.0683441162109,
+				},
+			},
+			["DetailWindowX"] = 0,
+			["BarTextColorSwap"] = false,
+			["CurDataSet"] = "CurrentFightData",
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+					["Total Bar"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["DetailWindowY"] = 0,
+			["MainWindowVis"] = false,
+			["Font"] = "SSPro - Semibold",
+			["GraphWindowX"] = 0,
+			["LastInstanceName"] = "Throne of Thunder",
 		},
 		["Orazzle - Thrall"] = {
 			["GraphWindowY"] = 0,
@@ -245,139 +379,6 @@ RecountDB = {
 			["GraphWindowX"] = 0,
 			["MainWindowWidth"] = 246.0972747802734,
 			["MainWindowHeight"] = 156.5964202880859,
-		},
-		["Orstout - Thrall"] = {
-			["GraphWindowY"] = 0,
-			["MainWindow"] = {
-				["Position"] = {
-					["y"] = -440.1426887512207,
-					["x"] = 714.5716552734375,
-					["w"] = 270.7140808105469,
-					["h"] = 159.1428375244141,
-				},
-			},
-			["Colors"] = {
-				["Bar"] = {
-					["Bar Text"] = {
-						["a"] = 1,
-					},
-					["Total Bar"] = {
-						["a"] = 1,
-					},
-				},
-			},
-			["DetailWindowY"] = 0,
-			["LastInstanceName"] = "Gate of the Setting Sun",
-			["DetailWindowX"] = 0,
-			["GraphWindowX"] = 0,
-			["CurDataSet"] = "LastFightData",
-		},
-		["Orstout - Aerie Peak"] = {
-			["GraphWindowY"] = 0,
-			["MainWindow"] = {
-				["Position"] = {
-					["y"] = -481.7905731201172,
-					["x"] = 907.8632202148438,
-					["w"] = 271.31640625,
-					["h"] = 159.0683441162109,
-				},
-			},
-			["Colors"] = {
-				["Bar"] = {
-					["Bar Text"] = {
-						["a"] = 1,
-					},
-					["Total Bar"] = {
-						["a"] = 1,
-					},
-				},
-			},
-			["DetailWindowY"] = 0,
-			["DetailWindowX"] = 0,
-			["GraphWindowX"] = 0,
-			["Font"] = "SSPro - Semibold",
-			["BarTextColorSwap"] = false,
-			["CurDataSet"] = "LastFightData",
-			["LastInstanceName"] = "Throne of Thunder",
-		},
-		["Eammiran - Thrall"] = {
-			["GraphWindowY"] = 0,
-			["MainWindow"] = {
-				["Position"] = {
-					["y"] = 382.2015075683594,
-					["h"] = 200.0001220703125,
-					["w"] = 139.9999847412109,
-					["x"] = -746.4168701171875,
-				},
-			},
-			["Colors"] = {
-				["Bar"] = {
-					["Bar Text"] = {
-						["a"] = 1,
-					},
-					["Total Bar"] = {
-						["a"] = 1,
-					},
-				},
-			},
-			["DetailWindowY"] = 0,
-			["DetailWindowX"] = 0,
-			["GraphWindowX"] = 0,
-			["CurDataSet"] = "OverallData",
-		},
-		["Cajamarca - Thrall"] = {
-			["GraphWindowY"] = 0,
-			["MainWindow"] = {
-				["Position"] = {
-					["y"] = -428.5324478149414,
-					["h"] = 192.9999694824219,
-					["w"] = 310.9999389648438,
-					["x"] = 696.876953125,
-				},
-			},
-			["DetailWindowX"] = 0,
-			["LastInstanceName"] = "Scarlet Monastery",
-			["CurDataSet"] = "OverallData",
-			["Colors"] = {
-				["Bar"] = {
-					["Bar Text"] = {
-						["a"] = 1,
-					},
-					["Total Bar"] = {
-						["a"] = 1,
-					},
-				},
-			},
-			["DetailWindowY"] = 0,
-			["MainWindowHeight"] = 193.2554168701172,
-			["MainWindowWidth"] = 310.8664245605469,
-			["GraphWindowX"] = 0,
-		},
-		["Orlight - Aerie Peak"] = {
-			["GraphWindowY"] = 0,
-			["MainWindow"] = {
-				["Position"] = {
-					["y"] = 438.4075622558594,
-					["h"] = 200.0000305175781,
-					["w"] = 139.9999847412109,
-					["x"] = -780.1405487060547,
-				},
-			},
-			["Colors"] = {
-				["Bar"] = {
-					["Bar Text"] = {
-						["a"] = 1,
-					},
-					["Total Bar"] = {
-						["a"] = 1,
-					},
-				},
-			},
-			["DetailWindowY"] = 0,
-			["LastInstanceName"] = "Shadowfang Keep",
-			["CurDataSet"] = "OverallData",
-			["GraphWindowX"] = 0,
-			["DetailWindowX"] = 0,
 		},
 	},
 }

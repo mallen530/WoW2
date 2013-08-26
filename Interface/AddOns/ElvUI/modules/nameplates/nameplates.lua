@@ -5,10 +5,9 @@ local LSM = LibStub("LibSharedMedia-3.0")
 local numChildren = -1
 local twipe = table.wipe
 local band = bit.band
+local gsub = string.gsub
 
 NP.NumTargetChecks = -1
-NP.NumMouseoverChecks = -1
-NP.NumNonTransparentPlates = 0
 NP.CreatedPlates = {};
 NP.Healers = {};
 NP.ComboPoints = {};
@@ -100,13 +99,14 @@ function NP:OnUpdate(elapsed)
 	end
 
 	NP.PlateParent:Hide()
-	NP.NumNonTransparentPlates = 0
 	for blizzPlate, plate in pairs(NP.CreatedPlates) do
 		plate:Hide()
 		if(blizzPlate:IsShown()) then
-          plate:SetPoint("CENTER", WorldFrame, "BOTTOMLEFT", blizzPlate:GetCenter())
-          NP.SetAlpha(blizzPlate, plate)
-          plate:Show()
+			if(not self.viewPort) then
+				plate:SetPoint("CENTER", WorldFrame, "BOTTOMLEFT", blizzPlate:GetCenter())
+			end
+			NP.SetAlpha(blizzPlate, plate)
+			plate:Show()
 		end
 	end
 	NP.PlateParent:Show()
@@ -128,7 +128,7 @@ end
 
 function NP:CheckFilterAndHealers(frame)
 	local myPlate = NP.CreatedPlates[frame]
-	local name = frame.name:GetText()
+	local name = myPlate.name
 	local db = E.global.nameplate["filter"][name]
 
 	if db and db.enable then
@@ -346,21 +346,19 @@ function NP:SetAlpha(myPlate)
 	if self:GetAlpha() < 1 then
 		myPlate:SetAlpha(NP.db.nonTargetAlpha)
 	else
-		NP.NumNonTransparentPlates = NP.NumNonTransparentPlates + 1
 		myPlate:SetAlpha(1)
 	end
 end
 
 function NP:SetUnitInfo(myPlate)
-	if self:GetAlpha() == 1 and UnitExists("target") and UnitName("target") == self.name:GetText() and NP.NumNonTransparentPlates == 1 then
+	if self:GetAlpha() == 1 and NP.targetName and NP.targetName == myPlate.name then
 		self.guid = UnitGUID("target")
 		self.unit = "target"
 		myPlate:SetFrameLevel(2)
 		myPlate.overlay:Hide()
-
 		if((NP.NumTargetChecks > -1) or self.allowCheck) then
 			NP.NumTargetChecks = NP.NumTargetChecks + 1
-			if NP.NumTargetChecks > 1 then
+			if NP.NumTargetChecks > 0 then
 				NP.NumTargetChecks = -1
 			end
 
@@ -368,26 +366,21 @@ function NP:SetUnitInfo(myPlate)
 			NP:UpdateComboPointsByUnitID('target')
 			self.allowCheck = nil
 		end
-	elseif self.highlight:IsShown() and UnitExists("mouseover") and UnitName("mouseover") == self.name:GetText() then
-		self.guid = UnitGUID("mouseover")
-		self.unit = "mouseover"
-		myPlate:SetFrameLevel(1)
-		myPlate.overlay:Show()
-
-		if((NP.NumMouseoverChecks > -1) or self.allowCheck) then
-			NP.NumMouseoverChecks = NP.NumMouseoverChecks + 1
-			if NP.NumMouseoverChecks > 1 then
-				NP.NumMouseoverChecks = -1
-			end
+	elseif self.highlight:IsShown() and UnitExists("mouseover") and UnitName("mouseover") == myPlate.name then
+		if(self.unit ~= "mouseover" or self.allowCheck) then
+			myPlate:SetFrameLevel(1)
+			myPlate.overlay:Show()			
 
 			NP:UpdateAurasByUnitID('mouseover')
 			NP:UpdateComboPointsByUnitID('mouseover')
 			self.allowCheck = nil
-		end		
+		end
+		self.guid = UnitGUID("mouseover")
+		self.unit = "mouseover"		
 	else
-		self.unit = nil
 		myPlate:SetFrameLevel(0)
 		myPlate.overlay:Hide()
+		self.unit = nil
 	end
 end
 
@@ -415,13 +408,11 @@ end
 
 function NP:PLAYER_TARGET_CHANGED()
 	if(UnitExists("target")) then
+		self.targetName = UnitName("target")
+		WorldFrame.elapsed = 0
 		NP.NumTargetChecks = 0
-	end
-end
-
-function NP:UPDATE_MOUSEOVER_UNIT()
-	if(UnitExists("mouseover")) then
-		NP.NumMouseoverChecks = 0
+	else
+		self.targetName = nil
 	end
 end
 
@@ -458,9 +449,9 @@ function NP:Initialize()
 	self:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 	self:RegisterEvent("UNIT_AURA")
 	self:RegisterEvent("PLAYER_TARGET_CHANGED")
-	self:RegisterEvent("UPDATE_MOUSEOVER_UNIT")
 	self:RegisterEvent("UNIT_COMBO_POINTS")
 
+	self.viewPort = IsAddOnLoaded("SunnArt");
 	self:CombatToggle()
 end
 
@@ -524,7 +515,7 @@ function NP:OnShow()
 		self.allowCheck = true
 	end
 
-	NP.ColorizeAndScale(self, myPlate)
+	myPlate.name = gsub(self.name:GetText(), '%s%(%*%)','')
 end
 
 function NP:OnHide()
@@ -726,7 +717,9 @@ function NP:CreatePlate(frame)
 	frame.castBar.texture, frame.castBar.border, frame.castBar.shield, frame.castBar.icon, frame.castBar.name, frame.castBar.shadow = frame.castBar:GetRegions()
 
 	local myPlate = CreateFrame("Frame", nil, self.PlateParent)
-
+	if(self.viewPort) then
+		myPlate:SetPoint("BOTTOMLEFT", frame, "BOTTOMLEFT")
+	end
 	--HealthBar
 	myPlate.healthBar = CreateFrame("StatusBar", nil, myPlate)
 	myPlate.healthBar:SetPoint('BOTTOM', myPlate, 'BOTTOM', 0, 5)
@@ -836,12 +829,12 @@ function NP:CreatePlate(frame)
 	
 	--Script Handlers
 	frame:HookScript("OnShow", NP.OnShow)
-	frame:HookScript("OnHide", NP.OnHide)
+	frame:HookScript("OnHide", NP.OnHide)	
 	frame.healthBar:HookScript("OnValueChanged", NP.HealthBar_OnValueChanged)
 	frame.castBar:HookScript("OnShow", NP.CastBar_OnShow)
 	frame.castBar:HookScript("OnHide", NP.CastBar_OnHide)
 	frame.castBar:HookScript("OnValueChanged", NP.CastBar_OnValueChanged)
-	
+
 	--Hide Elements
 	NP:QueueObject(frame, frame.healthBar)
 	NP:QueueObject(frame, frame.castBar)
@@ -856,12 +849,13 @@ function NP:CreatePlate(frame)
 
 	self.CreatedPlates[frame] = myPlate
 	NP.UpdateSettings(frame)
-	
 	if not frame.castBar:IsShown() then
 		myPlate.castBar:Hide()
 	else
 		NP.CastBar_OnShow(frame.castBar)
 	end
+
+
 end
 
 function NP:QueueObject(frame, object)
@@ -1420,7 +1414,7 @@ function NP:UpdateAuras(frame)
 	if not guid then
 		-- Attempt to ID widget via Name or Raid Icon
 		if RAID_CLASS_COLORS[frame.unitType] then 
-			guid = NP.ByName[frame.name:GetText()]
+			guid = NP.ByName[myPlate.name]
 		elseif frame.raidIcon:IsShown() then 
 			guid = NP.ByRaidIcon[frame.raidIconType] 
 		end
@@ -1464,8 +1458,8 @@ end
 function NP:SearchNameplateByName(sourceName)
 	if not sourceName then return; end
 	local SearchFor = strsplit("-", sourceName)
-	for frame, _ in pairs(NP.CreatedPlates) do
-		if frame and frame:IsShown() and frame.name:GetText() == SearchFor and RAID_CLASS_COLORS[frame.unitType] then
+	for frame, myPlate in pairs(NP.CreatedPlates) do
+		if frame and frame:IsShown() and myPlate.name == SearchFor and RAID_CLASS_COLORS[frame.unitType] then
 			return frame
 		end
 	end

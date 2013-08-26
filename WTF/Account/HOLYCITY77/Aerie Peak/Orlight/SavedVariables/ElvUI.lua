@@ -8,62 +8,8 @@ ElvCharacterDB = {
 		" tank/dps", -- [5]
 	},
 	["ChatLog"] = {
-		["1369783096.534"] = {
-			"he isnt doing anything, he is just talking lol", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			607, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1369783066.529"] = {
-			"he is gonna be a problem with doing RD raid stuff", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			601, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1369785472.341"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:505:05800000084E2146:1:5:28:13:4294967295:4294967295:4294967295:4294967295|h[250 Quests Completed]|h|r!", -- [1]
-			"Orlight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Orlight", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			924, -- [11]
-			"0x05800000084E2146", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		},
-		["1370053806.662"] = {
-			"sooo", -- [1]
+		["1370053519.946"] = {
+			"got heals tanks and dps, and idc to swap out on weeks if needed", -- [1]
 			"|Kf5|k000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -73,138 +19,12 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			539, -- [11]
-			false, -- [12]
-			5, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1369784273.846"] = {
-			"haha", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			767, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1370053699.916"] = {
-			"me HPally, Kloros Prot War, Azuba RestoDruid, Quit Hunter", -- [1]
-			"|Kf5|k000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			528, -- [11]
-			false, -- [12]
-			5, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1369782346.296"] = {
-			"that is a bad attitude", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			480, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1370053559.106"] = {
-			"cool", -- [1]
-			"|Kf5|k000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			511, -- [11]
-			false, -- [12]
-			5, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1370053783.669"] = {
-			"yeah what do you like out of your 2? monk/pally?", -- [1]
-			"|Kf5|k000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			536, -- [11]
+			500, -- [11]
 			false, -- [12]
 			5, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1369782148.871"] = {
-			"hey", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			421, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1369782794.441"] = {
-			"no im worried that you are correct", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			551, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
 		["1370054139.058"] = {
 			"tank/dps", -- [1]
@@ -224,42 +44,6 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
-		["1369783116.595"] = {
-			"i should have been working on at leat 1 alt during MoP", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			610, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1369782475.911"] = {
-			"we only have 6, we cant raid if everyone shows up on time", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			499, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
 		["1369782286.711"] = {
 			"eay", -- [1]
 			"|Kf60|k00000000000|k", -- [2]
@@ -277,78 +61,6 @@ ElvCharacterDB = {
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1369784266.107"] = {
-			"which is 10 miles from another guy", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			766, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1370054118.728"] = {
-			"dps/tank/heals?", -- [1]
-			"|Kf5|k000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			595, -- [11]
-			false, -- [12]
-			5, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1369782511.776"] = {
-			"didnt we say we were not doing that?", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			502, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1370053727.738"] = {
-			"i should catch my shammy up", -- [1]
-			"|Kf5|k000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			531, -- [11]
-			false, -- [12]
-			5, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
 		},
 		["1369783065.675"] = {
 			"yep", -- [1]
@@ -386,26 +98,8 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
-		["1369782271.499"] = {
-			"im sooo hungry", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			459, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1370054078.874"] = {
-			"ill go give me a sec though", -- [1]
+		["1370054118.728"] = {
+			"dps/tank/heals?", -- [1]
 			"|Kf5|k000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -415,84 +109,12 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			578, -- [11]
+			595, -- [11]
 			false, -- [12]
 			5, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1370053656.578"] = {
-			"well the only ppl who has said they were interested is", -- [1]
-			"|Kf5|k000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			527, -- [11]
-			false, -- [12]
-			5, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1369783078.838"] = {
-			"yeah i figured that out quickly", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			604, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1369782523.303"] = {
-			"well i didnt know that that was the plan", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			504, -- [11]
-			false, -- [12]
-			60, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1369782657.734"] = {
-			"and then azuba tells you things that aren't true", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			530, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
 		["1369782536.063"] = {
 			"we just dont want to pug 8", -- [1]
@@ -512,9 +134,9 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
-		["1369782729.561"] = {
-			"and talking to you guys i still didnt get the impression that anythign ahd changed", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
+		["1370053802.685"] = {
+			"well monk is my main", -- [1]
+			"|Kf5|k000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
 			"", -- [5]
@@ -525,25 +147,7 @@ ElvCharacterDB = {
 			0, -- [10]
 			538, -- [11]
 			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1369782900.127"] = {
-			"the only \"free agent\" convo I had was looking through the ppl posting as free agents and scoop them up", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			567, -- [11]
-			false, -- [12]
-			60, -- [13]
+			5, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
@@ -566,42 +170,6 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
 		},
-		["1370049731.908"] = {
-			"Convert to Raid Too just did Resto Druids", -- [1]
-			"|Kf30|k00000000000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			10, -- [11]
-			false, -- [12]
-			30, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1370053473.825"] = {
-			"well we haven't established that yet", -- [1]
-			"|Kf5|k000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			482, -- [11]
-			false, -- [12]
-			5, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
 		["1369782684.57"] = {
 			"just tired of having to correct what ppl are telling you", -- [1]
 			"|Kf60|k00000000000|k", -- [2]
@@ -619,24 +187,6 @@ ElvCharacterDB = {
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1370053852.828"] = {
-			"brb", -- [1]
-			"|Kf5|k000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			547, -- [11]
-			false, -- [12]
-			5, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
 		},
 		["1369782496.41"] = {
 			"pugging 4 is better than pugging 8", -- [1]
@@ -692,24 +242,6 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
 		},
-		["1369783086.576"] = {
-			"b/c now he knows that we will be building up a team so there is no way to stop him from noining wihtout jst flat out saying he cant come", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			606, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
 		["1369782374.508"] = {
 			"its not an attitude, its the fact that you guys havent dont any more to have it set up/recruit people and azuba said that the talk of the town was everyone go free agent", -- [1]
 			"|Kf60|k00000000000|k", -- [2]
@@ -728,60 +260,6 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
 		},
-		["1370044883.268"] = {
-			"dad", -- [1]
-			"Wârison", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Wârison", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			280, -- [11]
-			"0x058000000851FFDF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_GUILD",
-		},
-		["1370053637.409"] = {
-			"oh haha", -- [1]
-			"|Kf5|k000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			525, -- [11]
-			false, -- [12]
-			5, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1369783101.145"] = {
-			"yeah", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			608, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
 		["1369782509.755"] = {
 			"one of the best ways to get recurits is pugging", -- [1]
 			"|Kf60|k00000000000|k", -- [2]
@@ -796,42 +274,6 @@ ElvCharacterDB = {
 			501, -- [11]
 			false, -- [12]
 			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1370053650.984"] = {
-			"oh you gonna heal on ur monk? ", -- [1]
-			"|Kf5|k000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			526, -- [11]
-			false, -- [12]
-			5, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1370053802.685"] = {
-			"well monk is my main", -- [1]
-			"|Kf5|k000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			538, -- [11]
-			false, -- [12]
-			5, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
@@ -872,42 +314,6 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
 		},
-		["1369782207.426"] = {
-			"ah thats right, sorry ive been thinking its monday b/c of no school yesterday", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			434, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1370053743.77"] = {
-			"cool", -- [1]
-			"|Kf5|k000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			534, -- [11]
-			false, -- [12]
-			5, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
 		["1370053564.262"] = {
 			"not geared yet but doesn't tank long", -- [1]
 			"|Kf5|k000000|k", -- [2]
@@ -925,60 +331,6 @@ ElvCharacterDB = {
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1369782624.053"] = {
-			"that i have so far which has been that we need a new strategy", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			523, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1369782963.666"] = {
-			"yep i understand", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			582, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1370053756.332"] = {
-			"we might need another tank as well", -- [1]
-			"|Kf5|k000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			535, -- [11]
-			false, -- [12]
-			5, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
 		["1369783060.103"] = {
 			"omg huanji is getting on my last nerve", -- [1]
@@ -998,42 +350,6 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
 		},
-		["1369782214.456"] = {
-			"ha", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			436, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1369784059.287"] = {
-			"yes", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			738, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
 		["1369782627.731"] = {
 			"no im not frustrated with you", -- [1]
 			"|Kf60|k00000000000|k", -- [2]
@@ -1052,9 +368,9 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
-		["1369782616.2"] = {
-			"ok matt, honestly, you need to stop being frustarted with me, i have been trying to talk to you guys for the past week to get this ball rolling, and i understand that it hasnt progressed very far, but im not being a jerk, im working off the best intel ", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
+		["1370053727.738"] = {
+			"i should catch my shammy up", -- [1]
+			"|Kf5|k000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
 			"", -- [5]
@@ -1063,48 +379,12 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			521, -- [11]
+			531, -- [11]
 			false, -- [12]
-			60, -- [13]
+			5, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1369782572.812"] = {
-			"well why don't we just give up", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			518, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1369782359.334"] = {
-			"that is why we are having attendence issues", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			482, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
 		["1369784298.347"] = {
 			"be back in a bit", -- [1]
@@ -1120,42 +400,6 @@ ElvCharacterDB = {
 			770, -- [11]
 			false, -- [12]
 			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1369783068.157"] = {
-			"your telling me", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			602, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1370054102.812"] = {
-			"k", -- [1]
-			"|Kf5|k000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			594, -- [11]
-			false, -- [12]
-			5, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
@@ -1177,42 +421,6 @@ ElvCharacterDB = {
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1369782907.926"] = {
-			"yea i didnt either i just heard it 2nd hand, but you and I talk about alot of things too without telling everyone, that might have just been a conversation they had and a recent conclusion", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			568, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1369782734.518"] = {
-			"id rather not cancel before we even try", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			539, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
 		["1369782544.725"] = {
 			"b/c last time it took us an hour to pug 3 and one of them was terrible and that sparked the whole \"we need to get on the forums, etc\" talk", -- [1]
@@ -1268,9 +476,9 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
 		},
-		["1369782409.926"] = {
-			"we can't when everyone shows up late", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
+		["1370053580.117"] = {
+			"well Kloros is going to be the other tank on his warrior who is lvl 50 atm", -- [1]
+			"|Kf5|k000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
 			"", -- [5]
@@ -1279,30 +487,12 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			491, -- [11]
+			516, -- [11]
 			false, -- [12]
-			60, -- [13]
+			5, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1369784054.341"] = {
-			"we def need to schedule an official time to meet and talk about stuff", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			735, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
 		},
 		["1370045364.653"] = {
 			"%s has earned the achievement |cffffff00|Hachievement:637:058000000852911E:1:5:31:13:4294967295:4294967295:4294967295:4294967295|h[Scarlet Monastery]|h|r!", -- [1]
@@ -1322,8 +512,8 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		},
-		["1369782760.563"] = {
-			"thats the thing is that i didnt think there was anything to cancel, i thought we were at a point where raid was not going to happen until something changed", -- [1]
+		["1369782214.456"] = {
+			"ha", -- [1]
 			"|Kf60|k00000000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1333,66 +523,12 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			544, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1369782577.789"] = {
-			"and not do anything", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			519, -- [11]
+			436, -- [11]
 			false, -- [12]
 			60, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1370053813.101"] = {
-			"lol biased ", -- [1]
-			"|Kf5|k000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			541, -- [11]
-			false, -- [12]
-			5, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1369782781.7"] = {
-			"but apparnetly i was wrong, which is my bad", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			548, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
 		},
 		["1369782330.9"] = {
 			"well it is already 7", -- [1]
@@ -1406,24 +542,6 @@ ElvCharacterDB = {
 			"", -- [9]
 			0, -- [10]
 			478, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1369782288.66"] = {
-			"eat", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			474, -- [11]
 			false, -- [12]
 			60, -- [13]
 			false, -- [14]
@@ -1466,9 +584,9 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
-		["1369784115.63"] = {
-			"ok", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
+		["1370053756.332"] = {
+			"we might need another tank as well", -- [1]
+			"|Kf5|k000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
 			"", -- [5]
@@ -1477,9 +595,9 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			742, -- [11]
+			535, -- [11]
 			false, -- [12]
-			60, -- [13]
+			5, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
@@ -1502,8 +620,8 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
 		},
-		["1369782156.231"] = {
-			"not working?", -- [1]
+		["1369782734.518"] = {
+			"id rather not cancel before we even try", -- [1]
 			"|Kf60|k00000000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1513,43 +631,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			423, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1369782647.702"] = {
-			"i talk to quit and we discuss things", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			529, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1369782917.357"] = {
-			"yaeh", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			569, -- [11]
+			539, -- [11]
 			false, -- [12]
 			60, -- [13]
 			false, -- [14]
@@ -1592,9 +674,9 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		},
-		["1370053570.194"] = {
-			"*take", -- [1]
-			"|Kf5|k000000|k", -- [2]
+		["1369782317.368"] = {
+			"im gonna call it in, i think we are doing takeout mexican, meg is asleep", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
 			"", -- [5]
@@ -1603,30 +685,12 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			515, -- [11]
+			477, -- [11]
 			false, -- [12]
-			5, -- [13]
+			60, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1370052400.548"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:8:058000000839F6E5:1:5:31:13:4294967295:4294967295:4294967295:4294967295|h[Level 30]|h|r!", -- [1]
-			"Squatingdog", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Squatingdog", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			340, -- [11]
-			"0x058000000839F6E5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		},
 		["1369784161.841"] = {
 			"got a chem major, and a guy who works making pippetts and flasks lol", -- [1]
@@ -1646,6 +710,960 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
 		},
+		["1370053498.667"] = {
+			"yeah, well you've got mine, whenever it is, what ever role is needed", -- [1]
+			"|Kf5|k000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			491, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1369782523.443"] = {
+			"no", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			505, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1370052400.548"] = {
+			"%s has earned the achievement |cffffff00|Hachievement:8:058000000839F6E5:1:5:31:13:4294967295:4294967295:4294967295:4294967295|h[Level 30]|h|r!", -- [1]
+			"Squatingdog", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Squatingdog", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			340, -- [11]
+			"0x058000000839F6E5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		},
+		["1370044871.933"] = {
+			"hi dad", -- [1]
+			"Wârison", -- [2]
+			"Common", -- [3]
+			"", -- [4]
+			"Wârison", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			277, -- [11]
+			"0x058000000851FFDF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1369782935.769"] = {
+			"well its possible that azuba misunderstood, thats also why i said we needed to meet and get a strategy figured out, i figured that tonight peopel would prob be on so we could prob do that", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			574, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1370053473.825"] = {
+			"well we haven't established that yet", -- [1]
+			"|Kf5|k000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			482, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1369783083.204"] = {
+			"what is he doing/", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			605, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1370053549.862"] = {
+			"what is your tank?", -- [1]
+			"|Kf5|k000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			505, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1370046544.54"] = {
+			"%s has earned the achievement |cffffff00|Hachievement:650:05800000084D62B0:1:5:31:13:4294967295:4294967295:4294967295:4294967295|h[Underbog]|h|r!", -- [1]
+			"Sherryberrie", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Sherryberrie", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			406, -- [11]
+			"0x05800000084D62B0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		},
+		["1370053783.669"] = {
+			"yeah what do you like out of your 2? monk/pally?", -- [1]
+			"|Kf5|k000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			536, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1370049920.327"] = {
+			"%s has earned the achievement |cffffff00|Hachievement:889:05800000084E2146:1:5:31:13:4294967295:4294967295:4294967295:4294967295|h[Fast and Furious]|h|r!", -- [1]
+			"Orlight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Orlight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			31, -- [11]
+			"0x05800000084E2146", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		},
+		["1369783066.529"] = {
+			"he is gonna be a problem with doing RD raid stuff", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			601, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1370053806.662"] = {
+			"sooo", -- [1]
+			"|Kf5|k000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			539, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1369782907.926"] = {
+			"yea i didnt either i just heard it 2nd hand, but you and I talk about alot of things too without telling everyone, that might have just been a conversation they had and a recent conclusion", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			568, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1369782346.296"] = {
+			"that is a bad attitude", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			480, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1370053559.106"] = {
+			"cool", -- [1]
+			"|Kf5|k000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			511, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1370054078.874"] = {
+			"ill go give me a sec though", -- [1]
+			"|Kf5|k000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			578, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1377485960.671"] = {
+			"%s has earned the achievement |cffffff00|Hachievement:1258:05800000084176A1:1:8:25:13:4294967295:4294967295:4294967295:4294967295|h[Take a Chill Pill]|h|r!", -- [1]
+			"Walarik", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Walarik", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1275, -- [11]
+			"0x05800000084176A1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		},
+		["1369782511.776"] = {
+			"didnt we say we were not doing that?", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			502, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1370053656.578"] = {
+			"well the only ppl who has said they were interested is", -- [1]
+			"|Kf5|k000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			527, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1369782657.734"] = {
+			"and then azuba tells you things that aren't true", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			530, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1369782900.127"] = {
+			"the only \"free agent\" convo I had was looking through the ppl posting as free agents and scoop them up", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			567, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1370053699.916"] = {
+			"me HPally, Kloros Prot War, Azuba RestoDruid, Quit Hunter", -- [1]
+			"|Kf5|k000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			528, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1370049731.908"] = {
+			"Convert to Raid Too just did Resto Druids", -- [1]
+			"|Kf30|k00000000000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			10, -- [11]
+			false, -- [12]
+			30, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1369782917.357"] = {
+			"yaeh", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			569, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1369782956.063"] = {
+			"yeah it is just hard to have a convo when ppl dont come online", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			578, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1370044883.268"] = {
+			"dad", -- [1]
+			"Wârison", -- [2]
+			"Common", -- [3]
+			"", -- [4]
+			"Wârison", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			280, -- [11]
+			"0x058000000851FFDF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1370053637.409"] = {
+			"oh haha", -- [1]
+			"|Kf5|k000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			525, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1369783101.145"] = {
+			"yeah", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			608, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1369782475.911"] = {
+			"we only have 6, we cant raid if everyone shows up on time", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			499, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1370053650.984"] = {
+			"oh you gonna heal on ur monk? ", -- [1]
+			"|Kf5|k000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			526, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1369784266.107"] = {
+			"which is 10 miles from another guy", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			766, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1370053743.77"] = {
+			"cool", -- [1]
+			"|Kf5|k000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			534, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1369782624.053"] = {
+			"that i have so far which has been that we need a new strategy", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			523, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1369782963.666"] = {
+			"yep i understand", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			582, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1369782207.426"] = {
+			"ah thats right, sorry ive been thinking its monday b/c of no school yesterday", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			434, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1369782616.2"] = {
+			"ok matt, honestly, you need to stop being frustarted with me, i have been trying to talk to you guys for the past week to get this ball rolling, and i understand that it hasnt progressed very far, but im not being a jerk, im working off the best intel ", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			521, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1369782572.812"] = {
+			"well why don't we just give up", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			518, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1370054102.812"] = {
+			"k", -- [1]
+			"|Kf5|k000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			594, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1369782409.926"] = {
+			"we can't when everyone shows up late", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			491, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1369782156.231"] = {
+			"not working?", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			423, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1369782577.789"] = {
+			"and not do anything", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			519, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1370053813.101"] = {
+			"lol biased ", -- [1]
+			"|Kf5|k000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			541, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1370053508.573"] = {
+			"sweet thanks", -- [1]
+			"|Kf5|k000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			498, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1369782288.66"] = {
+			"eat", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			474, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1369783096.534"] = {
+			"he isnt doing anything, he is just talking lol", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			607, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1369782647.702"] = {
+			"i talk to quit and we discuss things", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			529, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1369782271.499"] = {
+			"im sooo hungry", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			459, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1370044966.007"] = {
+			"hi everyone accept for dad", -- [1]
+			"Wârison", -- [2]
+			"Common", -- [3]
+			"", -- [4]
+			"Wârison", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			309, -- [11]
+			"0x058000000851FFDF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1369784273.846"] = {
+			"haha", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			767, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1370053570.194"] = {
+			"*take", -- [1]
+			"|Kf5|k000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			515, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1369784260.848"] = {
+			"and apparently some guy lives near a nuclear plant in tenn", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			765, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1369784059.287"] = {
+			"yes", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			738, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
 		["1369782875.152"] = {
 			"the issue is I never had that conversation", -- [1]
 			"|Kf60|k00000000000|k", -- [2]
@@ -1664,9 +1682,9 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
-		["1370053498.667"] = {
-			"yeah, well you've got mine, whenever it is, what ever role is needed", -- [1]
-			"|Kf5|k000000|k", -- [2]
+		["1369782629.955"] = {
+			"and nothing has happened with that yet", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
 			"", -- [5]
@@ -1675,9 +1693,9 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			491, -- [11]
+			525, -- [11]
 			false, -- [12]
-			5, -- [13]
+			60, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
@@ -1718,26 +1736,8 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
 		},
-		["1370053580.117"] = {
-			"well Kloros is going to be the other tank on his warrior who is lvl 50 atm", -- [1]
-			"|Kf5|k000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			516, -- [11]
-			false, -- [12]
-			5, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1369782523.443"] = {
-			"no", -- [1]
+		["1369783078.838"] = {
+			"yeah i figured that out quickly", -- [1]
 			"|Kf60|k00000000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1747,12 +1747,30 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			505, -- [11]
+			604, -- [11]
 			false, -- [12]
 			60, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1369783116.595"] = {
+			"i should have been working on at leat 1 alt during MoP", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			610, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
 		},
 		["1370044903.33"] = {
 			"SAY HI NOW!", -- [1]
@@ -1772,26 +1790,8 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD",
 		},
-		["1369782956.063"] = {
-			"yeah it is just hard to have a convo when ppl dont come online", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			578, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1370053508.573"] = {
-			"sweet thanks", -- [1]
+		["1370053738.953"] = {
+			"he's 48 atm", -- [1]
 			"|Kf5|k000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1801,12 +1801,30 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			498, -- [11]
+			533, -- [11]
 			false, -- [12]
 			5, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1369784133.445"] = {
+			"lots of chemistry tlak in gchat right now lol", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			743, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
 		},
 		["1370053600.654"] = {
 			"yeah, im just worried about how many leather wearers we're gonna have again.. >.>", -- [1]
@@ -1826,26 +1844,8 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
 		},
-		["1370044966.007"] = {
-			"hi everyone accept for dad", -- [1]
-			"Wârison", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Wârison", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			309, -- [11]
-			"0x058000000851FFDF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_GUILD",
-		},
-		["1369782317.368"] = {
-			"im gonna call it in, i think we are doing takeout mexican, meg is asleep", -- [1]
+		["1369782737.591"] = {
+			"which is why i came up wiht the \"lets try to raid on RD as well\" plan", -- [1]
 			"|Kf60|k00000000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1855,7 +1855,25 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			477, -- [11]
+			540, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1369782709.988"] = {
+			"right, and im willing to help do whatever after this week, i just honestly assumed there was no raid this week since i had talked to him and you and especially since i cannot be here thursday", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			534, -- [11]
 			false, -- [12]
 			60, -- [13]
 			false, -- [14]
@@ -1880,37 +1898,37 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
-		["1370044871.933"] = {
-			"hi dad", -- [1]
-			"Wârison", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Wârison", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			277, -- [11]
-			"0x058000000851FFDF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_GUILD",
-		},
-		["1370044940.377"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:9:05800000084E2146:1:5:31:13:4294967295:4294967295:4294967295:4294967295|h[Level 40]|h|r!", -- [1]
-			"Orlight", -- [2]
+		["1369782161.808"] = {
+			"no", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Orlight", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			302, -- [11]
-			"0x05800000084E2146", -- [12]
+			424, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1369783566.433"] = {
+			"%s has earned the achievement |cffffff00|Hachievement:651:05800000084C7AC5:1:5:28:13:4294967295:4294967295:4294967295:4294967295|h[Mana-Tombs]|h|r!", -- [1]
+			"Melsey", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Melsey", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			689, -- [11]
+			"0x05800000084C7AC5", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
@@ -1970,26 +1988,8 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
 		},
-		["1370049920.327"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:889:05800000084E2146:1:5:31:13:4294967295:4294967295:4294967295:4294967295|h[Fast and Furious]|h|r!", -- [1]
-			"Orlight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Orlight", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			31, -- [11]
-			"0x05800000084E2146", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		},
-		["1369782935.769"] = {
-			"well its possible that azuba misunderstood, thats also why i said we needed to meet and get a strategy figured out, i figured that tonight peopel would prob be on so we could prob do that", -- [1]
+		["1369782794.441"] = {
+			"no im worried that you are correct", -- [1]
 			"|Kf60|k00000000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1999,9 +1999,63 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			574, -- [11]
+			551, -- [11]
 			false, -- [12]
 			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1370044567.475"] = {
+			"%s has earned the achievement |cffffff00|Hachievement:649:05800000084D62B0:1:5:31:13:4294967295:4294967295:4294967295:4294967295|h[The Slave Pens]|h|r!", -- [1]
+			"Sherryberrie", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Sherryberrie", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			232, -- [11]
+			"0x05800000084D62B0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		},
+		["1369782674.097"] = {
+			"but you haven't been here bc you have been busy so i know you don't know everything", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			531, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1370053852.828"] = {
+			"brb", -- [1]
+			"|Kf5|k000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			547, -- [11]
+			false, -- [12]
+			5, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
@@ -2024,80 +2078,152 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
 		},
-		["1369782674.097"] = {
-			"but you haven't been here bc you have been busy so i know you don't know everything", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
+		["1369785472.341"] = {
+			"%s has earned the achievement |cffffff00|Hachievement:505:05800000084E2146:1:5:28:13:4294967295:4294967295:4294967295:4294967295|h[250 Quests Completed]|h|r!", -- [1]
+			"Orlight", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Orlight", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			531, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1370053519.946"] = {
-			"got heals tanks and dps, and idc to swap out on weeks if needed", -- [1]
-			"|Kf5|k000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			500, -- [11]
-			false, -- [12]
-			5, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1370044567.475"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:649:05800000084D62B0:1:5:31:13:4294967295:4294967295:4294967295:4294967295|h[The Slave Pens]|h|r!", -- [1]
-			"Sherryberrie", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Sherryberrie", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			232, -- [11]
-			"0x05800000084D62B0", -- [12]
+			924, -- [11]
+			"0x05800000084E2146", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		},
-		["1369783566.433"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:651:05800000084C7AC5:1:5:28:13:4294967295:4294967295:4294967295:4294967295|h[Mana-Tombs]|h|r!", -- [1]
-			"Melsey", -- [2]
+		["1369782359.334"] = {
+			"that is why we are having attendence issues", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Melsey", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			689, -- [11]
-			"0x05800000084C7AC5", -- [12]
+			482, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1369782523.303"] = {
+			"well i didnt know that that was the plan", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			504, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1369782760.563"] = {
+			"thats the thing is that i didnt think there was anything to cancel, i thought we were at a point where raid was not going to happen until something changed", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			544, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1369782729.561"] = {
+			"and talking to you guys i still didnt get the impression that anythign ahd changed", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			538, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1369783086.576"] = {
+			"b/c now he knows that we will be building up a team so there is no way to stop him from noining wihtout jst flat out saying he cant come", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			606, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1369782781.7"] = {
+			"but apparnetly i was wrong, which is my bad", -- [1]
+			"|Kf60|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			548, -- [11]
+			false, -- [12]
+			60, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1370044940.377"] = {
+			"%s has earned the achievement |cffffff00|Hachievement:9:05800000084E2146:1:5:31:13:4294967295:4294967295:4294967295:4294967295|h[Level 40]|h|r!", -- [1]
+			"Orlight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Orlight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			302, -- [11]
+			"0x05800000084E2146", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		},
-		["1369783083.204"] = {
-			"what is he doing/", -- [1]
+		["1369784115.63"] = {
+			"ok", -- [1]
 			"|Kf60|k00000000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2107,15 +2233,15 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			605, -- [11]
+			742, -- [11]
 			false, -- [12]
 			60, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
-		["1369782161.808"] = {
-			"no", -- [1]
+		["1369784054.341"] = {
+			"we def need to schedule an official time to meet and talk about stuff", -- [1]
 			"|Kf60|k00000000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2125,133 +2251,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			424, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1370053549.862"] = {
-			"what is your tank?", -- [1]
-			"|Kf5|k000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			505, -- [11]
-			false, -- [12]
-			5, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1369782709.988"] = {
-			"right, and im willing to help do whatever after this week, i just honestly assumed there was no raid this week since i had talked to him and you and especially since i cannot be here thursday", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			534, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1369782737.591"] = {
-			"which is why i came up wiht the \"lets try to raid on RD as well\" plan", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			540, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1369784133.445"] = {
-			"lots of chemistry tlak in gchat right now lol", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			743, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1370053738.953"] = {
-			"he's 48 atm", -- [1]
-			"|Kf5|k000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			533, -- [11]
-			false, -- [12]
-			5, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1370046544.54"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:650:05800000084D62B0:1:5:31:13:4294967295:4294967295:4294967295:4294967295|h[Underbog]|h|r!", -- [1]
-			"Sherryberrie", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Sherryberrie", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			406, -- [11]
-			"0x05800000084D62B0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		},
-		["1369782629.955"] = {
-			"and nothing has happened with that yet", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			525, -- [11]
+			735, -- [11]
 			false, -- [12]
 			60, -- [13]
 			false, -- [14]
@@ -2276,8 +2276,8 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
 		},
-		["1369784260.848"] = {
-			"and apparently some guy lives near a nuclear plant in tenn", -- [1]
+		["1369783068.157"] = {
+			"your telling me", -- [1]
 			"|Kf60|k00000000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2287,12 +2287,12 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			765, -- [11]
+			602, -- [11]
 			false, -- [12]
 			60, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
 		["1369782825.733"] = {
 			"well i think i am based on azubas talk and based on the info i got from quit last time we all talked about it, which is why i was a little freaked out when i heard \"go free agent\"", -- [1]
