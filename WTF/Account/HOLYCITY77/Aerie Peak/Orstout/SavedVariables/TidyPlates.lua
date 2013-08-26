@@ -1,9 +1,9 @@
 
 TidyPlatesOptions = {
-	["FriendlyAutomation"] = "No Automation",
 	["_EnableMiniButton"] = false,
+	["FriendlyAutomation"] = "No Automation",
 	["EnemyAutomation"] = "No Automation",
-	["primary"] = "Neon/|cFFFF4400Damage",
+	["primary"] = "Neon/|cFF3782D1Tank",
 	["WelcomeShown"] = true,
-	["secondary"] = "Neon/|cFF3782D1Tank",
+	["secondary"] = "Neon/|cFFFF4400Damage",
 }

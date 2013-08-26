@@ -53,6 +53,10 @@ Quartz3DB = {
 	},
 	["profiles"] = {
 		["Default"] = {
+			["modules"] = {
+				["GCD"] = false,
+				["Buff"] = false,
+			},
 		},
 	},
 }

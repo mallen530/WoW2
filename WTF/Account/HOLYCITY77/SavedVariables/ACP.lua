@@ -5,11 +5,12 @@ ACP_Data = {
 	["NoChildren"] = true,
 	["collapsed"] = {
 		["Skada"] = true,
+		["OmniCC"] = true,
 		["BigWigs"] = true,
 		["PitBull4"] = true,
-		["TidyPlates"] = true,
 		["miirgui"] = true,
-		["OmniCC"] = true,
+		["Blizzard Addons"] = true,
+		["TidyPlates"] = true,
 	},
 	["ProtectedAddons"] = {
 		["ACP"] = true,

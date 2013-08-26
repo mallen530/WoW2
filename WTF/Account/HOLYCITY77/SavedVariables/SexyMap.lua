@@ -16,20 +16,20 @@ SexyMap2DB = {
 			},
 		},
 		["buttons"] = {
-			["radius"] = 10,
+			["radius"] = -8,
 			["lockDragging"] = false,
 			["allowDragging"] = true,
 			["visibilitySettings"] = {
 				["MinimapZoomIn"] = "never",
 				["MinimapZoneTextButton"] = "hover",
-				["TimeManagerClockButton"] = "hover",
-				["MiniMapMailFrame"] = "always",
-				["MinimapZoomOut"] = "never",
 				["MiniMapWorldMapButton"] = "never",
+				["MinimapZoomOut"] = "never",
+				["MiniMapMailFrame"] = "always",
+				["TimeManagerClockButton"] = "hover",
 			},
 			["dragPositions"] = {
-				["MiniMapTracking"] = 120.5104638482926,
-				["GameTimeFrame"] = 59.21744541170748,
+				["MiniMapTracking"] = -47.12946903587977,
+				["GameTimeFrame"] = 229.3168049937007,
 				["LibDBIcon10_BigWigs"] = 162.9177254901742,
 				["LibDBIcon10_PitBull4"] = 180.5872809738204,
 			},
@@ -37,31 +37,31 @@ SexyMap2DB = {
 		},
 		["hudmap"] = {
 			["scale"] = 1.4,
-			["textColor"] = {
-				["a"] = 1,
-				["b"] = 0.5,
-				["g"] = 1,
-				["r"] = 0.5,
+			["hudColor"] = {
 			},
 			["alpha"] = 0.7,
-			["hudColor"] = {
+			["textColor"] = {
+				["a"] = 1,
+				["r"] = 0.5,
+				["g"] = 1,
+				["b"] = 0.5,
 			},
 		},
 		["zonetext"] = {
 			["bgColor"] = {
 				["a"] = 1,
-				["b"] = 0,
-				["g"] = 0,
 				["r"] = 0,
+				["g"] = 0,
+				["b"] = 0,
 			},
-			["font"] = "ABF",
+			["font"] = "SSPro - Semibold",
 			["fontColor"] = {
 			},
 			["borderColor"] = {
 				["a"] = 1,
-				["b"] = 0,
-				["g"] = 0,
 				["r"] = 0,
+				["g"] = 0,
+				["b"] = 0,
 			},
 			["xOffset"] = 0,
 			["fontsize"] = 8,
@@ -70,18 +70,18 @@ SexyMap2DB = {
 		["clock"] = {
 			["bgColor"] = {
 				["a"] = 1,
-				["b"] = 0,
-				["g"] = 0,
 				["r"] = 0,
+				["g"] = 0,
+				["b"] = 0,
 			},
-			["font"] = "ABF",
+			["font"] = "SSPro - Semibold",
 			["fontColor"] = {
 			},
 			["borderColor"] = {
 				["a"] = 1,
-				["b"] = 0,
-				["g"] = 0,
 				["r"] = 0,
+				["g"] = 0,
+				["b"] = 0,
 			},
 			["xOffset"] = 0,
 			["fontsize"] = 8,
@@ -92,8 +92,8 @@ SexyMap2DB = {
 			["borders"] = {
 				{
 					["rotation"] = 225,
-					["blendMode"] = "BLEND",
 					["name"] = "RenaitreFadeBorder",
+					["blendMode"] = "BLEND",
 					["r"] = 0,
 					["scale"] = 1.47,
 					["b"] = 0,
@@ -108,8 +108,8 @@ SexyMap2DB = {
 					["drawLayer"] = "HIGHLIGHT",
 					["blendMode"] = "BLEND",
 					["b"] = 0.6,
-					["rotation"] = 225,
 					["name"] = "RenaitreFadeNormal",
+					["rotation"] = 225,
 					["texture"] = "Interface\\Addons\\SexyMap\\media\\RenaitreFadeNormal",
 				}, -- [2]
 				{
@@ -142,33 +142,20 @@ SexyMap2DB = {
 			},
 			["hideBlizzard"] = true,
 		},
-		["core"] = {
-			["clamp"] = true,
-			["point"] = "BOTTOMRIGHT",
-			["relpoint"] = "BOTTOMRIGHT",
-			["autoZoom"] = 5,
-			["northTag"] = false,
-			["y"] = -0,
-			["x"] = 0,
-			["lock"] = false,
-			["scale"] = 1.5,
-			["shape"] = "Interface\\BUTTONS\\WHITE8X8",
-			["rightClickToConfig"] = true,
-		},
 		["movers"] = {
 			["enabled"] = true,
 			["framePositions"] = {
 				["Boss1TargetFrame"] = {
-					["y"] = 1569.445556640625,
-					["x"] = 2571.86181640625,
+					["y"] = 89.97859954833984,
+					["x"] = 2597.076171875,
 				},
 				["DurabilityFrame"] = {
 					["y"] = 74.88614654541016,
 					["x"] = 2045.630126953125,
 				},
 				["WatchFrame"] = {
-					["y"] = 814.5385131835938,
-					["x"] = 1869.703491210938,
+					["y"] = 1128.199584960938,
+					["x"] = 25.72539329528809,
 				},
 				["VehicleSeatIndicator"] = {
 					["y"] = 127.7616500854492,
@@ -176,6 +163,19 @@ SexyMap2DB = {
 				},
 			},
 			["lock"] = true,
+		},
+		["core"] = {
+			["clamp"] = true,
+			["point"] = "BOTTOMRIGHT",
+			["relpoint"] = "BOTTOMRIGHT",
+			["autoZoom"] = 5,
+			["northTag"] = false,
+			["y"] = 4.601856708526611,
+			["x"] = -3.646463871002197,
+			["lock"] = false,
+			["scale"] = 1.5,
+			["shape"] = "Interface\\BUTTONS\\WHITE8X8",
+			["rightClickToConfig"] = true,
 		},
 	},
 	["presets"] = {

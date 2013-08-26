@@ -27,8 +27,8 @@ Bartender4DB = {
 							["rows"] = 2,
 							["version"] = 3,
 							["position"] = {
-								["y"] = 76.0500442206876,
-								["x"] = 284.4233135334544,
+								["y"] = 73.35000291466713,
+								["x"] = 265.1339572982142,
 								["point"] = "BOTTOM",
 								["scale"] = 0.9000000357627869,
 							},
@@ -94,14 +94,14 @@ Bartender4DB = {
 		["MicroMenu"] = {
 			["profiles"] = {
 				["Orstout - Aerie Peak"] = {
-					["version"] = 3,
+					["fadeout"] = true,
 					["position"] = {
 						["y"] = 4.950095974942087,
 						["x"] = 59.85558480642567,
 						["point"] = "TOPLEFT",
 						["scale"] = 0.9000000357627869,
 					},
-					["fadeout"] = true,
+					["version"] = 3,
 				},
 			},
 		},
@@ -123,25 +123,13 @@ Bartender4DB = {
 			["profiles"] = {
 				["Orstout - Aerie Peak"] = {
 					["onebag"] = true,
-					["version"] = 3,
+					["fadeout"] = true,
 					["position"] = {
 						["y"] = 2.9998779296875,
 						["x"] = 335.0484924316406,
 						["point"] = "TOPLEFT",
 					},
-					["fadeout"] = true,
-				},
-			},
-		},
-		["Vehicle"] = {
-			["profiles"] = {
-				["Orstout - Aerie Peak"] = {
 					["version"] = 3,
-					["position"] = {
-						["y"] = 250.6192626953125,
-						["x"] = 26.50874900817871,
-						["point"] = "BOTTOMLEFT",
-					},
 				},
 			},
 		},
@@ -155,6 +143,18 @@ Bartender4DB = {
 						["scale"] = 1,
 					},
 					["version"] = 3,
+				},
+			},
+		},
+		["Vehicle"] = {
+			["profiles"] = {
+				["Orstout - Aerie Peak"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 250.6192626953125,
+						["x"] = 26.50874900817871,
+						["point"] = "BOTTOMLEFT",
+					},
 				},
 			},
 		},
