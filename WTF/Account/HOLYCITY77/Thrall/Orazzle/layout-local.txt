@@ -16,8 +16,8 @@ H: 32
 Frame: ElementaristDisplayFrame
 FrameLevel: 1
 Anchor: CENTER
-X: -260
-Y: -104
+X: -258
+Y: -89
 W: 150
 H: 120
 Frame: ElementaristDebuffTrackerFrame

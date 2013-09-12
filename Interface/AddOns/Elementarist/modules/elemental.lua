@@ -184,14 +184,14 @@ Elementarist.elemental = {
 			end
 		end
 
-		-- Earth shock if Lightning Shield count >=7 and not on cd, and FS debuff remaining > FS cooldown, or FS debuff remaining between FS and FS cd + 2sec and LS count>=5
+		-- Earth shock if Lightning Shield count >=6 and not on cd, and FS debuff remaining > FS cooldown, or FS debuff remaining between FS and FS cd + 2sec and LS count>=5
 		if ( (exspell1 ~= Elementarist.SpellList["Earth Shock"]) and (exspell2 ~= Elementarist.SpellList["Earth Shock"]) and (exspell1 ~= Elementarist.SpellList["Flame Shock"]) and (exspell2 ~= Elementarist.SpellList["Flame Shock"]) ) then
 			if ( (fsExpiration - GetTime() - timeshift) > Elementarist.lastShockCD ) then
 				d = Elementarist:GetSpellCooldownRemaining(Elementarist.SpellList["Earth Shock"])
 				local _, _, _, lscount = Elementarist:hasBuff("player",Elementarist.SpellList["Lightning Shield"])
 				if (
 					( (d) and ((d-timeshift) <= 0) and (lscount) ) and (	-- Earth Shock is available, and has lightning shield
-						(lscount>=7) or 														-- Lightning shield has 7 charge
+						(lscount>=6) or 														-- Lightning shield has 6 charge
 						( (lscount>=5) and ( (fsExpiration - GetTime() - timeshift) < Elementarist.lastShockCD + 2 ) )	-- or, has 5 or more charges but FS expiration within 2 secs to FS CD
 					)
 				) then

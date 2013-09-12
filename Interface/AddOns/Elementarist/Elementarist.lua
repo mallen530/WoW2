@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
--- Elementarist 3.2.1
+-- Elementarist 3.2.3
 --
 -- Shows the advised spell for an elemental shaman for optimal DPS output.
 -------------------------------------------------------------------------------
@@ -8,7 +8,7 @@ Elementarist = {Locals = {}}
 
 local L = Elementarist.Locals
 
-Elementarist.versionNumber = '3.2.1';
+Elementarist.versionNumber = '3.2.3';
 Elementarist.enabled = true;
 Elementarist.playerName = UnitName("player")
 Elementarist.playerGUID = UnitGUID("player")
@@ -35,7 +35,7 @@ Elementarist.DebugMode = false
 Elementarist.DebugChat = DEFAULT_CHAT_FRAME
 Elementarist.inParty = 0
 Elementarist.OmniCC = _G['OmniCC']
-Elementarist.SpellFlash = _G['SpellFlashAddon']
+Elementarist.SpellFlash = _G['SpellFlashAddon'];
 Elementarist.SFHistory = {
 	["spell"] = nil,
 	["misc"] = nil,
@@ -222,11 +222,13 @@ function Elementarist.events.ADDON_LOADED(addon)
 	Elementarist.EleLayout["1"] = L.LAYOUT_GROW
 	Elementarist.EleLayout["2"] = L.LAYOUT_RIGHTTOLEFT
 	
+	-- Coop with other addons
+	Elementarist.OmniCC = _G['OmniCC']
+	Elementarist.SpellFlash = _G['SpellFlashAddon']
+	
 	-- Create GUI
 	Elementarist:CreateGUI()
 	Elementarist.displayFrame:SetScale(ElementaristDB.scale)
-	Elementarist.OmniCC = _G['OmniCC']
-	Elementarist.SpellFlash = _G['SpellFlashAddon']
 
 	-- Register for Function Events
 	Elementarist.eventFrame:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")

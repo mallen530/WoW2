@@ -8,7 +8,7 @@ GreenWall = {
 	["logsize"] = 2048,
 	["rank"] = false,
 	["achievements"] = false,
-	["version"] = "1.2.7",
+	["version"] = "1.3.2",
 	["tag"] = true,
 }
 GreenWallLog = {

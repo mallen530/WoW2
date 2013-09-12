@@ -60,15 +60,16 @@ DBM_SavedOptions = {
 	["ShowWarningsInChat"] = true,
 	["DontSetIcons"] = false,
 	["BigBrotherAnnounceToRaid"] = false,
+	["SpecialWarningFlashDura1"] = 0.4,
 	["CountdownVoice"] = "Corsica",
 	["ForumsMessageShown"] = 9413,
-	["RangeFrameRadarX"] = 100,
 	["RangeFrameLocked"] = false,
+	["LastRevision"] = 9413,
 	["InfoFrameY"] = -75,
 	["SpecialWarningSound"] = "Sound\\Spells\\PVPFlagTaken.wav",
 	["WarningIconRight"] = true,
 	["HealthFrameGrowUp"] = false,
-	["LastRevision"] = 9413,
+	["RangeFrameRadarX"] = 100,
 	["HideBossEmoteFrame"] = false,
 	["ShowCountdownText"] = false,
 	["ShowBigBrotherOnCombatStart"] = false,
@@ -108,23 +109,23 @@ DBM_SavedOptions = {
 	["ShowFakedRaidWarnings"] = false,
 	["LatencyThreshold"] = 250,
 	["ShowLoadMessage"] = true,
-	["HPFrameMaxEntries"] = 5,
 	["RangeFrameFrames"] = "radar",
-	["SpecialWarningFlashDura1"] = 0.4,
+	["LFDEnhance"] = true,
+	["HPFrameMaxEntries"] = 5,
 	["SetPlayerRole"] = true,
-	["AdvancedAutologBosses"] = false,
+	["ArrowPosY"] = -150,
 	["RangeFramePoint"] = "CENTER",
 	["WarningIconChat"] = true,
-	["ArrowPosY"] = -150,
 	["BlockVersionUpdateNotice"] = false,
 	["SpecialWarningFontColor"] = {
 		0, -- [1]
 		0, -- [2]
 		1, -- [3]
 	},
+	["RangeFrameSound2"] = "none",
 	["ShowLHFrame"] = true,
 	["ShowPizzaMessage"] = true,
-	["RangeFrameSound2"] = "none",
+	["AdvancedAutologBosses"] = false,
 	["SpecialWarningFlashCol1"] = {
 		1, -- [1]
 		1, -- [2]

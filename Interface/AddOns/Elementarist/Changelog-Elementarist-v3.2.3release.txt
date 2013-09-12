@@ -1,0 +1,13 @@
+tag v3.2.3release
+3af16f8e921a6f712f61cade3dece1501daff5fc
+Taracque <taracque@taracque.hu>
+2013-09-12 09:43:25 +0200
+
+v3.2.3release
+
+
+--------------------
+
+Taracque:
+	- 5.4 compatible, minor adjustments in elemental rotation.
+	- Added some work on Masque usage

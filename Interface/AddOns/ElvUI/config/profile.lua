@@ -93,12 +93,23 @@ P["nameplate"] = {
 	['fontOutline'] = 'MONOCHROMEOUTLINE',
 	["smallPlates"] = true,
 	["comboPoints"] = true,
-	['nonTargetAlpha'] = 0.25,
+	['nonTargetAlpha'] = 0.6,
 	['combatHide'] = false,
+	['colorNameByValue'] =  true,
+	['targetIndicator'] = {
+		['enable'] = true,
+		['style'] = 'glow',
+		['colorMatchHealthBar'] = false,
+		['color'] = {r= 1, g = 1, b = 1},
+		['width'] = 50,
+		['height'] = 50,
+		['yOffset'] = 0,
+		['xOffset'] = 0
+	},
 	['healthBar'] = {
+		['lowThreshold'] =  0.40,
 		['width'] = 108,
 		['height'] = 9,		
-		['lowThreshold'] =  0.40,
 		['text'] = {
 			['enable'] = false,
 			['format'] = 'CURRENT',			
@@ -117,6 +128,7 @@ P["nameplate"] = {
 		['attachTo'] = 'LEFT',
 	},
 	['threat'] = {
+		['enable'] = true,
 		['goodScale'] = 1,
 		['badScale'] = 1,
 		["goodColor"] = {r = 75/255,  g = 175/255, b = 76/255},
@@ -125,12 +137,12 @@ P["nameplate"] = {
 		["badTransitionColor"] = {r = 240/255, g = 154/255, b = 17/255},
 	},
 	['auras'] = {
-		['enable'] = true,
 		['font'] = 'ElvUI Pixel',
 		['fontSize'] = 7,
 		['fontOutline'] = 'MONOCHROMEOUTLINE',
 		['numAuras'] = 4,
 		['stretchTexture'] = true,
+		['showPersonal'] = true,
 		['additionalFilter'] = 'CCDebuffs',
 		['filterType'] = 'DEBUFFS'
 	},	
@@ -186,6 +198,7 @@ P['auras'] = {
 		['size'] = 32,
 	},
 }
+
 --Chat
 P['chat'] = {
 	['lockPositions'] = true,
@@ -209,19 +222,19 @@ P['chat'] = {
 	['panelBackdropNameLeft'] = '',
 	['panelBackdropNameRight'] = '',
 	['panelBackdrop'] = 'SHOWBOTH',
-	['panelTabBackdrop'] = true,
+	['panelTabBackdrop'] = false,
 	['panelTabTransparency'] = false,
 	['editBoxPosition'] = 'BELOW_CHAT',
 
-	['tabFont'] = 'ElvUI Font',
-	['tabFontSize'] = 12,
+	['tabFont'] = 'ElvUI Pixel',
+	['tabFontSize'] = 10,
 	['tabFontOutline'] = 'NONE',
 }
 
 --Datatexts
 P['datatexts'] = {
-	['font'] = 'ElvUI Font',
-	['fontSize'] = 12,
+	['font'] = 'ElvUI Pixel',
+	['fontSize'] = 10,
 	['fontOutline'] = 'NONE',
 	
 	['panels'] = {
@@ -267,11 +280,10 @@ P['tooltip'] = {
 		['fontSize'] = 10,
 	}
 }
-
 --UnitFrame
 P['unitframe'] = {
-	['smoothbars'] = true,
-	['statusbar'] = "Minimalist",
+	['smoothbars'] = false,
+	['statusbar'] = "ElvUI Norm",
 	['font'] = 'ElvUI Pixel',
 	['fontSize'] = 10,
 	['fontOutline'] = 'MONOCHROMEOUTLINE',
@@ -1712,7 +1724,7 @@ P['unitframe'] = {
 				['xOffset'] = 0,
 				['yOffset'] = 10,
 			},				
-		},				
+		},		
 		['tank'] = {
 			['enable'] = true,
 			['threatStyle'] = 'GLOW',
@@ -1755,7 +1767,6 @@ P["actionbar"] = {
 	
 	["macrotext"] = false,
 	["hotkeytext"] = true,
-	["enablecd"] = true,
 	['showGrid'] = true,
 	["treshold"] = 3,
 	["expiringcolor"] = { r = 1, g = 0, b = 0 },

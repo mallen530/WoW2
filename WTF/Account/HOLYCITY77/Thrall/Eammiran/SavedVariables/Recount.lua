@@ -2,6 +2,37 @@
 RecountPerCharDB = {
 	["version"] = "1.3",
 	["combatants"] = {
+		["Eammiran"] = {
+			["GUID"] = "0x050000000348962A",
+			["type"] = "Self",
+			["GuardianReverseGUIDs"] = {
+				["Water Elemental"] = {
+					["LatestGuardian"] = 0,
+					["GUIDs"] = {
+						[0] = "0xF140C6FED1000CCF",
+					},
+				},
+				["Frozen Orb"] = {
+					["LatestGuardian"] = 0,
+					["GUIDs"] = {
+						[0] = "0xF130B10A000FF4BA",
+					},
+				},
+			},
+			["Owner"] = false,
+			["enClass"] = "MAGE",
+			["LastAbility"] = 11800.356,
+			["Name"] = "Eammiran",
+			["Pet"] = {
+				"Water Elemental <Eammiran>", -- [1]
+				"Frozen Orb <Eammiran>", -- [2]
+			},
+			["UnitLockout"] = 1370402423,
+			["level"] = 87,
+			["Fights"] = {
+			},
+			["LastFightIn"] = 0,
+		},
 		["Gold Shaman"] = {
 			["GUID"] = "0xF1307E54000FE8B7",
 			["type"] = "Nontrivial",
@@ -15,44 +46,15 @@ RecountPerCharDB = {
 			},
 			["Owner"] = false,
 			["enClass"] = "MOB",
+			["LastAbility"] = 11800.356,
 			["Name"] = "Gold Shaman",
 			["Pet"] = {
 				"Summoned Windfury Totem <Gold Shaman>", -- [1]
 			},
-			["Fights"] = {
-			},
-			["level"] = 1,
 			["UnitLockout"] = 1370402349,
-			["LastFightIn"] = 0,
-		},
-		["Eammiran"] = {
-			["GUID"] = "0x050000000348962A",
-			["type"] = "Self",
-			["GuardianReverseGUIDs"] = {
-				["Frozen Orb"] = {
-					["LatestGuardian"] = 0,
-					["GUIDs"] = {
-						[0] = "0xF130B10A000FF4BA",
-					},
-				},
-				["Water Elemental"] = {
-					["LatestGuardian"] = 0,
-					["GUIDs"] = {
-						[0] = "0xF140C6FED1000CCF",
-					},
-				},
-			},
-			["Owner"] = false,
-			["enClass"] = "MAGE",
-			["Name"] = "Eammiran",
-			["Pet"] = {
-				"Water Elemental <Eammiran>", -- [1]
-				"Frozen Orb <Eammiran>", -- [2]
-			},
+			["level"] = 1,
 			["Fights"] = {
 			},
-			["level"] = 87,
-			["UnitLockout"] = 1370402423,
 			["LastFightIn"] = 0,
 		},
 	},

@@ -15,5 +15,6 @@ Elementarist: disabled
 DBM-Brawlers: disabled
 DBM-HeartofFear: disabled
 DBM-MogushanVaults: disabled
-DBM-TerraceofEndlessSpring: disabled
+DBM-TerraceofEndlessSpring: enabled
 DeathNote: disabled
+ElvUI_AddOnSkins: enabled

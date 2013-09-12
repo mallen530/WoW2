@@ -28,7 +28,7 @@ local function UpdateFilterGroup()
 		guiInline = true,
 		order = -10,
 		get = function(info) return E.global["nameplate"]['filter'][selectedFilter][ info[#info] ] end,
-		set = function(info, value) E.global["nameplate"]['filter'][selectedFilter][ info[#info] ] = value; NP:ForEachPlate("CheckFilter"); NP:UpdateAllPlates(); UpdateFilterGroup() end,		
+		set = function(info, value) E.global["nameplate"]['filter'][selectedFilter][ info[#info] ] = value; NP:ForEachPlate("CheckFilterAndHealers"); NP:UpdateAllPlates(); UpdateFilterGroup() end,		
 		args = {
 			enable = {
 				type = 'toggle',
@@ -130,6 +130,11 @@ E.Options.args.nameplate = {
 					desc = L['Alpha of nameplates that are not your current target.'],
 					min = 0, max = 1, step = 0.01, isPercent = true,
 				},
+				colorNameByValue = {
+					type = 'toggle',
+					order = 5,
+					name = L['Color Name By Health Value'],		
+				},				
 				fontGroup = {
 					order = 100,
 					type = 'group',
@@ -243,8 +248,8 @@ E.Options.args.nameplate = {
 					name = L['Low Health Threshold'],
 					desc = L['Color the border of the nameplate yellow when it reaches this point, it will be colored red when it reaches half this value.'],
 					isPercent = true,
-					min = 0, max = 1, step = 0.01, 			
-				},
+					min = 0, max = 1, step = 0.01,
+				},				
 				fontGroup = {
 					order = 4,
 					type = "group",
@@ -322,6 +327,93 @@ E.Options.args.nameplate = {
 				},				
 			},
 		},
+		targetIndicator = {
+			type = "group",
+			order = 4,
+			name = L["Target Indicator"],
+			get = function(info) return E.db.nameplate.targetIndicator[ info[#info] ] end,
+			set = function(info, value) E.db.nameplate.targetIndicator[ info[#info] ] = value; WorldFrame.elapsed = 3; NP:UpdateAllPlates() end,				
+			args = {
+				enable = {
+					order = 1,
+					type = "toggle",
+					name = L["Enable"],
+				},
+				width = {
+					order = 2,
+					name = L["Width"],
+					type = "range",
+					min = 0, max = 220, step = 1,
+					disabled = function() return (NP.db.targetIndicator.style == "glow") end,
+					set = function(info, value) E.db.nameplate.targetIndicator[ info[#info] ] = value; NP:SetTargetIndicatorDimensions() end,	
+				},
+				height = {
+					order = 3,
+					name = L["Height"],
+					type = "range",
+					min = 0, max = 220, step = 1,
+					disabled = function() return (NP.db.targetIndicator.style == "glow") end,
+					set = function(info, value) E.db.nameplate.targetIndicator[ info[#info] ] = value; NP:SetTargetIndicatorDimensions() end,	
+				},			
+				style = {
+					order = 4,
+					name = L["Style"],
+					type = "select",
+					values = {
+						arrow = L["Vertical Arrow"],
+						doubleArrow = L["Horrizontal Arrows"],
+						doubleArrowInverted = L["Horrizontal Arrows (Inverted)"],
+						glow = L["Glow"]
+					},
+					set = function(info, value) E.db.nameplate.targetIndicator[ info[#info] ] = value; NP:SetTargetIndicator(); NP:UpdateAllPlates() end,	
+				},
+				xOffset = {
+					order = 5,
+					name = L['X-Offset'],
+					type = 'range',
+					min = -100, max = 100, step = 1,
+					disabled = function() return (NP.db.targetIndicator.style ~= "doubleArrow" and NP.db.targetIndicator.style ~= "doubleArrowInverted") end
+				},					
+				yOffset = {
+					order = 6,
+					name = L['Y-Offset'],
+					type = 'range',
+					min = -100, max = 100, step = 1,
+					disabled = function() return (NP.db.targetIndicator.style ~= "arrow") end
+				},
+				colorMatchHealthBar = {
+					order = 10,
+					type = "toggle",
+					name = L["Color By Healthbar"],
+					desc = L["Match the color of the healthbar."],
+					set = function(info, value) 
+						E.db.nameplate.targetIndicator.colorMatchHealthBar = value; 
+						if(not value) then
+							local color = E.db.nameplate.targetIndicator.color
+							NP:ColorTargetIndicator(color.r, color.g, color.b)
+						else
+							WorldFrame.elapsed = 3
+						end
+					end,	
+				},
+				color = {
+					type = "color",
+					name = L["Color"],
+					order = 11,
+					disabled = function() return E.db.nameplate.targetIndicator.colorMatchHealthBar end,
+					get = function(info)
+						local t = E.db.nameplate.targetIndicator[ info[#info] ]
+						return t.r, t.g, t.b, t.a
+					end,
+					set = function(info, r, g, b)
+						E.db.nameplate.targetIndicator[ info[#info] ] = {}
+						local t = E.db.nameplate.targetIndicator[ info[#info] ]
+						t.r, t.g, t.b = r, g, b
+						NP:UpdateAllPlates()
+					end,					
+				},
+			},
+		},
 		raidHealIcon = {
 			type = "group",
 			order = 5,
@@ -369,14 +461,9 @@ E.Options.args.nameplate = {
 			get = function(info) return E.db.nameplate.auras[ info[#info] ] end,
 			set = function(info, value) E.db.nameplate.auras[ info[#info] ] = value; NP:UpdateAllPlates() end,	
 			args = {
-				enable = {
-					order = 1,
-					type = "toggle",
-					name = L["Enable"],
-				},	
 				numAuras = {
 					type = "range",
-					order = 2,
+					order = 1,
 					name = L["Number of Auras"],
 					type = "range",
 					min = 2, max = 8, step = 1,		
@@ -385,8 +472,13 @@ E.Options.args.nameplate = {
 					type = "toggle",
 					name = L["Stretch Texture"],
 					desc = L["Stretch the icon texture, intended for icons that don't have the same width/height."],
-					order = 4,
+					order = 2,
 				},
+				showPersonal = {
+					order = 3,
+					type = "toggle",
+					name = L["Show Personal Auras"],
+				},					
 				additionalFilter = {
 					type = "select",
 					order = 5,
@@ -458,11 +550,16 @@ E.Options.args.nameplate = {
 			get = function(info) return E.db.nameplate.threat[ info[#info] ] end,
 			set = function(info, value) E.db.nameplate.threat[ info[#info] ] = value; NP:UpdateAllPlates() end,	
 			args = {
+				enable = {
+					type = "toggle",
+					order = 1,
+					name = L["Enable"],
+				},
 				scaling = {
 					type = 'group',
 					name = L['Scaling'],
 					guiInline = true,
-					order = 1,
+					order = 2,
 					args = {
 						goodScale = {
 							type = 'range',
@@ -479,7 +576,7 @@ E.Options.args.nameplate = {
 					},
 				},
 				colors = {
-					order = 2,
+					order = 3,
 					type = "group",
 					name = L["Colors"],
 					guiInline = true,

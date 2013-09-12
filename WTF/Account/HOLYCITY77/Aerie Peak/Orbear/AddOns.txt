@@ -1,0 +1,9 @@
+Auctionator: disabled
+AskMrRobot: disabled
+clcInfo: disabled
+clcInfo_Monk: disabled
+clcInfo_Options: disabled
+DBM-Core: enabled
+GreenWall: disabled
+Omen: disabled
+TargetCharms: disabled

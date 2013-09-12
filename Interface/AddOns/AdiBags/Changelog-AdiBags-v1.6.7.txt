@@ -1,0 +1,18 @@
+tag v1.6.7
+5a3e70d7d0c7324344b80c86fe51a779ad7e6ab7
+Guillaume Perréal <guillaume.perreal@irstea.fr>
+2013-09-11 15:34:58 +0200
+
+Updated for 5.4.
+
+
+--------------------
+
+Guillaume Perréal:
+	- Hide the brand new NewItemTexture added in 5.4.0. Fixes #175.
+	- TOC bump.
+Adirelle:
+	- Added some options to the Item Level module.
+	- ItemLevel: properly show the item level when the module is re-enabled.
+	- Added a new module : ItemLevel.
+	Display the level of equippable item in the top left corner of the button.
