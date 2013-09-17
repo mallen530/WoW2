@@ -14,7 +14,7 @@ end
 
 -- experimental
 -- show debuffs on specified unit if in raid
-function mod.MIconRaidUnitAuras(unitName, filter)
+function mod.MIconRaidUnitAuras(unitName, filter, exact)
 
 	-- get raidslot
 	local unit = UnitInRaid(unitName)
@@ -28,7 +28,14 @@ function mod.MIconRaidUnitAuras(unitName, filter)
 	while name do
 		-- add aura as micon
 		if count <= 1 then count = nil end
-		mod.AddMIcon("mirua", true, icon, expires - duration, duration, 1, true, count)
+		if exact then
+			if exact == name then
+				mod.AddMIcon("mirua", true, icon, expires - duration, duration, 1, true, count)
+				return
+			end
+		else
+			mod.AddMIcon("mirua", true, icon, expires - duration, duration, 1, true, count)
+		end
 
 		i = i + 1
 		name, rank, icon, count, debuffType, duration, expires, unitCaster, isStealable, shouldConsolidate, spellId, canApplyAura, isBossDebuff, value1, value2, value3 = UnitAura(unit, i, filter)

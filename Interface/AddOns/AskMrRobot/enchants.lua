@@ -4202,7 +4202,7 @@ local enchantIconIndexes = {
 [5035]=53,
 [5125]=7}
 -- return 'none', the name of the enchant, or 'unknown (id)'
-function getEnchantName(enchantId)
+function AskMrRobot.getEnchantName(enchantId)
 	if enchantId == 0 then return 'none' end	
 	local enchantName = enchantNames[enchantId]
 	if not enchantName then return 'unknown (' .. enchantId .. ')' end
@@ -4210,19 +4210,19 @@ function getEnchantName(enchantId)
 end   
                
 -- return the spell id, if we have it, otherwise nil
-function getEnchantSpellid(enchantId)
+function AskMrRobot.getEnchantSpellId(enchantId)
 	if not enchantId then return nil end
 	return enchantSpellIds[enchantId]
 end
 
 -- return the item id, if we have it, otherwise nil
-function getEnchantItemId(enchantId)
+function AskMrRobot.getEnchantItemId(enchantId)
 	if not enchantId then return nil end
 	return enchantItemIds[enchantId]
 end
 
 -- return the enchant icon, if we have it, otherwise nil
-function getEnchantIcon(enchantId)
+function AskMrRobot.getEnchantIcon(enchantId)
 	if not enchantId then return nil end
 	local index = enchantIconIndexes[enchantId]
 	if not index then return nil end
@@ -4230,17 +4230,16 @@ function getEnchantIcon(enchantId)
 end
 
 -- material list -> itemId -> count
-function addEnchantMaterials(materialList, enchantId)
+function AskMrRobot.addEnchantMaterials(materialList, enchantId)
     local materials = enchantMaterials[enchantId]
     if materials then
         for materialId, count in pairs(materials) do
             local existingCount = materialList[materialId]
             if existingCount then
-            	existingCount.total = existingCount.total + 1
+            	existingCount.total = existingCount.total + count
             else
-            	materialList[materialId] = {count = 0, total = 1}
+            	materialList[materialId] = {count = 0, total = count}
             end
         end
     end
 end
-

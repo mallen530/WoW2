@@ -1,71 +1,23 @@
--- function printtable(table, indent)
-
---   indent = indent or 0;
-
---   local keys = {};
-
---   for k in pairs(table) do
---     keys[#keys+1] = k;
---     table.sort(keys, function(a, b)
---       local ta, tb = type(a), type(b);
---       if (ta ~= tb) then
---         return ta < tb;
---       else
---         return a < b;
---       end
---     end);
---   end
-
---   print(string.rep('  ', indent)..'{');
---   indent = indent + 1;
---   for k, v in pairs(table) do
-
---     local key = k;
---     if (type(key) == 'string') then
---       if not (string.match(key, '^[A-Za-z_][0-9A-Za-z_]*$')) then
---         key = "['"..key.."']";
---       end
---     elseif (type(key) == 'number') then
---       key = "["..key.."]";
---     end
-
---     if (type(v) == 'table') then
---       if (next(v)) then
---         printf("%s%s =", string.rep('  ', indent), tostring(key));
---         printtable(v, indent);
---       else
---         printf("%s%s = {},", string.rep('  ', indent), tostring(key));
---       end 
---     elseif (type(v) == 'string') then
---       printf("%s%s = %s,", string.rep('  ', indent), tostring(key), "'"..v.."'");
---     else
---       printf("%s%s = %s,", string.rep('  ', indent), tostring(key), tostring(v));
---     end
---   end
---   indent = indent - 1;
---   print(string.rep('  ', indent)..'}');
--- end
-
 -- initialize the GemTab class
-GemTab = inheritsFrom(Frame)
+AskMrRobot.GemTab = AskMrRobot.inheritsFrom(AskMrRobot.Frame)
 
 local MAX_SLOTS = 4
 
 -- GemTab contructor
-function GemTab:new(name, parent)
+function AskMrRobot.GemTab:new(name, parent)
 	-- create a new frame (if one isn't supplied)
-	local tab = Frame:new(name, parent)
+	local tab = AskMrRobot.Frame:new(name, parent)
 	tab:SetPoint("TOPLEFT")
 	tab:SetPoint("BOTTOMRIGHT")
 	-- use the GemTab class
-	setmetatable(tab, { __index = GemTab })
+	setmetatable(tab, { __index = AskMrRobot.GemTab })
 	tab:Hide()
 
 	local text = tab:CreateFontString("AmrGemsText1", "ARTWORK", "GameFontNormalLarge")
 	text:SetPoint("TOPLEFT", 0, -5)
 	text:SetText("Gems")
 
-	tab.stamp = RobotStamp:new(nil, tab)
+	tab.stamp = AskMrRobot.RobotStamp:new(nil, tab)
 	tab.stamp:Hide()
 	tab.stamp.smallText:SetText("Your gems are 100% optimal! You are truly, truly outrageous.")
 	tab.stamp:SetPoint("TOPLEFT", text, "BOTTOMLEFT", 2, -15)
@@ -102,12 +54,12 @@ function GemTab:new(name, parent)
 	tab.fauxScroll:SetPoint("BOTTOMRIGHT", -40, 15)
 	tab.fauxScroll:SetPoint("TOPLEFT", "AmrBadGemSlot0", "BOTTOMLEFT", -12, -5)
 	tab.fauxScroll.parent = tab
-	tab.fauxScroll:SetScript("OnVerticalScroll", GemTab_OnVerticalScroll)
+	tab.fauxScroll:SetScript("OnVerticalScroll", AskMrRobot.GemTab.OnVerticalScroll)
 
 	tab.jewelPanels = {}
 	for i = 1, MAX_SLOTS do
 
-		tab.jewelPanels[i] = JewelPanel:new("AmrBadGemSlot" .. i, tab)
+		tab.jewelPanels[i] = AskMrRobot.JewelPanel:new("AmrBadGemSlot" .. i, tab)
 		if i == 1 then
 			tab.jewelPanels[i]:SetPoint("TOPLEFT", "AmrBadGemSlot" .. (i-1), "BOTTOMLEFT", -12, -5)
 			--tab.jewelPanels[i]:SetPoint("TOPLEFT")
@@ -120,24 +72,20 @@ function GemTab:new(name, parent)
 	return tab
 end
 
-function GemTab:showBadGems()
+function AskMrRobot.GemTab:showBadGems()
 	self.count = 0
 
 	local i = 1
 	local badGemTotal = 0
 
-	if itemDiffs.gems then
-		for slotNum, badGems in sortSlots(itemDiffs.gems) do
-			--print('slot ' .. slotNames[slotNum])
+	if AskMrRobot.itemDiffs.gems then
+		for slotNum, badGems in AskMrRobot.sortSlots(AskMrRobot.itemDiffs.gems) do
 			self.count = self.count + 1
 			if i <= MAX_SLOTS then
 				self.jewelPanels[i]:Show()
 			end
-			for j = 1, #badGems.badGems do
-				if badGems.badGems[j] then
-					--print('has bad gem')
-					badGemTotal = badGemTotal + 1
-				end
+			for k, v in pairs(badGems.badGems) do
+				badGemTotal = badGemTotal + 1
 			end
 			i = i + 1
 		end
@@ -165,36 +113,31 @@ function GemTab:showBadGems()
 		i = i + 1
 	end
 
-	GemTab_OnUpdate(self.fauxScroll, self.count, #self.jewelPanels, self.jewelPanels[1]:GetHeight())
+	AskMrRobot.GemTab.OnUpdate(self.fauxScroll, self.count, #self.jewelPanels, self.jewelPanels[1]:GetHeight())
 end
 
-function GemTab_OnVerticalScroll(scrollframe, offset)
+function AskMrRobot.GemTab.OnVerticalScroll(scrollframe, offset)
 	local self = scrollframe.parent
-	FauxScrollFrame_OnVerticalScroll(self.fauxScroll, offset, self.jewelPanels[1]:GetHeight(), GemTab_OnUpdate)
+	FauxScrollFrame_OnVerticalScroll(self.fauxScroll, offset, self.jewelPanels[1]:GetHeight(), AskMrRobot.GemTab.OnUpdate)
 end
 
-function GemTab_OnUpdate(scrollframe)	
-
-	--print('ON UPDATE')
-	if itemDiffs.gems then
-		for slotNum, badGems in sortSlots(itemDiffs.gems) do
-			--print('slot ' .. slotNum .. slotNames[slotNum])
-			for j = 1, #badGems.badGems do
-				if badGems.badGems[j] then
-					--print('has bad gem')
-				end
-			end
-			i = i + 1
-		end
-	end
-	--print('------------------')
+function AskMrRobot.GemTab.OnUpdate(scrollframe)	
+	--if AskMrRobot.itemDiffs.gems then
+	--	for slotNum, badGems in AskMrRobot.sortSlots(AskMrRobot.itemDiffs.gems) do
+	--		for j = 1, #badGems.badGems do
+	--			if badGems.badGems[j] then
+	--			end
+	--		end
+	--		i = i + 1
+	--	end
+	--end
 
 	local self = scrollframe.parent
 	FauxScrollFrame_Update(self.fauxScroll, self.count, #self.jewelPanels, self.jewelPanels[1]:GetHeight())
 	local offset = FauxScrollFrame_GetOffset(scrollframe)
 
 	local i = 1
-	for slotNum, badGems in sortSlots(itemDiffs.gems) do
+	for slotNum, badGems in AskMrRobot.sortSlots(AskMrRobot.itemDiffs.gems) do
 		if offset > 0 then
 			offset = offset - 1
 		else
@@ -203,36 +146,7 @@ function GemTab_OnUpdate(scrollframe)
 				break
 			end
 
-			self.jewelPanels[i]:SetItemLink(_G[strupper(slotNames[slotNum])], badGems.current.link )
-			if slotNum == 11 then
-				--print('badgems')
-				--printtable(badGems, 2)
-				if badGems.optimized then
-					--print('has optimized')
-					if #badGems.optimized == 0 then
-						--print('but empty')
-					else
-						for j = 1, #badGems.optimized do
-							--print(badGems.optimized[j].id)
-						end
-					end
-				end
-				if badGems.badGems then
-					--print('has badGems')
-					if #badGems.badGems == 0 then
-						--print('but empty')
-					else
-						for j = 1, #badGems.badGems do
-							if badGems.badGems[j] then
-								--print('true')
-							else
-								--print('false')
-							end
-						end
-
-					end
-				end
-			end
+			self.jewelPanels[i]:SetItemLink(_G[strupper(AskMrRobot.slotNames[slotNum])], badGems.current.link )
 			self.jewelPanels[i]:SetOptimizedGems(badGems.optimized, badGems.badGems)
 			i = i + 1
 		end

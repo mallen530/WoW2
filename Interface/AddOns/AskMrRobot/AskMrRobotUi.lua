@@ -1,27 +1,25 @@
 local showImportDetailsError = nil
 local showImportErrorTab = nil
 
-AmrUI = inheritsFrom(Frame)
+AskMrRobot.AmrUI = AskMrRobot.inheritsFrom(AskMrRobot.Frame)
 
-parseAmr = nil
-
-function AmrUI:displayImportItems()
+function AskMrRobot.AmrUI:displayImportItems()
 	if not self.importedItems then 
 		return false
 	end
-	for slotNum = 1, #slotIds do
-		if AmrOptimizationSlots[slotNum] then
-			local slotId = slotIds[slotNum]
+	for slotNum = 1, #AskMrRobot.slotIds do
+		if AskMrRobot.OptimizationSlots[slotNum] then
+			local slotId = AskMrRobot.slotIds[slotNum]
 			local itemLink = GetInventoryItemLink("player", slotId)
-			populateItemDiffs(self.importedItems[slotNum], itemLink, slotNum)
+			AskMrRobot.populateItemDiffs(self.importedItems[slotNum], itemLink, slotNum)
 		end
 	end
 
 	self.summaryTab:showBadItems()
 
 	-- if there are incorrect items equiped, display errors on other tabs
-	if itemDiffs and itemDiffs.items then
-		for k,v in pairs(itemDiffs.items) do
+	if AskMrRobot.itemDiffs and AskMrRobot.itemDiffs.items then
+		for k,v in pairs(AskMrRobot.itemDiffs.items) do
 			if not v.needsUpgrade then
 				self.hasImportError = true
 			end
@@ -38,7 +36,7 @@ function AmrUI:displayImportItems()
 	end
 end
 
-function AmrUI:showImportError(text, ...)
+function AskMrRobot.AmrUI:showImportError(text, ...)
 	self.summaryTab:showImportError(text, ...)
 	if text then
 		self.hasImportError = true		
@@ -48,7 +46,7 @@ function AmrUI:showImportError(text, ...)
 	end
 end
 
-function AmrUI:showImportWarning(text, ...)
+function AskMrRobot.AmrUI:showImportWarning(text, ...)
 	self.summaryTab:showImportWarning(text, ...)
 	self.hasImportError = false
 	if text then
@@ -56,21 +54,21 @@ function AmrUI:showImportWarning(text, ...)
 	end
 end
 
-function AmrUI:validateInput(input)
+function AskMrRobot.AmrUI:validateInput(input)
 	self.importedItems = nil
 	self.mostlySuccess = false
-	local parsed = parseAmr(input)
+	local parsed = AskMrRobot.parseAmr(input)
 	if not parsed.realm then
 		self:showImportError("Oops, you didn't have proper import text", "Please go back to AskMrRobot.com and grab optimizations for this character")
-	elseif not validateCharacterName(parsed.name) then
+	elseif not AskMrRobot.validateCharacterName(parsed.name) then
 		self:showImportError("Oops, you've imported optimizations for " .. parsed.name, "Please go back to AskMrRobot.com and grab optimizations for this character, who is much better looking anyway!")
-	elseif not validateRace(parsed.race) then
+	elseif not AskMrRobot.validateRace(parsed.race) then
 		self:showImportError("It looks like your race may have changed, which affects the optimizations.", "Right now, Mr. Robot thinks you are a " .. parsed.race)
-	elseif not validateFaction(parsed.faction) then
+	elseif not AskMrRobot.validateFaction(parsed.faction) then
 		self:showImportError("It looks like your faction may have changed.", "Right now, Mr. Robot thinks you belong to the " .. parsed.faction)
-	elseif not validateProfessions(parsed.professions) then
+	elseif not AskMrRobot.validateProfessions(parsed.professions) then
 		self:showImportError("Your professions have changed, which affects the optimizations.", "You will need to make sure your in-game professions match the professions on AskMrRobot.com when importing.")
-	elseif not validateSpec(parsed.spec) then
+	elseif not AskMrRobot.validateSpec(parsed.spec) then
 		if parsed.spec and parsed.spec ~= 'nil' then			
 			local _, specName = GetSpecializationInfoByID(parsed.spec)
 			self:showImportError("WARNING! Please check your character before proceeding:", "Change your spec to " .. specName .. ".")
@@ -83,9 +81,9 @@ function AmrUI:validateInput(input)
 		self.summaryTab.badGlyphs = nil
 		AmrImportString = input
 	else
-		self.summaryTab.badRealm = not validateRealm(parsed.realm) and parsed.realm
-		self.summaryTab.badTalents = not validateTalents(parsed.talents)
-		self.summaryTab.badGlyphs = not validateGlyphs(parsed.glyphs)
+		self.summaryTab.badRealm = not AskMrRobot.validateRealm(parsed.realm) and parsed.realm
+		self.summaryTab.badTalents = not AskMrRobot.validateTalents(parsed.talents)
+		self.summaryTab.badGlyphs = not AskMrRobot.validateGlyphs(parsed.glyphs)
 		self.mostlySuccess = true
 		self:showImportError(nil)
 		AmrImportString = input
@@ -128,7 +126,7 @@ local function createImportDetailsErrorTab(reforgeFrame)
 	return tab
 end
 
-function AmrUI:createTabButtons()
+function AskMrRobot.AmrUI:createTabButtons()
 	local importTabButton = CreateFrame("Button", "AmrImportTabButton", self, "OptionsListButtonTemplate")
 
 	local buttons = {}
@@ -185,11 +183,11 @@ function AmrUI:createTabButtons()
 	return buttons
 end
 
-function AmrUI:new()
-	local o = Frame:new("AskMrRobot_Dialog", nil, "UIPanelDialogTemplate")
+function AskMrRobot.AmrUI:new()
+	local o = AskMrRobot.Frame:new("AskMrRobot_Dialog", nil, "UIPanelDialogTemplate")
 
 	-- use the AmrUI class
-	setmetatable(o, { __index = AmrUI })
+	setmetatable(o, { __index = AskMrRobot.AmrUI })
 
 	o:RegisterForDrag("LeftButton");
 	o:SetWidth(600)
@@ -207,11 +205,11 @@ function AmrUI:new()
 	o:SetToplevel(true)
 
 	--o:SetScript("OnEscapePressed", function)
-	o:SetScript("OnDragStart", AmrUI.OnDragStart)
-	o:SetScript("OnDragStop", AmrUI.OnDragStop)
-	o:SetScript("OnHide", AmrUI.OnHide)
+	o:SetScript("OnDragStart", AskMrRobot.AmrUI.OnDragStart)
+	o:SetScript("OnDragStop", AskMrRobot.AmrUI.OnDragStop)
+	o:SetScript("OnHide", AskMrRobot.AmrUI.OnHide)
 	-- make the UI show the first tab when its opened
-	o:SetScript("OnShow", AmrUI.OnShow)
+	o:SetScript("OnShow", AskMrRobot.AmrUI.OnShow)
 
 	o:RegisterEvent("AUCTION_HOUSE_CLOSED")
 	o:RegisterEvent("AUCTION_HOUSE_SHOW")
@@ -232,14 +230,14 @@ function AmrUI:new()
 	-- create the tab buttons
 	o.buttons = o:createTabButtons()
 
-	local tabArea = Frame:new(nil, o)
+	local tabArea = AskMrRobot.Frame:new(nil, o)
 	tabArea:SetPoint("TOPLEFT", 140, -30)
 	tabArea:SetPoint("BOTTOMRIGHT")	
 
 	createImportDetailsErrorTab(tabArea)
 
 	-- create the import tab and associated it with the import tab button
-	o.importTab = ImportTab:new(tabArea)
+	o.importTab = AskMrRobot.ImportTab:new(tabArea)
 	o.buttons[1].element = o.importTab	
 	o.importTab.scrollFrame.EditBox:SetScript("OnEscapePressed", function()
 		o:Hide()
@@ -257,26 +255,26 @@ function AmrUI:new()
 		o:ShowTab("summary")
 	end)
 
-	o.summaryTab = SummaryTab:new(tabArea)
+	o.summaryTab = AskMrRobot.SummaryTab:new(tabArea)
 	o.buttons[2].element = o.summaryTab
 
-	o.gemTab = GemTab:new(nil, tabArea)
+	o.gemTab = AskMrRobot.GemTab:new(nil, tabArea)
 	o.buttons[3].element = o.gemTab
 
-	o.enchantTab = EnchantTab:new(tabArea)
+	o.enchantTab = AskMrRobot.EnchantTab:new(tabArea)
 	o.buttons[4].element = o.enchantTab
 
-	o.reforgeTab = ReforgesTab:new(tabArea)
+	o.reforgeTab = AskMrRobot.ReforgesTab:new(tabArea)
 	o.buttons[5].element = o.reforgeTab
 
-	o.shoppingTab = ShoppingListTab:new(tabArea)
+	o.shoppingTab = AskMrRobot.ShoppingListTab:new(tabArea)
 	o.buttons[6].element = o.shoppingTab
 
 	o.shoppingTab.sendTo:SetScript("OnEscapePressed", function()
  		o:Hide()
   	end)
 
-	o.exportTab = ExportTab:new(tabArea)
+	o.exportTab = AskMrRobot.ExportTab:new(tabArea)
 	o.buttons[7].element = o.exportTab
 	--o.buttons[7].element = HelpTab:new(tabArea)
 
@@ -292,38 +290,38 @@ function AmrUI:new()
 	return o
 end
 
-function AmrUI:OnUpdate()
+function AskMrRobot.AmrUI:OnUpdate()
 	local input = self.importTab.scrollFrame.EditBox:GetText()
 	if input and input:len() > 0 then
 		self:validateInput(input)
 	end
 end
 
-function AmrUI:OnShow()
+function AskMrRobot.AmrUI:OnShow()
 	self:OnUpdate()	
 end
 
-function AmrUI:OnDragStart()
+function AskMrRobot.AmrUI:OnDragStart()
 	if not self.isLocked then
 		self:StartMoving();
 	end
 end
 
-function AmrUI:OnDragStop()
+function AskMrRobot.AmrUI:OnDragStop()
 	self:StopMovingOrSizing()
 end
 
-function AmrUI:OnHide()
+function AskMrRobot.AmrUI:OnHide()
 	self.visible = false
 	self:StopMovingOrSizing()
 end
 
-function AmrUI:ShowReforgeFrame()
+function AskMrRobot.AmrUI:ShowReforgeFrame()
 	self.visible = true
 	self:Show()	
 end
 
-function AmrUI:Toggle()
+function AskMrRobot.AmrUI:Toggle()
 	if self.visible then
 		self:Hide()
 	else
@@ -341,31 +339,40 @@ local nameToButtonNumber = {
 	export = 7		
 }
 
-function AmrUI:ShowTab(tabName)
+function AskMrRobot.AmrUI:ShowTab(tabName)
 	local buttonNumber = nameToButtonNumber[tabName]
 	if buttonNumber then
 		self.buttons[buttonNumber]:Click()
 	end
 end
 
-function AmrUI:OnEvent(frame, event, ...)
+function AskMrRobot.AmrUI:OnEvent(frame, event, ...)
 	local handler = self["On_" .. event]
 	if handler then
 		handler(self, ...)
 	end
 end
 
-function AmrUI:On_AUCTION_HOUSE_SHOW()
+function AskMrRobot.AmrUI:On_AUCTION_HOUSE_SHOW()
 	self.isAuctionHouseVisible = true
 	if self.mostlySuccess then
-		if not self.visible then
-			self:Show()
+		local showTab = self.visible
+		if not AmrOptions.manualShowShop and not self.visible then
+
+			-- show if there is anything to buy
+			if self.shoppingTab:HasStuffToBuy() then
+				self:Show()
+				showTab = true
+			end
 		end
-		self:ShowTab("shopping")
+
+		if showTab then
+			self:ShowTab("shopping")
+		end
 	end	
 end
 
-function AmrUI:On_AUCTION_HOUSE_CLOSED()
+function AskMrRobot.AmrUI:On_AUCTION_HOUSE_CLOSED()
 	self.isAuctionHouseVisible = false
 	if self.isReforgeVisible then
 		self:ShowTab("reforges")
@@ -374,17 +381,31 @@ function AmrUI:On_AUCTION_HOUSE_CLOSED()
 	end
 end
 
-function AmrUI:On_FORGE_MASTER_OPENED()
+function AskMrRobot.AmrUI:On_FORGE_MASTER_OPENED()
 	self.isReforgeVisible = true
 	if self.mostlySuccess then
-		if not self.visible then
-			self:Show()
+		local showTab = self.visible
+		if not AmrOptions.manualShowReforge and not self.visible then
+
+			-- see if there are any reforges to do
+			local reforgeCount = 0
+			for slotNum, badReforge in pairs(AskMrRobot.itemDiffs.reforges) do
+				reforgeCount = reforgeCount + 1
+			end
+
+			if reforgeCount > 0 then
+				self:Show()
+				showTab = true
+			end
 		end
-		self:ShowTab("reforges")
+
+		if showTab then
+			self:ShowTab("reforges")
+		end
 	end
 end
 
-function AmrUI:On_FORGE_MASTER_CLOSED()
+function AskMrRobot.AmrUI:On_FORGE_MASTER_CLOSED()
 	self.isReforgeVisible = false
 	if self.isAuctionHouseVisible then
 		self:ShowTab("shopping")
@@ -393,7 +414,7 @@ function AmrUI:On_FORGE_MASTER_CLOSED()
 	end	
 end
 
-function AmrUI:On_SOCKET_INFO_UPDATE()
+function AskMrRobot.AmrUI:On_SOCKET_INFO_UPDATE()
 	self.isSocketWindowVisible = true
 	if self.mostlySuccess then
 		if not self.visible then
@@ -403,7 +424,7 @@ function AmrUI:On_SOCKET_INFO_UPDATE()
 	end
 end
 
-function AmrUI:On_SOCKET_INFO_CLOSE()
+function AskMrRobot.AmrUI:On_SOCKET_INFO_CLOSE()
 	self.isSocketWindowVisible = false
 	if self.isAuctionHouseVisible then
 		self:ShowTab("shopping")

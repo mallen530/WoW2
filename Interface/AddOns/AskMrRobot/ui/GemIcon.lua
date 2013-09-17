@@ -11,15 +11,15 @@ GEM_TYPE_INFO = {
 	Prismatic = {tex=engineeringGemTexture, left=0.01562500, right=0.68750000, top=0.76367188, bottom=0.84765625, r=1, g=1, b=1, OBLeft=0.01562500, OBRight=0.68750000, OBTop=0.58789063, OBBottom=0.67187500}
 }
 
-GemIcon = inheritsFrom(ItemIcon)
+AskMrRobot.GemIcon = AskMrRobot.inheritsFrom(AskMrRobot.ItemIcon)
 
 -- item icon contructor
-function GemIcon:new(name, parent)
+function AskMrRobot.GemIcon:new(name, parent)
 	-- create a new frame (if one isn't supplied)
-	local o = ItemIcon:new(name, parent)
+	local o = AskMrRobot.ItemIcon:new(name, parent)
 
 	-- use the ItemIcon class
-	setmetatable(o, { __index = GemIcon })
+	setmetatable(o, { __index = AskMrRobot.GemIcon })
 
 	-- add the overlay for the 
 	o.openBracket = o:CreateTexture(nil, "ARTWORK")
@@ -30,8 +30,8 @@ function GemIcon:new(name, parent)
 	return o
 end
 
-function GemIcon:SetGemColor(color)
-	local info = GEM_TYPE_INFO[color]
+function AskMrRobot.GemIcon:UpdateGemStuff()
+	local info = GEM_TYPE_INFO[self.color]
 
 	if self.itemLink then
 		-- hide the 2nd half of the empty gem icon
@@ -68,4 +68,15 @@ function GemIcon:SetGemColor(color)
 
 		self:SetBackdropBorderColor(0,0,0,0)
 	end
+
+end
+
+function AskMrRobot.GemIcon:SetItemLink(link)
+	AskMrRobot.ItemIcon.SetItemLink(self, link)
+	self:UpdateGemStuff()
+end
+
+function AskMrRobot.GemIcon:SetGemColor(color)
+	self.color = color
+	self:UpdateGemStuff()
 end

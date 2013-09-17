@@ -1,10 +1,10 @@
 -- initialize the HelpTab class
-HelpTab = inheritsFrom(Frame)
+AskMrRobot.HelpTab = AskMrRobot.inheritsFrom(AskMrRobot.Frame)
 
-function HelpTab:new(parent)
+function AskMrRobot.HelpTab:new(parent)
 
-	local tab = Frame:new(nil, parent)
-	setmetatable(tab, { __index = HelpTab })
+	local tab = AskMrRobot.Frame:new(nil, parent)
+	setmetatable(tab, { __index = AskMrRobot.HelpTab })
 	tab:SetPoint("TOPLEFT")
 	tab:SetPoint("BOTTOMRIGHT")
 	tab:Hide()

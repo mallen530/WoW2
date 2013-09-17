@@ -1,13 +1,13 @@
 -- initialize the RobotStamp class (inherit from Frame)
-RobotStamp = inheritsFrom(Frame)
+AskMrRobot.RobotStamp = AskMrRobot.inheritsFrom(AskMrRobot.Frame)
 
 -- item icon contructor
-function RobotStamp:new(name, parent)
+function AskMrRobot.RobotStamp:new(name, parent)
 	-- create a new frame (if one isn't supplied)
-	local o = Frame:new(name, parent)
+	local o = AskMrRobot.Frame:new(name, parent)
 
-	-- use the ItemIcon class
-	setmetatable(o, { __index = ItemIcon })
+	-- use the RobotStamp class
+	setmetatable(o, { __index = AskMrRobot.RobotStamp })
 
 	o:SetPoint("TOPLEFT", parent, "TOPLEFT")
 	o:SetPoint("RIGHT", parent, "RIGHT")
@@ -26,11 +26,11 @@ function RobotStamp:new(name, parent)
 	o.smallText:SetPoint("TOPLEFT", o.bigText, "BOTTOMLEFT", 0, -7)
 	o.smallText:SetPoint("RIGHT", o, "RIGHT", -15, 0)
 	o.smallText:SetWidth(o.smallText:GetWidth())
-	o.smallText:SetJustifyH("LEFT")
+	o.smallText:SetJustifyH("CENTER")
 
 	o:SetBackdrop({edgeFile = "Interface\\AddOns\\AskMrRobot\\Media\\round-edge-big", edgeSize = 16})
 	o:SetBackdropBorderColor(7/255, 166/255, 11/255)
 
-	-- return the instance of the ItemIcon
+	-- return the instance of the RobotStamp
 	return o
 end

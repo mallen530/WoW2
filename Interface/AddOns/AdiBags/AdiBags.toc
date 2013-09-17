@@ -1,5 +1,5 @@
 ## Interface: 50400
-## X-Curse-Packaged-Version: v1.6.7
+## X-Curse-Packaged-Version: v1.6.9
 ## X-Curse-Project-Name: AdiBags
 ## X-Curse-Project-ID: adibags
 ## X-Curse-Repository-ID: wow/adibags/mainline
@@ -7,10 +7,10 @@
 ## Title: AdiBags
 ## Notes: Adirelle's bag addon.
 ## Author: Adirelle
-## Version: v1.6.7
+## Version: v1.6.9
 ## SavedVariables: AdiBagsDB
-## X-Date: 2013-09-11T13:33:42Z
-## OptionalDeps: LibStub, CallbackHandler-1.0, Ace3, LibBabble-Inventory-3.0, LibSharedMedia-3.0, Scrap, BrainDead, ProfessionsVault
+## X-Date: 2013-09-14T08:32:43Z
+## OptionalDeps: LibStub, CallbackHandler-1.0, Ace3, LibBabble-Inventory-3.0, LibSharedMedia-3.0, Scrap, BrainDead
 #@alpha@
 # ## OptionalDeps: AdiDebug, BugSack, Swatter
 #@end-alpha@

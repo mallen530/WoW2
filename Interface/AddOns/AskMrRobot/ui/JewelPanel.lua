@@ -1,15 +1,15 @@
 local MAX_GEMS_PER_SLOT = 3
 
 -- make the JewelPanel inherit from a dummy frame
-JewelPanel = inheritsFrom(Frame)
+AskMrRobot.JewelPanel = AskMrRobot.inheritsFrom(AskMrRobot.Frame)
 
 -- JewelPanel constructor
-function JewelPanel:new (name, parent)
+function AskMrRobot.JewelPanel:new (name, parent)
 	-- create a new frame if one isn't supplied
-	local o = Frame:new(name, parent)
+	local o = AskMrRobot.Frame:new(name, parent)
 
 	-- make the object a JewelPanel instanct
-	setmetatable(o, { __index = JewelPanel})
+	setmetatable(o, { __index = AskMrRobot.JewelPanel})
 
 	-- set the height and border of the newly created jewel frame
 	o:SetHeight(95)
@@ -22,7 +22,7 @@ function JewelPanel:new (name, parent)
 	o._slotName:SetJustifyH("LEFT")
 
 	-- setup the item icon frame
-	o._itemIcon = ItemIcon:new()
+	o._itemIcon = AskMrRobot.ItemIcon:new()
 	o._itemIcon:SetParent(o)
 	o._itemIcon:SetRoundBorder()
 	o._itemIcon:SetPoint("TOPLEFT", 9, -32)
@@ -36,7 +36,7 @@ function JewelPanel:new (name, parent)
 	-- for each row of gems
 	for i = 1, MAX_GEMS_PER_SLOT do
 		-- create an item icon for the currently equiped gem
-		local gemIcon = GemIcon:new(nil, o)
+		local gemIcon = AskMrRobot.GemIcon:new(nil, o)
 		gemIcon:SetPoint("TOPLEFT", 100, 18 - 27 * i)
 		gemIcon:SetWidth(24)
 		gemIcon:SetHeight(24)
@@ -44,7 +44,7 @@ function JewelPanel:new (name, parent)
 		o._currentGems[i] = gemIcon
 
 		-- create an item icon for the optimized gem
-		gemIcon = GemIcon:new(nil, o)
+		gemIcon = AskMrRobot.GemIcon:new(nil, o)
 		gemIcon:SetPoint("TOPLEFT", 170, 18 - 27 * i)
 		gemIcon:SetWidth(24)
 		gemIcon:SetHeight(24)
@@ -65,7 +65,7 @@ end
 
 -- set the item link for this JewelPanel
 -- this updates the item icon, the slot name, and the tooltip
-function JewelPanel:SetItemLink(slotName, itemLink)
+function AskMrRobot.JewelPanel:SetItemLink(slotName, itemLink)
 	-- set the item icon and the tooltip
 	self._itemIcon:SetItemLink(itemLink)
 
@@ -87,7 +87,7 @@ end
 
 -- set the optimized gem information (array of {id, color, enchantId})
 -- SetItemLink must be called first
-function JewelPanel:SetOptimizedGems(optimizedGems, showGems)
+function AskMrRobot.JewelPanel:SetOptimizedGems(optimizedGems, showGems)
 
 	-- get the item link
 	local itemLink = self._itemIcon.itemLink
@@ -95,7 +95,7 @@ function JewelPanel:SetOptimizedGems(optimizedGems, showGems)
 	if not itemLink then return end
 
 	-- for all of the gem rows in this control
-	local itemId = getItemIdFromLink(itemLink)
+	local itemId = AskMrRobot.getItemIdFromLink(itemLink)
 
 	local gemCount = 0
 
@@ -114,15 +114,15 @@ function JewelPanel:SetOptimizedGems(optimizedGems, showGems)
 			-- set the current gem icon / tooltip
 			currentIcon:SetItemLink(currentGemLink)
 
-			local currentGemId = getItemIdFromLink(currentGemLink)
+			local currentGemId = AskMrRobot.getItemIdFromLink(currentGemLink)
 
-			local optimizedGemLink = nil;
+			local optimizedGemLink = nil
 			if i <= #optimizedGems then
 				-- make a link for the optimized gem
 				optimizedGemLink = select(2, GetItemInfo(optimizedGems[i].id))
 
 				if not optimizedGemLink and optimizedGems[i].id and itemId then
-					RegisterItemInfoCallback(itemId, function(name, link)
+					AskMrRobot.RegisterItemInfoCallback(optimizedGems[i].id, function(name, link)
 						optimizedIcon:SetItemLink(link)
 					end)
 				end
@@ -132,7 +132,7 @@ function JewelPanel:SetOptimizedGems(optimizedGems, showGems)
 				gemCount = gemCount + 1
 				-- set the optimized gem text
 				text:SetTextColor(1,1,1)
-				text:SetText(alternateGemName[optimizedGems[i].id] or getEnchantName(optimizedGems[i].enchantId))
+				text:SetText(AskMrRobot.alternateGemName[optimizedGems[i].id] or (optimizedGems[i].enchantId ~= 0 and AskMrRobot.getEnchantName(optimizedGems[i].enchantId)) or GetItemInfo(optimizedGems[i].id))
 				currentIcon:Show()
 
 				-- load the item image / tooltip

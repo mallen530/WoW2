@@ -43,6 +43,7 @@ local exoId					= 879			-- exorcism
 local mexoId				= 122032	-- mass exorcism
 local howId 				=	24275		-- hammer of wrath
 local csId 					= 35395		-- crusader strike
+local dsId					= 53385		-- divine storm
 local jId						= 20271		-- judgement
 local esId					= 114157	-- execution sentence
 local hprId					= 114165	-- holy prism
@@ -54,6 +55,7 @@ local buffDP 		= GetSpellInfo(90174)		-- divine purpose
 local buffHA		= GetSpellInfo(105809)	-- holy avenger
 local buffAW    = GetSpellInfo(31884)		-- avenging wrath	
 local buff4T15 	= GetSpellInfo(138169)  -- templar's verdict buff
+local buff4T16	= GetSpellInfo(144595)	-- divine crusader
 
 -- custom function to check ss since there are 2 buffs with same name
 --local buffSS		= 65148
@@ -61,7 +63,7 @@ local buffSS = 20925
 
 -- status vars
 local s1, s2
-local s_ctime, s_otime, s_gcd, s_hp, s_inq, s_dp, s_ha, s_aw, s_ss, s_4t15, s_haste, s_targetType
+local s_ctime, s_otime, s_gcd, s_hp, s_inq, s_dp, s_ha, s_aw, s_ss, s_4t15, s_4t16, s_haste, s_targetType
 local s_exoId = exoId
 
 -- the queue
@@ -489,6 +491,29 @@ local actions = {
 		info = "Sacred Shield",
 		reqTalent = 9,
 	},
+	ds_4t16 = {
+		id = dsId,
+		GetCD = function()
+			if s_4t16 >= 0 then return 0 end
+			return 100
+		end,
+		UpdateStatus = function()
+			s_ctime = s_ctime + s_gcd + 1.5
+		end,
+		info = "Divine Storm with 4t16 active",
+	},
+
+	ds_4t16_5hp = {
+		id = dsId,
+		GetCD = function()
+			if ( (s_4t16 >= 0) and (s_hp >= 5) ) then return 0 end
+			return 100
+		end,
+		UpdateStatus = function()
+			s_ctime = s_ctime + s_gcd + 1.5
+		end,
+		info = "Divine Storm with 4t16 active and 5HP",
+	},
 }
 --------------------------------------------------------------------------------
 
@@ -548,14 +573,16 @@ local function GetStatus()
 	
 	-- the buffs
 	s_inq 	= GetBuff(buffInq)
-	s_dp 		= GetBuff(buffDP)
-	s_ha 		= GetBuff(buffHA)
-	s_aw 		=	GetBuff(buffAW)
+	s_dp	= GetBuff(buffDP)
+	s_ha	= GetBuff(buffHA)
+	s_aw	= GetBuff(buffAW)
+	s_4t16 	= GetBuff(buff4T16)
+
 
 	-- special for ss
 	GetBuffSS()
 
-	-- 4piece t15
+	-- 4piece t15 has no duration
 	if UnitBuff("player", buff4T15) then
 		s_4t15 = 100000
 	else
@@ -689,6 +716,7 @@ function xmod.Rotation()
 	s_ha = max(0, s_ha - s_otime)
 	s_ss = max(0, s_ss - s_otime)
 	s_aw = max(0, s_aw - s_otime)
+	s_4t16 = max(0, s_4t16 - s_otime)
 	
 	if debug and debug.enabled then
 		debug:AddBoth("ctime", s_ctime)

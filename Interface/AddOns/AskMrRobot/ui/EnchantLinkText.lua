@@ -1,13 +1,13 @@
-EnchantLinkText = inheritsFrom(ItemTooltipFrame)
+AskMrRobot.EnchantLinkText = AskMrRobot.inheritsFrom(AskMrRobot.ItemTooltipFrame)
 
-function EnchantLinkText:new(name, parent)
-	local o = ItemTooltipFrame:new(name, parent)
+function AskMrRobot.EnchantLinkText:new(name, parent)
+	local o = AskMrRobot.ItemTooltipFrame:new(name, parent)
 
 	-- use the ItemLinkText class
-	setmetatable(o, { __index = EnchantLinkText })
+	setmetatable(o, { __index = AskMrRobot.EnchantLinkText })
 
 	-- the item text
-	o.itemText = FontString:new(o, nil, "ARTWORK", "GameFontWhite")
+	o.itemText = AskMrRobot.FontString:new(o, nil, "ARTWORK", "GameFontWhite")
 	o.itemText:SetPoint("TOPLEFT")
 	o.itemText:SetPoint("BOTTOMRIGHT")
 	o.itemText:SetJustifyH("LEFT")
@@ -15,22 +15,21 @@ function EnchantLinkText:new(name, parent)
 	return o
 end
 
-function EnchantLinkText:SetEnchantId(enchantId)
+function AskMrRobot.EnchantLinkText:SetEnchantId(enchantId)
 	self.itemName = nil
 	if enchantId then
-		local spellId = getEnchantSpellid(enchantId)
+		local spellId = AskMrRobot.getEnchantSpellId(enchantId)
 		local link = nil
 		if spellId then
 			link = 'enchant:' .. spellId
 		end
 		self:SetItemLink(link)
 		if self.useSpellName then
-			local spellId = getEnchantSpellid(enchantId)				
 			local spellName = spellId and select(1, GetSpellInfo(spellId))
 			self.itemText:SetText(spellName)
 			self.itemName = spellName
 		else
-			self.itemName = getEnchantName(enchantId)
+			self.itemName = AskMrRobot.getEnchantName(enchantId)
 			self.itemText:SetText(self.itemName)
 		end
 	else
@@ -39,23 +38,23 @@ function EnchantLinkText:SetEnchantId(enchantId)
 	end
 end
 
-function EnchantLinkText:SetFontSize(fontSize)
+function AskMrRobot.EnchantLinkText:SetFontSize(fontSize)
 	self.itemText:SetFontSize(fontSize)
 end
 
-function EnchantLinkText:UseSpellName()
+function AskMrRobot.EnchantLinkText:UseSpellName()
 	self.useSpellName = true
 end
 
-EnchantLinkIconAndText = inheritsFrom(EnchantLinkText)
+AskMrRobot.EnchantLinkIconAndText = AskMrRobot.inheritsFrom(AskMrRobot.EnchantLinkText)
 
-function EnchantLinkIconAndText:new(name, parent)
-	local o = EnchantLinkText:new(name, parent)
+function AskMrRobot.EnchantLinkIconAndText:new(name, parent)
+	local o = AskMrRobot.EnchantLinkText:new(name, parent)
 
 	-- use the EnchantLinkIconAndText class
-	setmetatable(o, { __index = EnchantLinkIconAndText })
+	setmetatable(o, { __index = AskMrRobot.EnchantLinkIconAndText })
 
-	o.iconFrame = Frame:new(nil, o)
+	o.iconFrame = AskMrRobot.Frame:new(nil, o)
 	o.iconFrame:SetPoint("TOPLEFT", 0, 5)
 	o.iconFrame:SetWidth(24)
 	o.iconFrame:SetHeight(24)
@@ -71,18 +70,18 @@ function EnchantLinkIconAndText:new(name, parent)
 	return o
 end
 
-function EnchantLinkIconAndText:SetRoundBorder()
+function AskMrRobot.EnchantLinkIconAndText:SetRoundBorder()
 	self.iconFrame:SetBackdrop({edgeFile = "Interface\\AddOns\\AskMrRobot\\Media\\round-edge", edgeSize = 8})
 end
 
-function EnchantLinkIconAndText:SetSquareBorder()
+function AskMrRobot.EnchantLinkIconAndText:SetSquareBorder()
 	self.iconFrame:SetBackdrop({edgeFile = "Interface\\AddOns\\AskMrRobot\\Media\\square-edge", edgeSize = 8})
 end
 
-function EnchantLinkIconAndText:SetEnchantId(enchantId)
-	EnchantLinkText.SetEnchantId(self, enchantId)
+function AskMrRobot.EnchantLinkIconAndText:SetEnchantId(enchantId)
+	AskMrRobot.EnchantLinkText.SetEnchantId(self, enchantId)
 	if enchantId then
-		local texture = getEnchantIcon(enchantId)
+		local texture = AskMrRobot.getEnchantIcon(enchantId)
 		self.icon:SetTexture('Interface/Icons/' .. texture)
 		self.iconFrame:Show()
 	else
@@ -90,6 +89,6 @@ function EnchantLinkIconAndText:SetEnchantId(enchantId)
 	end
 end
 
-function EnchantLinkIconAndText:SetFontSize(fontSize)
+function AskMrRobot.EnchantLinkIconAndText:SetFontSize(fontSize)
 	self.itemText:SetFontSize(fontSize)
 end

@@ -1,10 +1,10 @@
 -- initialize the ImportTab class
-ImportTab = inheritsFrom(Frame)
+AskMrRobot.ImportTab = AskMrRobot.inheritsFrom(AskMrRobot.Frame)
 
-function ImportTab:new(parent)
+function AskMrRobot.ImportTab:new(parent)
 
-	local tab = Frame:new(nil, parent)
-	setmetatable(tab, { __index = ImportTab })
+	local tab = AskMrRobot.Frame:new(nil, parent)
+	setmetatable(tab, { __index = AskMrRobot.ImportTab })
 	tab:SetPoint("TOPLEFT")
 	tab:SetPoint("BOTTOMRIGHT")
 	tab:Hide()

@@ -1,12 +1,12 @@
 ## Interface: 50400
 ## Title: Ask Mr Robot
 ## Author: Ask Mr Robot
-## Version: 1.1.8.0
+## Version: 1.1.10.0
 ## Notes: Exports bag/bank items to a saved variable.
 ## URL: www.askmrrobot.com
 ## DefaultState: Enabled
 ## LoadOnDemand: 0
-## SavedVariablesPerCharacter: AmrBagItems,AmrBankItems,AmrEquipedItems,AmrGold,AmrRealmName,AmrCharacterName,AmrIconInfo,AmrCurrencies,AmrProfessions,AmrSpecializations,AmrRace,AmrLevel,AmrFaction,AmrActiveSpec,AmrHideMapIcon,AmrGlyphs,AmrTalents,AmrBankItemsAndCounts,AmrImportString,AmrImportDate,AmrSendSettings
+## SavedVariablesPerCharacter: AmrBagItems,AmrBankItems,AmrEquipedItems,AmrGold,AmrRealmName,AmrCharacterName,AmrIconInfo,AmrCurrencies,AmrProfessions,AmrSpecializations,AmrRace,AmrLevel,AmrFaction,AmrActiveSpec,AmrOptions,AmrGlyphs,AmrTalents,AmrBankItemsAndCounts,AmrImportString,AmrImportDate,AmrSendSettings
 
 #@no-lib-strip@
 Libs\LibStub\Libstub.lua
@@ -20,7 +20,6 @@ Libs\LibDBIcon-1.0\LibDBIcon-1.0.lua
 #@end-no-lib-strip@
 
 wait.lua
-xmit.lua
 sort.lua
 enchants.lua
 gems.lua

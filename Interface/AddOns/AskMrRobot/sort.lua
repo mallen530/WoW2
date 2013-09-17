@@ -1,4 +1,4 @@
-function spairs(t, order)
+function AskMrRobot.spairs(t, order)
     -- collect the keys
     local keys = {}
     for k in pairs(t) do keys[#keys+1] = k end
@@ -21,9 +21,9 @@ function spairs(t, order)
     end
 end
 
-function sortSlots(t)
-    return spairs(t, function(x, a, b)
+function AskMrRobot.sortSlots(t)
+    return AskMrRobot.spairs(t, function(x, a, b)
         if a == nil and b == nil then return 0 end
-        return sortedSlots[a] < sortedSlots[b]
+        return AskMrRobot.sortedSlots[a] < AskMrRobot.sortedSlots[b]
     end)
 end

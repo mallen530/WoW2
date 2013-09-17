@@ -1,10 +1,10 @@
 -- initialize the ExportTab class
-ExportTab = inheritsFrom(Frame)
+AskMrRobot.ExportTab = AskMrRobot.inheritsFrom(AskMrRobot.Frame)
 
-function ExportTab:new(parent)
+function AskMrRobot.ExportTab:new(parent)
 
-	local tab = Frame:new(nil, parent)	
-	setmetatable(tab, { __index = ExportTab })
+	local tab = AskMrRobot.Frame:new(nil, parent)	
+	setmetatable(tab, { __index = AskMrRobot.ExportTab })
 	tab:SetPoint("TOPLEFT")
 	tab:SetPoint("BOTTOMRIGHT")
 	tab:Hide()

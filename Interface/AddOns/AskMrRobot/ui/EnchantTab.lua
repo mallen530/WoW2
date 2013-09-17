@@ -1,10 +1,10 @@
 -- initialize the EnchantTab class
-EnchantTab = inheritsFrom(Frame)
+AskMrRobot.EnchantTab = AskMrRobot.inheritsFrom(AskMrRobot.Frame)
 
-function EnchantTab:new(parent)
+function AskMrRobot.EnchantTab:new(parent)
 
-	local tab = Frame:new(nil, parent)
-	setmetatable(tab, { __index = EnchantTab })
+	local tab = AskMrRobot.Frame:new(nil, parent)
+	setmetatable(tab, { __index = AskMrRobot.EnchantTab })
 	tab:SetPoint("TOPLEFT")
 	tab:SetPoint("BOTTOMRIGHT")
 	tab:Hide()
@@ -14,7 +14,7 @@ function EnchantTab:new(parent)
 	text:SetPoint("TOPLEFT", 0, -5)
 	text:SetText("Enchants")
 
-	tab.stamp = RobotStamp:new(nil, tab)
+	tab.stamp = AskMrRobot.RobotStamp:new(nil, tab)
 	tab.stamp:Hide()
 	tab.stamp.smallText:SetText("Your enchants are 100% optimal!")
 	tab.stamp:SetPoint("TOPLEFT", text, "BOTTOMLEFT", 2, -15)
@@ -42,7 +42,7 @@ function EnchantTab:new(parent)
 	tab.badEnchantCurrent = {}
 	tab.badEnchantOptimized = {}
 
-	for i = 1, #slotNames do
+	for i = 1, #AskMrRobot.slotNames do
 		local itemText = tab:CreateFontString(nil, "ARTWORK", "GameFontWhite")
 		itemText:SetPoint("TOPLEFT", "AmrBadEnchantSlotHeader", "TOPLEFT", 0, -26 * i)
 		itemText:SetPoint("BOTTOMRIGHT", "AmrBadEnchantSlotHeader", "BOTTOMRIGHT", 0, -26 * i)
@@ -50,12 +50,12 @@ function EnchantTab:new(parent)
 		itemText:SetText("TestSlot")
 		tinsert(tab.badEnchantSlots, itemText)
 
-		itemText = EnchantLinkText:new(nil, tab)
+		itemText = AskMrRobot.EnchantLinkText:new(nil, tab)
 		itemText:SetPoint("TOPLEFT", "AmrBadEnchantCurrentHeader", "TOPLEFT", 0, -26 * i)
 		itemText:SetPoint("BOTTOMRIGHT", "AmrBadEnchantCurrentHeader", "BOTTOMRIGHT", 0,  -26 * i)
 		tinsert(tab.badEnchantCurrent, itemText)
 
-		itemText = EnchantLinkIconAndText:new(nil, tab)
+		itemText = AskMrRobot.EnchantLinkIconAndText:new(nil, tab)
 		itemText:SetPoint("TOPLEFT", "AmrBadEnchantOptimizedHeader", "TOPLEFT", 0,  -26 * i)
 		itemText:SetPoint("BOTTOMRIGHT", "AmrBadEnchantOptimizedHeader", "BOTTOMRIGHT", 0,  -26 * i)
 		tinsert(tab.badEnchantOptimized, itemText)
@@ -64,15 +64,15 @@ function EnchantTab:new(parent)
 	return tab
 end
 
-function EnchantTab:showBadEnchants()
+function AskMrRobot.EnchantTab:showBadEnchants()
 
-	local badEnchants = itemDiffs.enchants
+	local badEnchants = AskMrRobot.itemDiffs.enchants
 
 	local i = 1
 
 	-- for all the bad items
-	for slotNum, badEnchant in sortSlots(badEnchants) do
-		self.badEnchantSlots[i]:SetText(_G[strupper(slotNames[slotNum])])
+	for slotNum, badEnchant in AskMrRobot.sortSlots(badEnchants) do
+		self.badEnchantSlots[i]:SetText(_G[strupper(AskMrRobot.slotNames[slotNum])])
 		self.badEnchantSlots[i]:Show()
 
 		self.badEnchantCurrent[i]:SetEnchantId(badEnchant.current)

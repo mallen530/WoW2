@@ -18,3 +18,4 @@ DBM-MogushanVaults: disabled
 DBM-TerraceofEndlessSpring: enabled
 DeathNote: disabled
 ElvUI_AddOnSkins: enabled
+GreenWall: enabled

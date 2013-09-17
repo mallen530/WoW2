@@ -1,7 +1,7 @@
-unresolvedItemIds = {}
+local unresolvedItemIds = {}
 
 -- Create a new class that inherits from a base class
-function inheritsFrom( baseClass )
+function AskMrRobot.inheritsFrom( baseClass )
 
     -- The following lines are equivalent to the SimpleClass example:
 
@@ -31,13 +31,9 @@ function inheritsFrom( baseClass )
     return new_class
 end
 
-function pack(...)
-  return arg
-end
-
 local itemInfoFrame = nil;
 
-function onGetItemInfoReceived()
+local function onGetItemInfoReceived()
 	-- since wow is awesome, it doesn't tell us *which* item id was just resolved, so we have to look at them all
 	for itemId, callbacks in pairs(unresolvedItemIds) do
 		-- attempt to get the item info AGAIN
@@ -56,7 +52,7 @@ function onGetItemInfoReceived()
 end
 
 
-function RegisterItemInfoCallback(itemId, callback)
+function AskMrRobot.RegisterItemInfoCallback(itemId, callback)
 	if not itemId then
 		return
 	end
@@ -78,22 +74,23 @@ function RegisterItemInfoCallback(itemId, callback)
 		unresolvedItemIds[itemId] = { callback }
 	end
 end
-function getItemIdFromLink(item)
+
+function AskMrRobot.getItemIdFromLink(item)
 	if not item then return 0 end
 	local id = tonumber (item:match ("item:(%d+):%d+:%d+:%d+:%d+:%d+:%-?%d+:%-?%d+:%d+:%d+"))
 	return (id and id ~= 0 and id or 0)
 end
 
 -- initialize the Frame class (inherit from a dummy frame)
-Frame = inheritsFrom(CreateFrame("Frame"))
+AskMrRobot.Frame = AskMrRobot.inheritsFrom(CreateFrame("Frame"))
 
 -- Frame contructor
-function Frame:new(name, parentFrame, inheritsFrame)
+function AskMrRobot.Frame:new(name, parentFrame, inheritsFrame)
 	-- create a new frame (if one isn't supplied)
-	o = CreateFrame("Frame", name, parentFrame, inheritsFrame)
+	local o = CreateFrame("Frame", name, parentFrame, inheritsFrame)
 
-	-- use the ItemTooltipFrame class
-	setmetatable(o, { __index = Frame })
+	-- use the Frame class
+	setmetatable(o, { __index = AskMrRobot.Frame })
 
 	-- return the instance of the Frame
 	return o
@@ -102,15 +99,15 @@ end
 local MAINHAND = nil
 local OFFHAND = nil
 
-slotNames = {"HeadSlot", "NeckSlot", "ShoulderSlot", "BackSlot", "ChestSlot", "ShirtSlot", "TabardSlot", "WristSlot", "HandsSlot", "WaistSlot", "LegsSlot", "FeetSlot", "Finger0Slot", "Finger1Slot", "Trinket0Slot", "Trinket1Slot", "MainHandSlot", "SecondaryHandSlot", "AmmoSlot" };
-AmrOptimizationSlots = {}
-slotIdToSlotNum = {}
-slotIds = {};
-for slotNum = 1, #slotNames do
-	local slotId = GetInventorySlotInfo(slotNames[slotNum])
-	slotIds[slotNum] = slotId
-	slotIdToSlotNum[slotId] = slotNum
-	local slotName = slotNames[slotNum]
+AskMrRobot.slotNames = {"HeadSlot", "NeckSlot", "ShoulderSlot", "BackSlot", "ChestSlot", "ShirtSlot", "TabardSlot", "WristSlot", "HandsSlot", "WaistSlot", "LegsSlot", "FeetSlot", "Finger0Slot", "Finger1Slot", "Trinket0Slot", "Trinket1Slot", "MainHandSlot", "SecondaryHandSlot", "AmmoSlot" };
+AskMrRobot.OptimizationSlots = {}
+AskMrRobot.slotIdToSlotNum = {}
+AskMrRobot.slotIds = {};
+for slotNum = 1, #AskMrRobot.slotNames do
+	local slotId = GetInventorySlotInfo(AskMrRobot.slotNames[slotNum])
+	AskMrRobot.slotIds[slotNum] = slotId
+	AskMrRobot.slotIdToSlotNum[slotId] = slotNum
+	local slotName = AskMrRobot.slotNames[slotNum]
 	if slotName == "MainHandSlot" then
 		MAINHAND = slotNum
 	end
@@ -118,32 +115,32 @@ for slotNum = 1, #slotNames do
 		OFFHAND = slotNum
 	end
 	if slotName ~= "TabardSlot" and slotName ~= "AmmoSlot" and slotName ~= "ShirtSlot" then
-		AmrOptimizationSlots[slotNum] = true
+		AskMrRobot.OptimizationSlots[slotNum] = true
 	end
 
 end
 
-sortedSlots = {[MAINHAND] = 1, [OFFHAND] = 2}
+AskMrRobot.sortedSlots = {[MAINHAND] = 1, [OFFHAND] = 2}
 
 local i = 3
-for slotNum = 1, #slotNames do
+for slotNum = 1, #AskMrRobot.slotNames do
 	if slotNum ~= MAINHAND and slotNum ~= OFFHAND then
-		sortedSlots[slotNum] = i
+		AskMrRobot.sortedSlots[slotNum] = i
 		i = i + 1
 	end
 end
 
 
 -- initialize the Frame class (inherit from a dummy frame)
-FontString = inheritsFrom(Frame:new():CreateFontString(nil, "ARTWORK", "GameFontNormal"))
+AskMrRobot.FontString = AskMrRobot.inheritsFrom(AskMrRobot.Frame:new():CreateFontString(nil, "ARTWORK", "GameFontNormal"))
 
 -- Frame contructor
-function FontString:new(parentFrame, name, layer, style, fontSize)
+function AskMrRobot.FontString:new(parentFrame, name, layer, style, fontSize)
 
 	local o = parentFrame:CreateFontString(name, layer, style)	-- create a new frame (if one isn't supplied)
 
-	-- use the ItemTooltipFrame class
-	setmetatable(o, { __index = FontString })
+	-- use the fontstring class
+	setmetatable(o, { __index = AskMrRobot.FontString })
 
 	if fontSize then
 		o:SetFontSize(fontSize)
@@ -152,12 +149,12 @@ function FontString:new(parentFrame, name, layer, style, fontSize)
 	return o
 end
 
-function FontString:SetFontSize(fontSize)
+function AskMrRobot.FontString:SetFontSize(fontSize)
 	local file, _, flags = self:GetFont()
 	self:SetFont(file, fontSize, flags)
 end
 
-function SetFontSize(fontString, fontSize)
+function AskMrRobot.SetFontSize(fontString, fontSize)
 	local file, _, flags = fontString:GetFont()
 	fontString:SetFont(file, fontSize, flags)
 end

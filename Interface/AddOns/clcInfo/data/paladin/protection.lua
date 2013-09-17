@@ -63,7 +63,7 @@ local buffBoG 		= GetSpellInfo(114637)	-- bastion of glory
 local buffAW			= GetSpellInfo(31884)		-- avenging wrath
 local buffGC			= GetSpellInfo(85416)				-- grand cursader
 -- debuffs
-local debuffWB			= GetSpellInfo(115798) -- weakened blows
+-- local debuffWB			= GetSpellInfo(115798) -- weakened blows
 
 -- custom function to check ss since there are 2 buffs with same name
 local buffSS = 20925
@@ -264,6 +264,7 @@ local function GetBuff(buff)
 end
 
 -- weakened blows
+--[[
 local function GetDebuffWB()
 	local left, _, expires
 	_, _, _, _, _, _, expires = UnitDebuff("target", debuffWB, nil)
@@ -275,6 +276,7 @@ local function GetDebuffWB()
 	end
 	s_wb = left
 end
+]]--
 
 -- special case for SS
 local function GetBuffSS()
@@ -316,7 +318,7 @@ local function GetStatus()
 	GetBuffSS()
 
 	-- the debuffs
-	GetDebuffWB()
+	-- GetDebuffWB()
 	
 	-- client hp and haste
 	s_hp = UnitPower("player", SPELL_POWER_HOLY_POWER)
@@ -432,7 +434,7 @@ local function ProtRotation()
 		debug:AddBoth("s1", action)
 	end
 
-	if s1 == csId and s_wb < 5 then s1 = hotrId end
+	-- if s1 == csId and s_wb < 5 then s1 = hotrId end
 
 	s2 = nil
 	if IsUsableSpell(sotrId) then

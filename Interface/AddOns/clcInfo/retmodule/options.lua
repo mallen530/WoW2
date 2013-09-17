@@ -49,7 +49,7 @@ function xmod.BuildOptions()
 										get = Get, set = Set,
 									},
 									infoCMD = {
-										order = 3, type = "description", name = "Sample command line usage: /clcinfo retprio inq tv5 how exo cs j tv3",
+										order = 3, type = "description", name = "Sample command line usage: /clcinfo retprio exo cs j (for clcinfo) /clcretlp exo cs j (for clcret)",
 									},
 								},
 							},

@@ -8,7 +8,7 @@ StaticPopupDialogs["REFORGE_TAB_PLEASE_OPEN"] = {
 }
 
 -- initialize the ReforgesTab class
-ReforgesTab = inheritsFrom(Frame)
+AskMrRobot.ReforgesTab = AskMrRobot.inheritsFrom(AskMrRobot.Frame)
 
 --from LibReforge
 local SPI = 1
@@ -44,8 +44,8 @@ local StatToString = {
 }
 
 
-REFORGE_TABLE_BASE = 112
-REFORGE_TABLE = {
+local REFORGE_TABLE_BASE = 112
+local REFORGE_TABLE = {
   {1, 2}, {1, 3}, {1, 4}, {1, 5}, {1, 6}, {1, 7}, {1, 8},
   {2, 1}, {2, 3}, {2, 4}, {2, 5}, {2, 6}, {2, 7}, {2, 8},
   {3, 1}, {3, 2}, {3, 4}, {3, 5}, {3, 6}, {3, 7}, {3, 8},
@@ -58,12 +58,12 @@ REFORGE_TABLE = {
 
 --------------- returns the index into the REFORGE_TABLE or nil
 -- returns the reforge id or 0
-function GetReforgeIdForItem(item)
+local function GetReforgeIdForItem(item)
   local id = tonumber (item:match ("item:%d+:%d+:%d+:%d+:%d+:%d+:%-?%d+:%-?%d+:%d+:(%d+)"))
   return (id and id ~= 0 and id or 0)
 end
 
-function GetReforgeIdFromStats(fromStat, toStat)
+local function GetReforgeIdFromStats(fromStat, toStat)
 	if (toStat > fromStat) then
 		return REFORGE_TABLE_BASE + 7 * (fromStat - 1) + toStat - 1;
 	else
@@ -71,7 +71,7 @@ function GetReforgeIdFromStats(fromStat, toStat)
 	end
 end
 
-function GetReforgeString(fromId, toId)
+local function GetReforgeString(fromId, toId)
 	if toId == 0 then
 		return "Restore"
 	end
@@ -86,8 +86,8 @@ function GetReforgeString(fromId, toId)
 end
 
 
-function ReforgesTab:AddToReforgeQueue(itemSlot, reforgeId)
-	local item = GetInventoryItemLink("player", slotIds[itemSlot])
+function AskMrRobot.ReforgesTab:AddToReforgeQueue(itemSlot, reforgeId)
+	local item = GetInventoryItemLink("player", AskMrRobot.slotIds[itemSlot])
 	if item == nil then 
 		--print ('no item')
 		return 
@@ -105,10 +105,10 @@ function ReforgesTab:AddToReforgeQueue(itemSlot, reforgeId)
 	end
 end
 
-function ReforgesTab:new(parent)
+function AskMrRobot.ReforgesTab:new(parent)
 
-	local tab = Frame:new(nil, parent)
-	setmetatable(tab, { __index = ReforgesTab })
+	local tab = AskMrRobot.Frame:new(nil, parent)
+	setmetatable(tab, { __index = AskMrRobot.ReforgesTab })
 	tab:SetPoint("TOPLEFT")
 	tab:SetPoint("BOTTOMRIGHT")
 	tab:Hide()
@@ -117,7 +117,7 @@ function ReforgesTab:new(parent)
 	text:SetPoint("TOPLEFT", 0, -5)
 	text:SetText("Reforges")
 
-	tab.stamp = RobotStamp:new(nil, tab)
+	tab.stamp = AskMrRobot.RobotStamp:new(nil, tab)
 	tab.stamp:Hide()
 	tab.stamp.smallText:SetText("Your reforges are 100% optimal!")
 	tab.stamp:SetPoint("TOPLEFT", text, "BOTTOMLEFT", 2, -15)
@@ -158,7 +158,7 @@ function ReforgesTab:new(parent)
 	tab.slots = {}
 	tab.optimized = {}
 
-	for i = 1, #slotNames do
+	for i = 1, #AskMrRobot.slotNames do
 		tab.slots[i] = tab:CreateFontString(nil, "ARTWORK", "GameFontWhite")
 		tab.slots[i]:SetPoint("TOPLEFT", tab.slotHeader, "TOPLEFT", 0, -20 * i)
 		tab.slots[i]:Hide()
@@ -187,31 +187,31 @@ function ReforgesTab:new(parent)
 end
 
 
-function ReforgesTab:showBadReforges()
+function AskMrRobot.ReforgesTab:showBadReforges()
 	--print('show bad reforges')
 	self.reforgequeue = {}
 
-	local reforges = itemDiffs.reforges
+	local reforges = AskMrRobot.itemDiffs.reforges
 
 	local i = 1
 
 	local cost = 0
 
 	-- for all the bad items
-	for slotNum, badReforge in sortSlots(reforges) do
+	for slotNum, badReforge in AskMrRobot.sortSlots(reforges) do
 		--print('reforge on ' .. slotNum .. ' as ' .. badReforge.optimized)
 
 
 		self.optimized[i]:SetText(GetReforgeString(badReforge.current, badReforge.optimized))
 		self.optimized[i]:Show()
 
-		--print(_G[strupper(slotNames[slotNum])])
-		self.slots[i]:SetText(_G[strupper(slotNames[slotNum])])
+		--print(_G[strupper(AskMrRobot.slotNames[slotNum])])
+		self.slots[i]:SetText(_G[strupper(AskMrRobot.slotNames[slotNum])])
 		self.slots[i]:Show()
 
 		-- Restore is free, so only add cost for non-restore reforges
 		if badReforge.optimized > 0 then
-			local slotId = slotIds[slotNum]
+			local slotId = AskMrRobot.slotIds[slotNum]
 			local itemLink = GetInventoryItemLink("player", slotId)
 			cost = cost + (itemLink and select (11, GetItemInfo(itemLink)) or 0)
 		end
@@ -249,7 +249,7 @@ function ReforgesTab:showBadReforges()
 	end		
 end
 
-function ReforgesTab:HasPendingOperation()
+function AskMrRobot.ReforgesTab:HasPendingOperation()
 	if self.pendingItemSlot then
 		--print('pending item slot')
 		return true
@@ -263,11 +263,11 @@ function ReforgesTab:HasPendingOperation()
 	return false
 end
 
-function ReforgesTab:CheckReforge()
+function AskMrRobot.ReforgesTab:CheckReforge()
 
 	--print('Checking reforge')
 
-	if #self.reforgequeue == 0 or self.reforgequeue == {} or self.reforgequeue == nil then
+	if self.reforgequeue == nil or #self.reforgequeue == 0 or self.reforgequeue == {} then
 		return
 	end
 
@@ -298,15 +298,15 @@ function ReforgesTab:CheckReforge()
 			else
 				--try again
 				ReforgeItem(self.pendingReforge)
-				amr__wait(0.250, ReforgesTab.CheckReforge, self)
+				AskMrRobot.wait(0.250, AskMrRobot.ReforgesTab.CheckReforge, self)
 			end
 			return
 		end
 
 		local itemSlot = v[1]
-		itemSlot = slotIds[itemSlot]
+		itemSlot = AskMrRobot.slotIds[itemSlot]
 
-		local item = GetInventoryItemLink("player", slotIds[itemSlot])
+		local item = GetInventoryItemLink("player", AskMrRobot.slotIds[itemSlot])
 
 		local reforgeId = GetReforgeIdForItem(item)
 
@@ -323,8 +323,8 @@ function ReforgesTab:CheckReforge()
 
 end
 
-function ReforgesTab:PutNextItemInForge()
-	if (#self.reforgequeue == 0 or self.reforgequeue == {} or self.reforgequeue == nil) then
+function AskMrRobot.ReforgesTab:PutNextItemInForge()
+	if (self.reforgequeue == nil or #self.reforgequeue == 0 or self.reforgequeue == {}) then
 		return
 	end
 
@@ -335,7 +335,7 @@ function ReforgesTab:PutNextItemInForge()
 	for k, v in pairs(self.reforgequeue) do
 		--Pick up the item and place it in the reforge window
 		local itemSlot = v[1]
-		itemSlot = slotIds[itemSlot]
+		itemSlot = AskMrRobot.slotIds[itemSlot]
 		--print("slot " .. itemSlot)
 
 		local item = GetInventoryItemLink("player", itemSlot)
@@ -357,8 +357,8 @@ function ReforgesTab:PutNextItemInForge()
  	end
 end
 
-function ReforgesTab:ReforgeItem()
-	if #self.reforgequeue == 0 or self.reforgequeue == {} or self.reforgequeue == nil then
+function AskMrRobot.ReforgesTab:ReforgeItem()
+	if self.reforgequeue == nil or #self.reforgequeue == 0 or self.reforgequeue == {} then
 		return
 	end
 
@@ -413,14 +413,14 @@ function ReforgesTab:ReforgeItem()
 			end
 			self.pendingReforge = reforgeID
 			ReforgeItem(reforgeID)
-			amr__wait(0.250, ReforgesTab.CheckReforge, self)
+			AskMrRobot.wait(0.250, AskMrRobot.ReforgesTab.CheckReforge, self)
 		end
 		--self:RetryReforge()
 		return
 	end
 end
 
-function ReforgesTab:OnReforge(event)
+function AskMrRobot.ReforgesTab:OnReforge(event)
 	if not self.isReforgeOpen then
 		StaticPopup_Show("REFORGE_TAB_PLEASE_OPEN")
 		return
@@ -432,7 +432,7 @@ function ReforgesTab:OnReforge(event)
 	self:PutNextItemInForge()
 end
 
-function ReforgesTab:On_FORGE_MASTER_SET_ITEM()
+function AskMrRobot.ReforgesTab:On_FORGE_MASTER_SET_ITEM()
 	if self.pendingItemSlot then
 		--print('self.pendingItemSlot = ' .. self.pendingItemSlot)
 		--printtable(self)
@@ -445,7 +445,7 @@ function ReforgesTab:On_FORGE_MASTER_SET_ITEM()
 	end 
 end
 
-function ReforgesTab:On_FORGE_MASTER_ITEM_CHANGED()
+function AskMrRobot.ReforgesTab:On_FORGE_MASTER_ITEM_CHANGED()
 	if self.pendingReforge then
 	 	--print('processing pending reforge')
 	-- 	-- indicate the item is done
@@ -467,15 +467,15 @@ function ReforgesTab:On_FORGE_MASTER_ITEM_CHANGED()
 	end
 end
 
-function ReforgesTab:On_FORGE_MASTER_OPENED()
+function AskMrRobot.ReforgesTab:On_FORGE_MASTER_OPENED()
 	self.isReforgeOpen = true
 end
 
-function ReforgesTab:On_FORGE_MASTER_CLOSED()
+function AskMrRobot.ReforgesTab:On_FORGE_MASTER_CLOSED()
 	self.isReforgeOpen = false
 end
 
-function ReforgesTab:OnEvent(frame, event, ...)
+function AskMrRobot.ReforgesTab:OnEvent(frame, event, ...)
 	--print("EVENT " .. event)
 	local handler = self["On_" .. event]
 	if handler then

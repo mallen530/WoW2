@@ -9,9 +9,9 @@ clcInfoCharDB = {
 				["bars"] = {
 					["iconBottom"] = 0,
 					["barRight"] = 0,
-					["iconLeft"] = 0,
 					["t1HSize"] = 80,
-					["iconRight"] = 2,
+					["iconLeft"] = 0,
+					["t3Aliasing"] = true,
 					["t3HSize"] = 20,
 					["t2Color"] = {
 						1, -- [1]
@@ -20,33 +20,28 @@ clcInfoCharDB = {
 						1, -- [4]
 					},
 					["t1Font"] = "Arial Narrow",
-					["t3Aliasing"] = true,
-					["bdColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0, -- [4]
-					},
+					["iconRight"] = 2,
+					["t3Font"] = "Arial Narrow",
 					["iconAlign"] = "left",
-					["t1Outline"] = true,
 					["t3Center"] = 0,
-					["t2ThickOutline"] = false,
 					["barColor"] = {
 						0.43, -- [1]
 						0.5600000000000001, -- [2]
 						1, -- [3]
 						1, -- [4]
 					},
-					["t1Center"] = 0,
-					["iconTop"] = 0,
+					["t2ThickOutline"] = false,
 					["barBgColor"] = {
 						0.17, -- [1]
 						0.22, -- [2]
 						0.43, -- [3]
 						0.5, -- [4]
 					},
+					["iconBd"] = true,
+					["barBd"] = true,
+					["t1Outline"] = true,
 					["t3Outline"] = true,
-					["barBdBorder"] = "Blizzard Tooltip",
+					["t3Size"] = 70,
 					["iconPadding"] = 1,
 					["bdBorder"] = "Blizzard Tooltip",
 					["t1Size"] = 70,
@@ -61,17 +56,22 @@ clcInfoCharDB = {
 					},
 					["barPadding"] = 2,
 					["iconBdBg"] = "Blizzard Tooltip",
+					["iconBdColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0, -- [4]
+					},
+					["t2Font"] = "Arial Narrow",
+					["bdBg"] = "Blizzard Tooltip",
+					["barBgTexture"] = "Aluminium",
+					["barInset"] = 2,
 					["barBdBorderColor"] = {
 						1, -- [1]
 						1, -- [2]
 						1, -- [3]
 						1, -- [4]
 					},
-					["t2Font"] = "Arial Narrow",
-					["bdBg"] = "Blizzard Tooltip",
-					["barBgTexture"] = "Aluminium",
-					["bd"] = false,
-					["t3Right"] = 2,
 					["t1Left"] = 2,
 					["t2HSize"] = 80,
 					["iconEdgeSize"] = 8,
@@ -90,18 +90,13 @@ clcInfoCharDB = {
 						1, -- [4]
 					},
 					["t1ThickOutline"] = false,
-					["barInset"] = 2,
-					["inset"] = 0,
+					["bd"] = false,
+					["t3ThickOutline"] = false,
 					["t2Center"] = 0,
 					["advancedSkin"] = false,
 					["barLeft"] = 0,
-					["iconBdColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0, -- [4]
-					},
-					["t3ThickOutline"] = false,
+					["t3Right"] = 2,
+					["inset"] = 0,
 					["t2Size"] = 70,
 					["t2Outline"] = true,
 					["barTop"] = 0,
@@ -113,11 +108,16 @@ clcInfoCharDB = {
 					},
 					["t1Aliasing"] = true,
 					["barEdgeSize"] = 6,
+					["barBdBorder"] = "Blizzard Tooltip",
+					["iconTop"] = 0,
+					["t1Center"] = 0,
 					["barTexture"] = "Aluminium",
-					["barBd"] = true,
-					["iconBd"] = true,
-					["t3Size"] = 70,
-					["t3Font"] = "Arial Narrow",
+					["bdColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0, -- [4]
+					},
 					["iconInset"] = 0,
 				},
 				["micons"] = {
@@ -145,9 +145,9 @@ clcInfoCharDB = {
 				["mbars"] = {
 					["iconBottom"] = 0,
 					["barRight"] = 0,
-					["iconLeft"] = 0,
 					["t1HSize"] = 80,
-					["iconRight"] = 2,
+					["iconLeft"] = 0,
+					["t3Aliasing"] = true,
 					["t3HSize"] = 20,
 					["t2Color"] = {
 						1, -- [1]
@@ -156,33 +156,28 @@ clcInfoCharDB = {
 						1, -- [4]
 					},
 					["t1Font"] = "Arial Narrow",
-					["t3Aliasing"] = true,
-					["bdColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0, -- [4]
-					},
+					["iconRight"] = 2,
+					["t3Font"] = "Arial Narrow",
 					["iconAlign"] = "left",
-					["t1Outline"] = true,
 					["t3Center"] = 0,
-					["t2ThickOutline"] = false,
 					["barColor"] = {
 						0.43, -- [1]
 						0.5600000000000001, -- [2]
 						1, -- [3]
 						1, -- [4]
 					},
-					["t1Center"] = 0,
-					["iconTop"] = 0,
+					["t2ThickOutline"] = false,
 					["barBgColor"] = {
 						0.17, -- [1]
 						0.22, -- [2]
 						0.43, -- [3]
 						0.5, -- [4]
 					},
+					["iconBd"] = true,
+					["barBd"] = true,
+					["t1Outline"] = true,
 					["t3Outline"] = true,
-					["barBdBorder"] = "Blizzard Tooltip",
+					["t3Size"] = 70,
 					["iconPadding"] = 1,
 					["bdBorder"] = "Blizzard Tooltip",
 					["t1Size"] = 70,
@@ -197,17 +192,22 @@ clcInfoCharDB = {
 					},
 					["barPadding"] = 2,
 					["iconBdBg"] = "Blizzard Tooltip",
+					["iconBdColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0, -- [4]
+					},
+					["t2Font"] = "Arial Narrow",
+					["bdBg"] = "Blizzard Tooltip",
+					["barBgTexture"] = "Aluminium",
+					["barInset"] = 2,
 					["barBdBorderColor"] = {
 						1, -- [1]
 						1, -- [2]
 						1, -- [3]
 						1, -- [4]
 					},
-					["t2Font"] = "Arial Narrow",
-					["bdBg"] = "Blizzard Tooltip",
-					["barBgTexture"] = "Aluminium",
-					["bd"] = false,
-					["t3Right"] = 2,
 					["t1Left"] = 2,
 					["t2HSize"] = 80,
 					["iconEdgeSize"] = 8,
@@ -226,18 +226,13 @@ clcInfoCharDB = {
 						1, -- [4]
 					},
 					["t1ThickOutline"] = false,
-					["barInset"] = 2,
-					["inset"] = 0,
+					["bd"] = false,
+					["t3ThickOutline"] = false,
 					["t2Center"] = 0,
 					["advancedSkin"] = false,
 					["barLeft"] = 0,
-					["iconBdColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0, -- [4]
-					},
-					["t3ThickOutline"] = false,
+					["t3Right"] = 2,
+					["inset"] = 0,
 					["t2Size"] = 70,
 					["t2Outline"] = true,
 					["barTop"] = 0,
@@ -249,11 +244,16 @@ clcInfoCharDB = {
 					},
 					["t1Aliasing"] = true,
 					["barEdgeSize"] = 6,
+					["barBdBorder"] = "Blizzard Tooltip",
+					["iconTop"] = 0,
+					["t1Center"] = 0,
 					["barTexture"] = "Aluminium",
-					["barBd"] = true,
-					["iconBd"] = true,
-					["t3Size"] = 70,
-					["t3Font"] = "Arial Narrow",
+					["bdColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0, -- [4]
+					},
 					["iconInset"] = 0,
 				},
 				["icons"] = {

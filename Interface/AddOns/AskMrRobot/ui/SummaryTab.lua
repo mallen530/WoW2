@@ -1,9 +1,9 @@
-SummaryTab = inheritsFrom(Frame)
+AskMrRobot.SummaryTab = AskMrRobot.inheritsFrom(AskMrRobot.Frame)
 
-function SummaryTab:new(parent)
+function AskMrRobot.SummaryTab:new(parent)
 
-	local tab = Frame:new(nil, parent)
-	setmetatable(tab, { __index = SummaryTab })
+	local tab = AskMrRobot.Frame:new(nil, parent)
+	setmetatable(tab, { __index = AskMrRobot.SummaryTab })
 	tab:SetPoint("TOPLEFT")
 	tab:SetPoint("BOTTOMRIGHT")
 	tab:Hide()
@@ -80,7 +80,7 @@ function SummaryTab:new(parent)
 	itemText:Hide()
 	tab.upgradeItemHeader = itemText
 
-	for i = 1, #slotNames do
+	for i = 1, #AskMrRobot.slotNames do
 		local itemText = tab:CreateFontString("AmrBadItemSlot" .. i, "ARTWORK", "GameFontWhite")
 		itemText:SetPoint("TOPLEFT", "AmrBadItemSlot" .. (i-1), "BOTTOMLEFT", 0, -5)
 		itemText:SetPoint("TOPRIGHT", "AmrBadItemSlot" .. (i-1), "BOTTOMRIGHT", 0, -5)
@@ -88,7 +88,7 @@ function SummaryTab:new(parent)
 		itemText:Hide()
 		tinsert(tab.badItemSlots, itemText)
 
-		itemText = ItemLinkText:new(nil, tab)
+		itemText = AskMrRobot.ItemLinkText:new(nil, tab)
 		itemText:SetPoint("LEFT", "AmrBadItemName0", "TOPLEFT", 0, 0)
 		itemText:SetPoint("RIGHT", "AmrBadItemName0", "BOTTOMRIGHT", 0, 0)
 		itemText:SetPoint("TOP", "AmrBadItemSlot" .. i, 0, 0)
@@ -99,7 +99,7 @@ function SummaryTab:new(parent)
 
 	tab.upgradeItemSlots = {}
 	tab.upgradeItemNames = {}
-	for i = 1, #slotNames do
+	for i = 1, #AskMrRobot.slotNames do
 		local itemText = tab:CreateFontString(nil, "ARTWORK", "GameFontWhite")
 		if i == 1 then
 			itemText:SetPoint("TOPLEFT", tab.upgradeSlotHeader, "BOTTOMLEFT", 0, -5)
@@ -112,7 +112,7 @@ function SummaryTab:new(parent)
 		itemText:Hide()
 		tinsert(tab.upgradeItemSlots, itemText)
 
-		itemText = ItemLinkText:new(nil, tab)
+		itemText = AskMrRobot.ItemLinkText:new(nil, tab)
 		itemText:SetFormat("|cff00ff00Upgrade|r %s")
 		itemText:SetPoint("LEFT", tab.upgradeItemHeader, "LEFT", 0, 0)
 		itemText:SetPoint("RIGHT", tab.upgradeItemHeader, "RIGHT", 0, 0)
@@ -135,7 +135,7 @@ function SummaryTab:new(parent)
 	tab.specIcon:SetPoint("TOPLEFT", tab.importInfo, "BOTTOMLEFT", 0, -10)
 	tab.specIcon:Hide()
 
-	tab.stamp = RobotStamp:new(nil, tab)
+	tab.stamp = AskMrRobot.RobotStamp:new(nil, tab)
 	tab.stamp:Hide()
 	tab.stamp.smallText:SetText("Congratulations! You are 100% optimal")
 	tab.stamp:SetPoint("TOPLEFT", tab.specIcon, "BOTTOMLEFT", 2, -25)
@@ -177,7 +177,7 @@ function SummaryTab:new(parent)
 	return tab
 end
 
-function SummaryTab:getSpecIcon(specId)
+function AskMrRobot.SummaryTab:getSpecIcon(specId)
 	for i = 1, GetNumSpecializations() do
 		local id, _, _, icon = GetSpecializationInfo(i)
 		if id == specId then
@@ -187,15 +187,15 @@ function SummaryTab:getSpecIcon(specId)
 	return nil
 end
 
-function SummaryTab:showBadItems()
-	local badItems = itemDiffs.items
+function AskMrRobot.SummaryTab:showBadItems()
+	local badItems = AskMrRobot.itemDiffs.items
 
 	local i = 2
 
 	-- for all the bad items
-	for slotNum, badItem in sortSlots(badItems) do
+	for slotNum, badItem in AskMrRobot.sortSlots(badItems) do
 		if not badItem.needsUpgrade then
-			self.badItemSlots[i]:SetText(_G[strupper(slotNames[slotNum])])
+			self.badItemSlots[i]:SetText(_G[strupper(AskMrRobot.slotNames[slotNum])])
 			self.badItemSlots[i]:Show()
 			if badItem.optimized then
 				self.badItemNames[i]:SetItemId(badItem.optimized.itemId, badItem.optimized.upgradeId, badItem.optimized.suffixId)
@@ -209,9 +209,9 @@ function SummaryTab:showBadItems()
 
     -- for all the upgrade items
     local j = 1
-	for slotNum, badItem in sortSlots(badItems) do
+	for slotNum, badItem in AskMrRobot.sortSlots(badItems) do
 		if badItem.needsUpgrade then
-			self.upgradeItemSlots[j]:SetText(_G[strupper(slotNames[slotNum])])
+			self.upgradeItemSlots[j]:SetText(_G[strupper(AskMrRobot.slotNames[slotNum])])
 			self.upgradeItemSlots[j]:Show()
 			if badItem.optimized then
 				self.upgradeItemNames[j]:SetItemId(badItem.optimized.itemId, badItem.optimized.upgradeId, badItem.optimized.suffixId)
@@ -238,25 +238,23 @@ function SummaryTab:showBadItems()
 		self.specText:Show()
 
 		local gemCount = 0
-		for slotNum, badGems in pairs(itemDiffs.gems) do
-			for k = 1, #badGems.badGems do
-				if badGems.badGems[k] then
-					gemCount = gemCount + 1
-				end
+		for slotNum, badGems in pairs(AskMrRobot.itemDiffs.gems) do
+			for k, v in pairs(badGems.badGems) do
+				gemCount = gemCount + 1
 			end
 		end
 
 		self.gemCount:SetFormattedText("%d \1244gem:gems;", gemCount)
 
 		local enchantCount = 0
-		for slotNum, badEnchant in pairs(itemDiffs.enchants) do
+		for slotNum, badEnchant in pairs(AskMrRobot.itemDiffs.enchants) do
 			enchantCount = enchantCount + 1
 		end
 
 		self.enchantCount:SetFormattedText("%d \1244enchant:enchants;", enchantCount)
 
 		local reforgeCount = 0
-		for slotNum, badReforge in pairs(itemDiffs.reforges) do
+		for slotNum, badReforge in pairs(AskMrRobot.itemDiffs.reforges) do
 			reforgeCount = reforgeCount + 1
 		end
 
@@ -398,7 +396,7 @@ function SummaryTab:showBadItems()
 end
 
 
-function SummaryTab:showImportError(text, text2)
+function AskMrRobot.SummaryTab:showImportError(text, text2)
 	self.stamp:Hide()
 	self.gemCount:Hide()
 	self.instructions:Hide()
@@ -422,17 +420,17 @@ function SummaryTab:showImportError(text, text2)
 		self.errorText2:Hide()
 		self.importInfo:Show()
 	end
-	for i = 1, #slotNames + 1 do
+	for i = 1, #AskMrRobot.slotNames + 1 do
 		self.badItemSlots[i]:Hide()
 		self.badItemNames[i]:Hide()
 	end
-	for i = 1, #slotNames do
+	for i = 1, #AskMrRobot.slotNames do
 		self.upgradeItemSlots[i]:Hide()
 		self.upgradeItemNames[i]:Hide()
 	end	
 end
 
-function SummaryTab:showImportWarning (text, text2)
+function AskMrRobot.SummaryTab:showImportWarning (text, text2)
 	self.stamp:Hide()
 	self.hasImportError = false
 	self.gemCount:Hide()

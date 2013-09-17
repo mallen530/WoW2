@@ -1,28 +1,28 @@
-frame = CreateFrame("FRAME"); -- Need a frame to respond to events
-frame:RegisterEvent("ADDON_LOADED"); -- Fired when saved variables are loaded
-frame:RegisterEvent("PLAYER_LOGOUT"); -- Fired when about to log out
-frame:RegisterEvent("ITEM_PUSH");
-frame:RegisterEvent("DELETE_ITEM_CONFIRM");
-frame:RegisterEvent("UNIT_INVENTORY_CHANGED");
-frame:RegisterEvent("BANKFRAME_OPENED");
-frame:RegisterEvent("BANKFRAME_CLOSED");
-frame:RegisterEvent("PLAYERBANKSLOTS_CHANGED");
-frame:RegisterEvent("CHARACTER_POINTS_CHANGED");
-frame:RegisterEvent("CONFIRM_TALENT_WIPE");
-frame:RegisterEvent("PLAYER_TALENT_UPDATE");
-frame:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED");
-frame:RegisterEvent("PLAYER_LEVEL_UP");
---frame:RegisterEvent("GET_ITEM_INFO_RECEIVED")
-frame:RegisterEvent("PLAYER_SPECIALIZATION_CHANGED")
-frame:RegisterEvent("SOCKET_INFO_UPDATE")
-frame:RegisterEvent("SOCKET_INFO_CLOSE")
-frame:RegisterEvent("BAG_UPDATE")
+AskMrRobot.eventListener = CreateFrame("FRAME"); -- Need a frame to respond to events
+AskMrRobot.eventListener:RegisterEvent("ADDON_LOADED"); -- Fired when saved variables are loaded
+AskMrRobot.eventListener:RegisterEvent("ITEM_PUSH");
+AskMrRobot.eventListener:RegisterEvent("DELETE_ITEM_CONFIRM");
+AskMrRobot.eventListener:RegisterEvent("UNIT_INVENTORY_CHANGED");
+AskMrRobot.eventListener:RegisterEvent("BANKFRAME_OPENED");
+AskMrRobot.eventListener:RegisterEvent("BANKFRAME_CLOSED");
+AskMrRobot.eventListener:RegisterEvent("PLAYERBANKSLOTS_CHANGED");
+AskMrRobot.eventListener:RegisterEvent("CHARACTER_POINTS_CHANGED");
+AskMrRobot.eventListener:RegisterEvent("CONFIRM_TALENT_WIPE");
+AskMrRobot.eventListener:RegisterEvent("PLAYER_TALENT_UPDATE");
+AskMrRobot.eventListener:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED");
+AskMrRobot.eventListener:RegisterEvent("PLAYER_LOGOUT"); -- Fired when about to log out
+AskMrRobot.eventListener:RegisterEvent("PLAYER_LEVEL_UP");
+--AskMrRobot.eventListener:RegisterEvent("GET_ITEM_INFO_RECEIVED")
+AskMrRobot.eventListener:RegisterEvent("PLAYER_SPECIALIZATION_CHANGED")
+AskMrRobot.eventListener:RegisterEvent("SOCKET_INFO_UPDATE")
+AskMrRobot.eventListener:RegisterEvent("SOCKET_INFO_CLOSE")
+AskMrRobot.eventListener:RegisterEvent("BAG_UPDATE")
 
 local amrLDB
 local icon
 local reforgequeue
 local reforgeFrame = nil
-itemDiffs = {
+AskMrRobot.itemDiffs = {
 	items = {},    -- slotNum -> nil (no change) or current <item id>, optimized <item id>
 	enchants = {}, -- slotNum -> nil (no change) or current <enchant id>, optimized <enchant id>
 	gems = {},     -- slotNum -> nil (no change) or ?
@@ -71,7 +71,7 @@ local upgradeTable = {
   [493] =  2 -- ? -> 0
 }
 
-function frame:OnEvent(event, arg1)
+function AskMrRobot.eventListener:OnEvent(event, arg1)
 	if event == "ADDON_LOADED" and arg1 == "AskMrRobot" then
 		print("Loaded Ask Mr. Robot");  
   
@@ -83,7 +83,7 @@ function frame:OnEvent(event, arg1)
 		if not AmrBankItems then AmrBankItems = {} end
 		if not AmrCurrencies then AmrCurrencies = {} end
 		if not AmrSpecializations then AmrSpecializations = {} end
-		if not AmrHideMapIcon then AmrHideMapIcon = false end
+		if not AmrOptions then AmrOptions = {} end
 		if not AmrGlyphs then AmrGlyphs = {} end
 		if not AmrTalents then AmrTalents = {} end
 		if not AmrBankItemsAndCounts then AmrBankItemsAndCounts = {} end
@@ -104,50 +104,55 @@ function frame:OnEvent(event, arg1)
 			text = "Ask Mr. Robot",
 			icon = "Interface\\AddOns\\AskMrRobot\\Media\\icon",
 			OnClick = function()
-				AskMrRobot_ReforgeFrame:Toggle()
+
+				if IsModifiedClick("CHATLINK") then
+					AskMrRobot.SaveAll()
+				else
+					AskMrRobot_ReforgeFrame:Toggle()
+				end
 			end,
 			OnTooltipShow = function(tt)
 				tt:AddLine("Ask Mr. Robot", 1, 1, 1);
 				tt:AddLine(" ");
-				tt:AddLine("Click to launch the Ask Mr. Robot Dialog")
+				tt:AddLine("Left Click to open the Ask Mr. Robot window.\n\nShift + Left Click to save your bag and bank data.")
 			end	
 		});
 
 
-		AmrUpdateMinimap()
+		AskMrRobot.AmrUpdateMinimap()
 
-		AskMrRobot_ReforgeFrame = AmrUI:new()
+		AskMrRobot_ReforgeFrame = AskMrRobot.AmrUI:new()
 
 		-- remember the import settings between sessions
 		AskMrRobot_ReforgeFrame.importTab.scrollFrame.EditBox:SetText(AmrImportString or "")
 		AskMrRobot_ReforgeFrame:OnUpdate()
 		AskMrRobot_ReforgeFrame.summaryTab.importDate = AmrImportDate or ""
 		AskMrRobot_ReforgeFrame.buttons[2]:Click()
-		AskMrRobot_ReforgeFrame.exportTab.button:SetScript("OnClick", SaveAll)
-		--ScanBags();
-		--ScanEquiped();
-		--GetCurrencies();
-		--GetGold();
-		--GetAmrSpecializations();
-		--GetAmrProfessions();
-		--GetRace();
-		--GetLevel();
+		AskMrRobot_ReforgeFrame.exportTab.button:SetScript("OnClick", AskMrRobot.SaveAll)
+		--AskMrRobot.SaveBags();
+		--AskMrRobot.SaveEquiped();
+		--AskMrRobot.GetCurrencies();
+		--AskMrRobot.GetGold();
+		--AskMrRobot.GetAmrSpecializations();
+		--AskMrRobot.GetAmrProfessions();
+		--AskMrRobot.GetRace();
+		--AskMrRobot.GetLevel();
 	elseif event == "ITEM_PUSH" or event == "DELETE_ITEM_CONFIRM" or event == "UNIT_INVENTORY_CHANGED" or event == "SOCKET_INFO_UPDATE" or event == "SOCKET_INFO_CLOSE" or event == "PLAYER_SPECIALIZATION_CHANGED" or event == "BAG_UPDATE" then
 		if AskMrRobot_ReforgeFrame then
 			AskMrRobot_ReforgeFrame:OnUpdate()
 		end
-		--ScanBags();
-		--ScanEquiped();
-		--GetCurrencies();
-		--GetGold();
+		--AskMrRobot.SaveBags();
+		--AskMrRobot.SaveEquiped();
+		--AskMrRonot.GetCurrencies();
+		--AskMrRobot.GetGold();
 	elseif event == "BANKFRAME_OPENED" or event == "PLAYERBANKSLOTS_CHANGED" then 
 		--print("Scanning Bank: " .. event);
-		ScanBank();
+		AskMrRobot.ScanBank();
 	elseif event == "BANKFRAME_CLOSED" then
 		--print("Stop Scanning Bank");
 		--inBank = false;
 	elseif event == "CHARACTER_POINTS_CHANGED" or event == "CONFIRM_TALENT_WIPE" or event == "PLAYER_TALENT_UPDATE" or event == "ACTIVE_TALENT_GROUP_CHANGED" then
-		--GetAmrSpecializations();
+		--AskMrRobot.GetAmrSpecializations();
 		if AskMrRobot_ReforgeFrame then
 			AskMrRobot_ReforgeFrame:OnUpdate()
 		end
@@ -159,36 +164,51 @@ function frame:OnEvent(event, arg1)
  
 end
 
-frame:SetScript("OnEvent", frame.OnEvent);
+AskMrRobot.eventListener:SetScript("OnEvent", AskMrRobot.eventListener.OnEvent);
 
 
 SLASH_AMR1 = "/amr";
 function SlashCmdList.AMR(msg)
-	SaveAll();
+
+	if msg == 'toggle' then
+		AskMrRobot_ReforgeFrame:Toggle()
+	elseif msg == 'show' then
+		AskMrRobot_ReforgeFrame:Show()
+	elseif msg == 'hide' then
+		AskMrRobot_ReforgeFrame:Hide()
+	elseif msg == 'export' then
+		AskMrRobot.SaveAll();
+	else
+		print('Available AskMrRobot slash commands:\n' ..
+			'  /amr show   -- show the main window\n' ..
+			'  /amr hide   -- hide the main window\n' ..
+			'  /amr toggle -- toggle the main window\n' ..
+			'  /amr export -- export bag and bank data')
+	end
 end
 
-function SaveAll()
-	ScanBank()
-	ScanBags()
-	ScanEquiped()
-	GetCurrencies()
-	GetGold()
-	GetAmrSpecializations()
-	GetAmrProfessions()
-	GetRace()
-	GetLevel()
-	GetAmrGlyphs()
-	GetAmrTalents()
+function AskMrRobot.SaveAll()
+	AskMrRobot.ScanBank()
+	AskMrRobot.SaveBags()
+	AskMrRobot.SaveEquiped()
+	AskMrRobot.GetCurrencies()
+	AskMrRobot.GetGold()
+	AskMrRobot.GetAmrSpecializations()
+	AskMrRobot.GetAmrProfessions()
+	AskMrRobot.GetRace()
+	AskMrRobot.GetLevel()
+	AskMrRobot.GetAmrGlyphs()
+	AskMrRobot.GetAmrTalents()
 	ReloadUI()
 end
 
-function InitIcon()
+local function InitIcon()
 	icon = LibStub("LibDBIcon-1.0");
 	icon:Register("AskMrRobot", amrLDB, AmrIconInfo);	
 end
 
-function AmrUpdateMinimap()
-	if (AmrHideMapIcon) then
+function AskMrRobot.AmrUpdateMinimap()
+	if (AmrOptions.hideMapIcon) then
 		if (icon) then
 			icon:Hide("AskMrRobot");
 		end
@@ -207,7 +227,7 @@ end
 local bagItems = {}
 local bagItemsWithCount = {}
 
-function ScanBag(bagId) 	
+function AskMrRobot.ScanBag(bagId) 	
 	local numSlots = GetContainerNumSlots(bagId);
 	for slotId = 1, numSlots do
 		local _, itemCount, _, _, _, _, itemLink = GetContainerItemInfo(bagId, slotId);
@@ -221,33 +241,41 @@ end
 local BACKPACK_CONTAINER = 0;
 local BANK_CONTAINER = -1;
 
-function ScanEquiped()
+function AskMrRobot.ScanEquiped()
 	local equipedItems = {};
-	for slotNum = 1, #slotIds do
-		local slotId = slotIds[slotNum];
+	for slotNum = 1, #AskMrRobot.slotIds do
+		local slotId = AskMrRobot.slotIds[slotNum];
 		local itemLink = GetInventoryItemLink("player", slotId);
 		if (itemLink ~= nil) then
 			equipedItems[slotId .. ""] = itemLink;
 		end
 	end
-	AmrEquipedItems = equipedItems;
+	return equipedItems
 end
 
-function ScanBags()
+function AskMrRobot.SaveEquiped()
+	AmrEquipedItems = AskMrRobot.ScanEquiped();
+end
+
+function AskMrRobot.ScanBags()
 	bagItems = {}
 	bagItemsWithCount = {}
 
-	ScanBag(BACKPACK_CONTAINER); -- backpack
+	AskMrRobot.ScanBag(BACKPACK_CONTAINER); -- backpack
 	
 	for bagId = 1, NUM_BAG_SLOTS do
-		ScanBag(bagId);
+		AskMrRobot.ScanBag(bagId);
 	end
 	
-	AmrBagItems = bagItems
-	AmrBagItemsWithCount = bagItemsWithCount
+
+	return bagItems, bagItemsWithCount
 end
 
-function GetGold()
+function AskMrRobot.SaveBags()
+	AmrBagItems, _ = AskMrRobot.ScanBags()
+end
+
+function AskMrRobot.GetGold()
 	AmrGold = GetMoney();
 end
 
@@ -257,7 +285,7 @@ local bankItems = {};
 local bankItemsAndCount = {};
 AmrBankItemsAndCounts = {};
 
-function ScanBankBag(bagId)
+local function ScanBankBag(bagId)
 	local numSlots = GetContainerNumSlots(bagId);
 	for slotId = 1, numSlots do
 		local _, itemCount, _, _, _, _, itemLink = GetContainerItemInfo(bagId, slotId);
@@ -270,7 +298,7 @@ function ScanBankBag(bagId)
 	end
 end
 		
-function ScanBank()
+function AskMrRobot.ScanBank()
 		
 	bankItems = {};
 	bankItemsAndCount = {}
@@ -290,12 +318,12 @@ function ScanBank()
 	end
 end
 
-function GetCurrencyAmount(index)
+local function GetCurrencyAmount(index)
 	local localized_label, amount, icon_file_name = GetCurrencyInfo(index);
 	return amount;
 end
 
-function GetCurrencies()
+function AskMrRobot.GetCurrencies()
 	local currencies = {};
 	local currencyList = {61, 81, 241, 361, 384, 394, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 416, 515, 614, 615, 676, 679};
 
@@ -308,23 +336,12 @@ function GetCurrencies()
 	AmrCurrencies = currencies;
 end
 
-function AmrGetNumSpecs()
-	local numSpecs = 0
-	for group = 1, 2 do
-		local spec = GetSpecialization(false, false, group)
-		if spec ~= nil then
-			numSpecs = numSpecs + 1
-		end
-	end
-	return numSpecs
-end
-
 local function GetAmrSpecialization(specGroup)
 	local spec = GetSpecialization(false, false, group);
 	return spec and GetSpecializationInfo(spec);
 end
 
-function GetAmrSpecializations()
+function AskMrRobot.GetAmrSpecializations()
 
 	AmrSpecializations = {};
 
@@ -381,7 +398,7 @@ function GetAmrSpecializations()
 -- 73 - Protection
 end
 
-function GetAmrProfessions()
+function AskMrRobot.GetAmrProfessions()
 
 	local profMap = {
 		[794] = "Archaeology",
@@ -441,13 +458,13 @@ function GetAmrProfessions()
 	end
 end
 
-function GetRace()
+function AskMrRobot.GetRace()
 	local race, raceEn = UnitRace("player");
 	AmrRace = raceEn;
 	AmrFaction = UnitFactionGroup("player");
 end
 
-function GetLevel()
+function AskMrRobot.GetLevel()
 	AmrLevel = UnitLevel("player");
 end
 
@@ -498,7 +515,7 @@ local function GetAmrTalentsForSpec(spec)
 	return str
 end
 
-function GetAmrTalents()
+function AskMrRobot.GetAmrTalents()
 	AmrTalents = {}
     for spec = 1, GetNumSpecGroups() do
     	AmrTalents[spec] = GetAmrTalentsForSpec(spec);
@@ -516,7 +533,7 @@ local function GetAmrGlyphsForSpec(spec)
 	return glyphs;
 end
 
-function GetAmrGlyphs()
+function AskMrRobot.GetAmrGlyphs()
 	AmrGlyphs = {}
 	for spec = 1, GetNumSpecGroups() do
 		AmrGlyphs[spec] = GetAmrGlyphsForSpec(spec)
@@ -587,8 +604,7 @@ local function parseAmrItem(input)
 		upgradeId = tonumber(upgradeId),
 		gems = gems,
 		enchantId = tonumber(enchantId),
-		reforgeId = tonumber(reforgeId),
-		expectsSocketBonus = AmrExpectsSocketBonus(gems)
+		reforgeId = tonumber(reforgeId)
 	}
 	return slot, item
 end
@@ -605,13 +621,13 @@ local function parseItemLink(input)
 	return item
 end
 
-function parseAmr(input)
+function AskMrRobot.parseAmr(input)
 	local parsedInput = {}
 	parsedInput.items = {}
 	for k, v in string.gmatch(input, "([^=;]+)=([^;]*)") do
 		if (k == 'item') then
 			local slot, item = parseAmrItem(v);
-			parsedInput.items[slotIdToSlotNum[tonumber(slot) + 1]] = item;
+			parsedInput.items[AskMrRobot.slotIdToSlotNum[tonumber(slot) + 1]] = item;
 		 elseif (k == 'glyphs') then
 		 	parsedInput.glyphs = parseGlyphs(v)
 	 	 elseif (k == 'professions') then
@@ -623,24 +639,24 @@ function parseAmr(input)
 	return parsedInput
 end
 
-function validateRealm(realm)
+function AskMrRobot.validateRealm(realm)
 	return realm == GetRealmName();
 end
 
-function validateCharacterName(characterName)
+function AskMrRobot.validateCharacterName(characterName)
 	return UnitName("player") == characterName
 end
 
-function validateRace(race)
+function AskMrRobot.validateRace(race)
 	local _, raceEn = UnitRace("player")
 	return raceEn == race or (raceEn == "Scourge" and race == "Undead")
 end
 
-function validateFaction(faction)
+function AskMrRobot.validateFaction(faction)
 	return faction == UnitFactionGroup("player")
 end
 
-function validateSpec(spec)
+function AskMrRobot.validateSpec(spec)
 	if spec == 'nil' then 
 		spec = nil
 	end
@@ -648,14 +664,14 @@ function validateSpec(spec)
 	return (not currentSpec and not spec) or tostring(currentSpec) == spec
 end
 
-function validateTalents(talents)
+function AskMrRobot.validateTalents(talents)
 	if talents == nil then
 		talents = ''
 	end
 	return talents == GetAmrTalentsForSpec(GetActiveSpecGroup())
 end
 
-function validateGlyphs(glyphs)
+function AskMrRobot.validateGlyphs(glyphs)
 	if (glyphs == nil) then
 		glyphs = {};
 	end
@@ -711,7 +727,7 @@ local function getPrimaryProfessions()
 	return profs;
 end
 
-function validateProfessions(professions)
+function AskMrRobot.validateProfessions(professions)
 	local currentProfessions = getPrimaryProfessions()
 	if #currentProfessions ~= #professions then
 		return false
@@ -724,11 +740,11 @@ function validateProfessions(professions)
 	return true
 end
 
-function populateItemDiffs(amrItem, itemLink, slotNum)
-	itemDiffs.items[slotNum] = nil
-	itemDiffs.gems[slotNum] = nil
-	itemDiffs.enchants[slotNum] = nil
-	itemDiffs.reforges[slotNum] = nil
+function AskMrRobot.populateItemDiffs(amrItem, itemLink, slotNum)
+	AskMrRobot.itemDiffs.items[slotNum] = nil
+	AskMrRobot.itemDiffs.gems[slotNum] = nil
+	AskMrRobot.itemDiffs.enchants[slotNum] = nil
+	AskMrRobot.itemDiffs.reforges[slotNum] = nil
 
 	local needsUpgrade = false
 	local aSuffix = 0
@@ -740,7 +756,7 @@ function populateItemDiffs(amrItem, itemLink, slotNum)
 
 	if itemLink == nil then
 		if amrItem ~= nil then
-			itemDiffs.items[slotNum] = {
+			AskMrRobot.itemDiffs.items[slotNum] = {
 				current = nil,
 				optimized = { itemId = amrItem.itemId, upgradeId = amrItem.upgradeId, suffixId = aSuffix },
 				needsUpgrade = false
@@ -770,28 +786,28 @@ function populateItemDiffs(amrItem, itemLink, slotNum)
 	end
 
 	if isItemBad then
-		itemDiffs.items[slotNum] = {
+		AskMrRobot.itemDiffs.items[slotNum] = {
 			current = item.itemId,
-			optimized = { itemId = amrItem.itemId, upgradeId = amrItem.upgradeId, suffixId = aSuffix },			
+			optimized = { itemId = amrItem and amrItem.itemId or 0, upgradeId = amrItem and amrItem.upgradeId or 0, suffixId = aSuffix },			
 			needsUpgrade = needsUpgrade
 		}
 		return
 	end
 
-	local badGemCount, gemInfo = MatchesGems(itemLink, item.gemEnchantIds, amrItem.gems)
+	local badGemCount, gemInfo = AskMrRobot.MatchesGems(itemLink, item.gemEnchantIds, amrItem.gems)
 	if badGemCount > 0 then
-		itemDiffs.gems[slotNum] = gemInfo
+		AskMrRobot.itemDiffs.gems[slotNum] = gemInfo
 	end
 
 	if item.enchantId ~= amrItem.enchantId then
-		itemDiffs.enchants[slotNum] = {
+		AskMrRobot.itemDiffs.enchants[slotNum] = {
 			current = item.enchantId,
 			optimized = amrItem.enchantId
 		}
 	end
 
 	if item.reforgeId ~= amrItem.reforgeId then
-		itemDiffs.reforges[slotNum] = {
+		AskMrRobot.itemDiffs.reforges[slotNum] = {
 			current = item.reforgeId,
 			optimized = amrItem.reforgeId
 		}

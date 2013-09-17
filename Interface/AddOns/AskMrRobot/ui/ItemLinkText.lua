@@ -1,13 +1,13 @@
-ItemLinkText = inheritsFrom(ItemTooltipFrame)
+AskMrRobot.ItemLinkText = AskMrRobot.inheritsFrom(AskMrRobot.ItemTooltipFrame)
 
-function ItemLinkText:new(name, parent)
-	local o = ItemTooltipFrame:new(name, parent)
+function AskMrRobot.ItemLinkText:new(name, parent)
+	local o = AskMrRobot.ItemTooltipFrame:new(name, parent)
 
 	-- use the ItemLinkText class
-	setmetatable(o, { __index = ItemLinkText })
+	setmetatable(o, { __index = AskMrRobot.ItemLinkText })
 
 	-- the item text
-	o.itemText = FontString:new(o, nil, "ARTWORK", "GameFontWhite")
+	o.itemText = AskMrRobot.FontString:new(o, nil, "ARTWORK", "GameFontWhite")
 	o.itemText:SetPoint("TOPLEFT")
 	o.itemText:SetPoint("BOTTOMRIGHT")
 	o.itemText:SetJustifyH("LEFT")
@@ -15,14 +15,14 @@ function ItemLinkText:new(name, parent)
 	return o
 end
 
-function ItemLinkText:SetFormat(formatText)
+function AskMrRobot.ItemLinkText:SetFormat(formatText)
 	self.formatText = formatText
 end
 
-function ItemLinkText:SetItemId(itemId, upgradeId, suffixId)
-	ItemTooltipFrame.SetItemLink(self, link)
+function AskMrRobot.ItemLinkText:SetItemId(itemId, upgradeId, suffixId)
+	AskMrRobot.ItemTooltipFrame.SetItemLink(self, link)
 	self.itemName = nil
-	if itemId then
+	if itemId > 0 then
 		local linkTemplate = "item:%d:0:0:0:0:0:%d:0:%d:0:%d"
 		local itemName, itemLink = GetItemInfo(linkTemplate:format(itemId, suffixId, UnitLevel("player"), upgradeId))
 		self:SetItemLink(itemLink)
@@ -36,7 +36,7 @@ function ItemLinkText:SetItemId(itemId, upgradeId, suffixId)
 		else
 			self.itemText:SetFormattedText("unknown (%d)", itemId)
 			self.itemText:SetTextColor(1,1,1)
-			RegisterItemInfoCallback(itemId, function(name, itemLink2)
+			AskMrRobot.RegisterItemInfoCallback(itemId, function(name, itemLink2)
 				if self.formatText then
 					self.itemText:SetFormattedText(self.formatText, itemLink2:gsub("%[", ""):gsub("%]", ""))
 				else
@@ -53,6 +53,6 @@ function ItemLinkText:SetItemId(itemId, upgradeId, suffixId)
 	end
 end
 
-function ItemLinkText:SetFontSize(fontSize)
+function AskMrRobot.ItemLinkText:SetFontSize(fontSize)
 	self.itemText:SetFontSize(fontSize)
 end

@@ -7,7 +7,7 @@ GreenWall = {
 	["roster"] = true,
 	["logsize"] = 2048,
 	["tag"] = false,
-	["version"] = "1.3.2",
+	["version"] = "1.3.3",
 	["achievements"] = true,
 	["rank"] = false,
 }

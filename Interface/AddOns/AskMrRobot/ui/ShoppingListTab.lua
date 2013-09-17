@@ -1,10 +1,10 @@
 -- initialize the ShoppingListTab class
-ShoppingListTab = inheritsFrom(Frame)
+AskMrRobot.ShoppingListTab = AskMrRobot.inheritsFrom(AskMrRobot.Frame)
 
-function ShoppingListTab:new(parent)
+function AskMrRobot.ShoppingListTab:new(parent)
 
-	local tab = Frame:new(nil, parent)
-	setmetatable(tab, { __index = ShoppingListTab })
+	local tab = AskMrRobot.Frame:new(nil, parent)
+	setmetatable(tab, { __index = AskMrRobot.ShoppingListTab })
 	tab:SetPoint("TOPLEFT")
 	tab:SetPoint("BOTTOMRIGHT")
 	tab:Hide()
@@ -24,11 +24,11 @@ function ShoppingListTab:new(parent)
 		tab:OnEvent(...)
 	end)
 
-	tab.shoppingListHeader = FontString:new(tab, nil, "ARTWORK", "GameFontNormalLarge")
+	tab.shoppingListHeader = AskMrRobot.FontString:new(tab, nil, "ARTWORK", "GameFontNormalLarge")
 	tab.shoppingListHeader:SetPoint("TOPLEFT", 0, -5)
 	tab.shoppingListHeader:SetText("Shopping List")
 
-	tab.shoppingPanel = Frame:new(nil, tab)
+	tab.shoppingPanel = AskMrRobot.Frame:new(nil, tab)
 	tab.shoppingPanel:SetPoint("TOPLEFT", tab.shoppingListHeader, "BOTTOMLEFT", 0, -10)
 	tab.shoppingPanel:SetPoint("BOTTOMRIGHT", tab, "BOTTOMRIGHT", -20, 17)
 
@@ -79,23 +79,23 @@ function ShoppingListTab:new(parent)
 	text:SetPoint("TOPLEFT", tab.gemsCheckbox, "TOPRIGHT", 2, -4)
 
 
-	tab.sendMessage4 = FontString:new(tab.shoppingPanel, nil, "ARTWORK", "GameFontHighlightLarge")
+	tab.sendMessage4 = AskMrRobot.FontString:new(tab.shoppingPanel, nil, "ARTWORK", "GameFontHighlightLarge")
 	tab.sendMessage4:SetText("Include:")
 	tab.sendMessage4:SetPoint("TOPLEFT", tab.gemsCheckbox, "TOPLEFT", 0, 20)
 
 
-	tab.sendMessage3 = FontString:new(tab.shoppingPanel, nil, "ARTWORK", "GameFontHighlightLarge")
+	tab.sendMessage3 = AskMrRobot.FontString:new(tab.shoppingPanel, nil, "ARTWORK", "GameFontHighlightLarge")
 	tab.sendMessage3:SetText("Send list to")
 	tab.sendMessage3:SetPoint("TOPLEFT", tab.sendMessage4, "TOPLEFT", 0, 25)
 
 
-	tab.sendMessage2 = FontString:new(tab.shoppingPanel, nil, "ARTWORK", "GameFontNormal")
+	tab.sendMessage2 = AskMrRobot.FontString:new(tab.shoppingPanel, nil, "ARTWORK", "GameFontNormal")
 	tab.sendMessage2:SetTextColor(.5,.5,.5)
 	tab.sendMessage2:SetText("Whisper to a friend or send to a channel, like /raid or /guild.")
 	tab.sendMessage2:SetPoint("TOPLEFT", tab.sendMessage3, "TOPLEFT", 0, 25)
 
 
-	tab.sendMessage1 = FontString:new(tab.shoppingPanel, nil, "ARTWORK", "GameFontNormalLarge")
+	tab.sendMessage1 = AskMrRobot.FontString:new(tab.shoppingPanel, nil, "ARTWORK", "GameFontNormalLarge")
 	tab.sendMessage1:SetTextColor(0,1,0)
 	tab.sendMessage1:SetText("Send to a Jewelcraft or Enchanter friend :)")
 	tab.sendMessage1:SetPoint("TOPLEFT", tab.sendMessage2, "TOPLEFT", 0, 25)
@@ -106,7 +106,7 @@ function ShoppingListTab:new(parent)
 	tab.scrollFrame:SetPoint("RIGHT", -20, 0)
 	tab.scrollFrame:SetPoint("BOTTOM", tab.sendMessage1, "TOP", 0, 10)
 
-	tab.scrollParent = Frame:new(nil, tab.shoppingPanel)
+	tab.scrollParent = AskMrRobot.Frame:new(nil, tab.shoppingPanel)
 	tab.scrollParent:SetPoint("TOPLEFT", 0, 0)
 	tab.scrollParent:SetWidth(tab:GetWidth() - 20)
 	tab.scrollParent:SetHeight(500)
@@ -117,29 +117,29 @@ function ShoppingListTab:new(parent)
 	 	ScrollFrameTemplate_OnMouseWheel(arg1, arg2, arg1.ScrollBar)
 	end)
 
-	tab.gemsHeader = FontString:new(tab.scrollParent, nil, "ARTWORK", "GameFontNormalLarge")
+	tab.gemsHeader = AskMrRobot.FontString:new(tab.scrollParent, nil, "ARTWORK", "GameFontNormalLarge")
 	tab.gemsHeader:SetText("Gems")
 	tab.gemsHeader:SetPoint("TOPLEFT", tab.scrollParent, "TOPLEFT", 0, 0)
 
-	tab.gemsQuantityHeader = FontString:new(tab.scrollParent, nil, "ARTWORK", "GameFontNormalLarge")
+	tab.gemsQuantityHeader = AskMrRobot.FontString:new(tab.scrollParent, nil, "ARTWORK", "GameFontNormalLarge")
 	tab.gemsQuantityHeader:SetText("Total")
 	tab.gemsQuantityHeader:SetPoint("TOPLEFT", tab.scrollParent, "TOPLEFT", 370, 0)
 
-	tab.enchantsHeader = FontString:new(tab.scrollParent, nil, "ARTWORK", "GameFontNormalLarge")
+	tab.enchantsHeader = AskMrRobot.FontString:new(tab.scrollParent, nil, "ARTWORK", "GameFontNormalLarge")
 	tab.enchantsHeader:SetText("Enchants")
 
-	tab.enchantsQuantityHeader = FontString:new(tab.scrollParent, nil, "ARTWORK", "GameFontNormalLarge")
+	tab.enchantsQuantityHeader = AskMrRobot.FontString:new(tab.scrollParent, nil, "ARTWORK", "GameFontNormalLarge")
 	tab.enchantsQuantityHeader:SetText("Total")
 	tab.enchantsQuantityHeader:SetPoint("TOPLEFT", tab.enchantsHeader, "TOPLEFT", 370, 0)
 
-	tab.enchantMaterialsHeader = FontString:new(tab.scrollParent, nil, "ARTWORK", "GameFontNormalLarge")
+	tab.enchantMaterialsHeader = AskMrRobot.FontString:new(tab.scrollParent, nil, "ARTWORK", "GameFontNormalLarge")
 	tab.enchantMaterialsHeader:SetText("Enchant Materials")
 
-	tab.enchantMaterialsQuantityHeader = FontString:new(tab.scrollParent, nil, "ARTWORK", "GameFontNormalLarge")
+	tab.enchantMaterialsQuantityHeader = AskMrRobot.FontString:new(tab.scrollParent, nil, "ARTWORK", "GameFontNormalLarge")
 	tab.enchantMaterialsQuantityHeader:SetText("Total")
 	tab.enchantMaterialsQuantityHeader:SetPoint("TOPLEFT", tab.enchantMaterialsHeader, "TOPLEFT", 370, 0)
 
-	tab.stamp = RobotStamp:new(nil, tab)
+	tab.stamp = AskMrRobot.RobotStamp:new(nil, tab)
 	tab.stamp:Hide()
 	tab.stamp.bigText:SetText("YOUR SHOPPING IS ALL DONE!")
 	tab.stamp.smallText:SetText("Unless you want to buy me a birthday present! I like titanium bolts and robot dogs... Or was it titanium dogs and robot bolts...")
@@ -203,6 +203,7 @@ function ShoppingListTab:new(parent)
 	tab.sendTo:SetHeight(30)
 	tab.sendTo:SetText(AmrSendSettings.SendTo or "")
 	tab.sendTo:SetFontObject("GameFontHighlightLarge")
+	tab.sendTo:SetAutoFocus(false)
 	tab.sendTo:SetScript("OnChar", function()
 		AmrSendSettings.SendTo = tab.sendTo:GetText()
 	end)
@@ -215,14 +216,14 @@ end
 
 -- display a gem icon in a row
 -- gemInfo is {id, enchantId, color, count }
-function ShoppingListTab:SetGemIcon(row, gemInfo)
+function AskMrRobot.ShoppingListTab:SetGemIcon(row, gemInfo)
 	-- get gem icon for the row
 	local gemIcon = self.gemIcons[row]
 
 	-- if we don't have one
 	if gemIcon == nil then
 		-- make one
-		gemIcon = GemIcon:new(nil, self.scrollParent)
+		gemIcon = AskMrRobot.GemIcon:new(nil, self.scrollParent)
 		self.gemIcons[row] = gemIcon
 		gemIcon:SetScript("OnMouseDown", function()
 			self:SearchForGem(row)
@@ -253,9 +254,9 @@ function ShoppingListTab:SetGemIcon(row, gemInfo)
 	gemIcon:SetGemColor(gemInfo.color)
 
 	-- if we didn't get one, its because WoW is slow
-	if not gemLink and gemInfo.id and itemId then
+	if not gemLink and gemInfo.id then
 		-- when WoW finally returns the link, set the icon / tooltip
-		RegisterItemInfoCallback(itemId, function(name, link)
+		AskMrRobot.RegisterItemInfoCallback(gemInfo.id, function(name, link)
 			gemIcon:SetItemLink(link)
 		end)
 	end
@@ -265,14 +266,14 @@ end
 
 -- display a gem icon in a row
 -- gemInfo is {id, enchantId, color, count }
-function ShoppingListTab:SetGemText(row, gemInfo)
+function AskMrRobot.ShoppingListTab:SetGemText(row, gemInfo)
 	-- get gem icon for the row
 	local gemText = self.gemLinks[row]
 
 	-- if we don't have one
 	if gemText == nil then
 		-- make one
-		gemText = ItemLinkText:new(nil, self.scrollParent)
+		gemText = AskMrRobot.ItemLinkText:new(nil, self.scrollParent)
 		self.gemLinks[row] = gemText
 		gemText:SetScript("OnMouseDown", function()
 			self:SearchForGem(row)
@@ -296,7 +297,7 @@ end
 
 -- display a gem icon in a row
 -- gemInfo is {id, enchantId, color, count }
-function ShoppingListTab:SetGemQuantity(row, qty, total)
+function AskMrRobot.ShoppingListTab:SetGemQuantity(row, qty, total)
 	if qty > total then qty = total end
 
 	-- get gem icon for the row
@@ -305,7 +306,7 @@ function ShoppingListTab:SetGemQuantity(row, qty, total)
 	-- if we don't have one
 	if gemText == nil then
 		-- make one
-		gemText = FontString:new(self.scrollParent, nil, "ARTWORK", "GameFontNormalLarge")
+		gemText = AskMrRobot.FontString:new(self.scrollParent, nil, "ARTWORK", "GameFontNormalLarge")
 		self.gemQuantity[row] = gemText
 
 		-- position it
@@ -329,7 +330,7 @@ end
 
 
 -- display an enchant icon in a row
-function ShoppingListTab:SetEnchantIcon(row, enchantId)
+function AskMrRobot.ShoppingListTab:SetEnchantIcon(row, enchantId)
 
 	-- get enchant icon for the row
 	local enchantIcon = self.enchantIcons[row]
@@ -337,7 +338,7 @@ function ShoppingListTab:SetEnchantIcon(row, enchantId)
 	-- if we don't have one
 	if enchantIcon == nil then
 		-- make one
-		enchantIcon = EnchantLinkIconAndText:new(nil, self.scrollParent)
+		enchantIcon = AskMrRobot.EnchantLinkIconAndText:new(nil, self.scrollParent)
 		self.enchantIcons[row] = enchantIcon
 		enchantIcon:SetScript("OnMouseDown", function()
 			self:SearchForEnchant(row)
@@ -370,7 +371,7 @@ end
 
 -- display a gem icon in a row
 -- gemInfo is {id, enchantId, color, count }
-function ShoppingListTab:SetEnchantQuantity(row, qty, total)
+function AskMrRobot.ShoppingListTab:SetEnchantQuantity(row, qty, total)
 	if qty > total then qty = total end
 
 	-- get gem icon for the row
@@ -379,7 +380,7 @@ function ShoppingListTab:SetEnchantQuantity(row, qty, total)
 	-- if we don't have one
 	if enchantText == nil then
 		-- make one
-		enchantText = FontString:new(self.scrollParent, nil, "ARTWORK", "GameFontNormalLarge")
+		enchantText = AskMrRobot.FontString:new(self.scrollParent, nil, "ARTWORK", "GameFontNormalLarge")
 		self.enchantQuantity[row] = enchantText
 
 		-- position it
@@ -401,34 +402,34 @@ function ShoppingListTab:SetEnchantQuantity(row, qty, total)
 	enchantText:Show()
 end
 
-function ShoppingListTab:SearchForItem(itemName)
+function AskMrRobot.ShoppingListTab:SearchForItem(itemName)
 	if self.isAuctionHouseVisible then
 		QueryAuctionItems(itemName, nil, nil, 0, 0, 0, 0, 0, 0, 0)
 	end
 end
 
-function ShoppingListTab:SearchForGem(row)
+function AskMrRobot.ShoppingListTab:SearchForGem(row)
 	self:SearchForItem(self.gemLinks[row].itemName)
 end
 
-function ShoppingListTab:SearchForEnchant(row)
+function AskMrRobot.ShoppingListTab:SearchForEnchant(row)
 	self:SearchForItem(self.enchantIcons[row].itemName)
 end
 
-function ShoppingListTab:SearchForEnchantMaterial(row)
+function AskMrRobot.ShoppingListTab:SearchForEnchantMaterial(row)
 	self:SearchForItem(self.enchantMaterialLinks[row].itemName)
 end
 
 
 -- display an enchant material icon in a row
-function ShoppingListTab:SetEnchantMaterialIcon(row, itemId)
+function AskMrRobot.ShoppingListTab:SetEnchantMaterialIcon(row, itemId)
 	-- get enchant material icon for the row
 	local materialIcon = self.enchantMaterialIcons[row]
 
 	-- if we don't have one
 	if materialIcon == nil then
 		-- make one
-		materialIcon = ItemIcon:new(nil, self.scrollParent)
+		materialIcon = AskMrRobot.ItemIcon:new(nil, self.scrollParent)
 		self.enchantMaterialIcons[row] = materialIcon
 		materialIcon:SetScript("OnMouseDown", function()
 			self:SearchForEnchantMaterial(row)
@@ -459,7 +460,7 @@ function ShoppingListTab:SetEnchantMaterialIcon(row, itemId)
 	-- if we didn't get one, its because WoW is slow
 	if not itemLink and itemId then
 		-- when WoW finally returns the link, set the icon / tooltip
-		RegisterItemInfoCallback(itemId, function(name, link)
+		AskMrRobot.RegisterItemInfoCallback(itemId, function(name, link)
 			materialIcon:SetItemLink(link)
 		end)
 	end
@@ -467,14 +468,14 @@ end
 
 
 -- display an enchant material link in a row
-function ShoppingListTab:SetEnchantMaterialLink(row, itemId)
+function AskMrRobot.ShoppingListTab:SetEnchantMaterialLink(row, itemId)
 	-- get gem icon for the row
 	local materialLink = self.enchantMaterialLinks[row]
 
 	-- if we don't have one
 	if materialLink == nil then
 		-- make one
-		materialLink = ItemLinkText:new(nil, self.scrollParent)
+		materialLink = AskMrRobot.ItemLinkText:new(nil, self.scrollParent)
 		self.enchantMaterialLinks[row] = materialLink
 		materialLink:SetScript("OnMouseDown", function()
 			self:SearchForEnchantMaterial(row)
@@ -499,7 +500,7 @@ end
 
 -- display a gem icon in a row
 -- gemInfo is {id, enchantId, color, count }
-function ShoppingListTab:SetEnchantMaterialQuantity(row, qty, total)
+function AskMrRobot.ShoppingListTab:SetEnchantMaterialQuantity(row, qty, total)
 	if qty > total then qty = total end
 
 	-- get gem icon for the row
@@ -508,7 +509,7 @@ function ShoppingListTab:SetEnchantMaterialQuantity(row, qty, total)
 	-- if we don't have one
 	if enchantText == nil then
 		-- make one
-		enchantText = FontString:new(self.scrollParent, nil, "ARTWORK", "GameFontNormalLarge")
+		enchantText = AskMrRobot.FontString:new(self.scrollParent, nil, "ARTWORK", "GameFontNormalLarge")
 		self.enchantMaterialQuantity[row] = enchantText
 
 		-- position it
@@ -530,10 +531,25 @@ function ShoppingListTab:SetEnchantMaterialQuantity(row, qty, total)
 	enchantText:Show()
 end
 
-function ShoppingListTab:CalculateItems()
+function AskMrRobot.ShoppingListTab:HasStuffToBuy()
+
+	local gemList, enchantList, enchantMaterials = self:CalculateItems()
+
+	local count = 0
+	for gemId, gemInfo in AskMrRobot.spairs(gemList) do
+		count = count + gemInfo.total - gemInfo.count
+	end
+	for slot, enchant in AskMrRobot.spairs(enchantList) do
+		count = count + enchant.total - enchant.count
+	end
+
+	return count > 0
+end
+
+function AskMrRobot.ShoppingListTab:CalculateItems()
 	-- build a map of missing gem-ids -> {id, color, enchantid, count, total}
 	local gemList = {}
-	for slotNum, badGems in pairs(itemDiffs.gems) do
+	for slotNum, badGems in pairs(AskMrRobot.itemDiffs.gems) do
 		--badGems: {current: array of enchant ids, optimized: (array of {id, color, enchantId})
 		for i = 1, #badGems.optimized do
 			if badGems.badGems[i] then
@@ -551,8 +567,8 @@ function ShoppingListTab:CalculateItems()
 	end
 
 	local enchantList = {}
-	for slot, enchantData in sortSlots(itemDiffs.enchants) do
-		local id = getEnchantItemId(enchantData.optimized) or enchantData.optimized
+	for slot, enchantData in AskMrRobot.sortSlots(AskMrRobot.itemDiffs.enchants) do
+		local id = AskMrRobot.getEnchantItemId(enchantData.optimized) or enchantData.optimized
 		local qty = enchantList[id]
 		if qty then
 			qty.total = qty.total + 1
@@ -563,19 +579,19 @@ function ShoppingListTab:CalculateItems()
 	end
 
 	local enchantMaterials = {}
-	for slot, enchantData in pairs(itemDiffs.enchants) do
-		addEnchantMaterials(enchantMaterials, enchantData.optimized)
+	for slot, enchantData in pairs(AskMrRobot.itemDiffs.enchants) do
+		AskMrRobot.addEnchantMaterials(enchantMaterials, enchantData.optimized)
 	end
 	
 	--substract any inventory we already have in the bank
 	for i = 1, #AmrBankItemsAndCounts do
-		local itemId = getItemIdFromLink(AmrBankItemsAndCounts[i].link)
+		local itemId = AskMrRobot.getItemIdFromLink(AmrBankItemsAndCounts[i].link)
 		if itemId then
 			local gem = gemList[itemId]
 			if gem then
 				gem.count = gem.count + AmrBankItemsAndCounts[i].count
 			else 
-				local alternateGemId = gemDuplicates[itemId]
+				local alternateGemId = AskMrRobot.gemDuplicates[itemId]
 				if alternateGemId then
 					gem = gemList[alternateGemId]
 					if gem then
@@ -594,31 +610,31 @@ function ShoppingListTab:CalculateItems()
 		end
 	end
 
-	ScanBags()
+	local _ , bagItemsWithCount = AskMrRobot.ScanBags()
 
 	--substract any inventory we already have in bags
-	for i = 1, #AmrBagItemsWithCount do
-		local itemId = getItemIdFromLink(AmrBagItemsWithCount[i].link)
+	for i = 1, #bagItemsWithCount do
+		local itemId = AskMrRobot.getItemIdFromLink(bagItemsWithCount[i].link)
 		if itemId then
 			local gem = gemList[itemId]
 			if gem then
-				gem.count = gem.count + AmrBagItemsWithCount[i].count
+				gem.count = gem.count + bagItemsWithCount[i].count
 			else 
-				local alternateGemId = gemDuplicates[itemId]
+				local alternateGemId = AskMrRobot.gemDuplicates[itemId]
 				if alternateGemId then
 					gem = gemList[alternateGemId]
 					if gem then
-						gem.count = gem.count + AmrBagItemsWithCount[i].count
+						gem.count = gem.count + bagItemsWithCount[i].count
 					end
 				end
 			end
 			local material = enchantMaterials[itemId]
 			if material then
-				material.count = material.count + AmrBagItemsWithCount[i].count
+				material.count = material.count + bagItemsWithCount[i].count
 			end
 			local enchant = enchantList[itemId]
 			if enchant then
-				enchant.count = enchant.count + AmrBagItemsWithCount[i].count
+				enchant.count = enchant.count + bagItemsWithCount[i].count
 			end
 		end
 	end
@@ -626,14 +642,14 @@ function ShoppingListTab:CalculateItems()
 	return gemList, enchantList, enchantMaterials
 end
 
-function ShoppingListTab:Update()
+function AskMrRobot.ShoppingListTab:Update()
 	
 	local gemList, enchantList, enchantMaterials = self:CalculateItems()
 
 	-- update the UI
 	local lastControl = nil
 	local row = 1
-	for gemId, gemInfo in spairs(gemList) do
+	for gemId, gemInfo in AskMrRobot.spairs(gemList) do
 		self:SetGemIcon(row, gemInfo)
 		self:SetGemText(row, gemInfo)
 		self:SetGemQuantity(row, gemInfo.count, gemInfo.total)
@@ -660,7 +676,7 @@ function ShoppingListTab:Update()
 	end
 
 	row = 1
-	for slot, enchant in spairs(enchantList) do
+	for slot, enchant in AskMrRobot.spairs(enchantList) do
 		self:SetEnchantIcon(row, enchant.optimized)
 		self:SetEnchantQuantity(row, enchant.count, enchant.total)
 		lastControl = self.enchantIcons[row]
@@ -685,7 +701,7 @@ function ShoppingListTab:Update()
 	end
 
 	row = 1
-	for itemId, count in spairs(enchantMaterials) do
+	for itemId, count in AskMrRobot.spairs(enchantMaterials) do
 		self:SetEnchantMaterialIcon(row, itemId)
 		self:SetEnchantMaterialLink(row, itemId)
 		self:SetEnchantMaterialQuantity(row, count.count, count.total)
@@ -727,22 +743,22 @@ function ShoppingListTab:Update()
 end
 
 
-function ShoppingListTab:OnEvent(frame, event, ...)
+function AskMrRobot.ShoppingListTab:OnEvent(frame, event, ...)
 	local handler = self["On_" .. event]
 	if handler then
 		handler(self, ...)
 	end
 end
 
-function ShoppingListTab:On_AUCTION_HOUSE_SHOW()
+function AskMrRobot.ShoppingListTab:On_AUCTION_HOUSE_SHOW()
 	self.isAuctionHouseVisible = true
 end
 
-function ShoppingListTab:On_AUCTION_HOUSE_CLOSED()
+function AskMrRobot.ShoppingListTab:On_AUCTION_HOUSE_CLOSED()
 	self.isAuctionHouseVisible = false
 end
 
-function ShoppingListTab:Send()
+function AskMrRobot.ShoppingListTab:Send()
 	local gemList, enchantList, enchantMaterials = self:CalculateItems()
 
 	local items = {}
@@ -810,7 +826,7 @@ function ShoppingListTab:Send()
 	end
 end
 
-function ShoppingListTab:SendNextMessage()
+function AskMrRobot.ShoppingListTab:SendNextMessage()
 	while #self.messageQueue > 0 do
 		local entry = self.messageQueue[1]
 		table.remove(self.messageQueue, 1)
