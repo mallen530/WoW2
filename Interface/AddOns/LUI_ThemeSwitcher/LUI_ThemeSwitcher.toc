@@ -1,0 +1,15 @@
+## Interface: 40200
+## Title: LUI_ThemeSwitcher
+## Author: Zista
+## Version: 2.3.1
+## X-Curse-Packaged-Version: v2.3.1
+## X-Curse-Project-Name: LUI ThemeSwitcher
+## X-Curse-Project-ID: lui-themeswitcher
+## X-Curse-Repository-ID: wow/lui-themeswitcher/mainline
+
+## Notes: Original Author: Xolsom
+
+## Dependencies: LUI
+## LoadOnDemand: 1
+
+LUI_ThemeSwitcher.lua

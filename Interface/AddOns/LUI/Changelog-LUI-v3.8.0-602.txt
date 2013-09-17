@@ -1,0 +1,190 @@
+------------------------------------------------------------------------
+r603 | chaoslux | 2013-05-22 20:07:29 +0000 (Wed, 22 May 2013) | 1 line
+Changed paths:
+   A /tags/v3.8.0-602 (from /trunk:602)
+
+Tagging as v3.8.0-602
+------------------------------------------------------------------------
+r602 | chaoslux | 2013-05-22 18:58:58 +0000 (Wed, 22 May 2013) | 1 line
+Changed paths:
+   M /trunk/LUI.toc
+
+I remembered to TOC Bump. :o
+------------------------------------------------------------------------
+r601 | chaoslux | 2013-05-22 18:58:08 +0000 (Wed, 22 May 2013) | 3 lines
+Changed paths:
+   M /trunk/modules/threatbar.lua
+
+- Added Friendship support to Rep Mode. Won't display weird numbers when you try to watch Brawler's Guild or Tillers
+- Fixed an integer overflow issue.
+- The text is now anchored to the right instead of center, fixes a visual issue with friendships.
+------------------------------------------------------------------------
+r600 | kitkeh | 2013-05-22 04:53:05 +0000 (Wed, 22 May 2013) | 1 line
+Changed paths:
+   M /trunk/scripts/blizzscale.lua
+
+- BlizzScale: add 2 of the renamed frames to the Blizzard frames list. (resolves #286)
+------------------------------------------------------------------------
+r599 | kitkeh | 2013-05-21 07:41:11 +0000 (Tue, 21 May 2013) | 1 line
+Changed paths:
+   M /trunk/modules/worldmap/worldmap.lua
+
+- World Map: woops, forgot to delete that piece of code.
+------------------------------------------------------------------------
+r598 | kitkeh | 2013-05-21 07:33:53 +0000 (Tue, 21 May 2013) | 8 lines
+Changed paths:
+   M /trunk/modules/worldmap/instancemaps.lua
+   M /trunk/modules/worldmap/questpoi.lua
+   M /trunk/modules/worldmap/worldmap.lua
+   M /trunk/modules/worldmap/worldmap.xml
+
+World Map:
+- Updated for 5.3 changes. Have added tick boxes to show/hide Dig Sites and Battle Pet Tamers.
+- Removed dependency on LibBabbleZone which is no longer maintained.
+- Added maps for 2x BG's and Throne of Thunder (now that we don't use LibBabbleZone).
+
+NOTES:
+- There is an outstanding bug with some micro dungeons if you're using the mini world map.
+- This update should work for both WoW 5.2 and WoW 5.3. If you have any issues on the live version of WoW disable the World Map module until the patch - then everything should work OK.
+------------------------------------------------------------------------
+r597 | chaoslux | 2013-05-20 01:56:46 +0000 (Mon, 20 May 2013) | 4 lines
+Changed paths:
+   M /trunk/unitframes/layout/layout.lua
+   M /trunk/unitframes/options/colors.lua
+
+- Rune bars now have an assigned ID to represent their runes.
+- Fixes the bug added in r596 where Frost runes and Unholy runes were swapped.
+- Changed the way runes are colored. They were colored based on position instead of ID. (Mainly due to lack of assigned IDs)
+- Fixed a bug where runes wouldnt update their colors dynamically when changed in the options.
+------------------------------------------------------------------------
+r596 | kitkeh | 2013-05-19 05:29:07 +0000 (Sun, 19 May 2013) | 20 lines
+Changed paths:
+   M /trunk/LUI.xml
+   M /trunk/addons/forte.lua
+   M /trunk/modules/bars.lua
+   M /trunk/modules/threatbar.lua
+   M /trunk/unitframes/core/LICENSE
+   M /trunk/unitframes/core/blizzard.lua
+   M /trunk/unitframes/core/colors.lua
+   M /trunk/unitframes/core/elements/altpowerbar.lua
+   D /trunk/unitframes/core/elements/arcanecharges.lua
+   M /trunk/unitframes/core/elements/assistant.lua
+   M /trunk/unitframes/core/elements/aura.lua
+   M /trunk/unitframes/core/elements/castbar.lua
+   D /trunk/unitframes/core/elements/chi.lua
+   A /trunk/unitframes/core/elements/classicons.lua
+   M /trunk/unitframes/core/elements/combat.lua
+   M /trunk/unitframes/core/elements/cpoints.lua
+   M /trunk/unitframes/core/elements/druidmana.lua
+   M /trunk/unitframes/core/elements/eclipsebar.lua
+   D /trunk/unitframes/core/elements/happiness.lua
+   M /trunk/unitframes/core/elements/healprediction.lua
+   M /trunk/unitframes/core/elements/health.lua
+   D /trunk/unitframes/core/elements/holypower.lua
+   M /trunk/unitframes/core/elements/leader.lua
+   M /trunk/unitframes/core/elements/lfdrole.lua
+   D /trunk/unitframes/core/elements/maintank.lua
+   M /trunk/unitframes/core/elements/masterlooter.lua
+   M /trunk/unitframes/core/elements/picon.lua
+   M /trunk/unitframes/core/elements/portraits.lua
+   M /trunk/unitframes/core/elements/power.lua
+   M /trunk/unitframes/core/elements/pvp.lua
+   M /trunk/unitframes/core/elements/qicon.lua
+   A /trunk/unitframes/core/elements/raidrole.lua
+   M /trunk/unitframes/core/elements/range.lua
+   M /trunk/unitframes/core/elements/readycheck.lua
+   M /trunk/unitframes/core/elements/resting.lua
+   M /trunk/unitframes/core/elements/resurrect.lua
+   M /trunk/unitframes/core/elements/ricons.lua
+   M /trunk/unitframes/core/elements/runebar.lua
+   D /trunk/unitframes/core/elements/shadoworbs.lua
+   M /trunk/unitframes/core/elements/tags.lua
+   M /trunk/unitframes/core/elements/threat.lua
+   M /trunk/unitframes/core/elements/totems.lua
+   D /trunk/unitframes/core/elements/vehicle.lua
+   D /trunk/unitframes/core/elements/warlockbar.lua
+   M /trunk/unitframes/core/events.lua
+   M /trunk/unitframes/core/factory.lua
+   M /trunk/unitframes/core/finalize.lua
+   M /trunk/unitframes/core/init.lua
+   A /trunk/unitframes/core/menu.lua
+   M /trunk/unitframes/core/oUF.toc
+   M /trunk/unitframes/core/oUF.xml
+   M /trunk/unitframes/core/ouf.lua
+   M /trunk/unitframes/core/private.lua
+   M /trunk/unitframes/core/units.lua
+   M /trunk/unitframes/defaults/focus.lua
+   M /trunk/unitframes/defaults/focustarget.lua
+   M /trunk/unitframes/defaults/maintank.lua
+   M /trunk/unitframes/defaults/party.lua
+   M /trunk/unitframes/defaults/partypet.lua
+   M /trunk/unitframes/defaults/pet.lua
+   M /trunk/unitframes/defaults/player.lua
+   M /trunk/unitframes/defaults/raid.lua
+   M /trunk/unitframes/defaults/target.lua
+   M /trunk/unitframes/defaults/tot.lua
+   M /trunk/unitframes/layout/layout.lua
+   M /trunk/unitframes/layout/tags.lua
+   M /trunk/unitframes/options/colors.lua
+   M /trunk/unitframes/options/general.lua
+   M /trunk/unitframes/options/showhide.lua
+   M /trunk/unitframes/options/toggle.lua
+   A /trunk/unitframes/plugins/arcanecharges.lua
+   A /trunk/unitframes/plugins/chi.lua
+   D /trunk/unitframes/plugins/druidmanabar.lua
+   A /trunk/unitframes/plugins/holypower.lua
+   A /trunk/unitframes/plugins/maintank.lua
+   M /trunk/unitframes/plugins/oUF_Experience.lua
+   M /trunk/unitframes/plugins/oUF_Reputation.lua
+   M /trunk/unitframes/plugins/oUF_Smooth.lua
+   A /trunk/unitframes/plugins/shadoworbs.lua
+   A /trunk/unitframes/plugins/totalabsorb.lua
+   D /trunk/unitframes/plugins/totem.lua
+   A /trunk/unitframes/plugins/vehicle.lua
+   A /trunk/unitframes/plugins/warlockbar.lua
+
+MAJOR UPDATE: embedded oUF upgraded from v1.5.16 to v1.6.4
+Why? This will allow us to more easily upgrade oUF in the future
+- Remove LUI DruidMana module and use the embedded oUF code
+- Remove LUI TotemBar and use the embedded oUF code
+- Minor update for changed oUF.ColorGradient() call in oUF_Experience,
+  oUF_Reputation and oUF_Smooth
+
+Additions:
+- TotalAbsorb module: Add an absorb bar to unit frames (currently anchored
+  to the same point as the Heal Prediction bar but may change)
+
+Small Updates:
+- FortExorcist Integration: update for Totem module change
+- Action Bars: Remove Totem Action Bar
+- Threat Bar: Minor update for changed oUF.ColorGradient() call
+- Unit Frames: enabled Frequent Updates for boss frames
+- Unit Frames: Moved LUI oUF modules out of the oUF core
+
+Hopefully this means there won't be any more C overflows when using Gradient
+colours. I've been using this for the past week and haven't found any so far.
+------------------------------------------------------------------------
+r595 | chaoslux | 2013-05-11 05:33:14 +0000 (Sat, 11 May 2013) | 1 line
+Changed paths:
+   M /trunk/modules/threatbar.lua
+
+- The Exp mode of the threatbar turns into a reputation bar if you are level capped. This is a quick hacked job i forgot to commit some time ago.
+------------------------------------------------------------------------
+r594 | kitkeh | 2013-04-25 08:51:12 +0000 (Thu, 25 Apr 2013) | 1 line
+Changed paths:
+   M /trunk/modules/minimap.lua
+
+- Minimap: strata update for coordinates. Not sure if best fix, but it'll do for now while more investigation is done.
+------------------------------------------------------------------------
+r593 | kitkeh | 2013-04-25 06:25:01 +0000 (Thu, 25 Apr 2013) | 1 line
+Changed paths:
+   M /trunk/unitframes/layout/layout.lua
+
+- Cannot destroy totems from TotemBar, set .Destroy to false to prevent Action Blocked errors.
+------------------------------------------------------------------------
+r592 | kitkeh | 2013-04-13 11:26:52 +0000 (Sat, 13 Apr 2013) | 1 line
+Changed paths:
+   M /trunk/unitframes/core/ouf.lua
+
+- Missed a togglemenu update. Simplified call so we're not checking WoW version all the time.
+------------------------------------------------------------------------

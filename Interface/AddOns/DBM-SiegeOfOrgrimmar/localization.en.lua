@@ -5,6 +5,10 @@ local L
 ---------------
 L= DBM:GetModLocalization(852)
 
+L:SetMiscLocalization({
+	Victory			= "Ah, you have done it!  The waters are pure once more."
+})
+
 ---------------------------
 -- The Fallen Protectors --
 ---------------------------
@@ -17,6 +21,10 @@ L= DBM:GetModLocalization(866)
 
 L:SetOptionLocalization({
 	InfoFrame			= "Show info frame for $journal:8252"
+})
+
+L:SetMiscLocalization({
+	wasteOfTime			= "Very well, I will create a field to keep your corruption quarantined."
 })
 
 ------------------
@@ -35,12 +43,21 @@ L:SetOptionLocalization({
 L= DBM:GetModLocalization(868)
 
 L:SetTimerLocalization({
+	timerTowerCD	= "Next Tower"
 })
 
 L:SetOptionLocalization({
+	timerTowerCD	= "Show timer for next tower assault",
+	FixateIcon		= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(147068)
 })
 
 L:SetMiscLocalization({
+	newForces1	= "Here they come!",--Jaina's line, alliance
+	newForces1H	= "Bring her down quick so i can wrap my fingers around her neck.",--Sylva's line, horde
+	newForces2	= "Dragonmaw, advance!",
+	newForces3	= "For Hellscream!",
+	newForces4	= "Next squad, push forward!",
+	tower		= "The door barring the"--The door barring the South/North Tower has been breached!
 })
 
 --------------------
@@ -64,17 +81,30 @@ L:SetOptionLocalization({
 	RangeFrame				= DBM_CORE_AUTO_RANGE_OPTION_TEXT:format(4, 143990)
 })
 
+L:SetMiscLocalization({
+	PrisonYell		= "Prison on %s fades (%d)"
+})
+
 ---------------------
 -- General Nazgrim --
 ---------------------
 L= DBM:GetModLocalization(850)
 
+L:SetWarningLocalization({
+	warnDefensiveStanceSoon		= "Defensive Stance in %ds"
+})
+
+L:SetOptionLocalization({
+	warnDefensiveStanceSoon		= "Show pre-warning countdown for $spell:143593 (5s before)"
+})
+
 L:SetMiscLocalization({
-	newForces1				= "Warriors, on the double!",
-	newForces2				= "Defend the gate!",
-	newForces3				= "Rally the forces!",
-	newForces4				= "Kor'kron, at my side!",
-	newForces5				= "Next squad, to the front!"
+	newForces1					= "Warriors, on the double!",
+	newForces2					= "Defend the gate!",
+	newForces3					= "Rally the forces!",
+	newForces4					= "Kor'kron, at my side!",
+	newForces5					= "Next squad, to the front!",
+	allForces					= "All Kor'kron... under my command... kill them... NOW!"
 })
 
 -----------------
@@ -92,10 +122,9 @@ L:SetOptionLocalization({
 ------------------------
 L= DBM:GetModLocalization(870)
 
-L:SetWarningLocalization({
-})
-
-L:SetOptionLocalization({
+L:SetMiscLocalization({
+	Module1 = "Module 1's all prepared for system reset.",
+	Victory	= "Module 2's all prepared for system reset"
 })
 
 ---------------------------
@@ -103,16 +132,9 @@ L:SetOptionLocalization({
 ---------------------------
 L= DBM:GetModLocalization(851)
 
-L:SetWarningLocalization({
-})
-
-L:SetTimerLocalization({
-})
-
 L:SetOptionLocalization({
-})
-
-L:SetMiscLocalization({
+	RangeFrame	= "Show dynamic range frame (10)<br/>(This is a smart range frame that shows when you reach Frenzy threshold)",
+	FixateIcon		= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(143445)
 })
 
 ----------------------------
@@ -137,8 +159,6 @@ L:SetWarningLocalization({
 
 L:SetOptionLocalization({
 	warnToxicCatalyst				= DBM_CORE_AUTO_ANNOUNCE_OPTIONS.spell:format("ej8036"),
-	specWarnToxicInjection			= DBM_CORE_AUTO_SPEC_WARN_OPTIONS.you:format(142528),
-	specWarnToxicCatalyst			= DBM_CORE_AUTO_SPEC_WARN_OPTIONS.you:format("ej8036"),
 	specWarnActivatedVulnerable		= "Show special warning when you are vulnerable to activating paragons",
 	specWarnCriteriaLinked			= "Show special warning when you are linked to $spell:144095",
 	SetIconOnAim					= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(142948),
@@ -147,23 +167,12 @@ L:SetOptionLocalization({
 })
 
 L:SetMiscLocalization({
-	calculatedTarget	= "calculating eye!",
-	--thanks to blizz, the only accurate way for this to work, is to translate 15 emotes in all languages
-	yellow				= "Yellow",
-	red					= "Red",
-	blue				= "Blue",
-	purple				= "Purple",
-	green				= "Green",
-	bomb				= "Bomb",
-	sword				= "Swords",
-	drums				= "Drums",
-	mantid				= "Mantid",--Assumed
-	staff 				= "Staff",--Assumed
+	--thanks to blizz, the only accurate way for this to work, is to translate 5 emotes in all languages
 	one					= "One",
-	two					= "Pair",
+	two					= "Two",
 	three				= "Three",
-	four				= "Four",--Assumed
-	five				= "Five",--Assumed
+	four				= "Four",
+	five				= "Five",
 	hisekFlavor			= "Look who's quiet now",--http://ptr.wowhead.com/quest=31510
 	KilrukFlavor		= "Just another day, culling the swarm",--http://ptr.wowhead.com/quest=31109
 	XarilFlavor			= "I see only dark skies in your future",--http://ptr.wowhead.com/quest=31216
@@ -182,20 +191,11 @@ L:SetMiscLocalization({
 ------------------------
 L= DBM:GetModLocalization(869)
 
-L:SetOptionLocalization({
-})
-
-L:SetMiscLocalization({
-})
-
 -------------
 --  Trash  --
 -------------
-L = DBM:GetModLocalization("FoOTrash")
+L = DBM:GetModLocalization("SoOTrash")
 
 L:SetGeneralLocalization({
 	name =	"Siege of Orgrimmar Trash"
-})
-
-L:SetOptionLocalization({
 })

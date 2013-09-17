@@ -1,0 +1,22 @@
+## Title: |cffffd200Skeen|r|cff69ccf0Core3|rFeralDruid
+## Version: 1.0.5
+## Author: Skeen
+## Interface: 50300
+## Dependencies: SkeenCore3
+## RequiredDeps: SkeenCore3
+## SavedVariables: SkeenFeralDruidDB
+## Notes: Feral Druid plugin for SkeenCore3
+## X-LoadOn-Always: delayed
+## X-LoadOn-Class: Druid
+## X-Child-Of: SkeenCore3
+## X-Part-Of: SkeenCore3
+## X-Curse-Packaged-Version: v1.0.5
+## X-Curse-Project-Name: SkeenCore3FeralDruid
+## X-Curse-Project-ID: skeencore3feraldruid
+## X-Curse-Repository-ID: wow/skeencore3feraldruid/mainline
+
+Libs\LibStub\LibStub.lua
+Libs\LibSkeenCore\LibSkeenCore.lua
+
+SkeenCore3FeralDruid.lua
+

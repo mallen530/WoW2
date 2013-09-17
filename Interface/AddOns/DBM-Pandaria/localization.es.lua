@@ -7,12 +7,12 @@ local L
 L= DBM:GetModLocalization(691)
 
 L:SetOptionLocalization({
-	RangeFrame			= "Mostrar distancia dinamica basada en el estado de\n$spell:119622",
+	RangeFrame			= "Mostrar distancia dinamica basada en el estado de<br/>$spell:119622",
 	ReadyCheck			= "Reproducir sonido de comprobación de listos si el jefe es pulleado (incluso si no es mi objetivo actual)"
 })
 
 L:SetMiscLocalization({
-	Pull				= "Yes, YES! Bring your rage to bear! Try to strike me down!" --TODO needs translation
+	Pull				= "Dejad que vuestra ira florezca"
 })
 
 -----------------------
@@ -25,7 +25,7 @@ L:SetOptionLocalization({
 })
 
 L:SetMiscLocalization({
-	Pull				= "Bring me their corpses!" --TODO needs translation
+	Pull				= "¡Quiero sus cadáveres!"
 })
 
 --------------
@@ -46,6 +46,14 @@ L:SetMiscLocalization({
 ---------------------------
 L= DBM:GetModLocalization(814)
 
+L:SetOptionLocalization({
+	ReadyCheck			= "Rerpoducir sonido de comprobación de listos si el jefe es pulleado (incluso si no es mi objetivo actual)"
+})
+
+L:SetMiscLocalization({
+	Pull				= "un viento frío? Se avecina la tormenta" -- first word is different in esMX, so we skip it
+})
+
 
 ---------------------------
 -- Chi-ji, The Red Crane --
@@ -56,22 +64,43 @@ L:SetOptionLocalization({
 	BeaconArrow				= "Mostrar flecha del DBM cuando a alguien le afecta $spell:144473"
 })
 
+L:SetMiscLocalization({
+	Pull					= "Comencemos.",
+	Victory					= "Vuestra esperanza brilla con fuerza, sobre todo cuando lucháis juntos."
+})
+
 ------------------------------
 -- Yu'lon, The Jade Serpent --
 ------------------------------
 L= DBM:GetModLocalization(858)
 
+L:SetMiscLocalization({
+	Pull					= "¡Comienza la prueba!",
+	Wave1					= "¡No dejéis que las dificultades os nublen el juicio!",
+	Wave2					= "¡Escuchad vuestra voz interior y buscad la verdad!",
+	Victory					= "Vuestra sabiduría os ha hecho superar esta prueba. Que siempre ilumine vuestro camino en la oscuridad."
+})
 
 --------------------------
 -- Niuzao, The Black Ox --
 --------------------------
 L= DBM:GetModLocalization(859)
 
+L:SetMiscLocalization({
+	Pull					= "Ya veremos.",
+--	Victory					= "",
+	VictoryDem				= "Rakkas shi alar re pathrebosh il zila rethule kiel shi shi belaros rikk kanrethad adare revos shi xi thorje Rukadare zila te lok zekul melar "--Cover all bases and all, TODO need translation
+})
+
 ---------------------------
 -- Xuen, The White Tiger --
 ---------------------------
 L= DBM:GetModLocalization(860)
 
+L:SetMiscLocalization({
+	Pull					= "¡Ja! ¡La prueba comienza!",
+	Victory					= "Sois fuertes, más de lo que creéis. Tenedlo presente en la oscuridad que os espera y dejad que os sirva de escudo."
+})
 
 ------------------------------------
 -- Ordos, Fire-God of the Yaungol --

@@ -1,0 +1,13 @@
+## Title: Lib: LibSkeenCore
+## Version: 1.3.17
+## Author: Skeen
+## Interface: 50300
+## LoadOnDemand: 0
+## Notes: Static library for buff/debuffs, used by skeencore addons.
+## X-Curse-Packaged-Version: r59
+## X-Curse-Project-Name: LibSkeenCore
+## X-Curse-Project-ID: libskeencore
+## X-Curse-Repository-ID: wow/libskeencore/mainline
+
+LibSkeenCore.lua
+Libs/LibStub/LibStub.lua

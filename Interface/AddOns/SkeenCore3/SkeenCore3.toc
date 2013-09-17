@@ -1,0 +1,16 @@
+## Title: |cffffd200Skeen|r|cff69ccf0Core3|r 1.10.0.5
+## Version: 1.10.0.5
+## Author: Skeen
+## Interface: 50300
+## SavedVariables: SkeenCore3Database
+## LoadOnDemand: 0
+## Notes: RotationHelper; Helps you maximize you DPS, by suggesting what ability to use next.
+## X-Child-Of: Skeen
+## X-Part-Of: Skeen
+## X-Curse-Packaged-Version: 1.10.0.5
+## X-Curse-Project-Name: SkeenCore3
+## X-Curse-Project-ID: skeencore-3
+## X-Curse-Repository-ID: wow/skeencore-3/mainline
+
+SkeenCore3.xml 
+

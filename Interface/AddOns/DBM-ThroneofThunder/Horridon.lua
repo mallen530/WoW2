@@ -1,9 +1,8 @@
 local mod	= DBM:NewMod(819, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9769 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 10296 $"):sub(12, -3))
 mod:SetCreatureID(68476)
-mod:SetQuestID(32745)
 mod:SetZone()
 mod:SetUsedIcons(8, 7, 6, 5, 4, 3, 1)
 
@@ -333,7 +332,7 @@ function mod:OnSync(msg, targetOrGuid, ver)
 	local target = targetOrGuid
 	local guid = targetOrGuid
 	if msg == "ChargeTo" and target then
-		local target = DBM:GetFullNameByShortName(target)
+		local target = DBM:GetUnitFullName(target)
 		warnCharge:Show(target)
 		timerCharge:Start()
 		timerChargeCD:Start()

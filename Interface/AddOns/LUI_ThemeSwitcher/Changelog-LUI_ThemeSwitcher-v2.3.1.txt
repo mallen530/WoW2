@@ -1,0 +1,113 @@
+------------------------------------------------------------------------
+r27 | deadlyslaya | 2011-08-18 05:29:55 +0000 (Thu, 18 Aug 2011) | 1 line
+Changed paths:
+   A /tags/v2.3.1 (from /trunk:26)
+
+Tagging as v2.3.1
+------------------------------------------------------------------------
+r26 | deadlyslaya | 2011-08-18 05:29:33 +0000 (Thu, 18 Aug 2011) | 1 line
+Changed paths:
+   M /trunk/LUI_ThemeSwitcher.toc
+
+Toc bump
+------------------------------------------------------------------------
+r25 | deadlyslaya | 2011-08-18 05:21:18 +0000 (Thu, 18 Aug 2011) | 1 line
+Changed paths:
+   M /trunk/.pkgmeta
+   D /trunk/Changelog.txt
+
+Added .pkgmeta file
+------------------------------------------------------------------------
+r24 | deadlyslaya | 2011-08-18 05:13:14 +0000 (Thu, 18 Aug 2011) | 1 line
+Changed paths:
+   M /trunk/.pkgmeta
+
+packager test
+------------------------------------------------------------------------
+r23 | deadlyslaya | 2011-08-18 05:05:36 +0000 (Thu, 18 Aug 2011) | 1 line
+Changed paths:
+   A /trunk/.pkgmeta
+   A /trunk/Changelog.txt
+
+.pkgmeta test
+------------------------------------------------------------------------
+r21 | deadlyslaya | 2011-08-10 12:22:51 +0000 (Wed, 10 Aug 2011) | 1 line
+Changed paths:
+   M /trunk/LUI_ThemeSwitcher.lua
+
+Fixed bug that would cause lua errors if you logged out or reloaded while a rule was active.
+------------------------------------------------------------------------
+r19 | deadlyslaya | 2011-08-02 02:57:05 +0000 (Tue, 02 Aug 2011) | 1 line
+Changed paths:
+   M /trunk/LUI_ThemeSwitcher.lua
+
+Fixed bug causing lua errors on login.
+------------------------------------------------------------------------
+r17 | deadlyslaya | 2011-08-01 19:11:05 +0000 (Mon, 01 Aug 2011) | 1 line
+Changed paths:
+   M /trunk/LUI_ThemeSwitcher.lua
+
+Updated db to be character specific so copying or changing profiles in LUI will not copy ThemeSwitcher rules.
+------------------------------------------------------------------------
+r15 | deadlyslaya | 2011-07-30 00:35:27 +0000 (Sat, 30 Jul 2011) | 1 line
+Changed paths:
+   M /trunk/LUI_ThemeSwitcher.lua
+
+Fixed bug that caused the default theme to change.
+------------------------------------------------------------------------
+r12 | deadlyslaya | 2011-07-29 01:04:54 +0000 (Fri, 29 Jul 2011) | 1 line
+Changed paths:
+   M /trunk/LUI_ThemeSwitcher.lua
+
+Fixed bug that caused color theme to not restore properly when no rules apply
+------------------------------------------------------------------------
+r10 | deadlyslaya | 2011-07-27 04:58:03 +0000 (Wed, 27 Jul 2011) | 7 lines
+Changed paths:
+   M /trunk/LUI_ThemeSwitcher.lua
+   M /trunk/LUI_ThemeSwitcher.toc
+
+- Important:
+This version is designed to work with LUI r186 alpha or later.
+
+- Changes:
+Converted to new Theme system introduced with LUI r186
+Added function to convert old rules to the new db system
+    This will fix the lua errors and issues opening the LUI options menu that occurred for some people with 2.2
+------------------------------------------------------------------------
+r8 | deadlyslaya | 2011-07-23 23:53:39 +0000 (Sat, 23 Jul 2011) | 1 line
+Changed paths:
+   M /trunk/LUI_ThemeSwitcher.lua
+   M /trunk/LUI_ThemeSwitcher.toc
+
+Fixed typo causing lua errors.
+------------------------------------------------------------------------
+r6 | deadlyslaya | 2011-07-23 22:05:10 +0000 (Sat, 23 Jul 2011) | 1 line
+Changed paths:
+   A /trunk/LUI_ThemeSwitcher.lua
+   M /trunk/LUI_ThemeSwitcher.toc
+   D /trunk/core.lua
+
+Fixed bug causing errors with LUI when disabling the ThemeSwitcher through LUI's option menu.
+------------------------------------------------------------------------
+r4 | deadlyslaya | 2011-07-23 09:11:04 +0000 (Sat, 23 Jul 2011) | 1 line
+Changed paths:
+   M /trunk/LUI_ThemeSwitcher.toc
+   M /trunk/core.lua
+
+Full rewrite that should alleviate a lot of the framerate issues.  The options menu is now split into 2 tabs: Add Rules and Existing Rules.
+------------------------------------------------------------------------
+r2 | deadlyslaya | 2011-07-20 07:11:31 +0000 (Wed, 20 Jul 2011) | 1 line
+Changed paths:
+   A /trunk/LUI_ThemeSwitcher.toc
+   A /trunk/core.lua
+
+Initial Release
+------------------------------------------------------------------------
+r1 | root | 2011-07-19 19:39:59 +0000 (Tue, 19 Jul 2011) | 1 line
+Changed paths:
+   A /branches
+   A /tags
+   A /trunk
+
+"lui-themeswitcher/mainline: Initial Import"
+------------------------------------------------------------------------

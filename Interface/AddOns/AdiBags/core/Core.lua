@@ -90,15 +90,6 @@ function addon:OnInitialize()
 
 	self:UpgradeProfile()
 
-	-- ProfessionVault support
-	local PV  =_G.ProfessionsVault
-	if PV then
-		self:Debug('Installing ProfessionsVault callback')
-		self.RegisterMessage(PV, "AdiBags_UpdateButton", function(_, button)
-			PV:SlotColor(button.itemId, button.IconTexture)
-		end)
-	end
-
 	self:RegisterChatCommand("adibags", function(cmd)
 		addon:OpenOptions(strsplit(' ', cmd or ""))
 	end, true)
@@ -147,6 +138,10 @@ function addon:OnEnable()
 	self:RegisterEvent('TRADE_CLOSED', 'UpdateInteractingWindow')
 	self:RegisterEvent('GUILDBANKFRAME_OPENED', 'UpdateInteractingWindow')
 	self:RegisterEvent('GUILDBANKFRAME_CLOSED', 'UpdateInteractingWindow')
+	self:RegisterEvent('VOID_STORAGE_OPEN', 'UpdateInteractingWindow')
+	self:RegisterEvent('VOID_STORAGE_CLOSE', 'UpdateInteractingWindow')
+	self:RegisterEvent('FORGE_MASTER_OPENED', 'UpdateInteractingWindow')
+	self:RegisterEvent('FORGE_MASTER_CLOSED', 'UpdateInteractingWindow')
 
 	self:SetSortingOrder(self.db.profile.sortingOrder)
 
@@ -395,7 +390,7 @@ end
 do
 	local current
 	function addon:UpdateInteractingWindow(event, ...)
-		local new = strmatch(event, '^([_%w]+)_OPENED$') or strmatch(event, '^([_%w]+)_SHOW$')
+		local new = strmatch(event, '^([_%w]+)_OPEN') or strmatch(event, '^([_%w]+)_SHOW$')
 		self:Debug('UpdateInteractingWindow', event, current, '=>', new, '|', ...)
 		if new ~= current then
 			local old = current

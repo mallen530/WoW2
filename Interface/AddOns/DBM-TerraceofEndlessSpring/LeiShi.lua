@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(729, "DBM-TerraceofEndlessSpring", nil, 320)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9871 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 10316 $"):sub(12, -3))
 mod:SetCreatureID(62983)--62995 Animated Protector
 
 mod:RegisterCombat("combat")
@@ -212,7 +212,7 @@ function mod:SPELL_AURA_APPLIED(args)
 		else
 			timerGetAway:Start()
 		end
-		if (self.Options.HealthFrame or DBM.Options.AlwaysShowHealthFrame) and self.Options.GWHealthFrame then
+		if DBM.BossHealth:IsShown() and self.Options.GWHealthFrame then
 			local getAwayHealth = math.floor(UnitHealthMax("boss1") * 0.04)
 			showDamagedHealthBar(self, args.sourceGUID, args.spellName, getAwayHealth)
 		end
@@ -256,7 +256,7 @@ function mod:SPELL_AURA_REMOVED(args)
 		timerSpray:Cancel(args.destName)
 	elseif args.spellId == 123461 then
 		timerGetAway:Cancel()
-		if (self.Options.HealthFrame or DBM.Options.AlwaysShowHealthFrame) and self.Options.GWHealthFrame then
+		if DBM.BossHealth:IsShown() and self.Options.GWHealthFrame then
 			hideDamagedHealthBar()
 		end
 	end
@@ -303,7 +303,10 @@ end
 --Fires twice when boss returns, once BEFORE visible (and before we can detect unitID, so it flags unknown), then once a 2nd time after visible
 --"<233.9> [INSTANCE_ENCOUNTER_ENGAGE_UNIT] Fake Args:#nil#nil#Unknown#0xF130F6070000006C#normal#0#nil#nil#nil#nil#normal#0#nil#nil#nil#nil#normal#0#nil#nil#nil#nil#normal#0#Real Args:", -- [14168]
 function mod:INSTANCE_ENCOUNTER_ENGAGE_UNIT(event)
-	hideActive = false
+	if hideActive then
+        hideActive = false
+		return
+	end
 	self:SetWipeTime(3)
 	self:UnregisterShortTermEvents()--Once boss appears, unregister event, so we ignore the next two that will happen, which will be 2nd time after reappear, and right before next Hide.
 	warnHideOver:Show(GetSpellInfo(123244))

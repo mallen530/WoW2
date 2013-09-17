@@ -1,0 +1,42 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
+
+    <!-- Load the library -->
+    <Script file="Libs\LibStub\LibStub.lua"/>
+    <Script file="Libs\LibSkeenCore\LibSkeenCore.lua"/>
+
+    <!-- Load the main script file -->
+    <Script file="SkeenCore3.lua"/>
+    <!-- Sets up the event listener, and contains mostly function calls to the
+      other entities. -->
+ <Script file="SkeenCore3Events.lua"/>
+ <!-- Sets up the location frame, and controls the code for loading/saving it's
+      location, and dragging it -->
+ <Script file="SkeenCore3Frame.lua"/>
+ <!-- Sets up the GUI frame system, which allows gui's to register, also
+      contains the internals of setting GUI's active and loading them. -->
+ <Script file="SkeenCore3GUI.lua"/>
+ <!-- Sets up the Modules (rotation) plugins system, that controls which plugin
+      is loaded, based upon the character and such information, it loads the
+      systems, and active them. -->
+ <Script file="SkeenCore3Modules.lua"/>
+ <!-- Sets up the SkeenCore3 options frame, this should essencially also be the
+      file to take care of option frames from the GUI and Modules plugins, however
+      these are currently in their respective domain. -->
+ <Script file="SkeenCore3Options.lua"/>
+ <!-- Sets up the SkeenCore3 slash commands. -->
+ <Script file="SkeenCore3Slash.lua"/>
+ <!-- Sets up the main OnUpdate frame, that takes care of updating everything,
+      on a specific internal. -->
+    <Frame name="SkeenCore3_Frame">
+        <Scripts>	
+            <OnLoad>self.TimeSinceLastUpdate = 0 </OnLoad>
+            <OnUpdate function="SkeenCore3_OnUpdate" />      
+        </Scripts>			
+    </Frame>
+
+    <!-- Load up the default no operation GUI as well -->
+    <Script file="SkeenCore3GUIDisabled.lua"/>
+</Ui>
+

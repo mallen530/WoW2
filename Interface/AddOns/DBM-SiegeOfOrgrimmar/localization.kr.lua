@@ -6,38 +6,22 @@ local L
 ---------------
 L= DBM:GetModLocalization(852)
 
-L:SetWarningLocalization({
-})
-
-L:SetOptionLocalization({
-})
-
 ---------------------------
 -- The Fallen Protectors --
 ---------------------------
 L= DBM:GetModLocalization(849)
-
-L:SetWarningLocalization({
-})
-
-L:SetTimerLocalization({
-})
-
-L:SetOptionLocalization({
-})
-
-L:SetMiscLocalization({
-})
 
 ---------------------------
 -- Norushen --
 ---------------------------
 L= DBM:GetModLocalization(866)
 
-L:SetWarningLocalization({
+L:SetOptionLocalization({
+	InfoFrame			= "$journal:8252에 대한 정보를 정보 창으로 보기"
 })
 
-L:SetOptionLocalization({
+L:SetMiscLocalization({
+	wasteOfTime			= "그래, 좋다. 너희 타락을 가두어 둘 공간을 만들겠다."
 })
 
 ------------------
@@ -45,14 +29,8 @@ L:SetOptionLocalization({
 ------------------
 L= DBM:GetModLocalization(867)
 
-L:SetWarningLocalization({
-})
-
 L:SetOptionLocalization({
-	InfoFrame			= "$journal:8255에 대한 정보 창 보기"
-})
-
-L:SetMiscLocalization({
+	InfoFrame			= "$journal:8255에 대한 정보를 정보 창으로 보기"
 })
 
 --------------
@@ -61,12 +39,20 @@ L:SetMiscLocalization({
 L= DBM:GetModLocalization(868)
 
 L:SetTimerLocalization({
+	timerTowerCD	= "다음 포탑"
 })
 
 L:SetOptionLocalization({
+	timerTowerCD	= "다음 포탑 바 보기"--번역이 조금 다른데? 나중에 확인
 })
 
 L:SetMiscLocalization({
+	newForces1		= "놈들이 와요!",--제이나 대사
+	newForces1H		= "저 계집을 당장 끌어내려라. 내가 친히 그녀의 목을 칠 것이다.",--실바나스 대사 (확인 필요)
+	newForces2		= "용아귀 용사들아, 진격하라!",
+	newForces3		= "헬스크림 님을 위하여!",
+	newForces4		= "다음 분대, 진격!",
+	tower			= "문이 뚫렸습니다!"--The door barring the South/North Tower has been breached!
 })
 
 --------------------
@@ -74,30 +60,13 @@ L:SetMiscLocalization({
 --------------------
 L= DBM:GetModLocalization(864)
 
-L:SetWarningLocalization({
-})
-
-L:SetTimerLocalization({
-})
-
-L:SetOptionLocalization({
-})
-
-L:SetMiscLocalization({
-})
-
 --------------------------
 -- Kor'kron Dark Shaman --
 --------------------------
 L= DBM:GetModLocalization(856)
 
-L:SetWarningLocalization({
-})
-
-L:SetOptionLocalization({
-})
-
 L:SetMiscLocalization({
+	PrisonYell		= "%s의 강철 감옥 사라지기 직전! (%d초 남음)"
 })
 
 ---------------------
@@ -106,17 +75,20 @@ L:SetMiscLocalization({
 L= DBM:GetModLocalization(850)
 
 L:SetWarningLocalization({
+	warnDefensiveStanceSoon		= "%d초 후 방어 태세"
 })
 
 L:SetOptionLocalization({
+	warnDefensiveStanceSoon		= "$spell:143593 이전에 초읽기 알림 보기(5초 전부터)"
 })
 
-L:SetMiscLocalization({--정식버전 출시시 로컬라이징 필요
-	newForces1				= "Warriors, on the double!",
-	newForces2				= "Defend the gate!",
-	newForces3				= "Rally the forces!",
-	newForces4				= "Kor'kron, at my side!",
-	newForces5				= "Next squad, to the front!"
+L:SetMiscLocalization({
+	newForces1	= "전사들이여! 이리로!",
+	newForces2	= "놈들을 막아라!",--확인 필요
+	newForces3	= "병력 집결!",
+	newForces4	= "코르크론! 날 지원하라!",
+	newForces5	= "다음 분대, 앞으로!",
+	allForces	= "전 코르크론, 내 명령을 따르라. 모두 죽여!"
 })
 
 -----------------
@@ -124,21 +96,14 @@ L:SetMiscLocalization({--정식버전 출시시 로컬라이징 필요
 -----------------
 L= DBM:GetModLocalization(846)
 
-L:SetWarningLocalization({
-})
-
-L:SetOptionLocalization({
-})
-
 ------------------------
 -- Spoils of Pandaria --
 ------------------------
 L= DBM:GetModLocalization(870)
 
-L:SetWarningLocalization({
-})
-
-L:SetOptionLocalization({
+L:SetMiscLocalization({
+	Module1 = "제1 모듈, 시스템 초기화 준비 완료.",
+	Victory	= "제2 모듈, 시스템 초기화 준비 완료."
 })
 
 ---------------------------
@@ -146,16 +111,8 @@ L:SetOptionLocalization({
 ---------------------------
 L= DBM:GetModLocalization(851)
 
-L:SetWarningLocalization({
-})
-
-L:SetTimerLocalization({
-})
-
 L:SetOptionLocalization({
-})
-
-L:SetMiscLocalization({
+	RangeFrame	= "거리 창 보기(10m) (피의 광란이 가능한 경우에만 보임)"
 })
 
 ----------------------------
@@ -163,15 +120,9 @@ L:SetMiscLocalization({
 ----------------------------
 L= DBM:GetModLocalization(865)
 
-L:SetWarningLocalization({
-})
-
-L:SetOptionLocalization({
-})
-
 L:SetMiscLocalization({
-	newWeapons	= "Unfinished weapons begin to roll out on the assembly line.",
-	newShredder	= "An Automated Shredder draws near!"
+	newWeapons	= "생산 설비에서 미완성 무기가 나오기 시작합니다.",
+	newShredder	= "자동 분쇄기가 다가옵니다!"
 })
 
 ----------------------------
@@ -180,43 +131,33 @@ L:SetMiscLocalization({
 L= DBM:GetModLocalization(853)
 
 L:SetWarningLocalization({
-	specWarnActivatedVulnerable		= "%s에 취약함 - 피하세요!!",
-	specWarnCriteriaLinked			= "%s에 연결됨!"
+	specWarnActivatedVulnerable		= "%s에게 취약함 - 주의!",
+	specWarnCriteriaLinked			= "계산 완료 대상과 연결됨 : %s!"
 })
 
 L:SetOptionLocalization({
-	specWarnActivatedVulnerable		= "활성화된 용장에게 당신이 취약할 경우 특수 경고 보기",
-	specWarnCriteriaLinked			= "$spell:144095에 연결된 경우 특수 경고 보기"
+	specWarnActivatedVulnerable		= "활성화된 용장중 주의해야 할 용장이 있을 경우 특수 경고 보기",
+	specWarnCriteriaLinked			= "$spell:144095 대상과 연결된 경우 특수 경고 보기"
 })
 
 L:SetMiscLocalization({
-	calculatedTarget	= "calculating eye!",
-	yellow				= "Yellow",
-	red					= "Red",
-	blue				= "Blue",
-	purple				= "Purple",
-	green				= "Green",
-	bomb				= "Bomb",
-	sword				= "Swords",
-	drums				= "Drums",
-	mantid				= "Mantid",--Assumed
-	staff 				= "Staff",--Assumed
-	one					= "One",
-	two					= "Pair",
-	three				= "Three",
-	four				= "Four",--Assumed
-	five				= "Five",--Assumed
-	hisekFlavor			= "Look who's quiet now",--http://ptr.wowhead.com/quest=31510
-	KilrukFlavor		= "Just another day, culling the swarm",--http://ptr.wowhead.com/quest=31109
-	XarilFlavor			= "I see only dark skies in your future",--http://ptr.wowhead.com/quest=31216
-	KaztikFlavor		= "Reduced to mere kunchong treats",--http://ptr.wowhead.com/quest=31024
-	KaztikFlavor2		= "1 Mantid down, only 199 to go",--http://ptr.wowhead.com/quest=31808
-	KorvenFlavor		= "The end of an ancient empire",--http://ptr.wowhead.com/quest=31232
-	KorvenFlavor2		= "Take your Gurthani Tablets and choke on them",--http://ptr.wowhead.com/quest=31232
-	IyyokukFlavor		= "See opportunities. Exploit them!",--Does not have quests, http://ptr.wowhead.com/npc=65305
-	KarozFlavor			= "You won't be leaping anymore!",---Does not have questst, http://ptr.wowhead.com/npc=65303
-	SkeerFlavor			= "A bloody delight!",--http://ptr.wowhead.com/quest=31178
-	RikkalFlavor		= "Specimen request fulfilled"--http://ptr.wowhead.com/quest=31508
+	--thanks to blizz, the only accurate way for this to work, is to translate 5 emotes in all languages
+	one					= "가 1",
+	two					= "가 2",
+	three				= "가 3",
+	four				= "가 4",
+	five				= "가 5",
+	hisekFlavor			= "누가 이제 조용한지 봐라.",
+	KilrukFlavor		= "무리의 도태가 일어난 또 다른 날이 되었군.",
+	XarilFlavor			= "너의 미래에 검은 하늘만 보일뿐.",
+	KaztikFlavor		= "단지 쿤총 특식이 되어버렸군.",
+	KaztikFlavor2		= "사마귀 한마리 처치. 199마리 남았음.",
+	KorvenFlavor		= "고대 제국의 멸망.",
+	KorvenFlavor2		= "구르다니 서판을 가져온 후 그들의 숨통을 끊어!",
+	IyyokukFlavor		= "기회를 포착하고, 활용해라!",
+	KarozFlavor			= "힘 안 들이고 잡아 없애면서도 명성이 높아지는데 뭘 그러나.",
+	SkeerFlavor			= "피투성이의 즐거움!",
+	RikkalFlavor		= "표본 요청 달성됨."
 })
 
 ------------------------
@@ -224,20 +165,11 @@ L:SetMiscLocalization({
 ------------------------
 L= DBM:GetModLocalization(869)
 
-L:SetOptionLocalization({
-})
-
-L:SetMiscLocalization({
-})
-
 -------------
 --  Trash  --
 -------------
-L = DBM:GetModLocalization("FoOTrash")
+L = DBM:GetModLocalization("SoOTrash")
 
 L:SetGeneralLocalization({
 	name =	"오그리마 공성전: 일반구간"
-})
-
-L:SetOptionLocalization({
 })

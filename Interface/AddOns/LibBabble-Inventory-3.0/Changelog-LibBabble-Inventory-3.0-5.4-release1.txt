@@ -1,0 +1,14 @@
+------------------------------------------------------------------------
+r172 | nevcairiel | 2013-09-13 15:36:00 +0000 (Fri, 13 Sep 2013) | 1 line
+Changed paths:
+   A /tags/5.4-release1 (from /trunk:171)
+
+Weekly Tag - #1
+------------------------------------------------------------------------
+r171 | nevcairiel | 2013-09-13 15:34:56 +0000 (Fri, 13 Sep 2013) | 1 line
+Changed paths:
+   M /trunk/LibBabble-Inventory-3.0.lua
+   M /trunk/LibBabble-Inventory-3.0.toc
+
+Update for 5.4
+------------------------------------------------------------------------
