@@ -1,5 +1,22 @@
 
 Postal3DB = {
+	["profileKeys"] = {
+		["Orran - Thrall"] = "Orran - Thrall",
+		["Khanen - Thrall"] = "Khanen - Thrall",
+		["Quitor - Aerie Peak"] = "Quitor - Aerie Peak",
+		["Orranstout - Aerie Peak"] = "Orranstout - Aerie Peak",
+		["Wrimtok - Aerie Peak"] = "Wrimtok - Aerie Peak",
+		["Brimtok - Thrall"] = "Brimtok - Thrall",
+		["Jains - Thrall"] = "Jains - Thrall",
+		["Orazzle - Thrall"] = "Orazzle - Thrall",
+		["Orsun - Aerie Peak"] = "Orsun - Aerie Peak",
+		["Orbear - Aerie Peak"] = "Orbear - Aerie Peak",
+		["Orstout - Aerie Peak"] = "Orstout - Aerie Peak",
+		["Orstout - Thrall"] = "Orstout - Thrall",
+		["Eammiran - Thrall"] = "Eammiran - Thrall",
+		["Cajamarca - Thrall"] = "Cajamarca - Thrall",
+		["Orlight - Aerie Peak"] = "Orlight - Aerie Peak",
+	},
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
@@ -20,23 +37,6 @@ Postal3DB = {
 				"Wrimtok|Aerie Peak|Alliance|21|DRUID", -- [15]
 			},
 		},
-	},
-	["profileKeys"] = {
-		["Orran - Thrall"] = "Orran - Thrall",
-		["Khanen - Thrall"] = "Khanen - Thrall",
-		["Quitor - Aerie Peak"] = "Quitor - Aerie Peak",
-		["Orlight - Aerie Peak"] = "Orlight - Aerie Peak",
-		["Wrimtok - Aerie Peak"] = "Wrimtok - Aerie Peak",
-		["Brimtok - Thrall"] = "Brimtok - Thrall",
-		["Jains - Thrall"] = "Jains - Thrall",
-		["Orazzle - Thrall"] = "Orazzle - Thrall",
-		["Orsun - Aerie Peak"] = "Orsun - Aerie Peak",
-		["Orbear - Aerie Peak"] = "Orbear - Aerie Peak",
-		["Cajamarca - Thrall"] = "Cajamarca - Thrall",
-		["Orstout - Thrall"] = "Orstout - Thrall",
-		["Eammiran - Thrall"] = "Eammiran - Thrall",
-		["Orstout - Aerie Peak"] = "Orstout - Aerie Peak",
-		["Orranstout - Aerie Peak"] = "Orranstout - Aerie Peak",
 	},
 	["profiles"] = {
 		["Orran - Thrall"] = {
@@ -60,7 +60,7 @@ Postal3DB = {
 		},
 		["Quitor - Aerie Peak"] = {
 		},
-		["Orlight - Aerie Peak"] = {
+		["Orranstout - Aerie Peak"] = {
 		},
 		["Wrimtok - Aerie Peak"] = {
 			["BlackBook"] = {
@@ -97,11 +97,18 @@ Postal3DB = {
 				},
 			},
 		},
-		["Cajamarca - Thrall"] = {
+		["Orstout - Aerie Peak"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Orstout|Thrall|Horde", -- [1]
+					"Orbear|Aerie Peak|Alliance", -- [1]
+					"Kloroseleon|Aerie Peak|Alliance", -- [2]
+					"Kloros|Aerie Peak|Alliance", -- [3]
+					"Quitkrying|Aerie Peak|Alliance", -- [4]
+					"Orlight|Aerie Peak|Alliance", -- [5]
+					"Wrimtok|Aerie Peak|Alliance", -- [6]
+					"Azuba|Aerie Peak|Alliance", -- [7]
 				},
+				["AutoCompleteGuild"] = false,
 			},
 		},
 		["Orstout - Thrall"] = {
@@ -120,21 +127,14 @@ Postal3DB = {
 				},
 			},
 		},
-		["Orstout - Aerie Peak"] = {
+		["Cajamarca - Thrall"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Kloroseleon|Aerie Peak|Alliance", -- [1]
-					"Orbear|Aerie Peak|Alliance", -- [2]
-					"Kloros|Aerie Peak|Alliance", -- [3]
-					"Quitkrying|Aerie Peak|Alliance", -- [4]
-					"Orlight|Aerie Peak|Alliance", -- [5]
-					"Wrimtok|Aerie Peak|Alliance", -- [6]
-					"Azuba|Aerie Peak|Alliance", -- [7]
+					"Orstout|Thrall|Horde", -- [1]
 				},
-				["AutoCompleteGuild"] = false,
 			},
 		},
-		["Orranstout - Aerie Peak"] = {
+		["Orlight - Aerie Peak"] = {
 		},
 	},
 }

@@ -13,3 +13,17 @@ X: -172
 Y: -116
 W: 32
 H: 32
+Frame: TopCharm
+FrameLevel: 1
+Anchor: BOTTOM
+X: 88
+Y: 198
+W: 32
+H: 32
+Frame: TopFlare
+FrameLevel: 1
+Anchor: BOTTOM
+X: -111
+Y: 197
+W: 32
+H: 32
