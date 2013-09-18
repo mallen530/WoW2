@@ -9,14 +9,15 @@ Postal3DB = {
 				"Jains|Thrall|Horde|68|MONK", -- [4]
 				"Khanen|Thrall|Horde|90|DEATHKNIGHT", -- [5]
 				"Orazzle|Thrall|Horde|89|SHAMAN", -- [6]
-				"Orlight|Aerie Peak|Alliance|41|PRIEST", -- [7]
-				"Orranstout|Aerie Peak|Alliance|14|MONK", -- [8]
-				"Orran|Thrall|Horde|90|PALADIN", -- [9]
-				"Orstout|Aerie Peak|Alliance|90|MONK", -- [10]
-				"Orstout|Thrall|Horde|90|MONK", -- [11]
-				"Orsun|Aerie Peak|Alliance|1|PALADIN", -- [12]
-				"Quitor|Aerie Peak|Alliance|3|PRIEST", -- [13]
-				"Wrimtok|Aerie Peak|Alliance|18|DRUID", -- [14]
+				"Orbear|Aerie Peak|Alliance|90|DRUID", -- [7]
+				"Orlight|Aerie Peak|Alliance|41|PRIEST", -- [8]
+				"Orranstout|Aerie Peak|Alliance|14|MONK", -- [9]
+				"Orran|Thrall|Horde|90|PALADIN", -- [10]
+				"Orstout|Aerie Peak|Alliance|90|MONK", -- [11]
+				"Orstout|Thrall|Horde|90|MONK", -- [12]
+				"Orsun|Aerie Peak|Alliance|1|PALADIN", -- [13]
+				"Quitor|Aerie Peak|Alliance|3|PRIEST", -- [14]
+				"Wrimtok|Aerie Peak|Alliance|18|DRUID", -- [15]
 			},
 		},
 	},
@@ -24,17 +25,18 @@ Postal3DB = {
 		["Orran - Thrall"] = "Orran - Thrall",
 		["Khanen - Thrall"] = "Khanen - Thrall",
 		["Quitor - Aerie Peak"] = "Quitor - Aerie Peak",
+		["Orlight - Aerie Peak"] = "Orlight - Aerie Peak",
 		["Wrimtok - Aerie Peak"] = "Wrimtok - Aerie Peak",
 		["Brimtok - Thrall"] = "Brimtok - Thrall",
 		["Jains - Thrall"] = "Jains - Thrall",
-		["Orranstout - Aerie Peak"] = "Orranstout - Aerie Peak",
-		["Orsun - Aerie Peak"] = "Orsun - Aerie Peak",
-		["Orlight - Aerie Peak"] = "Orlight - Aerie Peak",
-		["Cajamarca - Thrall"] = "Cajamarca - Thrall",
-		["Orstout - Thrall"] = "Orstout - Thrall",
-		["Eammiran - Thrall"] = "Eammiran - Thrall",
-		["Orstout - Aerie Peak"] = "Orstout - Aerie Peak",
 		["Orazzle - Thrall"] = "Orazzle - Thrall",
+		["Orsun - Aerie Peak"] = "Orsun - Aerie Peak",
+		["Orbear - Aerie Peak"] = "Orbear - Aerie Peak",
+		["Cajamarca - Thrall"] = "Cajamarca - Thrall",
+		["Orstout - Aerie Peak"] = "Orstout - Aerie Peak",
+		["Eammiran - Thrall"] = "Eammiran - Thrall",
+		["Orstout - Thrall"] = "Orstout - Thrall",
+		["Orranstout - Aerie Peak"] = "Orranstout - Aerie Peak",
 	},
 	["profiles"] = {
 		["Orran - Thrall"] = {
@@ -58,6 +60,8 @@ Postal3DB = {
 		},
 		["Quitor - Aerie Peak"] = {
 		},
+		["Orlight - Aerie Peak"] = {
+		},
 		["Wrimtok - Aerie Peak"] = {
 		},
 		["Brimtok - Thrall"] = {
@@ -72,16 +76,41 @@ Postal3DB = {
 		},
 		["Jains - Thrall"] = {
 		},
-		["Orranstout - Aerie Peak"] = {
+		["Orazzle - Thrall"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Eammiran|Thrall|Horde", -- [1]
+				},
+			},
 		},
 		["Orsun - Aerie Peak"] = {
 		},
-		["Orlight - Aerie Peak"] = {
+		["Orbear - Aerie Peak"] = {
 		},
 		["Cajamarca - Thrall"] = {
 			["BlackBook"] = {
 				["recent"] = {
 					"Orstout|Thrall|Horde", -- [1]
+				},
+			},
+		},
+		["Orstout - Aerie Peak"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Kloros|Aerie Peak|Alliance", -- [1]
+					"Quitkrying|Aerie Peak|Alliance", -- [2]
+					"Orlight|Aerie Peak|Alliance", -- [3]
+					"Wrimtok|Aerie Peak|Alliance", -- [4]
+					"Azuba|Aerie Peak|Alliance", -- [5]
+				},
+				["AutoCompleteGuild"] = false,
+			},
+		},
+		["Eammiran - Thrall"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Cajamarca|Thrall|Horde", -- [1]
+					"Orstout|Thrall|Horde", -- [2]
 				},
 			},
 		},
@@ -93,32 +122,7 @@ Postal3DB = {
 				},
 			},
 		},
-		["Eammiran - Thrall"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Cajamarca|Thrall|Horde", -- [1]
-					"Orstout|Thrall|Horde", -- [2]
-				},
-			},
-		},
-		["Orstout - Aerie Peak"] = {
-			["BlackBook"] = {
-				["AutoCompleteGuild"] = false,
-				["recent"] = {
-					"Kloros|Aerie Peak|Alliance", -- [1]
-					"Quitkrying|Aerie Peak|Alliance", -- [2]
-					"Orlight|Aerie Peak|Alliance", -- [3]
-					"Wrimtok|Aerie Peak|Alliance", -- [4]
-					"Azuba|Aerie Peak|Alliance", -- [5]
-				},
-			},
-		},
-		["Orazzle - Thrall"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Eammiran|Thrall|Horde", -- [1]
-				},
-			},
+		["Orranstout - Aerie Peak"] = {
 		},
 	},
 }

@@ -1,6 +1,8 @@
 
 AdiBagsDB = {
 	["namespaces"] = {
+		["ItemLevel"] = {
+		},
 		["FilterOverride"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -63,6 +65,21 @@ AdiBagsDB = {
 		},
 		["ItemSets"] = {
 		},
+		["DataSource"] = {
+		},
+		["Junk"] = {
+			["profiles"] = {
+				["Default"] = {
+					["exclude"] = {
+						[95567] = true,
+						[95568] = true,
+						[94288] = true,
+						[95491] = true,
+						[87903] = true,
+					},
+				},
+			},
+		},
 		["CurrencyFrame"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -80,37 +97,23 @@ AdiBagsDB = {
 				},
 			},
 		},
-		["Junk"] = {
-			["profiles"] = {
-				["Default"] = {
-					["exclude"] = {
-						[95567] = true,
-						[95568] = true,
-						[94288] = true,
-						[95491] = true,
-						[87903] = true,
-					},
-				},
-			},
-		},
-		["DataSource"] = {
-		},
 	},
 	["profileKeys"] = {
 		["Orran - Thrall"] = "Default",
 		["Khanen - Thrall"] = "Default",
 		["Quitor - Aerie Peak"] = "Default",
+		["Orlight - Aerie Peak"] = "Default",
 		["Wrimtok - Aerie Peak"] = "Default",
 		["Brimtok - Thrall"] = "Default",
 		["Jains - Thrall"] = "Default",
-		["Orranstout - Aerie Peak"] = "Default",
-		["Orsun - Aerie Peak"] = "Default",
-		["Orlight - Aerie Peak"] = "Default",
-		["Cajamarca - Thrall"] = "Default",
-		["Orstout - Thrall"] = "Default",
-		["Eammiran - Thrall"] = "Default",
-		["Orstout - Aerie Peak"] = "Default",
 		["Orazzle - Thrall"] = "Default",
+		["Orsun - Aerie Peak"] = "Default",
+		["Orbear - Aerie Peak"] = "Default",
+		["Cajamarca - Thrall"] = "Default",
+		["Orstout - Aerie Peak"] = "Default",
+		["Eammiran - Thrall"] = "Default",
+		["Orstout - Thrall"] = "Default",
+		["Orranstout - Aerie Peak"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
