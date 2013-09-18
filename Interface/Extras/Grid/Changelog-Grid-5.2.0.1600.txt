@@ -1,0 +1,34 @@
+------------------------------------------------------------------------
+r1600 | phanx | 2013-05-04 23:34:35 +0000 (Sat, 04 May 2013) | 1 line
+Changed paths:
+   A /tags/5.2.0.1600 (from /trunk:1599)
+
+Tagging as 5.2.0.1600
+------------------------------------------------------------------------
+r1599 | Phanx | 2013-04-25 22:22:30 +0000 (Thu, 25 Apr 2013) | 1 line
+Changed paths:
+   M /trunk/Locales/GridLocale-deDE.lua
+   M /trunk/Locales/GridLocale-esES.lua
+   M /trunk/Locales/GridLocale-frFR.lua
+   M /trunk/Locales/GridLocale-itIT.lua
+   M /trunk/Locales/GridLocale-koKR.lua
+   M /trunk/Locales/GridLocale-ptBR.lua
+   M /trunk/Locales/GridLocale-ruRU.lua
+   M /trunk/Locales/GridLocale-zhCN.lua
+   M /trunk/Locales/GridLocale-zhTW.lua
+   M /trunk/Statuses/GridStatusResurrect.lua
+
+- Add localization to GridStatusResurrect
+------------------------------------------------------------------------
+r1597 | Phanx | 2013-04-18 01:55:57 +0000 (Thu, 18 Apr 2013) | 1 line
+Changed paths:
+   M /trunk/GridLayout.lua
+
+- Give the drag tab a global name
+------------------------------------------------------------------------
+r1595 | Phanx | 2013-04-07 07:11:23 +0000 (Sun, 07 Apr 2013) | 1 line
+Changed paths:
+   M /trunk/GridFrame.lua
+
+- Add option to show right-click unit menu. Disabled by default.
+------------------------------------------------------------------------
