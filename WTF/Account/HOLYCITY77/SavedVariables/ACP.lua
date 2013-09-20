@@ -4,6 +4,7 @@ ACP_Data = {
 	["NoRecurse"] = false,
 	["NoChildren"] = true,
 	["collapsed"] = {
+		["DBM"] = true,
 	},
 	["ProtectedAddons"] = {
 		["ACP"] = true,

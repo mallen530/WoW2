@@ -1,0 +1,959 @@
+Version 5.2.3
+
+[Français]
+* Mise à jour pour le patch 5.4.0.
+* Mise à jour de l'id du sort Rêve de Cénarius.
+
+[English]
+* Update for 5.4.0 patch.
+* Update Dreams of Cenarius spell ID.
+
+Version 5.2.2
+
+[Français]
+* Compteur interne de point de combo fonctionne a nouveau (Il FAUT d'abord le réactiver dans le panneau de connfiguration des points de combo).
+
+[English]
+* Internal combo points counter work again (Before you MUST reactivate it in combo point configuration panel).
+
+Version 5.2.1
+
+[Français]
+* Mise à jour pour la 5.3.0.
+
+[English]
+* Update for 5.3.0.
+
+
+Version 5.2.0e
+
+[Français]
+* Changement de quelques variables globales en locales.
+* Modifications sur les fenetres popup statiques pour limiter les bugs avec l'interface du jeu.
+
+[English]
+* Changes somes variables from globals to locals.
+* Changes to static popup windows to limit bug with game ui.
+
+Version 5.2.0c
+
+[Français]
+* Mise à jour pour le patch 5.2
+* Desactivation du compteur interne de point de combo pour debuguage.
+* Les indicateurs de buffs sur les icônes ne devraient plus s'activer quand la technique n'aboutit pas (parade, absorbe, ...) et ne disparaissent plus si un autre feral pose un dot non buffé.
+* Corrections pour éviter les conflits avec certaines frames d'autres addons.
+
+[English]
+* Updated for patch 5.2
+* Deactivation of internal combo counter for debuguage.
+* Buffs indicators on icons should no longer activate when spell fails (parry, absorb, ...) and no longer disapear when other feral put a non buffed dot.
+* Fix to avoid conflicts with frames from other addons.
+
+Version 5.1.8 :
+
+[Français]
+* La barre de défense sauvage n'apparaît que dans la bonne spé.
+* Vous pouvez faire clignoter les icônes quand elles sont inactives.
+* DF ne modifie plus le zoom de la minimap dans les zones extérieures.
+* Changements mineurs.
+
+[English]
+* Savage defense bar only active in good spec.
+* You can make icons flashing when they are inactive.
+* DF no longer changes the zoom of the minimap in the outer areas.
+* Minors changes.
+
+Version 5.1.7g :
+
+[Français]
+* Le buff veille de la nature active correctement le point bleu sur les icônes.
+
+[English]
+* Nature's vigil buff correctly activate blue dot on icons.
+
+Version 5.1.7f :
+
+[Français]
+* Modification du fichier 'DroodFocus_fixLevel.lua' pour prendre en compte les cadres enfants avec un nom invalide.
+
+[English]
+* Changes into file 'DroodFocus_fixLevel.lua' to take into account childs frames without valide name.
+
+Version 5.1.7e :
+
+[Français]
+* [5.1.7e] Correction d'une erreur Lua dans le fichier 'DroodFocus_fixLevel.lua'.
+* [5.1.7b] Les addons (Droodfocus et d'autres) ne devraient plus provoquer de bugs au niveau de l'interface (boutons non cliquables, etc...)
+* [5.1.7b] Lacérer et mutilation n'apparaissent plus dans le module "fin de cooldown" si elle ne sont pas cochées.
+* [5.1.7b] Corrections mineures
+* [5.1.7] Module d'exportation : les sorts avec plusieurs ID sont correctement importés.
+* [5.1.7] Objets flottant : Les objets dans ce mode possèdent une échelle individuelle pour la texture et les textes.
+
+[English]
+* [5.1.7e] fix a lua error in file 'DroodFocus_fixLevel.lua'.
+* [5.1.7b] Addons (Droodfocus and others) should no longer cause bugs in the interface (buttons unclickable, etc ...)
+* [5.1.7b] Lacerate and mangle no longer appear in the module "cooldown ending" if they are not checked.
+* [5.1.7b] Minors fixes.
+* [5.1.7] Export Module: spells with multiple IDs are correctly imported.
+* [5.1.7] Floating Objects: The objects in this mode have an individual scale for texture and text.
+
+Version 5.1.6 :
+
+[Français]
+* Plus d'options pour le module "Puissance des dots".
+* La barre de puissance peut maintenant changer de couleur en fonction de sa valeur.
+* Liste de sort : nouvelle condition d'activation - Portée de la cible.
+* Corrections mineures.
+
+[English]
+* More options for module "Dots power".
+* The power bar can now change color depending on its value.
+* Spell list : new activation condition - Target range.
+* Minors fixes.
+
+Version 5.1.5 :
+
+[Français]
+* Les icônes ou les barres de temps peuvent être individuellement déplacées (dans le mode "flottant").
+* Certains effets speciaux ne devraient plus être désactivés aprés un rechargement de l'interface.
+* Effet speciaux : nouveau déclencheur - Actif par défaut.
+
+[English]
+* Icons or time bars can be individually moved (in "floating" mode).
+* Some special effects should no longer be disabled after a reload of the interface.
+* Special FX : New trigger - Active by default.
+
+Version 5.1.4 :
+
+[Français]
+* [5.1.4a] Correction d'une erreur LUA.
+* Ajout de fonctions pour l'exportation et l'importation de données dans la liste des sorts.
+* Barre de temps : La puissance des dots est également appliquée sur la couleur des barres pour déchirure, griffure et rosser.
+* Effet speciaux : Les textures peuvent être affichées progressivement.
+* Effet speciaux : nouveaux déclencheurs - Hors CD ou sous CD.
+* Changements mineurs au code et à la localisation.
+
+[English]
+* [5.1.4a] Fix LUA error.
+* Added functions for export and import datas to spells list.
+* Timerbars : Dots power is also applied on color of bars for rip, rake and thrash.
+* Special FX : Textures can be displayed progressively.
+* Special FX : New triggers - Under CD or not under CD.
+* Minors changes to code and localization.
+
+Version 5.1.3a :
+
+[Français]
+* Combo module: Mise à jour pour gérer les autres classes (Moines, Chaman, Prêtre, Démo, Chasseur, Guerrier, Mage).
+* Plus de précision pour le niveau d'affichage des cadres.
+* [5.1.3a] : Mise à jour de la nouvelle ID pour le sort idée claire
+* [5.1.3a] : Les textes sur les icones ne sont plus masqués
+
+[English]
+* Combo module: update to handle other classes (Monk, Shaman, Priest, Warlock, Hunter, Warrior, Mage).
+* More precision for level display of frames.
+* [5.1.3a] : Update for new spellID for Clearcasting.
+* [5.1.3a] : Texts on icons are no longer hidden.
+
+Version 5.1.2a :
+
+[Français]
+* Le point de combo supplémentaire sur un coup critique est affiché plus rapidement.
+* Le debuff rosser affiche également les petits points de puissance (comme déchirure et griffure).
+* Modification du système de calcul pour le point de puissances en haut a droite sur les icones:
+  Ce point indique par une couleur si vous pouvez poser un debuff plus puissant que l'actuel.
+  Un point rouge indique que votre puissance est inférieure à celle du debuff actuel (il ne faut pas appliquer un nouveau debuff par dessus l'actuel si le temps restant est supérieur à 3 secondes).
+  Un point jaune indique que votre puissance est supérieure de 0 à 12% de la puissance du debuff actuel (il est déconseillé d'appliquer un nouveau debuff par dessus l'actuel si le temps restant est supérieur à 3 secondes).
+  Un point vert indique que votre puissance est supérieur de 12% de la puissance du debuff actuel (Vous pouvez appliquer un debuff plus puissant que l'actuel).
+* Correction de l'erreur LUA au chargement de config auto lors du changement de spé.
+* Modification de la configuration par defaut.
+* Nouveau module 'DotsTracker' : Affiche une liste des dots sur différentes cibles (Ce module est désactivé par défaut).
+* [5.1.2a] Corrections bugs / Optimisations
+
+[English]
+* Additional combo point on a critical hit is displayed more quickly.
+* Thrash debuff also show small power points (like rip and rake).
+* Changes to calcul for the power point on the top right of the icons:
+  This point indicates by a color if you can put a more powerfull debuff than actual one.
+  A red dot indicates that your power is less than current debuff (Do not apply new debuff above the current if remaining time is greater than 3 secondes).
+  A yellow dot indicates that your power is greater than 0 to 12% of the current power debuff (it's not recommended to apply a new debuff above the current if the remaining time is greater than 3 secondes).
+  A green dot indicates that your power is greater than 12% of the current power debuff (You can apply a more powerfull debuff above the current).
+* Fix LUA error when configuration loaded after specialization changed.
+* Default configuration updated.
+* New module 'DotsTracker' : Displays a list of dots on different targets (This module is disabled by default).
+* [5.1.2a] Bugs fixes / Optimizations
+
+Version 5.1.1 :
+
+[Français]
+* Ajout du talent 'Veille de la nature' dans la gestion de la puissance des debuff déchirure et griffure.
+* Possibilité d'attribuer une couleur aux icônes en fonction de leur état (actif, inactif, sous cd).
+* Changement de la ligne de commande /df par /drood.
+* Modification de la configuration par défaut.
+* [5.1.1a] ajout d'options pour charger automatiquement une configuration au changement de spécialisation.
+* [5.1.1a] Vous pouvez paramétrer le message d'interruption.
+* [5.1.1b] Lambeau augmente correctement le nb de stack sur le debuff dechirure.
+* [5.1.1b] Correction de l'erreur LUA au chargement auto lors du changement de spé.
+
+[English]
+* Added talent 'Nature's Vigil' in managing power debuff of rip and rake.
+* Possibility to assign a color to the icons according to their status (active, inactive, cd).
+* Removed slash command /df, replaced by /drood.
+* Update default configuration.
+* [5.1.1a] added options pto change automatically the configuration when specialization changed.
+* [5.1.1a] You can set up the interrupt message.
+* [5.1.1b] Shred increase correctly number of stack on rip debuff.
+* [5.1.1b] Fix LUA error when configuration loaded when specialization changed.
+
+Version 5.1.0 :
+
+[Français]
+* Alerte visuelle et/ou sonore quand une technique atteint la limit de temps définie.
+* Les sons attribués quand un buff/debuff est activé ne se jouent plus de façon inopportune ou répété.
+* Amélioration de la gestion de la puissance des debuffs.
+* Nouvelle condition pour les sorts en fonction du % de vie de la cible.
+* Diverses corrections.
+
+[English]
+* Visual and/or sound alert when abilitie reach definited time limit.
+* Sounds assigned when a buff/debuff is active no longer play inappropriately.
+* Improved management for debuff power.
+* New condition for spells based on% health target.
+* Various fixes
+
+Version 5.0.8 :
+
+[Français]
+* Point de puissance d'attaque sur les icones:
+  le calcul de la puissance prend maintenant en compte la maitrise, rugissement sauvage, fureur du tigre et le talent "rêve de Cénarius".
+  De plus, pour les debuffs déchirure et griffure, il est indiqué par un point de couleur si le debuff a été posé avec le rugissement sauvage (rouge), la fureur du tigre (jaune) et une charge de rêve de Cenarius (bleu)
+* Les effets speciaux avec vérification du nombre de stack disparaissent correctement quand il n'y a plus de stack.
+
+[English]
+* Icon's Power dot:
+  Calcul takes now into account the mastery, savage roar, tiger fury and talent dream of Cenarius.
+  In addition, for rip and rake debuff, you show a little colored dot if debuff has been put with savage roar (red), tiger fury (yellow) and Dream of Cenarius (blue)
+* Special effects with number of stack checking disappear correctly when there is no more stack
+
+Version 5.0.7a :
+
+[Français]
+* Point de puissance d'attaque sur les icones:
+  le calcul de la puissance prend maintenant en compte la maitrise, rugissement sauvage, fureur du tigre et le talent "rêve de Cénarius".
+  De plus, pour tous les debuffs, il est indiqué par une petite lettre si le debuff profite du rugissement sauvage (R), de la fureur du tigre (T) ou du Rêve de Cenarius (C)
+* Barre d'incantation : Les sorts canalisés interruptibles devraient normalement être correctements affichés.
+* Ajouts mineurs dans la configuration par defaut (talents)
+* Meilleur gestion des auras.
+	
+[English]
+* Icon's Power dot:
+  Calcul takes now into account the mastery, savage roar, tiger fury and talent dream of Cenarius.
+  In addition, each debuff, you show a little letter if debuff has been put with savage roar (R), tiger fury (T) or Dream of cenarius (D)
+* Casting bar: interruptible channeled spells should correctly displayed.
+* Minors changes to defaut configuration (talents)
+* Code change to better management of auras.
+
+Version 5.0.6b :
+
+[Français]
+* les cooldowns fonctionnent pour tous les sorts
+* Nouvelle ligne de commande: /df showspellid
+  Active ou desactive l'affichage de l'id dans le chat
+		
+[English]
+* Cooldowns works for all spells.
+* New command line : /df showspellid
+  Enables or disables the display of spell id in chat
+
+Version 5.0.6a :
+
+[Français]
+* les CD internes (iCD) refonctionnent.
+* Changements mineurs sur la configuration par défaut.
+* Corrections mineurs au code/localisation.
+
+[English]
+* internal CD (iCD) fixed.
+* Minors changes to default configuration.
+* Minors code/localization fix.
+
+Version 5.0.6 :
+
+[Français]
+* Correction erreur lua au premier chargement de DF
+* La barre de combo supporte le Chi pour les moines
+
+[English]
+* Fix lua error at first launch of DF
+* Combo bar support Chi for Monk
+
+Version 5.0.5b :
+
+[Français]
+* Corrections erreur lua au déplacement des éléments avec la souris
+* Changements mineurs dans la localisation
+* Corrections mineures
+
+[English]
+* Fix lua error when drag UI elements
+* Minor localization update
+* Minors fix
+
+Version 5.0.5a :
+
+[Français]
+* Nouveau module : Défense sauvage. Similaire à la barre de combo mais pour les charges de défense sauvage.
+* Vous pouvez paramètrer le nombre de charge et l'ID utilisée pour la barre 'defense sauvage' (utile pour d'autre classe).
+* Panneaux de configuration : Créer à la demande pour libérer de la mémoire. La config s'ouvre plus rapidement.
+
+[English]
+* New module : Savage defense. Like combo bar but for savage defense charge.
+* You can now set up numbers of charge and spell ID for savage defense bar (usefull for other class).
+* Configuration panels : Created on demand to free memory. Configuration open more quickly.
+
+Version 5.0.5 :
+
+[Français]
+* Nouveau module : Défense sauvage. Similaire à la barre de combo mais pour les charges de défense sauvage.
+
+[English]
+* New module : Savage defense. Like combo bar but for savage defense charge.
+
+Version 5.0.4b :
+
+[Français]
+* corrections mineures
+* Les anciennes ID de sort eronnées sont changées automatiquement.
+* Point de puissance d'attaque: le calcul prend maintenant en compte la maitrise, fureur du tigre et rugissement sauvage.
+* Combo points module : Pour l'ours, possibilité d'afficher les charges pour défense sauvage au lieu des points de combo.
+
+[English]
+* minors fix
+* Bad spellID are changed automatically
+* PowerAttack dot: calculation now takes into account mastery, tiger fury and savage roar.
+* Combo points module : For bear, you can show savage defense charges instead combo points.
+
+Version 5.0.4a :
+
+[Français]
+* Corrections des bugs majeurs pour MoP et quelques bugs mineurs.
+* Modifications pour éviter le blocage de l'interface des glyphes,etc...
+* Configuration par defaut pour le chat et l'ours.
+* CD de mutilation (ours) et rosser (ours) directement implantés dans le code. Je n'aime pas mais en attendant mieux ça fonctionne...
+
+[English]
+* Fixs majors bugs with MoP and minors bugs.
+* Fixs to prevent glyph,... interface blocking
+* Default configuration for cat and bear
+* Hard coded CD for Mangle (bear) and Trash (bear). I don't like it ! I'll change this when i found a better solution...
+
+Version 4.3.9:
+
+[English]
+* * Fix error when open configuration panel via config mode.
+
+[Français]
+* Correction d'une erreur quand un panneau de config est ouvert via le mode de configuration.
+
+Version 4.3.8:
+
+[English]
+* CoolDown fixed and iCD limit increased.
+* Conflict with Dongeon finder and quest log fixed (i hope!).
+* To speed up the loading time, the control panels are not created during loading but when you open them for the first time. A brief slowdown can happen when you open the configuration for the first time.
+
+[Français]
+* CoolDown fixés et valeur maximale pour les iCD augmentées.
+* Conflit avec le journal de donjons et le journal de quêtes fixé (j'espére!).
+* Afin d'accélérer le temps de chargement, les panneaux de configuration ne sont plus créés pendant chargement mais quand vous les ouvrez pour la première fois.  Un ralentissement bref peut arriver quand vous ouvrez la configuration pour la première fois.
+
+Version 4.3.6:
+
+[English]
+* Update for 4.2
+* Minors code changes.
+
+[Français]
+* Mise à jour pour la 4.2
+* Changement de codes mineurs
+
+Version 4.3.5:
+
+[English]
+* Fix error lua when there is only one spell in spell list.
+* Workaround to handle Combatlog change at 4.2.
+* Cooldown correctly reset for mutilation spell when berzerk talent proc.
+
+[Français]
+* Correction d'une erreur lua quand seulement un sort est présent dans la liste des sorts.
+* Code spécial pour gérer le changement du Combatlog à la 4.2.
+* Cooldown correctement reset pour le sort mutilation quand le talent Berzerk proc.
+
+Version 4.3.4:
+
+[English]
+* Minor code changes.
+* The warning system can generate 4 events simultaneously.
+* Spells can now be filtered by specialization (talent tree) in addition to forms, etc. ...
+* New command line to change the channel where is redirected interrupts (/df report NONE|SAY|YELL|PARTY|RAID|CHAT)
+* The arrows on power bars are only visible when player use energie (cat,rogue,...)
+* The stacking order for bars and icons is now configurable.
+
+[Français]
+* Changement de code mineurs.
+* Le système d'alerte peut générer 4 événements simultanément.
+* Les sorts peuvent maintenant être filtrés par spécialisation (arbre de talents) en plus des formes,etc...
+* Nouvelle ligne de commande pour modifier le canal vers lequel est redirigé le report des interruptions (/df report NONE|SAY|YELL|PARTY|RAID|CHAT)
+* Les fléches sur la barres de puissances sont cachées quand le joueur n'utilise pas de l'energie.
+* L'ordre d'empilage des barres et icones est maintenant configurable.
+
+Version 4.3.3:
+
+* Tested for Patch 4.2
+
+[English]
+* Minors bugs fix
+* Added option to display interrupts.
+* Improving the method of sorting icons and bars.
+* Configurations saved can now be erased.
+* The combo points are visible to all classes.
+* The special effects can now be triggered if the (de) buff is not present.
+* New status bar : Savage defense, give current status of the shield.
+* CastBar update: You can play a sound on cast.
+
+[Français]
+* Corrections de bugs mineurs
+* Ajout d'une option pour afficher les interruptions.
+* Amélioration de la méthode de tri des icones et barres.
+* Les configurations sauvées peuvent maintenant être effacées.
+* Les points de combos sont visibles pour toutes les classes.
+* Les effets spéciaux peuvent maintenant être déclenchés si le (de)buff n'est pas présent.
+* Nouvelle barre de status : Défense sauvage, donne l'état du bouclier en temps réel.
+* Barre de cast màj: Vous pouvez jouer un son sur une incantation.
+
+Version 4.3.2:
+
+* Minors code change.
+* Added estimated Internal CD to spell's tooptip in spells list.
+* Updated CastBar: possibility to play sounds on cast.
+* adding a new special bar to track savage defense 'shield'.
+* New option for spells: Timer thresold, to ignore the spell if the remaining time exceeds the limit set.
+* Adding a predefined list of code in Lua code window:
+  - Blood in the Water: to set rip icon when target health >25% and bite icon when <25%
+  - Combopoint color : at 5 points, color combo points in red else in yellow.
+* Default configuration updated.
+
+Version 4.3.1b:
+
+* Time interval for 'Time-to-die' calcul fixed.
+
+Version 4.3.1:
+
+* Warning module : Text updated. Added spell school in addition of name of buff/debuff.
+* Spell module : Number of combo points needed to activate objet works with Bears and Paladins.
+
+Version 4.3.0:
+
+* Combo points module : Frost and unholy runes correctly detected.
+* Powerbar module : Energie indicators correctly placed in vertical mode.
+* Warning module : Added text to icon for buff and debuff.
+
+Version 4.2.9:
+
+* Combo points module : Textures more customizable and combo bar use holy power for paladin.
+* Infos module : added vengeance status and savage defense absortion base value is now 35% before mastery.
+* Icons module : New alpha level added for spells under CD.
+* Added default WoW fonts to list of fonts available to DF.
+
+Version 4.2.8:
+
+* Changes in the code to reduce CPU load.
+
+Version 4.2.7c:
+
+* minors code change. 
+
+Version 4.2.7b:
+
+* French version correctly detected. 
+
+Version 4.2.7:
+
+* Options : Somes adjustements and timerbars/iconbars 1 & 2 have separate parameters. 
+* Spells list: New conditions for the activation of objects.
+  - Minimum number of combo points needed.
+  - Minimum number of stacks required.
+  - LuaCode: LUA Editor to create your requirements.
+* Default configuration updated: added "Blood in the water" entry.
+* Cooldown: You can change the list of spells monitored.
+* News textures for blood splatters.
+* Minor changes to localization.
+
+Version 4.2.6:
+
+* Minors code change to avoid LUA error.
+
+Version 4.2.5 beta:
+
+* Minors code change to avoid LUA error.
+
+Version 4.2.4 beta:
+
+* Icons module: Fixed bad offsets for automatic mode.
+* Added errors handler: If DroodFocus cause LUA error, it's stopped and the error is clearly shown for easy report.
+
+Version 4.2.3 beta:
+
+* Icons module: Dot timer don't appear if CD text is disable.
+* Icons module options: You can setup width and height separatly. 'Inactive alpha' option fixed.
+* FX module : add text for timer.
+* Paladin justification (-10% damage) will be correctly detected.
+* G.P.S fixed
+
+Version 4.2.2 beta:
+
+* Minors localisation change.
+* Practice module: spells found by pratice mode are added (if there is not already in list) to current spells list rather than replacing it totally.
+* Special FX : you can specify a minimum number of stacks to start the effect.
+* Spells module: Dot timer can be disabled
+
+Version 4.2.1 beta:
+
+* CD Timers on icons fixed
+* Minors options added or fixed
+* Added new options in "infos" module : Savage défense. Theorical amount of damage absorbeb by your savage defense shield. Based on your PA in real time.
+* Blood splatters desactivated by default in raid.
+
+Version 4.2.0 beta:
+
+* minors code change
+* New module 'Special FX': For each spells tracked by DroodFocus, you can assign  specials FX (like OOC). 'OOC module' removed and replaced by new system.
+* New module 'EclipseBar'.
+* Configuration for feral and moonkin updated.
+* New stance for druids : Moonkin form and Tree of life are separated.
+* Bars can be stacked above or below anchors.
+* News options for timerbars 1 and 2.
+* TimeToDie : calculate Dps from last 10 seconds with a minimum of 4 secondes dps on the target to be available.
+* New option to "Visibility" module : Visible when active target only.
+* Icons custom positions fixed.
+* Anchors level fixed.
+* Icons module : New timer for periodics debuffs cast by the player: Next tick. For périodic debuff, instead of the CD timer, the time remaining for the next tick is displayed.
+
+Version 4.1.9 beta:
+* internal version. Not released.
+
+Version 4.1.8 beta:
+
+* Minors code change.
+* You can change numbers of columns for icons bar 2.
+* Auras are now managed.
+* TimeToDie is more accurate. Average dps calculated from last 10 secondes.
+* New module: Practice. DroodFocus can learn spells ! Start mode "practice" by typing the command "/df practice" or via configuration panel. DroodFocus will learn the buffs and debuffs for the duration of the session. Stop mode by typing again "/df practice" and you will be asked if you want to update the list of spells.
+
+Version 4.1.7 beta:
+
+* Fixed Lua error for somes config at login.
+* Fix LUA error if spellID for powerbar's arrows are incorrect.
+
+Version 4.1.6 beta:
+
+* Fix LUA error at login with items that are not in the player cache.
+* TargetBar and HealthBar have new option: TimeToDie. in addition of current HP, %, etc... you can also see "time to die" in format m:ss.
+* Warning system show a skull every 5 seconds if your threat is between 95%-99%.
+
+Version 4.1.5 beta:
+
+* Minors bugs fix
+* Powerbar arrows position can be changed.
+
+Version 4.1.4 beta:
+
+* Anchors correctly replaced (i hope!).
+* Timers on icons fixed (display in seconde only for icons, mm:ss for timerbars)
+
+Version 4.1.3 beta:
+
+* Minors localisation change.
+* Minors code changes.
+* Added a second icons bar.
+* Added a global anchor to move all the objects together.
+* The list of predefined spells is now built from the spellbook.
+* Added "Mastery" to infos module.
+* You can see also Buffs earned in the warning system.
+* Update the list of targets to scan the buffs/debuffs (Player buff/debuff, Target buff/debuff, Focus buff/debuff and Pet buff/debuff)
+* New popup window for important message. Appears only once for each new version (if needed).
+* To avoid conflict with spells with the same name (like swipe cat/bear or pulverize spells/proc), tracking of buffs / debuffs is now based on the SpellID only rather than checking the names. The corresponding option (Match exact ID) in the Control Panel has been deleted.
+
+Version 4.1.2 beta:
+
+* Minors localisation change
+* fix LUA error when you change value for spell's internalCD
+
+Version 4.1.1 beta:
+
+* Minors bugs fix and somes improvements
+* Power attack indicator on icons fixed
+* Positionning alert system fixed
+* Show only 3 combo points when in bear form
+* Remove slider for setup internal CD for spells, replaced by EditBox.
+* Cooldown fixed (for popup and bars)
+* Show décimal for Cooldown on icons when timer<3 secondes
+* Update predefinited spells list: all current feral cat-bear/defaut spells are included (missing somes specifics spells for balance/restoration). Spells with the same effect (like mangle cat/bear) are merged all in one.
+* Defaut configuration updated with new spellId.
+* NB: There is a new spells similar to mangle debuff. It's "Trauma", "Hemorrhage", "Tendon Rip" and "Gore" with IDs: 46857, 16511, 50271 and 35290. Don't forget to update in your spells list.
+
+Version 4.1.0 beta:
+
+* Fix for 4.0.1 patch
+* Timer >59 secondes are now shown in minutes.
+* GPS module desactivate for debugging.
+
+Version 4.0.21:
+
+* 'CONFIG' module : You can keep actual spell's list when you load another configuration (so, you change only the skin).
+
+Version 4.0.2:
+
+* 'CORE' module : OnUpdate event only handle after variables loaded.
+* 'BLOOD' module: Frames level changed to 0 from 1.
+* 'TALENT' module: Removed. Too many problems.
+* 'BARS' modules: Added an option to display the bar in the selected forms
+* 'COMBO' module: Added option to change power of the 'bump' effect.
+* 'SPELL' module :
+added somes spells ID and following objects ID (with procs) in preconfigurated list (in french here, localized in game, At least if you have the item )
+Volonté de porte-mort	(normal et héroïque) - Druide: Hâte/force/agilité
+Verdict de la mort (normal et héroïque)			
+Jeton de guerre de Herkuml	
+Idole de la lune gémissante (agilité/esquive)
+Idole de mutilation		
+Idole de l'éclipse de lune
+Idole du saule noir
+Bague de vengeance sans fin du Verdict des cendres	
+Carte de Sombrelune : Grandeur		
+Pierre runique de Mjolnir
+Scorpion incrusté d'aiguilles
+Le glas sinistre 
+
+Version 4.0.16:
+
+* 'SPELL' module: You can now track buff on your target (Like HOT).
+
+Version 4.0.15:
+
+* Optimizations.
+* 'SPELL' module: powerattack points values saved for for each mobs.
+* 'CoolDown' module: Mutilation (bear) CD fix.
+* 'TALENT' module: Change to avoid conflict with GearScore.
+* 'POWERBAR' module: Added option to change minimum interval for updating the bar. Energie Arrows correctly placed when bar is in vertical mode.
+* 'ALERT' module: If you want, you can show debuff icon when you gain it.
+* 'CORE' module: Added a trick to prevent combat log not responding.
+
+Version 4.0.14:
+
+* Seem to have a conflict with addon witch scan players talents/stuff (like GearScore). Remove all related things. Talent module totally removed for now.
+
+Version 4.0.13b:
+
+* Bug fixe causing lag interface
+
+Version 4.0.12:
+
+* 'GPS' module: second arrow added. You can set up the unit (target,focus or pet) for each arrow.
+* 'SPELL' module: improve PowerAttack point (PowerAttack saved for multiple mobs).
+* 'VISIBILITY' module: Added checkbox to always show UI (same for SPELL).
+* 'TALENT TREE' module: Configuration correctly loaded at spec change only and don't spam message in chat.
+* 'POWERBAR, MANABAR,TARGETBAR,...' module: text format is now customizable.
+* 'COMBO' module: You can show combo points has numerical value in addition of graphicals points (disabled by defaut).
+* New module : 'CASTBAR'. Show spell casting/channeling by your actual target. A green one: interruptible spell, a red one: not interruptible (of course, colors are customizable). 
+
+Version 4.0.11:
+
+* New module: Talent Tree. Set a configuration to a specific talent tree. This configuration will be loaded automatically at the connection or talent swap.
+* BuildIn config: Configuration for Moonkin fixed and should work normally.
+* Standard Minimap icon: You can hide standard icon from main option panel.
+* Modules "infos": dodge chance (#dodge) and parry chance (#parry) added.
+* Modules "alert": You can change the time that the texture will remain visible.
+* somes minors bugs fixed.
+
+Version 4.0.10 beta:
+
+* New indicator for icons: Attack Power. Small indicator at the top right of icons indicating the status of attack power.|A gray dot indicates that the PA is the same as when the application of the debuff.|A red dot, the PA is lower.|A green dot, the PA is higher.
+* New indicator for icons: Cooldown spiral. You can show the defaut animation of standard icon for cooldown on DroodFocus icons.
+
+Version 4.0.9:
+
+* For each spell, you can set alternate text for timerbars.
+* New option in Timerbars module: Bars can be proportional (from 100% to 0%) rather than fixed
+* Localization
+
+Version 4.0.8:
+
+* Bug fix: Internal CD not correctly update
+* Sound module: for each spell you can set up a sound when the buff is gain or debuff is applied
+* Few changes on default config (adding buff to the list)
+
+Version 4.0.7:
+
+* Fixed missing variables in default config
+* Now you can show/hide DroodFocus in specified stances/forms in addition of combat mode
+
+Version 4.0.6:
+
+* Cooldown module: GCD properly counted
+* New text added on icon for Cooldown.
+* new options for spells list: Internal CD. For each spell, you can assign an internal cooldown manually. It will appear on timerbars and icons just after the launch of spell (spells that have a real cooldown will ignore this number)
+* New module: sound. For the moment, play a sound when player leave combat only. I'll plan to extend this to spell proc in futur release.
+* Combo module: also manages the DeathKnight runes.
+* New skin : Moonkin. NOTA: I cannot test this configuration. So consider it's a beta version. Send me feedback on Curse. Thank you
+
+Version 4.0.5:
+
+* Timerbars no more disapears sometimes
+* New options for timerbars: CD bar
+  A little bar above the main timerbar show you the CD of spell.
+  You can change apparence in "timerbars panel"
+  and You can desactivate it for each spell in the "spells list"
+* added standard minimap icon
+* GPS return correct distance number
+* Somes adjustements on BuildIn config (default config set to statusbars v2)
+* the portrait of the flight form correctly assigned for feral druid
+
+Version 4.0.4:
+
+* Fix a Lua error during loading when the option "Automatic Placement" not activated
+* Gray background when exit configmode correctly disapear
+* Control Panel anchors: adding a link to the configuration of the objects they contain
+* Somes adjustements on BuildIn config
+* image size for portraits changed. It is possible that the portrait seems too big. Simply adjust its size in the configuration of the portrait (adjust the size of 64 pixels in height and width)
+
+Version 4.0.3:
+
+* New portraits for all druid forms availables. Default portrait change to the race and sex of you character
+* Add text to the GPS with distance (in meters)
+* Timerbars numbers : If timeleft > 60 sec, the format is mm:ss (icons remaining in seconde)
+* Few bugs removed
+
+Version 4.0.2:
+
+* adding options to adjust offset of texts on icons and timerbars.
+* Somes corrections to the buildins configs.
+* Adding new skin: Compact
+
+Version 4.0.1:
+
+* Combat log event fixed. This should fix the problem of the alert icon.
+* Spell receives correct value for "strong check" flag. This should fix the problem of spells with the same name like Berzerk or eclipse.
+* adding 2 new command lines: /df buff and /df debuff. To show in the chat a list a buff or debuff with the spells ID.
+* adding new module: GPS. a little arrow shows the direction where is located the raid's member targeted.|Only works for players of your raid.
+
+Version 4.0.0:
+
+* Addon totally rewrite.
+* support of LibDataBroker 1.1, LibSharedMedia 3.0
+
+Version 3.5.1:
+
+* Fixed a bug where multiple icons appears when the cooldown of technique was over
+
+Version 3.5.0:
+
+* DroodFocus now track cooldown (The icon of the technique appears when the CD is completed)
+* New options in configuration panel for manage CoolDown icon
+* Fix somes configurations where certains buffs not tracked
+* minors changes to code
+
+Version 3.4.1:
+
+* TOC change for patch 3.2
+* minors changes to code
+
+Version 3.4.0a:
+
+* Fixed a bug that causes an error when selecting a new skin
+
+* New configs added : DefaultWithTarget and DefaultLowRes
+All DroodFocus's skins and configs have been created for a resolution of 1280/1024 pixels and a UI scale set to minimum.
+I add config "DefaultLowRes" for people that use High UI scale.
+"DefaultWithTarget" is the same as default but with statut bar for target hp.
+* Some optimizations in handling the threat
+* Target HP is now a statut bars like health or mana bar (Used in skin "CompactWithTarget")
+* when windows are not linked, you can move all the elements of the HUD with mouse
+* Adding a system to count the number of times where your rip was increased by the "glyph of shred".
+* New option for the (de)buffs icon's timers
+By default, timers overlay are 'childrens' of the icons created specifiquely by DroodFocus.
+In this version, you can specify new "parent" for this texts (like actionbutton or other).
+Simply select the (de)buffs in the DroodFocus debuff's list, click on "Sel." button (for selection) next to the editbox "Parent" and move the mouse pointer over the desired object and press enter. Press "Apply" button to applying and see the change.
+All interface elements that have a name can be used and you can use the same parent for several debuffs, however, they may sometimes be superposed because DroodFocus will not affect the visibility of the object that were not created by DroodFocus.
+It is a very practical approach to display timers but asked to take a few times to configure all.
+It is therefore impossible to create a default configuration for this type of setting. You can show an example with Bartender4 in screenshots.
+You can play ;)
+
+version 3.3.8:
+
+* Changes on the functioning of the timerbars.
+The timerbars flashing at the end of the timer.
+Proportional mode: by default, the value of the timerbars is between 0% and 100%. 100% being the maximum duration of the debuff.
+In the proportional mode, the value is fixed. It extends to all the bars from 0 up to 12 seconds (changeable in options).
+If the remaining time is greater than the max value, the bar is still all just full until that time passes in the limit.
+* some optimizations to the code.
+* few changes to the configuration panel.
+* Splatters bloods work again.
+
+version 3.3.7:
+
+* Configuration reset at first launch of this version. (Your custom configs aren't erased)
+* Localization update for zhCN and zhTW - thank a lot to WoWui.cn
+
+version 3.3.6:
+
+* new option to show HUD in humanoid form in addition of cat form and bear form
+* new option to show HUD only in combat
+* OOC effect is visible even if the HUD is hidden. OOC effect can be totally desactivated too.
+* New attribute for the skin to hide energy / health / mana / combos bars.
+* new option to hide hp% of the target.
+* Timerbars may have a proportional width (relative to total time) rather than fixed.
+* Second stack of timerbars. (de)buffs can be placed in one or the other.
+* New skin : Blood. simple HUD with a bloody texture around it.
+* New skin : Compact. similar to simple HUD, but with minimalistic health/mana bars.
+* New configuration set : SideBars. Using simpleHUD, bars placed at left (debuff) and right (buff) of HUD. 
+* New configuration set : Square. Using compactHUD, icons placed at left (debuff) and right (buff) of HUD. 
+* Somes changes in configuration panel to manage second timersbar
+* localization updates
+
+version 3.3.5:
+
+* Configurations can be saved. Everything is saved : windows positions, scales, skin used, abilities list, etc...
+  I added somes configurations sets. Take a look in main panel option to show configurations available.
+  Beware, save your config before loading a new one else she'll be lost.
+* Positions of windows, icones and bars can be linked and moved together. Uncheck "linked" check box to enable individual moves.
+* New skin added: Simple. Basic Hud with simple statusbars (used in default config). and somes 'uggly' skins was removed.
+
+version 3.3.4:
+
+* Remove a fonction that cause deleted spells recreated at each login
+* Faerie fire feral and Improved Faerie Fire now correctly works together
+* Icons and statusbars can be hidden separatly
+
+version 3.3.3:
+
+* Debuff icons are now draggables with mouse (unlock windows to enable moves). You can always moves all the icons by using the little wheel or coordinates in options.
+* Savage defense buff added to the defaut list (spellId: 62600).
+* 'Alert system" improved. In addition of positionning alert (too far or not behind target), i add a threat alert: If your threat to the actual target is > at 95%, a skull icon is shown.
+* new command line: /df resetlist - Reset debuff list to default.
+* Localization changes.
+
+version 3.3.2 :
+
+* Somes bugs removed with 3.1.
+* New options to enable/disable automatic sorting of status bars.
+* New command line : /df resetbars, replace bars at center of screen
+* Status bars now use this own font and texture (file 'font_bars.ttf' & 'barsTexture.tga' in 'arts' directory).
+* Note to japanese or korean users : If spell names on status bar doesn't show correctly, overwrite the file 'font_bars.ttf' in the 'arts' directory by one similar TTF font from your PC.
+
+version 3.3.2 beta 4 :
+
+* Improved scanning of buff/debuff list.
+* New filter: Cat/Bear, debuffs active in cat and/or bear.
+* new indicator on icons to show if it's improved one (like Mangle - no point: mangle cat, one point: mangle bear, 2 points: trauma)
+* Adding status bars for each spell in addition of icons, stacked and sorted by time remaining.
+* Somes changes to configurations panel to configure status bar (font size, width, height and color for each buff/debuff).
+* Modifie .TOC file to support CURSE Client.
+
+version 3.3.2 beta 3 :
+
+* Somes problems with scaling & positionning frames. It will be ok with this version.
+
+version 3.3.2 beta 2 :
+
+* Optimisations
+
+version 3.3.2 beta 1 :
+
+* Options to change skin's details added. It's a basic interface, it should evolve (colors are not editable and field's descriptions aren't very clear).
+* New blood splatters
+* Add new skin : Blade (credits for texture goes to : whizque - SquidFrame - http://wow.curse.com/downloads/wow-addons/details/squidframe.aspx)
+* zhCN localization updated (thanx to people from www.wowui.cn)
+
+version 3.3.1 :
+
+* Add specific text to stack on icons. they can be placed individualy.
+* You can now specify width and height for debuff icons.
+* Fix debuff list add/remove items
+* 'alert positionning' icon correctly replaced for somes skins
+
+version 3.3.0c :
+
+* Remove bugs that cause debuffs icons doesn't appear or not correctly fading.
+* Fix debuff list add/remove items
+
+version 3.3.0 :
+
+* Due to the large change to variables. Configuration totally reset at the first launch of this version.
+* New configuration panel with mores options. Take a look into Blizzard interface options, or type /df options. 
+* Main frame and debuff frame can be dragged with mouse (hurray!)
+* You can modify,add or remove debuff/buff (check 'DEBUFF' tab in options)
+* Available skin slightly modified and no more need to reload ui to see changes.
+* demoralizing shout added to the debuff list (use the demoralizing roar icon)
+* Need returns from 3.1 PTR:
+  DroodFocus has a particular way to handle debuff and i think at this time, he's ready for the patch.
+  And particulary for the new glyph of Shred (+2 seconds to RIP duration per shred for a maximum of 6 seconds)
+    
+version 3.2.1 :
+
+* Icons for positionning alert correctly disapear.
+
+version 3.2.0 :
+
+* Removed "Infected wounds" debuff. Not very usefull.
+* Removed the "useless" threath bar. Replaced by a health bar.
+* Added "Lightning Speed / Berzerker" buff.
+  If your weapon is enchanted with berzerker or Mongoose, this icon pop when enchant proc.
+* Buffs/debuffs window : icons are always visibles, but they are transparent in inactive state .
+* corrections to somes skins.
+* Positions for the main window and debuff window are now relative to TOP LEFT (0,0) of the screen (instead of CENTER of the screen)
+  (you need to replace windows at the first launch of this version)
+  Note : i have no plan to enable dragging window with mouse. 
+* Added option to hide the HUD.
+* Added positionning errors : If a spell failed because you're not in range or behind your target (for shred), a small icon pop to prevent you.
+      
+version 3.1.8 :
+
+* Added option to change skin
+
+version 3.1.7 :
+
+* Added "BarkSkin" buff
+* Added "Trauma" debuff
+* Added littles arrows on energy bar. Show you the energy needed for mutilation and shred (buffs & talents include)
+
+version 3.1.6 :
+
+* If option activated (by default), play a sound when leave combat
+* Added "ClearCast" buff, "SavageRoar" buff and "Berzerk" buff
+* Animation for icons changed (no more scaling effect, replaced by a fading effect)
+* Using textures icons from game datas for abilities
+
+version 3.1.5 :
+
+* Positions of main frame and debuff frame correctly changed when closing options frame
+
+version 3.1.3 :
+
+* Somes bugs removed
+
+version 3.1.2 :
+
+* minor changes to the debuff datas
+* Icon flash when time expire
+
+version 3.1.0 :
+
+* Totally rewrite code for debuff functions, according to the new API.
+* Added "Infected Wounds" debuff to the list
+* Minors changes to the threat bar
+* Change text for debuff : time left, number of stack and below amount of damage for DOT like rip, lacérate, ect...
+
+version 3.0.0 :
+
+* Energy bar and mana bar totally rewrite according to the new regen system
+* Energy tick bar disapear, it's replaced by a threatbar using the new thread system : your threat is shown as %, 0% your not on threat list of the mob, 100% your actually tanking the mob. the bar's color change according to your current threat level

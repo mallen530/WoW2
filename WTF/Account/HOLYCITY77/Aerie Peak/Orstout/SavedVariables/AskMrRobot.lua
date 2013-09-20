@@ -280,4 +280,20 @@ AmrRace = "Pandaren"
 AmrLevel = 90
 AmrFaction = "Alliance"
 AmrActiveSpec = 1
-AmrHideMapIcon = false
+AmrOptions = {
+}
+AmrGlyphs = {
+}
+AmrTalents = {
+}
+AmrBankItemsAndCounts = {
+}
+AmrImportString = ""
+AmrImportDate = ""
+AmrSendSettings = {
+	["SendTo"] = "",
+	["SendGems"] = true,
+	["SendEnchants"] = true,
+	["SendEnchantMaterials"] = true,
+	["SendToType"] = "a friend",
+}

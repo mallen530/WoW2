@@ -1,0 +1,88 @@
+------------------------------------------------------------------------
+r1020 | jlam | 2013-09-11 01:35:08 +0000 (Wed, 11 Sep 2013) | 1 line
+Changed paths:
+   A /tags/5.4.0 (from /trunk:1019)
+
+Tagging as 5.4.0 release.
+------------------------------------------------------------------------
+r1019 | jlam | 2013-09-11 01:34:18 +0000 (Wed, 11 Sep 2013) | 1 line
+Changed paths:
+   M /trunk/Ovale.toc
+
+Update TOC for 5.4.
+------------------------------------------------------------------------
+r1017 | jlam | 2013-09-06 02:47:03 +0000 (Fri, 06 Sep 2013) | 1 line
+Changed paths:
+   M /trunk/OvaleAura.lua
+   M /trunk/OvaleCondition.lua
+   M /trunk/OvaleState.lua
+
+Fix bug with SpellDamageBuff() information not being applied to DoTs.
+------------------------------------------------------------------------
+r1015 | jlam | 2013-09-02 15:41:09 +0000 (Mon, 02 Sep 2013) | 16 lines
+Changed paths:
+   M /trunk/OvaleBestAction.lua
+
+Introduce new spell priority feature ``wait=N''.
+
+Setting wait=N in a Spell() or Item() action will cause that action to
+have priority over later actions if the later actions start within N
+seconds of that action's start time.
+
+In the following example, Crusader Strike will be suggested over later
+actions as long as it is within 0.2 seconds of the Crusader Strike
+cooldown, otherwise Judgment will be suggested within 0.2 seconds of the
+Judgment cooldown, followed by Templars Verdict or Holy Prism using normal
+start time comparisons.
+
+    Spell(crusader_strike wait=0.2)
+    Spell(judgment wait=0.2)
+    Spell(templars_verdict)
+    Spell(holy_prism)
+------------------------------------------------------------------------
+r1014 | jlam | 2013-09-02 15:41:00 +0000 (Mon, 02 Sep 2013) | 10 lines
+Changed paths:
+   M /trunk/defaut/Demoniste.lua
+
+Warlock: Fixes to destruction script for Immolate and Rain of Fire.
+
+- Use the correct spell ID for the instant-cast Rain of Fire gained by
+  destruction warlocks after level 54 (Aftermath).
+
+- Also check for the Immolate debuff applied to targets near an Immolate
+  target when determining whether a fresh Immolate must be cast on the
+  current target.
+
+Fixes from @ShmooDude in ticket 284.
+------------------------------------------------------------------------
+r1013 | jlam | 2013-09-02 15:40:51 +0000 (Mon, 02 Sep 2013) | 1 line
+Changed paths:
+   M /trunk/OvaleCondition.lua
+
+Alias IncomingDamage to DamageTaken to match SimC condition name.
+------------------------------------------------------------------------
+r1011 | jlam | 2013-08-14 21:13:34 +0000 (Wed, 14 Aug 2013) | 4 lines
+Changed paths:
+   M /trunk/OvalePaperDoll.lua
+
+Treat snapshotTime as a field that needs to be copied for snapshots.
+
+This fixes auras not gaining any snapshots when "aura" debugging is
+enabled.
+------------------------------------------------------------------------
+r1010 | jlam | 2013-08-14 21:13:14 +0000 (Wed, 14 Aug 2013) | 1 line
+Changed paths:
+   M /trunk/OvaleAura.lua
+
+Add more debugging info for OvaleAura for when DoTs are detected.
+------------------------------------------------------------------------
+r1009 | jlam | 2013-08-14 21:12:50 +0000 (Wed, 14 Aug 2013) | 4 lines
+Changed paths:
+   M /trunk/OvaleOptions.lua
+   M /trunk/OvalePaperDoll.lua
+
+Add a "snapshot" debug toggle to only know when a new snapshot is taken.
+
+Quiet down the debugging for PaperDoll a bit by removing some lines that
+were needed solely for debugging the MH/OH damage computation.
+------------------------------------------------------------------------

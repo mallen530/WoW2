@@ -1,0 +1,12 @@
+tag 5.4.1
+2dc043ded72fd7b9284a7301cd75ce8c8de950e4
+Johnny C. Lam <jlam88@gmail.com>
+2013-09-10 21:25:14 -0400
+
+Tagging as 5.4.1 release.
+
+
+--------------------
+
+Johnny C. Lam:
+	- Update TOC for 5.4.
