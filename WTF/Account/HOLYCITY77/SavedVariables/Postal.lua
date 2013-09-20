@@ -4,15 +4,15 @@ Postal3DB = {
 		["Orran - Thrall"] = "Orran - Thrall",
 		["Khanen - Thrall"] = "Khanen - Thrall",
 		["Quitor - Aerie Peak"] = "Quitor - Aerie Peak",
-		["Orranstout - Aerie Peak"] = "Orranstout - Aerie Peak",
+		["Orazzle - Thrall"] = "Orazzle - Thrall",
 		["Wrimtok - Aerie Peak"] = "Wrimtok - Aerie Peak",
 		["Brimtok - Thrall"] = "Brimtok - Thrall",
 		["Jains - Thrall"] = "Jains - Thrall",
-		["Orazzle - Thrall"] = "Orazzle - Thrall",
+		["Orranstout - Aerie Peak"] = "Orranstout - Aerie Peak",
 		["Orsun - Aerie Peak"] = "Orsun - Aerie Peak",
 		["Orbear - Aerie Peak"] = "Orbear - Aerie Peak",
-		["Orstout - Aerie Peak"] = "Orstout - Aerie Peak",
 		["Orstout - Thrall"] = "Orstout - Thrall",
+		["Orstout - Aerie Peak"] = "Orstout - Aerie Peak",
 		["Eammiran - Thrall"] = "Eammiran - Thrall",
 		["Cajamarca - Thrall"] = "Cajamarca - Thrall",
 		["Orlight - Aerie Peak"] = "Orlight - Aerie Peak",
@@ -60,7 +60,12 @@ Postal3DB = {
 		},
 		["Quitor - Aerie Peak"] = {
 		},
-		["Orranstout - Aerie Peak"] = {
+		["Orazzle - Thrall"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Eammiran|Thrall|Horde", -- [1]
+				},
+			},
 		},
 		["Wrimtok - Aerie Peak"] = {
 			["BlackBook"] = {
@@ -81,12 +86,7 @@ Postal3DB = {
 		},
 		["Jains - Thrall"] = {
 		},
-		["Orazzle - Thrall"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Eammiran|Thrall|Horde", -- [1]
-				},
-			},
+		["Orranstout - Aerie Peak"] = {
 		},
 		["Orsun - Aerie Peak"] = {
 		},
@@ -94,6 +94,14 @@ Postal3DB = {
 			["BlackBook"] = {
 				["recent"] = {
 					"Orstout|Aerie Peak|Alliance", -- [1]
+				},
+			},
+		},
+		["Orstout - Thrall"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Cajamarca|Thrall|Horde", -- [1]
+					"Eammiran|Thrall|Horde", -- [2]
 				},
 			},
 		},
@@ -109,14 +117,6 @@ Postal3DB = {
 					"Azuba|Aerie Peak|Alliance", -- [7]
 				},
 				["AutoCompleteGuild"] = false,
-			},
-		},
-		["Orstout - Thrall"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Cajamarca|Thrall|Horde", -- [1]
-					"Eammiran|Thrall|Horde", -- [2]
-				},
 			},
 		},
 		["Eammiran - Thrall"] = {

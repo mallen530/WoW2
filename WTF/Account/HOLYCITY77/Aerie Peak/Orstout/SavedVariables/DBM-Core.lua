@@ -57,28 +57,7 @@ DBM_SavedOptions = {
 	},
 	["RangeFrameRadarY"] = -200.7592010498047,
 	["SettingsMessageShown"] = true,
-	["WarningColors"] = {
-		{
-			["b"] = 0.9411764705882353,
-			["g"] = 0.8,
-			["r"] = 0.4117647058823529,
-		}, -- [1]
-		{
-			["b"] = 0,
-			["g"] = 0.9490196078431372,
-			["r"] = 0.9490196078431372,
-		}, -- [2]
-		{
-			["b"] = 0,
-			["g"] = 0.5019607843137255,
-			["r"] = 1,
-		}, -- [3]
-		{
-			["b"] = 0.1019607843137255,
-			["g"] = 0.1019607843137255,
-			["r"] = 1,
-		}, -- [4]
-	},
+	["SpecialWarningFlashDura2"] = 0.4,
 	["SpecialWarningSound3"] = "Sound\\Creature\\KilJaeden\\KILJAEDEN02.wav",
 	["ForumsMessageShown"] = 9413,
 	["ShowWarningsInChat"] = true,
@@ -88,70 +67,91 @@ DBM_SavedOptions = {
 	["CountdownVoice"] = "Corsica",
 	["ShowEngageMessage"] = true,
 	["ShowRecoveryMessage"] = true,
-	["ShowSpecialWarnings"] = true,
+	["SpecialWarningSound"] = "Sound\\Spells\\PVPFlagTaken.wav",
 	["InfoFrameY"] = 234.0954437255859,
-	["ChatFrame"] = "DEFAULT_CHAT_FRAME",
+	["ShowSpecialWarnings"] = true,
 	["WarningIconRight"] = true,
 	["HealthFrameGrowUp"] = false,
-	["RangeFrameRadarX"] = -306.4446411132813,
-	["HideBossEmoteFrame"] = false,
 	["ShowCountdownText"] = false,
+	["HideBossEmoteFrame"] = false,
+	["RangeFrameRadarX"] = -306.4446411132813,
 	["ShowBigBrotherOnCombatStart"] = false,
 	["DontShowPTCountdownText"] = false,
-	["PTCountThreshold"] = 5,
 	["SpecialWarningFlashAlph1"] = 0.3,
-	["AutoRespond"] = true,
+	["PTCountThreshold"] = 5,
+	["DontShowInfoFrame"] = false,
 	["RangeFrameLocked"] = false,
 	["DontShowRangeFrame"] = false,
 	["DontSendBossWhispers"] = false,
 	["InfoFrameShowSelf"] = false,
 	["SpecialWarningFont"] = "Interface\\Addons\\TouchysMedia\\fonts\\SourceSansPro-Semibold.ttf",
-	["UseMasterVolume"] = true,
-	["RangeFrameFrames"] = "radar",
-	["SpecialWarningFlashDura1"] = 0.4,
+	["HealthFrameLocked"] = false,
+	["DontShowBossAnnounces"] = false,
+	["HPFrameMaxEntries"] = 5,
 	["ShowFakedRaidWarnings"] = false,
 	["LatencyThreshold"] = 250,
 	["ShowLoadMessage"] = true,
-	["DontShowPTNoID"] = false,
-	["LFDEnhance"] = true,
-	["HPFrameMaxEntries"] = 5,
 	["SetPlayerRole"] = true,
-	["BlockVersionUpdateNotice"] = false,
-	["RangeFramePoint"] = "CENTER",
-	["WarningIconChat"] = true,
-	["ShowLHFrame"] = true,
-	["RangeFrameSound2"] = "none",
-	["DontShowCTCount"] = false,
-	["ArrowPosY"] = -150,
-	["ShowPizzaMessage"] = true,
-	["AdvancedAutologBosses"] = false,
-	["SpecialWarningFlashCol1"] = {
-		1, -- [1]
-		1, -- [2]
-		0, -- [3]
-	},
+	["LFDEnhance"] = true,
+	["SpecialWarningFlashDura1"] = 0.4,
+	["DontShowPTNoID"] = false,
 	["SpecialWarningFontColor"] = {
 		0, -- [1]
 		0, -- [2]
 		1, -- [3]
 	},
+	["RangeFramePoint"] = "CENTER",
+	["WarningIconChat"] = true,
+	["SpecialWarningFlashCol1"] = {
+		1, -- [1]
+		1, -- [2]
+		0, -- [3]
+	},
+	["AdvancedAutologBosses"] = false,
+	["DontShowCTCount"] = false,
+	["ArrowPosY"] = -150,
+	["ShowPizzaMessage"] = true,
+	["RangeFrameSound2"] = "none",
+	["ShowLHFrame"] = true,
+	["BlockVersionUpdateNotice"] = false,
 	["DontShowPTText"] = false,
 	["Enabled"] = true,
-	["DontShowBossAnnounces"] = false,
-	["HealthFrameLocked"] = false,
+	["RangeFrameFrames"] = "radar",
+	["UseMasterVolume"] = true,
 	["DisableCinematics"] = false,
 	["MovieFilters"] = {
 	},
-	["DontShowInfoFrame"] = false,
+	["AutoRespond"] = true,
 	["ShowWipeMessage"] = true,
 	["LogOnlyRaidBosses"] = false,
 	["StripServerName"] = true,
-	["SpecialWarningSound"] = "Sound\\Spells\\PVPFlagTaken.wav",
+	["ChatFrame"] = "DEFAULT_CHAT_FRAME",
 	["AlwaysShowHealthFrame"] = false,
 	["HPFrameX"] = 140.8898773193359,
 	["ChallengeBest"] = "Realm",
 	["SpamBlockBossWhispers"] = false,
-	["SpecialWarningFlashDura2"] = 0.4,
+	["WarningColors"] = {
+		{
+			["r"] = 0.4117647058823529,
+			["g"] = 0.8,
+			["b"] = 0.9411764705882353,
+		}, -- [1]
+		{
+			["r"] = 0.9490196078431372,
+			["g"] = 0.9490196078431372,
+			["b"] = 0,
+		}, -- [2]
+		{
+			["r"] = 1,
+			["g"] = 0.5019607843137255,
+			["b"] = 0,
+		}, -- [3]
+		{
+			["r"] = 1,
+			["g"] = 0.1019607843137255,
+			["b"] = 0.1019607843137255,
+		}, -- [4]
+	},
 	["ShowFlashFrame"] = true,
 }
 DBT_SavedOptions = {
@@ -168,15 +168,15 @@ DBT_SavedOptions = {
 		["TimerPoint"] = "RIGHT",
 		["StartColorG"] = 0.7019607843137254,
 		["HugeBarYOffset"] = 15,
-		["BarYOffset"] = 15,
+		["HugeScale"] = 1.049999952316284,
 		["EndColorR"] = 1,
 		["Width"] = 183,
 		["HugeTimerPoint"] = "CENTER",
 		["Font"] = "Interface\\Addons\\TouchysMedia\\fonts\\SourceSansPro-Semibold.ttf",
-		["StartColorB"] = 0,
-		["TimerY"] = 223.7900390625,
 		["HugeTimerX"] = 459.1123046875,
-		["HugeScale"] = 1.049999952316284,
+		["TimerY"] = 223.7900390625,
+		["StartColorB"] = 0,
+		["BarYOffset"] = 15,
 		["BarXOffset"] = 0,
 		["EndColorB"] = 0,
 	},
