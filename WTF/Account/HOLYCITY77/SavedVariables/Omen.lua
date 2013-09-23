@@ -8,14 +8,14 @@ Omen3DB = {
 		["Wrimtok - Aerie Peak"] = "Wrimtok - Aerie Peak",
 		["Brimtok - Thrall"] = "Brimtok - Thrall",
 		["Jains - Thrall"] = "Jains - Thrall",
-		["Orazzle - Thrall"] = "Orazzle - Thrall",
+		["Orranstout - Aerie Peak"] = "Orranstout - Aerie Peak",
 		["Orsun - Aerie Peak"] = "Orsun - Aerie Peak",
 		["Orbear - Aerie Peak"] = "Orbear - Aerie Peak",
 		["Cajamarca - Thrall"] = "Cajamarca - Thrall",
-		["Orstout - Thrall"] = "Orstout - Thrall",
-		["Eammiran - Thrall"] = "Eammiran - Thrall",
 		["Orstout - Aerie Peak"] = "Orstout - Aerie Peak",
-		["Orranstout - Aerie Peak"] = "Orranstout - Aerie Peak",
+		["Eammiran - Thrall"] = "Eammiran - Thrall",
+		["Orstout - Thrall"] = "Orstout - Thrall",
+		["Orazzle - Thrall"] = "Orazzle - Thrall",
 	},
 	["profiles"] = {
 		["Orran - Thrall"] = {
@@ -127,7 +127,7 @@ Omen3DB = {
 				["Spacing"] = 1,
 			},
 		},
-		["Orazzle - Thrall"] = {
+		["Orranstout - Aerie Peak"] = {
 			["PositionY"] = 623.5714721679688,
 			["Background"] = {
 				["EdgeSize"] = 1,
@@ -180,39 +180,6 @@ Omen3DB = {
 			},
 			["PositionH"] = 82.00001525878906,
 		},
-		["Orstout - Thrall"] = {
-			["PositionY"] = 623.5714721679688,
-			["PositionX"] = 744.6429443359375,
-			["Locked"] = true,
-			["Background"] = {
-				["EdgeSize"] = 1,
-				["BarInset"] = 2,
-				["Texture"] = "ElvUI Blank",
-			},
-			["MinimapIcon"] = {
-				["hide"] = true,
-			},
-			["Bar"] = {
-				["Spacing"] = 1,
-			},
-		},
-		["Eammiran - Thrall"] = {
-			["PositionY"] = 821.416748046875,
-			["PositionW"] = 200.0000152587891,
-			["PositionH"] = 82.00001525878906,
-			["MinimapIcon"] = {
-				["hide"] = true,
-			},
-			["Background"] = {
-				["EdgeSize"] = 1,
-				["BarInset"] = 2,
-				["Texture"] = "ElvUI Blank",
-			},
-			["PositionX"] = -0,
-			["Bar"] = {
-				["Spacing"] = 1,
-			},
-		},
 		["Orstout - Aerie Peak"] = {
 			["PositionW"] = 219.9266815185547,
 			["NumBars"] = 4,
@@ -255,7 +222,40 @@ Omen3DB = {
 				["Height"] = 16,
 			},
 		},
-		["Orranstout - Aerie Peak"] = {
+		["Eammiran - Thrall"] = {
+			["PositionY"] = 821.416748046875,
+			["PositionW"] = 200.0000152587891,
+			["PositionH"] = 82.00001525878906,
+			["MinimapIcon"] = {
+				["hide"] = true,
+			},
+			["Background"] = {
+				["EdgeSize"] = 1,
+				["BarInset"] = 2,
+				["Texture"] = "ElvUI Blank",
+			},
+			["PositionX"] = -0,
+			["Bar"] = {
+				["Spacing"] = 1,
+			},
+		},
+		["Orstout - Thrall"] = {
+			["PositionY"] = 623.5714721679688,
+			["PositionX"] = 744.6429443359375,
+			["Locked"] = true,
+			["Background"] = {
+				["EdgeSize"] = 1,
+				["BarInset"] = 2,
+				["Texture"] = "ElvUI Blank",
+			},
+			["MinimapIcon"] = {
+				["hide"] = true,
+			},
+			["Bar"] = {
+				["Spacing"] = 1,
+			},
+		},
+		["Orazzle - Thrall"] = {
 			["PositionY"] = 623.5714721679688,
 			["Background"] = {
 				["EdgeSize"] = 1,

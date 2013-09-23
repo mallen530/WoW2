@@ -2,13 +2,13 @@
 AUCTIONATOR_SAVEDVARS = {
 	["_50000"] = 500,
 	["_2000"] = 100,
-	["_10000"] = 200,
-	["_500"] = 5,
-	["_1000000"] = 2500,
 	["_200000"] = 1000,
 	["STARTING_DISCOUNT"] = 5,
-	["LOG_DE_DATA_X"] = true,
+	["_1000000"] = 2500,
 	["_5000000"] = 10000,
+	["LOG_DE_DATA_X"] = true,
+	["_500"] = 5,
+	["_10000"] = 200,
 }
 AUCTIONATOR_PRICING_HISTORY = {
 	["Raw Turtle Meat"] = {
@@ -82,18 +82,18 @@ AUCTIONATOR_PRICING_HISTORY = {
 	},
 	["Mote of Life"] = {
 		["is"] = "22575:0",
-		["2549946"] = "11000:1",
 		["2562592"] = "4900:5",
 		["2548752"] = "13800:1",
+		["2549946"] = "11000:1",
 	},
 	["Jagged Wild Jade"] = {
 		["is"] = "76652:0",
 		["2503691"] = "939000:1",
 	},
-	["Aquamarine"] = {
-		["2545849"] = "29600:1",
-		["is"] = "7909:0",
-		["2548751"] = "24800:1",
+	["Living Essence"] = {
+		["is"] = "12803:0",
+		["2548752"] = "41200:1",
+		["2549945"] = "9900:1",
 	},
 	["Short Bastard Sword of the Tiger"] = {
 		["is"] = "3192:-14:1310722",
@@ -109,10 +109,10 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["is"] = "74834:0",
 		["2499574"] = "39400:1",
 	},
-	["Living Essence"] = {
-		["is"] = "12803:0",
-		["2548752"] = "41200:1",
-		["2549945"] = "9900:1",
+	["Aquamarine"] = {
+		["2545849"] = "29600:1",
+		["is"] = "7909:0",
+		["2548751"] = "24800:1",
 	},
 	["Elemental Earth"] = {
 		["is"] = "7067:0",
@@ -169,9 +169,9 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["is"] = "22576:0",
 		["2531543"] = "870:3",
 	},
-	["Void Crystal"] = {
-		["is"] = "22450:0",
-		["2531544"] = "2800:3",
+	["Nethercite Ore"] = {
+		["is"] = "32464:0",
+		["2531543"] = "128000:20",
 	},
 	["Essence of Destruction"] = {
 		["is"] = "71998:0",
@@ -189,18 +189,19 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["2547360:hd"] = "244000:1",
 		["2548800:hd"] = "245000:1",
 	},
+	["Mantid Elixir"] = {
+		["is"] = "76075:0",
+		["2531543"] = "9700:5",
+	},
+	["Prismatic Scale"] = {
+		["is"] = "79101:0",
+		["2539954"] = "74000:20",
+		["2501987"] = "39200:1",
+	},
 	["Temple Pauldrons of the Beast"] = {
 		["2560324"] = "759000:1",
 		["2565224"] = "760000:1",
 		["is"] = "82292:-41:1463354270",
-	},
-	["Tender Wolf Meat"] = {
-		["is"] = "12208:0",
-		["2545849"] = "370:3",
-	},
-	["Mantid Elixir"] = {
-		["is"] = "76075:0",
-		["2531543"] = "9700:5",
 	},
 	["Exotic Leather"] = {
 		["is"] = "72120:0",
@@ -218,15 +219,13 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["2501018"] = "20400:5",
 		["2501987"] = "16600:5",
 	},
-	["Prismatic Scale"] = {
-		["is"] = "79101:0",
-		["2539954"] = "74000:20",
-		["2501987"] = "39200:1",
+	["Blade of Hanna"] = {
+		["is"] = "2801:0",
+		["2531544"] = "5000000:1",
 	},
-	["Frostweave Cloth"] = {
-		["is"] = "33470:0",
-		["2509829"] = "34400:13",
-		["2548751"] = "27400:3",
+	["Mageweave Cloth"] = {
+		["is"] = "4338:0",
+		["2545849"] = "1305:1",
 	},
 	["Netherweave Cloth"] = {
 		["2548751"] = "2200:20",
@@ -251,19 +250,6 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["2513633"] = "999000:1",
 		["2521133"] = "1000000:1",
 	},
-	["Small Glimmering Shard"] = {
-		["2545850"] = "88:2",
-		["2549945"] = "66:2",
-		["is"] = "10978:0",
-		["2548752"] = "72:2",
-		["2562592"] = "49:2",
-	},
-	["Vine Jerkin of the Marksman"] = {
-		["is"] = "82262:-91:47449310",
-		["2561660"] = "2207500:1",
-		["2560323"] = "639000:1",
-		["2562467"] = "2002500:1",
-	},
 	["Formula: Enchant Bracer - Greater Spirit"] = {
 		["2548753"] = "2252500:1",
 		["2549945"] = "2255555:1",
@@ -271,12 +257,23 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["is"] = "11204:0",
 		["2545850"] = "257200:1",
 	},
-	["Pattern: Fine Leather Pants"] = {
-		["2548753"] = "1000000:1",
-		["2549945"] = "500000:1",
-		["2545851"] = "250000:1",
-		["is"] = "5972:0",
-		["2562592"] = "1002500:1",
+	["Subtle Sun's Radiance"] = {
+		["2503690"] = "66500:1",
+		["2500890"] = "189500:1",
+		["is"] = "76698:0",
+		["2531543"] = "128000:1",
+		["2502272"] = "69500:1",
+	},
+	["Small Glimmering Shard"] = {
+		["2545850"] = "88:2",
+		["2549945"] = "66:2",
+		["is"] = "10978:0",
+		["2548752"] = "72:2",
+		["2562592"] = "49:2",
+	},
+	["Witchberries"] = {
+		["is"] = "74846:0",
+		["2489598"] = "11800:5",
 	},
 	["Balanced Wild Jade"] = {
 		["is"] = "76646:0",
@@ -293,9 +290,12 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["2565225"] = "907000:1",
 		["is"] = "82269:-41:1782972950",
 	},
-	["Witchberries"] = {
-		["is"] = "74846:0",
-		["2489598"] = "11800:5",
+	["Pattern: Fine Leather Pants"] = {
+		["2548753"] = "1000000:1",
+		["2549945"] = "500000:1",
+		["2545851"] = "250000:1",
+		["is"] = "5972:0",
+		["2562592"] = "1002500:1",
 	},
 	["Ghost Iron Ore"] = {
 		["2508147"] = "27600:1",
@@ -308,13 +308,15 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["2548752"] = "13600:4",
 		["2549945"] = "12800:4",
 	},
-	["Arcane Dust"] = {
-		["is"] = "22445:0",
-		["2548753"] = "31200:4",
+	["Roguestone"] = {
+		["is"] = "76135:0",
+		["2500909"] = "27000:1",
+		["2502160"] = "129000:1",
 	},
-	["Vermilion Onyx"] = {
-		["is"] = "76140:0",
-		["2574225"] = "792000:1",
+	["Pattern: Red Woolen Boots"] = {
+		["is"] = "4345:0",
+		["2500908"] = "999000:1",
+		["2502160"] = "999000:1",
 	},
 	["Mark of the Illidari"] = {
 		["is"] = "32897:0",
@@ -333,12 +335,12 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["2560324"] = "4502500:1",
 		["2545088"] = "4677500:1",
 		["2627686"] = "4550000:1",
-		["2527142"] = "4997500:1",
+		["2545089"] = "4677500:1",
 		["2629371"] = "4015000:1",
 		["2626464"] = "4997500:1",
 		["2512779"] = "4432500:1",
 		["2527141"] = "5870000:1",
-		["2545089"] = "4677500:1",
+		["2527142"] = "4997500:1",
 		["2521133"] = "4242500:1",
 	},
 	["Zephyrite"] = {
@@ -439,19 +441,19 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["2509828"] = "9400:7",
 		["2509687"] = "9400:16",
 	},
-	["Spring Rabbit's Foot"] = {
-		["is"] = "44794:0",
-		["2488042"] = "72000:1",
+	["Rigid River's Heart"] = {
+		["is"] = "76636:0",
+		["2500890"] = "106500:1",
+		["2502271"] = "106000:1",
 	},
 	["Sha-Touched Leather"] = {
 		["is"] = "72162:0",
 		["2501018"] = "6200:3",
 		["2501987"] = "4400:3",
 	},
-	["Rigid River's Heart"] = {
-		["is"] = "76636:0",
-		["2500890"] = "106500:1",
-		["2502271"] = "106000:1",
+	["Maelstrom Crystal"] = {
+		["is"] = "52722:0",
+		["2531543"] = "7500:5",
 	},
 	["Stalwart Vermilion Onyx"] = {
 		["2503690"] = "69500:1",
@@ -476,9 +478,11 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["2500890"] = "43600:1",
 		["2502271"] = "42400:1",
 	},
-	["Nethersteel Claymore of the Bandit"] = {
-		["is"] = "25167:-40:644350005",
-		["2531545"] = "500000:1",
+	["Bear Meat"] = {
+		["is"] = "3173:0",
+		["2503818"] = "444:7",
+		["2512267"] = "2700:7",
+		["2508160"] = "114:7",
 	},
 	["Arctic Fur"] = {
 		["2549938"] = "89500:1",
@@ -519,15 +523,13 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["2488041"] = "348000:1",
 		["2489597"] = "79500:1",
 	},
-	["Bear Meat"] = {
-		["is"] = "3173:0",
-		["2503818"] = "444:7",
-		["2512267"] = "2700:7",
-		["2508160"] = "114:7",
+	["Nethersteel Claymore of the Bandit"] = {
+		["is"] = "25167:-40:644350005",
+		["2531545"] = "500000:1",
 	},
-	["Maelstrom Crystal"] = {
-		["is"] = "52722:0",
-		["2531543"] = "7500:5",
+	["Spring Rabbit's Foot"] = {
+		["is"] = "44794:0",
+		["2488042"] = "72000:1",
 	},
 	["Greater Cosmic Essence"] = {
 		["is"] = "34055:0",
@@ -578,10 +580,22 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["is"] = "74842:0",
 		["2488041"] = "40800:1",
 	},
-	["Pattern: Red Woolen Boots"] = {
-		["is"] = "4345:0",
-		["2500908"] = "999000:1",
-		["2502160"] = "999000:1",
+	["Vermilion Onyx"] = {
+		["is"] = "76140:0",
+		["2574225"] = "792000:1",
+	},
+	["Plans: Gemmed Copper Gauntlets"] = {
+		["is"] = "3610:0",
+		["2500908"] = "500000:1",
+		["2502160"] = "48600:1",
+	},
+	["Mystery Meat"] = {
+		["is"] = "12037:0",
+		["2545849"] = "313:2",
+	},
+	["Arcane Dust"] = {
+		["is"] = "22445:0",
+		["2548753"] = "31200:4",
 	},
 	["Lava Coral"] = {
 		["2489598"] = "948000:1",
@@ -591,39 +605,25 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["2500906"] = "648000:1",
 		["2531543"] = "651000:1",
 	},
-	["Mystery Meat"] = {
-		["is"] = "12037:0",
-		["2545849"] = "313:2",
-	},
-	["Roguestone"] = {
-		["is"] = "76135:0",
-		["2500909"] = "27000:1",
-		["2502160"] = "129000:1",
-	},
-	["Plans: Gemmed Copper Gauntlets"] = {
-		["is"] = "3610:0",
-		["2500908"] = "500000:1",
-		["2502160"] = "48600:1",
-	},
-	["Subtle Sun's Radiance"] = {
-		["2503690"] = "66500:1",
-		["2500890"] = "189500:1",
-		["is"] = "76698:0",
-		["2531543"] = "128000:1",
-		["2502272"] = "69500:1",
+	["Vine Jerkin of the Marksman"] = {
+		["is"] = "82262:-91:47449310",
+		["2561660"] = "2207500:1",
+		["2560323"] = "639000:1",
+		["2562467"] = "2002500:1",
 	},
 	["Reckless Vermilion Onyx"] = {
 		["2502276"] = "1187500:1",
 		["is"] = "76668:0",
 		["2503690"] = "1067500:1",
 	},
-	["Mageweave Cloth"] = {
-		["is"] = "4338:0",
-		["2545849"] = "1305:1",
+	["Frostweave Cloth"] = {
+		["is"] = "33470:0",
+		["2509829"] = "34400:13",
+		["2548751"] = "27400:3",
 	},
-	["Blade of Hanna"] = {
-		["is"] = "2801:0",
-		["2531544"] = "5000000:1",
+	["Tender Wolf Meat"] = {
+		["is"] = "12208:0",
+		["2545849"] = "370:3",
 	},
 	["Wildfowl Breast"] = {
 		["2501018"] = "52500:1",
@@ -642,9 +642,9 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["2488041"] = "30200:1",
 		["2512780"] = "28200:1",
 	},
-	["Nethercite Ore"] = {
-		["is"] = "32464:0",
-		["2531543"] = "128000:20",
+	["Void Crystal"] = {
+		["is"] = "22450:0",
+		["2531544"] = "2800:3",
 	},
 	["Ironscale Leg Armor"] = {
 		["2513633"] = "4347500:1",
@@ -820,12 +820,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H902"] = 2449999,
 			["sc"] = 5,
 		},
-		["Aquamarine"] = {
-			["mr"] = 25000,
-			["sc"] = 8,
-			["id"] = "7909",
-			["H933"] = 25000,
-			["cc"] = 8,
+		["Living Essence"] = {
+			["mr"] = 30000,
+			["H943"] = 30000,
+			["id"] = "12803",
+			["cc"] = 6,
+			["sc"] = 1,
 		},
 		["Elemental Earth"] = {
 			["mr"] = 78547,
@@ -869,12 +869,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "74847",
 			["sc"] = 5,
 		},
-		["Aquamarine Signet of the Whale"] = {
-			["mr"] = 782403,
-			["cc"] = 2,
-			["id"] = "20964:-81",
-			["H933"] = 782403,
-			["sc"] = 1,
+		["Essence of Destruction"] = {
+			["H921"] = 259000,
+			["mr"] = 259000,
+			["sc"] = 13,
+			["id"] = "71998",
+			["cc"] = 6,
 		},
 		["Stormy Ocean Sapphire"] = {
 			["mr"] = 374999,
@@ -890,19 +890,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H892"] = 675346,
 			["sc"] = 1,
 		},
-		["Void Crystal"] = {
-			["H921"] = 2925,
-			["mr"] = 2925,
-			["sc"] = 7,
-			["id"] = "22450",
-			["cc"] = 6,
+		["Hessonite Band of the Fireflash"] = {
+			["mr"] = 250080,
+			["sc"] = 1,
+			["H892"] = 250080,
+			["cc"] = 2,
+			["id"] = "52308:-130",
 		},
-		["Essence of Destruction"] = {
-			["H921"] = 259000,
-			["mr"] = 259000,
-			["sc"] = 13,
-			["id"] = "71998",
-			["cc"] = 6,
+		["Aquamarine Signet of the Whale"] = {
+			["mr"] = 782403,
+			["cc"] = 2,
+			["id"] = "20964:-81",
+			["H933"] = 782403,
+			["sc"] = 1,
 		},
 		["Forceful Dream Emerald"] = {
 			["mr"] = 124258,
@@ -960,19 +960,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H902"] = 1697500,
 			["sc"] = 5,
 		},
-		["Frostweave Cloth"] = {
-			["mr"] = 27525,
-			["cc"] = 6,
-			["id"] = "33470",
-			["H933"] = 27525,
-			["sc"] = 2,
-		},
 		["Formula: Large Prismatic Shard"] = {
 			["H921"] = 1000000,
 			["mr"] = 1000000,
 			["sc"] = 9,
 			["id"] = "22565",
 			["cc"] = 7,
+		},
+		["Mageweave Cloth"] = {
+			["mr"] = 1310,
+			["H931"] = 1310,
+			["id"] = "4338",
+			["sc"] = 2,
+			["cc"] = 6,
 		},
 		["Design: Keen Hessonite"] = {
 			["mr"] = 500000,
@@ -981,12 +981,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 11,
 			["H891"] = 500000,
 		},
-		["Plans: Gemmed Copper Gauntlets"] = {
-			["mr"] = 48750,
-			["cc"] = 7,
-			["id"] = "3610",
-			["sc"] = 5,
-			["H901"] = 48750,
+		["Resplendent Vermilion Onyx"] = {
+			["mr"] = 901870,
+			["cc"] = 8,
+			["id"] = "76679",
+			["sc"] = 6,
+			["H901"] = 901870,
 		},
 		["Revitalizing Shadowspirit Diamond"] = {
 			["mr"] = 1411138,
@@ -1058,40 +1058,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 2,
 			["id"] = "52308:-114",
 		},
-		["Greater Astral Essence"] = {
-			["mr"] = 19999,
-			["sc"] = 7,
-			["id"] = "11082",
-			["cc"] = 6,
-			["H934"] = 19999,
-		},
-		["Bolt of Runecloth"] = {
-			["mr"] = 19800,
+		["Pattern: Fine Leather Pants"] = {
+			["mr"] = 1155593,
 			["sc"] = 2,
-			["id"] = "14048",
-			["cc"] = 6,
-			["H934"] = 19800,
+			["id"] = "5972",
+			["H943"] = 1155593,
+			["cc"] = 7,
 		},
-		["Sun's Radiance"] = {
-			["mr"] = 750000,
-			["cc"] = 8,
-			["H900"] = 750000,
-			["id"] = "76142",
-			["sc"] = 3,
-		},
-		["Arcane Dust"] = {
-			["mr"] = 31383,
-			["cc"] = 6,
-			["id"] = "22445",
-			["H933"] = 31383,
-			["sc"] = 7,
-		},
-		["Vermilion Onyx"] = {
-			["mr"] = 838999,
-			["cc"] = 8,
-			["id"] = "76140",
-			["sc"] = 6,
-			["H901"] = 838999,
+		["Plans: Gemmed Copper Gauntlets"] = {
+			["mr"] = 48750,
+			["cc"] = 7,
+			["id"] = "3610",
+			["sc"] = 5,
+			["H901"] = 48750,
 		},
 		["Sovereign Roguestone"] = {
 			["mr"] = 47289,
@@ -1100,12 +1079,33 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H901"] = 47289,
 			["sc"] = 4,
 		},
-		["Dream Emerald"] = {
-			["mr"] = 19999,
+		["Arcane Dust"] = {
+			["mr"] = 31383,
+			["cc"] = 6,
+			["id"] = "22445",
+			["H933"] = 31383,
+			["sc"] = 7,
+		},
+		["Pattern: Red Woolen Boots"] = {
+			["mr"] = 1000000,
+			["cc"] = 7,
+			["id"] = "4345",
+			["H901"] = 1000000,
+			["sc"] = 3,
+		},
+		["Sun's Radiance"] = {
+			["mr"] = 750000,
 			["cc"] = 8,
-			["H900"] = 19999,
-			["id"] = "52192",
-			["sc"] = 5,
+			["H900"] = 750000,
+			["id"] = "76142",
+			["sc"] = 3,
+		},
+		["Hessonite Band of the Earthshaker"] = {
+			["mr"] = 740000,
+			["cc"] = 2,
+			["id"] = "52308:-120",
+			["H892"] = 740000,
+			["sc"] = 1,
 		},
 		["Smooth Sun's Radiance"] = {
 			["mr"] = 674999,
@@ -1135,12 +1135,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H902"] = 468000,
 			["sc"] = 5,
 		},
-		["Aquamarine Signet of the Falcon"] = {
-			["mr"] = 768153,
-			["H931"] = 768153,
-			["id"] = "20964:-11",
-			["sc"] = 1,
-			["cc"] = 2,
+		["Perfect Veiled Roguestone"] = {
+			["mr"] = 1050000,
+			["cc"] = 8,
+			["H900"] = 1050000,
+			["id"] = "76616",
+			["sc"] = 4,
 		},
 		["Misty Wild Jade"] = {
 			["mr"] = 921000,
@@ -1198,12 +1198,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H901"] = 1499900,
 			["sc"] = 4,
 		},
-		["Hessonite Band of the Earthshaker"] = {
-			["mr"] = 740000,
-			["cc"] = 2,
-			["id"] = "52308:-120",
-			["H892"] = 740000,
-			["sc"] = 1,
+		["Dream Emerald"] = {
+			["mr"] = 19999,
+			["cc"] = 8,
+			["H900"] = 19999,
+			["id"] = "52192",
+			["sc"] = 5,
 		},
 		["Heavy Runecloth Bandage"] = {
 			["mr"] = 9000,
@@ -1212,12 +1212,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 5,
 			["H934"] = 9000,
 		},
-		["Effulgent Wild Jade"] = {
-			["mr"] = 985050,
-			["cc"] = 8,
-			["id"] = "76644",
-			["H902"] = 985050,
+		["Revitalizing Hammer of the Elder"] = {
+			["mr"] = 600000,
 			["sc"] = 5,
+			["id"] = "25311:-44",
+			["cc"] = 1,
+			["H901"] = 600000,
 		},
 		["Crafted Dreadful Gladiator's Satin Hood"] = {
 			["mr"] = 945798,
@@ -1226,26 +1226,26 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H892"] = 945798,
 			["sc"] = 2,
 		},
-		["Lucent Vermilion Onyx"] = {
-			["mr"] = 870000,
-			["cc"] = 8,
-			["id"] = "76675",
+		["Tenuous Vermilion Onyx"] = {
+			["H921"] = 40194,
+			["mr"] = 40194,
 			["sc"] = 6,
-			["H901"] = 870000,
+			["id"] = "76676",
+			["cc"] = 8,
 		},
-		["Aquamarine Signet of the Wolf"] = {
-			["mr"] = 69999,
-			["sc"] = 1,
-			["id"] = "20964:-13",
-			["H933"] = 69999,
-			["cc"] = 2,
+		["Perfect Reckless Hessonite"] = {
+			["mr"] = 200000,
+			["cc"] = 8,
+			["id"] = "52144",
+			["sc"] = 6,
+			["H891"] = 200000,
 		},
-		["Sulfuron Ingot"] = {
-			["H921"] = 2000000,
-			["mr"] = 2000000,
+		["Perfect Assassin's Roguestone"] = {
+			["mr"] = 1699000,
+			["cc"] = 8,
+			["id"] = "89679",
+			["H901"] = 1699000,
 			["sc"] = 4,
-			["id"] = "17203",
-			["cc"] = 6,
 		},
 		["Maelstrom Crystal"] = {
 			["H921"] = 7600,
@@ -1268,33 +1268,33 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H901"] = 9263,
 			["sc"] = 4,
 		},
-		["Perfect Veiled Roguestone"] = {
-			["mr"] = 1050000,
-			["cc"] = 8,
-			["H900"] = 1050000,
-			["id"] = "76616",
-			["sc"] = 4,
+		["Aquamarine Signet of the Falcon"] = {
+			["mr"] = 768153,
+			["H931"] = 768153,
+			["id"] = "20964:-11",
+			["sc"] = 1,
+			["cc"] = 2,
 		},
-		["Revitalizing Hammer of the Elder"] = {
-			["mr"] = 600000,
+		["Effulgent Wild Jade"] = {
+			["mr"] = 985050,
+			["cc"] = 8,
+			["id"] = "76644",
+			["H902"] = 985050,
 			["sc"] = 5,
-			["id"] = "25311:-44",
-			["cc"] = 1,
-			["H901"] = 600000,
 		},
-		["Shifting Roguestone"] = {
-			["mr"] = 25216,
+		["Vivid Wild Jade"] = {
+			["mr"] = 849996,
 			["cc"] = 8,
-			["id"] = "76555",
-			["sc"] = 4,
-			["H901"] = 25216,
+			["id"] = "76647",
+			["H902"] = 849996,
+			["sc"] = 5,
 		},
-		["Amberjewel"] = {
-			["mr"] = 29400,
-			["cc"] = 8,
-			["H900"] = 29400,
-			["id"] = "52195",
-			["sc"] = 3,
+		["Hessonite Band of the Sorcerer"] = {
+			["mr"] = 259000,
+			["cc"] = 2,
+			["id"] = "52308:-36",
+			["H892"] = 259000,
+			["sc"] = 1,
 		},
 		["Imperial Silkworm"] = {
 			["mr"] = 8580,
@@ -1338,12 +1338,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 8,
 			["H901"] = 2210000,
 		},
-		["Perfect Timeless Roguestone"] = {
-			["mr"] = 600000,
-			["cc"] = 8,
-			["id"] = "76623",
-			["H901"] = 600000,
-			["sc"] = 4,
+		["Design: Inscribed Hessonite"] = {
+			["mr"] = 1025000,
+			["cc"] = 7,
+			["id"] = "52371",
+			["H892"] = 1025000,
+			["sc"] = 11,
 		},
 		["Aquamarine Signet of the Gorilla"] = {
 			["mr"] = 249000,
@@ -1359,19 +1359,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 8,
 			["H901"] = 2000000,
 		},
-		["Tenuous Vermilion Onyx"] = {
-			["H921"] = 40194,
-			["mr"] = 40194,
+		["Lucent Vermilion Onyx"] = {
+			["mr"] = 870000,
+			["cc"] = 8,
+			["id"] = "76675",
 			["sc"] = 6,
-			["id"] = "76676",
-			["cc"] = 8,
+			["H901"] = 870000,
 		},
-		["Sparkling Lapis Lazuli"] = {
-			["mr"] = 9700,
-			["sc"] = 2,
-			["id"] = "76505",
+		["Mystic Sun's Radiance"] = {
+			["mr"] = 650000,
 			["cc"] = 8,
-			["H901"] = 9700,
+			["H900"] = 650000,
+			["id"] = "76701",
+			["sc"] = 3,
 		},
 		["Perfect Sovereign Roguestone"] = {
 			["mr"] = 500000,
@@ -1380,33 +1380,33 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 4,
 			["H901"] = 500000,
 		},
-		["Perfect Reckless Hessonite"] = {
-			["mr"] = 200000,
-			["cc"] = 8,
-			["id"] = "52144",
-			["sc"] = 6,
-			["H891"] = 200000,
-		},
-		["Mote of Life"] = {
-			["mr"] = 5000,
-			["H943"] = 5000,
-			["id"] = "22575",
-			["cc"] = 6,
+		["Aquamarine Signet of the Wolf"] = {
+			["mr"] = 69999,
 			["sc"] = 1,
+			["id"] = "20964:-13",
+			["H933"] = 69999,
+			["cc"] = 2,
 		},
-		["Perfect Assassin's Roguestone"] = {
-			["mr"] = 1699000,
-			["cc"] = 8,
-			["id"] = "89679",
-			["H901"] = 1699000,
-			["sc"] = 4,
-		},
-		["Mogu Pumpkin"] = {
-			["mr"] = 41050,
-			["cc"] = 6,
-			["id"] = "74842",
+		["Red Wolf Meat"] = {
+			["mr"] = 195,
+			["H931"] = 195,
+			["id"] = "12203",
 			["sc"] = 5,
-			["H891"] = 41050,
+			["cc"] = 6,
+		},
+		["Sulfuron Ingot"] = {
+			["H921"] = 2000000,
+			["mr"] = 2000000,
+			["sc"] = 4,
+			["id"] = "17203",
+			["cc"] = 6,
+		},
+		["Scrying Roguestone"] = {
+			["mr"] = 550000,
+			["cc"] = 4,
+			["id"] = "83795",
+			["H901"] = 550000,
+			["sc"] = 8,
 		},
 		["Zen Wild Jade"] = {
 			["mr"] = 620000,
@@ -1415,12 +1415,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H902"] = 620000,
 			["sc"] = 5,
 		},
-		["Glinting Roguestone"] = {
-			["mr"] = 2752063,
-			["cc"] = 8,
-			["id"] = "76548",
-			["H901"] = 2752063,
-			["sc"] = 4,
+		["Large Radiant Shard"] = {
+			["H921"] = 99500,
+			["mr"] = 99500,
+			["sc"] = 7,
+			["id"] = "11178",
+			["cc"] = 6,
 		},
 		["Champion's Vermilion Onyx"] = {
 			["mr"] = 254475,
@@ -1478,12 +1478,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 5,
 			["H891"] = 78407,
 		},
-		["Hessonite Band of the Sorcerer"] = {
-			["mr"] = 259000,
-			["cc"] = 2,
-			["id"] = "52308:-36",
-			["H892"] = 259000,
-			["sc"] = 1,
+		["Amberjewel"] = {
+			["mr"] = 29400,
+			["cc"] = 8,
+			["H900"] = 29400,
+			["id"] = "52195",
+			["sc"] = 3,
 		},
 		["Solid Ocean Sapphire"] = {
 			["mr"] = 628999,
@@ -1499,12 +1499,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 8,
 			["H901"] = 67179,
 		},
-		["Shattered Wild Jade"] = {
-			["H921"] = 499898,
-			["mr"] = 499898,
+		["Resolute Vermilion Onyx"] = {
+			["mr"] = 58499,
 			["cc"] = 8,
-			["id"] = "76650",
-			["sc"] = 5,
+			["id"] = "76663",
+			["sc"] = 6,
+			["H901"] = 58499,
 		},
 		["Sparkling Tinker's Gear"] = {
 			["mr"] = 1200000,
@@ -1541,19 +1541,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H892"] = 59000,
 			["sc"] = 6,
 		},
-		["Red Wolf Meat"] = {
-			["mr"] = 195,
-			["H931"] = 195,
-			["id"] = "12203",
-			["sc"] = 5,
+		["Mote of Life"] = {
+			["mr"] = 5000,
+			["H943"] = 5000,
+			["id"] = "22575",
 			["cc"] = 6,
+			["sc"] = 1,
 		},
-		["Etched Roguestone"] = {
-			["mr"] = 19862,
-			["cc"] = 8,
-			["id"] = "76552",
-			["H901"] = 19862,
-			["sc"] = 4,
+		["Aquamarine Signet of the Eagle"] = {
+			["mr"] = 70000,
+			["cc"] = 2,
+			["id"] = "20964:-69",
+			["H933"] = 70000,
+			["sc"] = 1,
 		},
 		["Sparkling Dust"] = {
 			["mr"] = 10000,
@@ -1562,12 +1562,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 9,
 			["H901"] = 10000,
 		},
-		["Sparkling Zephyrite"] = {
-			["mr"] = 75000,
-			["H901"] = 75000,
-			["id"] = "52087",
-			["sc"] = 2,
-			["cc"] = 8,
+		["Schematic: Goblin Land Mine"] = {
+			["mr"] = 898182,
+			["H943"] = 898182,
+			["id"] = "4416",
+			["sc"] = 4,
+			["cc"] = 7,
 		},
 		["Runecloth Gloves"] = {
 			["mr"] = 150000,
@@ -1611,19 +1611,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H892"] = 11130,
 			["sc"] = 2,
 		},
-		["Resolute Vermilion Onyx"] = {
-			["mr"] = 58499,
+		["Shattered Wild Jade"] = {
+			["H921"] = 499898,
+			["mr"] = 499898,
 			["cc"] = 8,
-			["id"] = "76663",
-			["sc"] = 6,
-			["H901"] = 58499,
+			["id"] = "76650",
+			["sc"] = 5,
 		},
-		["Vision Dust"] = {
-			["mr"] = 37400,
-			["H931"] = 37400,
-			["id"] = "11137",
-			["sc"] = 7,
-			["cc"] = 6,
+		["Perfect Artful Hessonite"] = {
+			["mr"] = 83410,
+			["cc"] = 8,
+			["id"] = "52140",
+			["sc"] = 6,
+			["H891"] = 83410,
 		},
 		["Runecloth Belt"] = {
 			["mr"] = 100000,
@@ -1646,12 +1646,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H902"] = 794900,
 			["sc"] = 6,
 		},
-		["Schematic: Goblin Land Mine"] = {
-			["mr"] = 898182,
-			["H943"] = 898182,
-			["id"] = "4416",
-			["sc"] = 4,
-			["cc"] = 7,
+		["Sparkling Zephyrite"] = {
+			["mr"] = 75000,
+			["H901"] = 75000,
+			["id"] = "52087",
+			["sc"] = 2,
+			["cc"] = 8,
 		},
 		["Smooth Amberjewel"] = {
 			["mr"] = 157500,
@@ -1682,12 +1682,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H892"] = 113026,
 			["sc"] = 6,
 		},
-		["Roguestone Shadowband"] = {
-			["mr"] = 10000000,
-			["cc"] = 2,
-			["id"] = "83798",
-			["H901"] = 10000000,
-			["sc"] = 1,
+		["Jagged Wild Jade"] = {
+			["mr"] = 940174,
+			["cc"] = 8,
+			["id"] = "76652",
+			["H902"] = 940174,
+			["sc"] = 5,
 		},
 		["Aquamarine Signet of the Tiger"] = {
 			["mr"] = 781733,
@@ -1703,12 +1703,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H901"] = 275928,
 			["sc"] = 4,
 		},
-		["Hessonite Band of the Mercenary"] = {
-			["mr"] = 259000,
-			["sc"] = 1,
-			["H892"] = 259000,
-			["cc"] = 2,
-			["id"] = "52308:-139",
+		["Adept Vermilion Onyx"] = {
+			["mr"] = 959997,
+			["cc"] = 8,
+			["id"] = "76670",
+			["sc"] = 6,
+			["H901"] = 959997,
 		},
 		["Puissant Dream Emerald"] = {
 			["mr"] = 70036,
@@ -1759,12 +1759,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 5,
 			["H891"] = 29000,
 		},
-		["Runecloth Headband"] = {
-			["mr"] = 2220657,
-			["sc"] = 2,
-			["id"] = "13866",
-			["cc"] = 2,
-			["H934"] = 2220657,
+		["Adept Lava Coral"] = {
+			["mr"] = 8999999,
+			["cc"] = 8,
+			["H900"] = 8999999,
+			["id"] = "71852",
+			["sc"] = 6,
 		},
 		["Timeless Roguestone"] = {
 			["mr"] = 18525,
@@ -1808,19 +1808,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H892"] = 109000,
 			["sc"] = 5,
 		},
-		["Piercing Dream Emerald"] = {
-			["mr"] = 350000,
-			["cc"] = 8,
-			["id"] = "52228",
-			["H892"] = 350000,
-			["sc"] = 5,
-		},
 		["Sparkling Deepholm Iolite"] = {
 			["mr"] = 6999999,
 			["sc"] = 2,
 			["id"] = "71819",
 			["cc"] = 8,
 			["H901"] = 6999999,
+		},
+		["Piercing Dream Emerald"] = {
+			["mr"] = 350000,
+			["cc"] = 8,
+			["id"] = "52228",
+			["H892"] = 350000,
+			["sc"] = 5,
 		},
 		["Aquamarine Signet of Agility"] = {
 			["mr"] = 1500000,
@@ -1871,12 +1871,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H902"] = 1087500,
 			["sc"] = 5,
 		},
-		["Netherweave Cloth"] = {
-			["mr"] = 4900,
-			["cc"] = 6,
-			["id"] = "21877",
-			["sc"] = 2,
-			["H934"] = 4900,
+		["Inscribed Vermilion Onyx"] = {
+			["mr"] = 598950,
+			["cc"] = 8,
+			["id"] = "76661",
+			["sc"] = 6,
+			["H901"] = 598950,
 		},
 		["Fractured Sun's Radiance"] = {
 			["mr"] = 549900,
@@ -2067,12 +2067,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 2,
 			["H934"] = 250000,
 		},
-		["Inscribed Vermilion Onyx"] = {
-			["mr"] = 598950,
-			["cc"] = 8,
-			["id"] = "76661",
-			["sc"] = 6,
-			["H901"] = 598950,
+		["Netherweave Cloth"] = {
+			["mr"] = 4900,
+			["cc"] = 6,
+			["id"] = "21877",
+			["sc"] = 2,
+			["H934"] = 4900,
 		},
 		["Mark of the Illidari"] = {
 			["mr"] = 4,
@@ -2123,33 +2123,33 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H892"] = 200000,
 			["sc"] = 1,
 		},
-		["Adept Lava Coral"] = {
-			["mr"] = 8999999,
-			["cc"] = 8,
-			["H900"] = 8999999,
-			["id"] = "71852",
-			["sc"] = 6,
+		["Runecloth Headband"] = {
+			["mr"] = 2220657,
+			["sc"] = 2,
+			["id"] = "13866",
+			["cc"] = 2,
+			["H934"] = 2220657,
 		},
-		["Adept Vermilion Onyx"] = {
-			["mr"] = 959997,
-			["cc"] = 8,
-			["id"] = "76670",
-			["sc"] = 6,
-			["H901"] = 959997,
+		["Hessonite Band of the Mercenary"] = {
+			["mr"] = 259000,
+			["sc"] = 1,
+			["H892"] = 259000,
+			["cc"] = 2,
+			["id"] = "52308:-139",
 		},
-		["Jagged Wild Jade"] = {
-			["mr"] = 940174,
-			["cc"] = 8,
-			["id"] = "76652",
-			["H902"] = 940174,
-			["sc"] = 5,
+		["Roguestone Shadowband"] = {
+			["mr"] = 10000000,
+			["cc"] = 2,
+			["id"] = "83798",
+			["H901"] = 10000000,
+			["sc"] = 1,
 		},
-		["Perfect Artful Hessonite"] = {
-			["mr"] = 83410,
-			["cc"] = 8,
-			["id"] = "52140",
-			["sc"] = 6,
-			["H891"] = 83410,
+		["Vision Dust"] = {
+			["mr"] = 37400,
+			["H931"] = 37400,
+			["id"] = "11137",
+			["sc"] = 7,
+			["cc"] = 6,
 		},
 		["Accurate Roguestone"] = {
 			["mr"] = 10000,
@@ -2186,12 +2186,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H892"] = 254000,
 			["sc"] = 1,
 		},
-		["Aquamarine Signet of the Eagle"] = {
-			["mr"] = 70000,
-			["cc"] = 2,
-			["id"] = "20964:-69",
-			["H933"] = 70000,
-			["sc"] = 1,
+		["Etched Roguestone"] = {
+			["mr"] = 19862,
+			["cc"] = 8,
+			["id"] = "76552",
+			["H901"] = 19862,
+			["sc"] = 4,
 		},
 		["Potent Vermilion Onyx"] = {
 			["mr"] = 909998,
@@ -2207,40 +2207,40 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 6,
 			["H934"] = 3750,
 		},
-		["Large Radiant Shard"] = {
-			["H921"] = 99500,
-			["mr"] = 99500,
-			["sc"] = 7,
-			["id"] = "11178",
+		["Glinting Roguestone"] = {
+			["mr"] = 2752063,
+			["cc"] = 8,
+			["id"] = "76548",
+			["H901"] = 2752063,
+			["sc"] = 4,
+		},
+		["Mogu Pumpkin"] = {
+			["mr"] = 41050,
 			["cc"] = 6,
-		},
-		["Scrying Roguestone"] = {
-			["mr"] = 550000,
-			["cc"] = 4,
-			["id"] = "83795",
-			["H901"] = 550000,
-			["sc"] = 8,
-		},
-		["Mystic Sun's Radiance"] = {
-			["mr"] = 650000,
-			["cc"] = 8,
-			["H900"] = 650000,
-			["id"] = "76701",
-			["sc"] = 3,
-		},
-		["Design: Inscribed Hessonite"] = {
-			["mr"] = 1025000,
-			["cc"] = 7,
-			["id"] = "52371",
-			["H892"] = 1025000,
-			["sc"] = 11,
-		},
-		["Vivid Wild Jade"] = {
-			["mr"] = 849996,
-			["cc"] = 8,
-			["id"] = "76647",
-			["H902"] = 849996,
+			["id"] = "74842",
 			["sc"] = 5,
+			["H891"] = 41050,
+		},
+		["Sparkling Lapis Lazuli"] = {
+			["mr"] = 9700,
+			["sc"] = 2,
+			["id"] = "76505",
+			["cc"] = 8,
+			["H901"] = 9700,
+		},
+		["Perfect Timeless Roguestone"] = {
+			["mr"] = 600000,
+			["cc"] = 8,
+			["id"] = "76623",
+			["H901"] = 600000,
+			["sc"] = 4,
+		},
+		["Shifting Roguestone"] = {
+			["mr"] = 25216,
+			["cc"] = 8,
+			["id"] = "76555",
+			["sc"] = 4,
+			["H901"] = 25216,
 		},
 		["Hessonite Band of the Rockslab"] = {
 			["mr"] = 250000,
@@ -2305,19 +2305,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "52235",
 			["sc"] = 2,
 		},
-		["Pattern: Red Woolen Boots"] = {
-			["mr"] = 1000000,
-			["cc"] = 7,
-			["id"] = "4345",
-			["H901"] = 1000000,
-			["sc"] = 3,
-		},
-		["Resplendent Vermilion Onyx"] = {
-			["mr"] = 901870,
+		["Vermilion Onyx"] = {
+			["mr"] = 838999,
 			["cc"] = 8,
-			["id"] = "76679",
+			["id"] = "76140",
 			["sc"] = 6,
-			["H901"] = 901870,
+			["H901"] = 838999,
+		},
+		["Bolt of Runecloth"] = {
+			["mr"] = 19800,
+			["sc"] = 2,
+			["id"] = "14048",
+			["cc"] = 6,
+			["H934"] = 19800,
 		},
 		["Mystery Meat"] = {
 			["mr"] = 314,
@@ -2340,19 +2340,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 6,
 			["H901"] = 830000,
 		},
-		["Pattern: Fine Leather Pants"] = {
-			["mr"] = 1155593,
-			["sc"] = 2,
-			["id"] = "5972",
-			["H943"] = 1155593,
-			["cc"] = 7,
-		},
-		["Mageweave Cloth"] = {
-			["mr"] = 1310,
-			["H931"] = 1310,
-			["id"] = "4338",
-			["sc"] = 2,
+		["Greater Astral Essence"] = {
+			["mr"] = 19999,
+			["sc"] = 7,
+			["id"] = "11082",
 			["cc"] = 6,
+			["H934"] = 19999,
+		},
+		["Frostweave Cloth"] = {
+			["mr"] = 27525,
+			["cc"] = 6,
+			["id"] = "33470",
+			["H933"] = 27525,
+			["sc"] = 2,
 		},
 		["Aquamarine Signet of the Bear"] = {
 			["mr"] = 69999,
@@ -2368,12 +2368,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 8,
 			["H901"] = 4232397,
 		},
-		["Hessonite Band of the Fireflash"] = {
-			["mr"] = 250080,
-			["sc"] = 1,
-			["H892"] = 250080,
-			["cc"] = 2,
-			["id"] = "52308:-130",
+		["Void Crystal"] = {
+			["H921"] = 2925,
+			["mr"] = 2925,
+			["sc"] = 7,
+			["id"] = "22450",
+			["cc"] = 6,
 		},
 		["Aquamarine Signet of Shadow Resistance"] = {
 			["mr"] = 159500,
@@ -2396,12 +2396,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H902"] = 645000,
 			["sc"] = 5,
 		},
-		["Living Essence"] = {
-			["mr"] = 30000,
-			["H943"] = 30000,
-			["id"] = "12803",
-			["cc"] = 6,
-			["sc"] = 1,
+		["Aquamarine"] = {
+			["mr"] = 25000,
+			["sc"] = 8,
+			["id"] = "7909",
+			["H933"] = 25000,
+			["cc"] = 8,
 		},
 	},
 	["Aerie Peak_Alliance"] = {
@@ -4764,12 +4764,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H981"] = 1500000,
 			["sc"] = 1,
 		},
-		["Large Glimmering Shard"] = {
-			["mr"] = 2000,
-			["cc"] = 6,
-			["id"] = "11084",
-			["H981"] = 2000,
-			["sc"] = 7,
+		["Turbid Wild Jade"] = {
+			["mr"] = 62999,
+			["sc"] = 5,
+			["id"] = "76648",
+			["H1019"] = 62999,
+			["cc"] = 8,
 		},
 		["Deadly Lava Coral"] = {
 			["H1018"] = 3000000,
@@ -5153,19 +5153,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 5,
 			["cc"] = 8,
 		},
-		["Mushan Hide Boots of the Stormblast"] = {
-			["mr"] = 1313999,
-			["cc"] = 2,
-			["id"] = "82093:-133",
-			["H981"] = 1313999,
-			["sc"] = 3,
-		},
 		["Lightning-Infused Leggings"] = {
 			["mr"] = 47067520,
 			["sc"] = 4,
 			["id"] = "49900",
 			["H920"] = 47067520,
 			["cc"] = 2,
+		},
+		["Mushan Hide Boots of the Stormblast"] = {
+			["mr"] = 1313999,
+			["cc"] = 2,
+			["id"] = "82093:-133",
+			["H981"] = 1313999,
+			["sc"] = 3,
 		},
 		["Shamanic Spellblade of the Whale"] = {
 			["mr"] = 830000,
@@ -5202,18 +5202,18 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H981"] = 119999998,
 			["sc"] = 2,
 		},
-		["Deadly Hessonite"] = {
-			["mr"] = 120000,
-			["cc"] = 8,
-			["id"] = "52109",
-			["H1001"] = 120000,
-			["sc"] = 6,
-		},
 		["Abyss Crystal"] = {
 			["H909"] = 73000,
 			["mr"] = 73000,
 			["cc"] = 6,
 			["id"] = "34057",
+			["sc"] = 7,
+		},
+		["Small Radiant Shard"] = {
+			["mr"] = 74900,
+			["cc"] = 6,
+			["id"] = "11177",
+			["H981"] = 74900,
 			["sc"] = 7,
 		},
 		["Drakehide Leg Armor"] = {
@@ -5385,12 +5385,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H981"] = 2500000,
 			["sc"] = 1,
 		},
-		["Nightshade Leggings of Agility"] = {
-			["mr"] = 4770000,
-			["cc"] = 2,
-			["id"] = "10227:-18",
-			["H981"] = 4770000,
-			["sc"] = 3,
+		["Precise Cardinal Ruby"] = {
+			["mr"] = 1400000,
+			["cc"] = 8,
+			["id"] = "40118",
+			["H902"] = 1400000,
+			["sc"] = 1,
 		},
 		["Quick Sunstone"] = {
 			["mr"] = 9900,
@@ -5413,12 +5413,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 5,
 			["mr"] = 29999,
 		},
-		["Precise Cardinal Ruby"] = {
-			["mr"] = 1400000,
-			["cc"] = 8,
-			["id"] = "40118",
-			["H902"] = 1400000,
-			["sc"] = 1,
+		["Engraved Mace of the Earthshaker"] = {
+			["mr"] = 1007500,
+			["cc"] = 1,
+			["id"] = "82275:-120",
+			["H981"] = 1007500,
+			["sc"] = 5,
 		},
 		["Deadly Vermilion Onyx"] = {
 			["H1018"] = 674161,
@@ -5469,12 +5469,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "15223:-17",
 			["sc"] = 5,
 		},
-		["Enchant Weapon - Windsong"] = {
-			["mr"] = 982999,
-			["cc"] = 4,
-			["id"] = "74723",
-			["H902"] = 982999,
-			["sc"] = 6,
+		["Cold-Forged Shank"] = {
+			["mr"] = 2750000,
+			["cc"] = 1,
+			["id"] = "55044",
+			["H981"] = 2750000,
+			["sc"] = 13,
 		},
 		["Shamanic Wand of the Whale"] = {
 			["mr"] = 336754,
@@ -5518,12 +5518,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H981"] = 11641,
 			["sc"] = 1,
 		},
-		["Sha Armor Kit"] = {
-			["mr"] = 300000,
-			["sc"] = 6,
-			["id"] = "85559",
-			["H981"] = 300000,
-			["cc"] = 4,
+		["Shattered Hand Legplates of Agility"] = {
+			["mr"] = 1370000,
+			["cc"] = 2,
+			["id"] = "25019:-18",
+			["H981"] = 1370000,
+			["sc"] = 5,
 		},
 		["Perfect Piercing Alexandrite"] = {
 			["H1009"] = 2179999,
@@ -5547,12 +5547,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["L981"] = 692900,
 			["sc"] = 1,
 		},
-		["Cold-Forged Shank"] = {
-			["mr"] = 2750000,
-			["cc"] = 1,
-			["id"] = "55044",
-			["H981"] = 2750000,
-			["sc"] = 13,
+		["Enchant Weapon - Windsong"] = {
+			["mr"] = 982999,
+			["cc"] = 4,
+			["id"] = "74723",
+			["H902"] = 982999,
+			["sc"] = 6,
 		},
 		["Inscribed Vermilion Onyx"] = {
 			["H1018"] = 595575,
@@ -5681,19 +5681,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H981"] = 1150000,
 			["sc"] = 2,
 		},
-		["Deadly Scope"] = {
-			["H1018"] = 90000,
-			["mr"] = 90000,
-			["sc"] = 10,
-			["id"] = "10546",
-			["cc"] = 6,
-		},
 		["Miner Shield of the Earthshaker"] = {
 			["mr"] = 750000,
 			["cc"] = 2,
 			["id"] = "82129:-120",
 			["H981"] = 750000,
 			["sc"] = 7,
+		},
+		["Deadly Scope"] = {
+			["H1018"] = 90000,
+			["mr"] = 90000,
+			["sc"] = 10,
+			["id"] = "10546",
+			["cc"] = 6,
 		},
 		["Glyph of Cloak of Shadows"] = {
 			["mr"] = 480218,
@@ -5926,12 +5926,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H981"] = 4717500,
 			["sc"] = 6,
 		},
-		["Shattered Hand Legplates of Agility"] = {
-			["mr"] = 1370000,
-			["cc"] = 2,
-			["id"] = "25019:-18",
-			["H981"] = 1370000,
-			["sc"] = 5,
+		["Sha Armor Kit"] = {
+			["mr"] = 300000,
+			["sc"] = 6,
+			["id"] = "85559",
+			["H981"] = 300000,
+			["cc"] = 4,
 		},
 		["G91 Landshark"] = {
 			["mr"] = 1795,
@@ -5968,12 +5968,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H981"] = 990000,
 			["sc"] = 5,
 		},
-		["Engraved Mace of the Earthshaker"] = {
-			["mr"] = 1007500,
-			["cc"] = 1,
-			["id"] = "82275:-120",
-			["H981"] = 1007500,
-			["sc"] = 5,
+		["Nightshade Leggings of Agility"] = {
+			["mr"] = 4770000,
+			["cc"] = 2,
+			["id"] = "10227:-18",
+			["H981"] = 4770000,
+			["sc"] = 3,
 		},
 		["Pattern: Shoulders of Lightning Reflexes"] = {
 			["mr"] = 200000,
@@ -6073,12 +6073,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H981"] = 667382,
 			["sc"] = 5,
 		},
-		["Small Radiant Shard"] = {
-			["mr"] = 74900,
-			["cc"] = 6,
-			["id"] = "11177",
-			["H981"] = 74900,
-			["sc"] = 7,
+		["Deadly Hessonite"] = {
+			["mr"] = 120000,
+			["cc"] = 8,
+			["id"] = "52109",
+			["H1001"] = 120000,
+			["sc"] = 6,
 		},
 		["Wicked Edge of the Planes, Reborn"] = {
 			["mr"] = 380249999,
@@ -6332,12 +6332,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "82441",
 			["cc"] = 6,
 		},
-		["Turbid Wild Jade"] = {
-			["mr"] = 62999,
-			["sc"] = 5,
-			["id"] = "76648",
-			["H1019"] = 62999,
-			["cc"] = 8,
+		["Large Glimmering Shard"] = {
+			["mr"] = 2000,
+			["cc"] = 6,
+			["id"] = "11084",
+			["H981"] = 2000,
+			["sc"] = 7,
 		},
 		["Shadow Council Mantle of the Invoker"] = {
 			["mr"] = 500000,
