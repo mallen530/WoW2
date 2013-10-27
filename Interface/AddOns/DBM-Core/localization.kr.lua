@@ -1,7 +1,7 @@
 ﻿if (GetLocale() == "koKR") then
 
 DBM_CORE_NEED_SUPPORT				= "오류/건의사항은 법사세린-아즈샤라(everfinale@gmail.com) 또는 인벤 닉네임 다시날아 로 보내주시기 바랍니다. DBM Team은 프로그래밍 또는 외국어에 능통하신 분의 도움을 기다리고 있습니다. 자세한 사항은 www.deadlybossmods.com 을 방문하시거나 tandanu@deadlybossmods.com 또는 nitram@deadlybossmods.com 으로 메일을 보내주시기 바랍니다."
-DBM_HOW_TO_USE_MOD					= "DBM 사용을 환영합니다. 대화창에서 /dbm help를 입력하면 사용 가능한 명령어 목록을 볼 수 있습니다. 설정을 위해서는 /dbm을 입력후 나타나는 창에서 각 우두머리에 대한 세부 설정을 할 수 있습니다. DBM은 처음 설치시 캐릭터 특성에 맞는 적절한 경고를 선택하며, 옵션에서 추가 설정 또한 가능합니다."
+DBM_HOW_TO_USE_MOD					= "DBM 사용을 환영합니다. 대화창에서 /dbm help를 입력하면 사용 가능한 명령어 목록을 볼 수 있습니다. 설정을 위해서는 /dbm을 입력후 나타나는 창에서 각 우두머리 세부 설정을 할 수 있습니다. DBM은 처음 설치시 캐릭터 특성에 맞는 적절한 경고를 선택하며, 옵션에서 추가 설정 또한 가능합니다."
 
 DBM_FORUMS_MESSAGE					= "오류나 잘못된 바를 발견하셨나요? 일부 전투에서 추가 알림, 특수 경고 또는 바가 있으면 좋을텐데라고 생각하셨나요?\n새로 개설된 Deadly Boss Mods 토론, 오류 제보 및 요청 게시판을 방문해 보세요. 주소는 |HDBM:forums|h|cff3588ffhttp://www.deadlybossmods.com|r 입니다. (링크를 클릭하신 후 주소를 복사하실 수 있습니다.)"
 DBM_FORUMS_COPY_URL_DIALOG			= "새로운 게시판을 방문해보세요.\r\n(Elitist Jerks에서 서비스를 제공합니다!)"
@@ -15,7 +15,7 @@ DBM_CORE_BAD_LOAD					= "DBM이 현재 인스턴스의 경고를 완전히 불�
 
 DBM_CORE_LOOT_SPEC_REMINDER			= "현재 전문화는 %s 입니다. 현재 선택된 전리품 전문화는 %s 입니다."
 
-DBM_CORE_BIGWIGS_ICON_CONFLICT		= "DBM이 BigWigs와 DBM의 전술 목표 아이콘 설정이 모두 활성화 된것을 발견했습니다. 아이콘 충돌을 방지하기 위해 둘 중 하나의 아이콘 설정을 비활성화 해주시기 바랍니다."
+DBM_CORE_BIGWIGS_ICON_CONFLICT		= "DBM이 BigWigs와 DBM의 전술 목표 아이콘 설정이 모두 활성화 되어 있는 것이 확인되었습니다. 아이콘 충돌을 방지하기 위해 둘 중 하나의 아이콘 설정을 비활성화 해주시기 바랍니다."
 
 DBM_CORE_COMBAT_STARTED				= "%s 작동됨. 행운을 빕니다! :)";
 DBM_CORE_COMBAT_STARTED_IN_PROGRESS	= "%s 전투 진행 도중 참가하였습니다. 행운을 빕니다! :)"
@@ -44,7 +44,8 @@ DBM_CORE_MIN_FMT					= "%d분"
 DBM_CORE_SEC						= "초"
 DBM_CORE_SEC_FMT					= "%d초"
 
-DBM_CORE_GENERIC_WARNING_DUPLICATE	= "%s 중 1명"
+DBM_CORE_GENERIC_WARNING_OTHERS		= "외 1명"
+DBM_CORE_GENERIC_WARNING_OTHERS2	= "외 %d명"
 DBM_CORE_GENERIC_WARNING_BERSERK	= "%s %s 후에 광폭화"
 DBM_CORE_GENERIC_TIMER_BERSERK		= "광폭화"
 DBM_CORE_OPTION_TIMER_BERSERK		= "$spell:26662 시간 바 보기"
@@ -86,6 +87,7 @@ DBM_CORE_UPDATEREMINDER_FOOTER			= (IsMacClient() and "Cmd-C" or "Ctrl-C").. " �
 DBM_CORE_UPDATEREMINDER_FOOTER_GENERIC	= (IsMacClient() and "Cmd-C" or "Ctrl-C").. " 를 누르면 주소를 복사하실 수 있습니다."
 DBM_CORE_UPDATEREMINDER_NOTAGAIN		= "새로운 버전이 발견되면 알림창을 보입니다."
 DBM_CORE_UPDATEREMINDER_DISABLE			= "경고: 현재 사용중인 DBM 버전이 지나치게 오래되어 (%d 버전 가량) 업데이트 전까지 작동을 중지합니다. 이것은 오래되거나 호환되지 않는 기능이 작동하여 당신 또는 공격대원에게 잘못된 알림이 되지 않기 위한 조치입니다. 지금 즉시 최신 버전으로 업데이트 하여 주시기 바랍니다."
+DBM_CORE_UPDATEREMINDER_HOTFIX			= "지금 사용하시는 DBM 버전은 이 우두머리 전투에서 잘못된 알림과 바를 표시할 것입니다. 이 오류는 다음 정식 버전에서 수정될 것이며, 최신 Alpha 버전으로 업데이트 하면 즉시 수정할 수 있습니다."
 
 DBM_CORE_MOVABLE_BAR				= "나를 움직이세요~_~"
 
@@ -118,16 +120,17 @@ DBM_LFG_INVITE						= "던전 입장"
 
 DBM_CORE_SLASHCMD_HELP				= {
 	"사용 가능한 명령어:",
-	"/dbm version: 공격대원의 DBM 버전 체크 (줄임말: ver)",
---	"/dbm version2: 공격대 전체 DBM 버전 체크. 오래된 DBM일 경우 귓속말로 알립니다. (줄임말: ver2).",
-	"/dbm unlock(move): 바 위치조정을 할 수 있도록 위치조정 바를 보여줌",
-	"/dbm timer <숫자> <글자>: <숫자>초 지속되는 <글자>바가 생성됨",
-	"/dbm broadcast timer <숫자> <글자>: <숫자>초 지속되는 <글자>바를 공격대에 보여줌 (승급 권한 필요)",
-	"/dbm break <min>: <min>분 지속되는 휴식 바를 보여줌. DBM을 설치한 모든 공격대원이 볼 수 있음 (승급 권한 필요)",
-	"/dbm pull <sec>: <sec>초 후 전투 예정 바를 보여줌. DBM을 설치한 모든 공격대원이 볼 수 있음 (승급 권한 필요)",
-	"/dbm arrow: DBM 화살표를 보여줌. 추가 도움말은 /dbm arrow help 를 입력",
-	"/dbm lockout: 현재 공격대원에게 공격대 귀속 정보를 요청함 (출력형식: 던전이름, 던전 ID) (승급 권한 필요)",
-	"/dbm help: 이 도움말을 보여줌"
+	"/dbm version: 공격대원의 DBM 버전 체크(줄임말: ver)",
+--	"/dbm version2: 공격대 전체 DBM 버전 체크 + 구버전 귓속말 알림(줄임말: ver2).",
+	"/dbm unlock(move): 바의 위치조정 바를 보임",
+	"/dbm timer <숫자> <글자>: <숫자>초 지속되는 <글자>바를 생성",
+	"/dbm broadcast timer <숫자> <글자>: <숫자>초 지속되는 <글자>바를 공격대원에게 보냄(승급 권한 필요)",
+	"/dbm break <min>: <min>분 지속되는 휴식 바를 보냄. DBM을 설치한 모든 공격대원이 볼 수 있음(승급 권한 필요)",
+	"/dbm pull <sec>: <sec>초 후 전투 예정 바를 보냄. DBM을 설치한 모든 공격대원이 볼 수 있음(승급 권한 필요)",
+	"/dbm arrow: DBM 화살표 보임. 추가 도움말은 /dbm arrow help 를 입력",
+	"/dbm lockout: 현재 공격대원에게 공격대 귀속 정보를 요(출력형식: 던전이름, 던전 ID)(승급 권한 필요)",
+	"/dbm lag: 공격대원의 지연시간을 확인",
+	"/dbm help: 이 도움말을 봄"
 }
 
 DBM_ERROR_NO_PERMISSION				= "해당 명령어를 실행하기 위한 권한을 가지고 있지 않습니다."
@@ -141,13 +144,13 @@ DBM_CORE_BACK						= "뒤쪽"--BACK
 DBM_CORE_FRONT						= "앞쪽"
 
 DBM_CORE_BREAK_START				= "쉬는 시간 시작 -- %s 분 남았습니다!"
-DBM_CORE_BREAK_MIN					= "%s 분 후 쉬는 시간이 끝납니다!"
-DBM_CORE_BREAK_SEC					= "%s 초 후 쉬는 시간이 끝납니다!"
+DBM_CORE_BREAK_MIN					= "%s분 후 쉬는 시간이 끝납니다!"
+DBM_CORE_BREAK_SEC					= "%s초 후 쉬는 시간이 끝납니다!"
 DBM_CORE_TIMER_BREAK				= "쉬는 시간"
 DBM_CORE_ANNOUNCE_BREAK_OVER		= "쉬는 시간이 종료되었습니다."
 
 DBM_CORE_TIMER_PULL					= "전투 예정"
-DBM_CORE_ANNOUNCE_PULL				= "%d 초 뒤 시작 합니다."
+DBM_CORE_ANNOUNCE_PULL				= "%d초 뒤 시작 합니다. (%s|1이;가; 보냄)"
 DBM_CORE_ANNOUNCE_PULL_NOW			= "시작합니다. 긴장하세요.!"
 
 DBM_CORE_ACHIEVEMENT_TIMER_SPEED_KILL = "Speed Kill(업적)"--BATTLE_PET_SOURCE_6
@@ -158,7 +161,7 @@ DBM_CORE_AUTO_ANNOUNCE_TEXTS.spell			= "%s"
 DBM_CORE_AUTO_ANNOUNCE_TEXTS.ends			= "%s 종료"
 DBM_CORE_AUTO_ANNOUNCE_TEXTS.fades			= "%s 사라짐"
 DBM_CORE_AUTO_ANNOUNCE_TEXTS.adds			= "%s : %%d 남음"
-DBM_CORE_AUTO_ANNOUNCE_TEXTS.cast			= "주문시전 %s : %.1f 초"
+DBM_CORE_AUTO_ANNOUNCE_TEXTS.cast			= "주문시전 %s : %.1f초"
 DBM_CORE_AUTO_ANNOUNCE_TEXTS.soon			= "곧 %s"
 DBM_CORE_AUTO_ANNOUNCE_TEXTS.prewarn		= "%2$s 후 %1$s"
 DBM_CORE_AUTO_ANNOUNCE_TEXTS.phase			= "%s 단계"
@@ -241,6 +244,7 @@ DBM_CORE_AUTO_TIMER_OPTIONS.nextsource		= "다음 $spell:%s 바 보기"
 DBM_CORE_AUTO_TIMER_OPTIONS.achievement		= "%s 업적까지 남은시간 바 보기"
 
 DBM_CORE_AUTO_ICONS_OPTION_TEXT			= "$spell:%s 대상에게 전술 목표 아이콘 설정"
+DBM_CORE_AUTO_ICONS_OPTION_TEXT2		= "$spell:%s 에게 전술 목표 아이콘 설정"
 DBM_CORE_AUTO_SOUND_OPTION_TEXT			= "$spell:%s 대상이 된 경우 별도 경고음 듣기"
 DBM_CORE_AUTO_COUNTDOWN_OPTION_TEXT		= "$spell:%s 이전에 초읽기 소리 듣기"
 DBM_CORE_AUTO_COUNTDOWN_OPTION_TEXT2	= "$spell:%s 남은시간 초읽기 소리 듣기"
@@ -249,7 +253,8 @@ DBM_CORE_AUTO_YELL_OPTION_TEXT			= "$spell:%s 대상이 된 경우 대화로 알
 DBM_CORE_AUTO_YELL_ANNOUNCE_TEXT		= UnitName("player").."에게 %s!"
 DBM_CORE_AUTO_RANGE_OPTION_TEXT			= "$spell:%2$s 관련 거리 창 보기(%1$sm)"
 DBM_CORE_AUTO_RANGE_OPTION_TEXT_SHORT	= "거리 창 보기(%sm)"
-
+DBM_CORE_AUTO_INFO_FRAME_OPTION_TEXT	= "$spell:%s 정보를 정보 창으로 보기"
+DBM_CORE_AUTO_READY_CHECK_OPTION_TEXT	= "우두머리 전투 시작시 전투 준비 소리 듣기(대상 선택 유무 무관)"
 
 -- New special warnings
 DBM_CORE_MOVE_SPECIAL_WARNING_BAR		= "특수 경고 움직이기"
@@ -288,5 +293,10 @@ DBM_INSTANCE_INFO_STATS_AWAY		= "자리비움: %s"
 DBM_INSTANCE_INFO_STATS_NO_RESPONSE	= "DBM 구버전 사용중: %s"
 DBM_INSTANCE_INFO_RESULTS			= "공격대 귀속 정보 확인 결과입니다. 만약 공격대원이 다른 언어의 WoW 클라이언트를 사용 중이라면 결과가 올바르게 보이지 않을 수도 있습니다."
 DBM_INSTANCE_INFO_SHOW_RESULTS		= "아직 응답하지 않은 공격대원: %s\n|HDBM:showRaidIdResults|h|cff3588ff[지금 결과 보기]|r|h"
+
+DBM_CORE_LAG_CHECKING				= "지연시간 확인중..."
+DBM_CORE_LAG_HEADER					= "Deadly Boss Mods - 지연시간 확인 결과"
+DBM_CORE_LAG_ENTRY					= "%s: 서버지연시간 [%d ms] / 개인지연시간 [%d ms]"
+DBM_CORE_LAG_FOOTER					= "응답없음: %s"
 
 end

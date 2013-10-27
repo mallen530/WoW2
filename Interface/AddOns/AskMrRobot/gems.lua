@@ -1,3 +1,5 @@
+local _, AskMrRobot = ...
+
 local gemToColor = {
 [22459]="Prismatic",
 [22460]="Prismatic",
@@ -1184,7 +1186,6 @@ local gemToColor = {
 [97309]="Hydraulic",
 [97538]="Orange",
 [97943]="Orange",
-[98090]="Blue",
 [98094]="Red"}
 
 AskMrRobot.alternateGemName = {
@@ -2364,7 +2365,6 @@ AskMrRobot.alternateGemName = {
 [97309]="34 Int",
 [97538]="5 Int, 10 Resil",
 [97943]="4 Int, 8 Resil",
-[98090]="16 Hit",
 [98094]="8 Int"}
 
 AskMrRobot.gemDuplicates = {
@@ -2643,6 +2643,58 @@ local gemEnchantDuplicates = {
 [5024]=5026,
 [5026]=5024}
 
+AskMrRobot.JewelcrafterGems = {
+[36766]=1,
+[36767]=1,
+[42142]=1,
+[42143]=1,
+[42144]=1,
+[42145]=1,
+[42146]=1,
+[42148]=1,
+[42149]=1,
+[42150]=1,
+[42151]=1,
+[42152]=1,
+[42153]=1,
+[42154]=1,
+[42155]=1,
+[42156]=1,
+[42157]=1,
+[42158]=1,
+[52255]=1,
+[52257]=1,
+[52258]=1,
+[52259]=1,
+[52260]=1,
+[52261]=1,
+[52262]=1,
+[52263]=1,
+[52264]=1,
+[52265]=1,
+[52266]=1,
+[52267]=1,
+[52268]=1,
+[52269]=1,
+[83141]=1,
+[83142]=1,
+[83143]=1,
+[83144]=1,
+[83145]=1,
+[83146]=1,
+[83147]=1,
+[83148]=1,
+[83149]=1,
+[83150]=1,
+[83151]=1,
+[83152]=1,
+[93404]=1,
+[93405]=1,
+[93406]=1,
+[93408]=1,
+[93409]=1,
+[93410]=1}
+
 
 local function DoGemsMatch(gemIdA, gemIdB)
    return gemIdA == gemIdB or (gemIdA and gemIdB and gemIdA == AskMrRobot.gemDuplicates[gemIdB])
@@ -2788,3 +2840,162 @@ function AskMrRobot.MatchesGems(existingItemLink, existingGemEnchantIds, gems)
 	return GetBadGems(existingItemLink, existingGemEnchantIds, reorderedGems)
 end
 
+
+local function findItemInBag(bagId, itemId)
+	local numSlots = GetContainerNumSlots(bagId);
+	local lockedSlotId = nil
+	for slotId = 1, numSlots do
+		local _, itemCount, locked, _, _, _, itemLink = GetContainerItemInfo(bagId, slotId);
+		if itemLink ~= nil then
+			local bagItemId = AskMrRobot.getItemIdFromLink(itemLink)
+			if itemId == bagItemId then
+				if locked then					
+					lockedSlotId = slotId
+				else
+					return slotId, false
+				end
+			end
+		end
+	end	
+	return lockedSlotId, lockedSlotId ~= nil
+end
+
+-- returns bagId, badSlotId, isLocked
+local function findItem(itemId)
+	local lockedSlotId, lockedBagId = nil, nil
+	local bagSlot, locked = findItemInBag(BACKPACK_CONTAINER, itemId) -- backpack
+	if bagSlot then 
+		if locked then
+			lockedBagId = BACKPACK_CONTAINER
+			lockedSlotId = badGems
+		else
+			return BACKPACK_CONTAINER, bagSlot, false
+		end
+	end
+	
+	for bagId = 1, NUM_BAG_SLOTS do
+		bagSlot, locked = findItemInBag(bagId, itemId)
+		if locked then
+			lockedBagId = bagId
+			lockedSlotId = badGems
+		elseif bagSlot then
+			return bagId, bagSlot, false
+		end
+	end
+
+	return lockedBagId, lockedSlotId, lockedSlotId ~= nil
+end
+
+local autoGemCoRoutine = nil
+local autoGemTime = nil
+
+local function checkAutoGemTimeout()
+	if autoGemTime and difftime(time(), autoGemTime) >= 5 then
+		autoGemTime = nil
+		autoGemCoRoutine = nil
+		return true
+	end
+	return false
+end
+
+local function autoGemHelper(inventorySlotId, gemInfo, gemSlot)
+	-- get the gem id to socket
+	local gemId = gemInfo.optimized[gemSlot].id
+
+	--loop forever until we get the item unlocked
+	while true do
+		-- attempt to find the gem in inventory
+		local bagId, bagSlot, locked = findItem(gemId)
+		if locked or IsInventoryItemLocked(inventorySlotId) then
+			coroutine.yield()
+			if checkAutoGemTimeout() then
+				return
+			end
+		else
+			-- if found...
+			if bagId then
+				ClearCursor()
+				-- launch the gem ui with the item
+				SocketInventoryItem(inventorySlotId)
+				-- grab the gem from a bag
+				PickupContainerItem(bagId, bagSlot)
+				-- put the gem in the socket
+				ClickSocketButton(gemSlot)
+				-- -- save the changes
+				AcceptSockets()
+				-- close the UI
+				CloseSocketInfo()
+				ClearCursor()
+			end
+			break
+		end
+	end
+end
+
+local function autoGem()
+	--http://wowprogramming.com/docs/api_categories#socket
+	for slotNum, gemInfo in AskMrRobot.sortSlots(AskMrRobot.itemDiffs.gems) do
+		local inventorySlotId = GetInventorySlotInfo(AskMrRobot.slotNames[slotNum])
+
+		-- do non-JC gems first
+		for gemSlot in pairs(gemInfo.badGems) do
+			if gemInfo.badGems[gemSlot] == true then
+				local gemId = gemInfo.optimized[gemSlot].id
+				if not AskMrRobot.JewelcrafterGems[gemId] then
+					autoGemHelper(inventorySlotId, gemInfo, gemSlot)
+				end
+			end
+		end
+	end
+
+	for slotNum, gemInfo in AskMrRobot.sortSlots(AskMrRobot.itemDiffs.gems) do
+		local inventorySlotId = GetInventorySlotInfo(AskMrRobot.slotNames[slotNum])
+
+		-- do JC gems next
+		for gemSlot in pairs(gemInfo.badGems) do
+			if gemInfo.badGems[gemSlot] == true then
+				local gemId = gemInfo.optimized[gemSlot].id
+				if AskMrRobot.JewelcrafterGems[gemId] then
+					autoGemHelper(inventorySlotId, gemInfo, gemSlot)
+				end
+			end
+		end
+	end
+end
+
+local function resumeAutoGemming()
+	if not autoGemCoRoutine then
+		return
+	end
+	if coroutine.status(autoGemCoRoutine) == 'dead' then
+		autoGemCoRoutine = nil
+		StaticPopup_Show('AUTOGEM_FINISHED')
+	end
+	if coroutine.status(autoGemCoRoutine) == 'suspended' then
+		coroutine.resume(autoGemCoRoutine)
+		if coroutine.status(autoGemCoRoutine) == 'dead' then
+			autoGemCoRoutine = nil
+			StaticPopup_Show('AUTOGEM_FINISHED')
+		end
+		return
+	end
+end
+
+function AskMrRobot.AutoGem()
+	checkAutoGemTimeout()
+	if autoGemCoRoutine then 
+		if coroutine.status(autoGemCoRoutine) == 'dead' then
+			autoGemCoRoutine = nil
+		else
+			return false 
+		end
+	end
+	autoGemTime = time()
+	autoGemCoRoutine = coroutine.create(autoGem)
+	resumeAutoGemming()
+	return true
+end
+
+function AskMrRobot.On_ITEM_UNLOCKED()
+	resumeAutoGemming()
+end

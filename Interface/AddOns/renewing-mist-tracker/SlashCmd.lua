@@ -20,8 +20,6 @@ function SlashCmdList.REMTRACKER(msg, editbox) -- 4.
 		slash_cmd:SetOrder( rest )
 	elseif command == "health" then
 		slash_cmd:HealthDisplay( rest )
-	elseif command == "lock" then
-		slash_cmd:Lock( rest )
 	end
 	
 end
@@ -34,7 +32,6 @@ function slash_cmd:DisplayHelp()
 	DEFAULT_CHAT_FRAME:AddMessage( "/rem compact - Toggles use of the compact frame", 1,1,1 )
 	DEFAULT_CHAT_FRAME:AddMessage( "/rem order (asc or desc) - Sets the sort order on the full frame.", 1,1,1 )
 	DEFAULT_CHAT_FRAME:AddMessage( "/rem health (off or on) - Sets the display of the health percentage on the full frame", 1,1,1 )
-	DEFAULT_CHAT_FRAME:AddMessage( "/rem lock (off or on) - Sets the lock status", 1,1,1 )
 end
 
 function slash_cmd:ScaleUi( rest )
@@ -75,21 +72,6 @@ function slash_cmd:HealthDisplay( rest )
 			ReMTrackerDB.hide_health_pct = true
 		else
 			ReMTrackerDB.hide_health_pct = false
-		end
-	end
-end
-
-function slash_cmd:Lock( rest )
-	local cmd, rest = rest:match("^(%S*)%s*(.-)$");
-	if ReMTrackerDB then
-		if cmd == "on" then
-			ReMTrackerDB.lock_frames = true
-			RenewingMistTracker.ui.parent_frame.dragLock.stopDraggable()
-			RenewingMistTracker.ui.compact_parent_frame.dragLock.stopDraggable()
-		else
-			ReMTrackerDB.lock_frames = false
-			RenewingMistTracker.ui.parent_frame.dragLock.startDraggable()
-			RenewingMistTracker.ui.compact_parent_frame.dragLock.startDraggable()
 		end
 	end
 end

@@ -1,1 +1,4 @@
 GreenWall: enabled
+Elementarist: disabled
+Ovale: enabled
+Nerien_Ovale_Scripts: enabled

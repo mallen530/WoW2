@@ -19,3 +19,6 @@ DBM-TerraceofEndlessSpring: enabled
 DeathNote: disabled
 ElvUI_AddOnSkins: enabled
 GreenWall: enabled
+AskMrRobot: enabled
+Nerien_Ovale_Scripts: disabled
+Ovale: disabled

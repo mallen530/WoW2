@@ -1,0 +1,19 @@
+------------------------------------------------------------------------
+r176 | nevcairiel | 2013-10-19 14:24:28 +0000 (Sat, 19 Oct 2013) | 1 line
+Changed paths:
+   A /tags/5.4-release6 (from /trunk:175)
+
+Weekly Tag - #6
+------------------------------------------------------------------------
+r175 | nevcairiel | 2013-10-19 14:23:19 +0000 (Sat, 19 Oct 2013) | 1 line
+Changed paths:
+   M /trunk/LibBabble-Inventory-3.0.lua
+
+Automated LibBabble re-generation from the localization system
+------------------------------------------------------------------------
+r173 | nevcairiel | 2013-09-23 13:41:22 +0000 (Mon, 23 Sep 2013) | 1 line
+Changed paths:
+   M /trunk/LibBabble-Inventory-3.0.lua
+
+Automated LibBabble re-generation from the localization system
+------------------------------------------------------------------------

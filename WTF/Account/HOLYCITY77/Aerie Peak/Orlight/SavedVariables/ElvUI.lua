@@ -8,23 +8,23 @@ ElvCharacterDB = {
 		"/i run", -- [5]
 	},
 	["ChatLog"] = {
-		["1370053519.946"] = {
-			"got heals tanks and dps, and idc to swap out on weeks if needed", -- [1]
-			"|Kf5|k000000|k", -- [2]
-			"", -- [3]
+		["1378582721.386"] = {
+			"brb", -- [1]
+			"Eloodard-Kel'Thuzad", -- [2]
+			"Common", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Eloodard", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			500, -- [11]
-			false, -- [12]
-			5, -- [13]
+			626, -- [11]
+			"0x0580000008665648", -- [12]
+			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
+			[20] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
 		},
 		["1378581781.942"] = {
 			"ty", -- [1]
@@ -98,19 +98,19 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_INSTANCE_CHAT",
 		},
-		["1377993641.275"] = {
-			"wth?", -- [1]
-			"Ëlfman-Ysera", -- [2]
+		["1377994045.041"] = {
+			"thanks all", -- [1]
+			"Jeromar-Azuremyst", -- [2]
 			"Common", -- [3]
 			"", -- [4]
-			"Ëlfman", -- [5]
+			"Jeromar", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			714, -- [11]
-			"0x0500000005CCAE72", -- [12]
+			817, -- [11]
+			"0x07000000054F3DE1", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
@@ -188,24 +188,6 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_INSTANCE_CHAT",
 		},
-		["1369784260.848"] = {
-			"and apparently some guy lives near a nuclear plant in tenn", -- [1]
-			"|Kf60|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			765, -- [11]
-			false, -- [12]
-			60, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
 		["1378581641.348"] = {
 			"ggod i hate tht guy", -- [1]
 			"Lizzyanna-Dalaran", -- [2]
@@ -223,6 +205,24 @@ ElvCharacterDB = {
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_SAY",
+		},
+		["1370054118.728"] = {
+			"dps/tank/heals?", -- [1]
+			"|Kf5|k000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			595, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
 		},
 		["1378583348.067"] = {
 			"what minimum ms", -- [1]
@@ -242,23 +242,23 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_INSTANCE_CHAT",
 		},
-		["1377992650.358"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:645:05800000084E2146:1:8:31:13:4294967295:4294967295:4294967295:4294967295|h[Scholomance]|h|r!", -- [1]
-			"Orlight", -- [2]
-			"", -- [3]
+		["1378583357.736"] = {
+			"or that i can get away with", -- [1]
+			"Anticipate-ShatteredHalls", -- [2]
+			"Common", -- [3]
 			"", -- [4]
-			"Orlight", -- [5]
+			"Anticipate", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			410, -- [11]
-			"0x05800000084E2146", -- [12]
+			795, -- [11]
+			"0x07000000054E5150", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[20] = "CHAT_MSG_INSTANCE_CHAT",
 		},
 		["1377993650.374"] = {
 			"idk", -- [1]
@@ -278,23 +278,23 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_INSTANCE_CHAT",
 		},
-		["1370053802.685"] = {
-			"well monk is my main", -- [1]
-			"|Kf5|k000000|k", -- [2]
+		["1377993900.717"] = {
+			"%s has earned the achievement |cffffff00|Hachievement:503:058000000864D18A:1:8:31:13:4294967295:4294967295:4294967295:4294967295|h[50 Quests Completed]|h|r!", -- [1]
+			"Ashlleigh", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Ashlleigh", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			538, -- [11]
-			false, -- [12]
-			5, -- [13]
+			795, -- [11]
+			"0x058000000864D18A", -- [12]
+			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		},
 		["1370053454.942"] = {
 			"hey, was wondering if you know when you all will be raiding on thrall? days/times, cus i was wanting to get in on it but my scheduling is 10 days in advance.. ", -- [1]
@@ -404,23 +404,23 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD",
 		},
-		["1377993108.59"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:1999:058000000846863E:1:8:31:13:4294967295:4294967295:4294967295:4294967295|h[10 Cooking Awards]|h|r!", -- [1]
-			"Gerrisan", -- [2]
-			"", -- [3]
+		["1378582974.143"] = {
+			"im lost where to now lol", -- [1]
+			"Everilm-Kel'Thuzad", -- [2]
+			"Common", -- [3]
 			"", -- [4]
-			"Gerrisan", -- [5]
+			"Everilm", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			510, -- [11]
-			"0x058000000846863E", -- [12]
+			713, -- [11]
+			"0x058000000865D209", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[20] = "CHAT_MSG_INSTANCE_CHAT",
 		},
 		["1370053727.738"] = {
 			"i should catch my shammy up", -- [1]
@@ -494,9 +494,27 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		},
-		["1370053580.117"] = {
-			"well Kloros is going to be the other tank on his warrior who is lvl 50 atm", -- [1]
-			"|Kf5|k000000|k", -- [2]
+		["1378583063.555"] = {
+			"go to where the big tree died and take the tunnel", -- [1]
+			"Orlight", -- [2]
+			"Common", -- [3]
+			"", -- [4]
+			"Orlight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			727, -- [11]
+			"0x05800000084E2146", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_INSTANCE_CHAT",
+		},
+		["1378581941.288"] = {
+			"<DBM> Cyndrasa has defeated Looking For Raid - Protectors of the Endless!", -- [1]
+			"|Kf61|k000000000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
 			"", -- [5]
@@ -505,30 +523,12 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			516, -- [11]
+			452, -- [11]
 			false, -- [12]
-			5, -- [13]
+			61, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1370045364.653"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:637:058000000852911E:1:5:31:13:4294967295:4294967295:4294967295:4294967295|h[Scarlet Monastery]|h|r!", -- [1]
-			"Waríson", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Waríson", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			330, -- [11]
-			"0x058000000852911E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[20] = "CHAT_MSG_BN_WHISPER",
 		},
 		["1378582508.979"] = {
 			"don't have any", -- [1]
@@ -566,8 +566,8 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		},
-		["1370053554.843"] = {
-			"monk/pally", -- [1]
+		["1370053756.332"] = {
+			"we might need another tank as well", -- [1]
 			"|Kf5|k000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -577,12 +577,30 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			507, -- [11]
+			535, -- [11]
 			false, -- [12]
 			5, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1378583618.148"] = {
+			"run", -- [1]
+			"Orlight", -- [2]
+			"Common", -- [3]
+			"", -- [4]
+			"Orlight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			845, -- [11]
+			"0x05800000084E2146", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_INSTANCE_CHAT",
 		},
 		["1370050522.251"] = {
 			"%s has earned the achievement |cffffff00|Hachievement:2000:0580000007A14979:1:5:31:13:4294967295:4294967295:4294967295:4294967295|h[25 Cooking Awards]|h|r!", -- [1]
@@ -601,6 +619,24 @@ ElvCharacterDB = {
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		},
+		["1378582333.96"] = {
+			"sry for lag", -- [1]
+			"Anticipate-ShatteredHalls", -- [2]
+			"Common", -- [3]
+			"", -- [4]
+			"Anticipate", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			507, -- [11]
+			"0x07000000054E5150", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_INSTANCE_CHAT",
 		},
 		["1370053498.667"] = {
 			"yeah, well you've got mine, whenever it is, what ever role is needed", -- [1]
@@ -818,6 +854,24 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_INSTANCE_CHAT",
 		},
+		["1378581985.812"] = {
+			"run back in you rez next to the door", -- [1]
+			"Orlight", -- [2]
+			"Common", -- [3]
+			"", -- [4]
+			"Orlight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			463, -- [11]
+			"0x05800000084E2146", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_INSTANCE_CHAT",
+		},
 		["1370053549.862"] = {
 			"what is your tank?", -- [1]
 			"|Kf5|k000000|k", -- [2]
@@ -908,6 +962,24 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
 		},
+		["1370049920.327"] = {
+			"%s has earned the achievement |cffffff00|Hachievement:889:05800000084E2146:1:5:31:13:4294967295:4294967295:4294967295:4294967295|h[Fast and Furious]|h|r!", -- [1]
+			"Orlight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Orlight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			31, -- [11]
+			"0x05800000084E2146", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		},
 		["1370053806.662"] = {
 			"sooo", -- [1]
 			"|Kf5|k000000|k", -- [2]
@@ -962,8 +1034,8 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
-		["1378582324.499"] = {
-			"sry", -- [1]
+		["1378582330.124"] = {
+			"had to toggle my cam zoom out lol", -- [1]
 			"Anticipate-ShatteredHalls", -- [2]
 			"Common", -- [3]
 			"", -- [4]
@@ -973,12 +1045,30 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			505, -- [11]
+			506, -- [11]
 			"0x07000000054E5150", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_INSTANCE_CHAT",
+		},
+		["1370054078.874"] = {
+			"ill go give me a sec though", -- [1]
+			"|Kf5|k000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			578, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
 		["1377485960.671"] = {
 			"%s has earned the achievement |cffffff00|Hachievement:1258:05800000084176A1:1:8:25:13:4294967295:4294967295:4294967295:4294967295|h[Take a Chill Pill]|h|r!", -- [1]
@@ -1070,9 +1160,9 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_INSTANCE_CHAT",
 		},
-		["1370053699.916"] = {
-			"me HPally, Kloros Prot War, Azuba RestoDruid, Quit Hunter", -- [1]
-			"|Kf5|k000000|k", -- [2]
+		["1378581738.78"] = {
+			"no one is dispelling the protectors", -- [1]
+			"|Kf61|k000000000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
 			"", -- [5]
@@ -1081,12 +1171,12 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			528, -- [11]
+			418, -- [11]
 			false, -- [12]
-			5, -- [13]
+			61, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[20] = "CHAT_MSG_BN_WHISPER",
 		},
 		["1370049731.908"] = {
 			"Convert to Raid Too just did Resto Druids", -- [1]
@@ -1124,19 +1214,19 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		},
-		["1378582510.143"] = {
-			"sorry", -- [1]
-			"Orlight", -- [2]
+		["1378582937.049"] = {
+			"ever", -- [1]
+			"Anticipate-ShatteredHalls", -- [2]
 			"Common", -- [3]
 			"", -- [4]
-			"Orlight", -- [5]
+			"Anticipate", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			556, -- [11]
-			"0x05800000084E2146", -- [12]
+			703, -- [11]
+			"0x07000000054E5150", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
@@ -1178,23 +1268,23 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD",
 		},
-		["1378583618.148"] = {
-			"run", -- [1]
-			"Orlight", -- [2]
-			"Common", -- [3]
+		["1370053637.409"] = {
+			"oh haha", -- [1]
+			"|Kf5|k000000|k", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Orlight", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			845, -- [11]
-			"0x05800000084E2146", -- [12]
-			0, -- [13]
+			525, -- [11]
+			false, -- [12]
+			5, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
 		["1370053650.984"] = {
 			"oh you gonna heal on ur monk? ", -- [1]
@@ -1232,24 +1322,6 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_INSTANCE_CHAT",
 		},
-		["1378583616.476"] = {
-			"thanks for the fun", -- [1]
-			"Orlight", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Orlight", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			844, -- [11]
-			"0x05800000084E2146", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
-		},
 		["1369784266.107"] = {
 			"which is 10 miles from another guy", -- [1]
 			"|Kf60|k00000000000|k", -- [2]
@@ -1267,24 +1339,6 @@ ElvCharacterDB = {
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1378583357.736"] = {
-			"or that i can get away with", -- [1]
-			"Anticipate-ShatteredHalls", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Anticipate", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			795, -- [11]
-			"0x07000000054E5150", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
 		},
 		["1370053743.77"] = {
 			"cool", -- [1]
@@ -1304,24 +1358,6 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
-		["1378581985.812"] = {
-			"run back in you rez next to the door", -- [1]
-			"Orlight", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Orlight", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			463, -- [11]
-			"0x05800000084E2146", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
-		},
 		["1378582917.114"] = {
 			"can i get a res", -- [1]
 			"Eloodard-Kel'Thuzad", -- [2]
@@ -1339,60 +1375,6 @@ ElvCharacterDB = {
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		},
-		["1378583063.555"] = {
-			"go to where the big tree died and take the tunnel", -- [1]
-			"Orlight", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Orlight", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			727, -- [11]
-			"0x05800000084E2146", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
-		},
-		["1378583017.406"] = {
-			"come back to where we were at the start", -- [1]
-			"Orlight", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Orlight", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			716, -- [11]
-			"0x05800000084E2146", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
-		},
-		["1378582974.143"] = {
-			"im lost where to now lol", -- [1]
-			"Everilm-Kel'Thuzad", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Everilm", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			713, -- [11]
-			"0x058000000865D209", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
 		},
 		["1378437316.507"] = {
 			"bye", -- [1]
@@ -1412,60 +1394,6 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD",
 		},
-		["1370053738.953"] = {
-			"he's 48 atm", -- [1]
-			"|Kf5|k000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			533, -- [11]
-			false, -- [12]
-			5, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1378582943.003"] = {
-			";0", -- [1]
-			"Everilm-Kel'Thuzad", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Everilm", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			706, -- [11]
-			"0x058000000865D209", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
-		},
-		["1378582937.049"] = {
-			"ever", -- [1]
-			"Anticipate-ShatteredHalls", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Anticipate", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			703, -- [11]
-			"0x07000000054E5150", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
-		},
 		["1377992969.367"] = {
 			"timber", -- [1]
 			"Chucksnoris-Kel'Thuzad", -- [2]
@@ -1483,60 +1411,6 @@ ElvCharacterDB = {
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_SAY",
-		},
-		["1378582721.386"] = {
-			"brb", -- [1]
-			"Eloodard-Kel'Thuzad", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Eloodard", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			626, -- [11]
-			"0x0580000008665648", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		},
-		["1378582333.96"] = {
-			"sry for lag", -- [1]
-			"Anticipate-ShatteredHalls", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Anticipate", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			507, -- [11]
-			"0x07000000054E5150", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
-		},
-		["1378582330.124"] = {
-			"had to toggle my cam zoom out lol", -- [1]
-			"Anticipate-ShatteredHalls", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Anticipate", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			506, -- [11]
-			"0x07000000054E5150", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
 		},
 		["1370054102.812"] = {
 			"k", -- [1]
@@ -1574,24 +1448,6 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_INSTANCE_CHAT",
 		},
-		["1370054078.874"] = {
-			"ill go give me a sec though", -- [1]
-			"|Kf5|k000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			578, -- [11]
-			false, -- [12]
-			5, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
 		["1378582226.012"] = {
 			"this way", -- [1]
 			"Orlight", -- [2]
@@ -1609,24 +1465,6 @@ ElvCharacterDB = {
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_INSTANCE_CHAT",
-		},
-		["1378581941.288"] = {
-			"<DBM> Cyndrasa has defeated Looking For Raid - Protectors of the Endless!", -- [1]
-			"|Kf61|k000000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			452, -- [11]
-			false, -- [12]
-			61, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
 		},
 		["1370053813.101"] = {
 			"lol biased ", -- [1]
@@ -1646,8 +1484,8 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
 		},
-		["1370053637.409"] = {
-			"oh haha", -- [1]
+		["1370053508.573"] = {
+			"sweet thanks", -- [1]
 			"|Kf5|k000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1657,7 +1495,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			525, -- [11]
+			498, -- [11]
 			false, -- [12]
 			5, -- [13]
 			false, -- [14]
@@ -1681,24 +1519,6 @@ ElvCharacterDB = {
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_INSTANCE_CHAT",
-		},
-		["1378581738.78"] = {
-			"no one is dispelling the protectors", -- [1]
-			"|Kf61|k000000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			418, -- [11]
-			false, -- [12]
-			61, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
 		},
 		["1378437287.879"] = {
 			"welp. im outa here. have fun ya'll. hopefully ill have the weekend off. Ill get beer and we can tell wild stories", -- [1]
@@ -1754,24 +1574,6 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_INSTANCE_CHAT",
 		},
-		["1378581727.551"] = {
-			"oh god", -- [1]
-			"|Kf61|k000000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			416, -- [11]
-			false, -- [12]
-			61, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
 		["1370044966.007"] = {
 			"hi everyone accept for dad", -- [1]
 			"Wârison", -- [2]
@@ -1789,24 +1591,6 @@ ElvCharacterDB = {
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD",
-		},
-		["1370049920.327"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:889:05800000084E2146:1:5:31:13:4294967295:4294967295:4294967295:4294967295|h[Fast and Furious]|h|r!", -- [1]
-			"Orlight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Orlight", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			31, -- [11]
-			"0x05800000084E2146", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		},
 		["1370053570.194"] = {
 			"*take", -- [1]
@@ -1826,6 +1610,24 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
 		},
+		["1382820277.358"] = {
+			"%s has earned the achievement |cffffff00|Hachievement:979:05800000084E2146:1:10:26:13:4294967295:4294967295:4294967295:4294967295|h[The Mask Task]|h|r!", -- [1]
+			"Orlight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Orlight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			12, -- [11]
+			"0x05800000084E2146", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		},
 		["1377994050.832"] = {
 			"ty", -- [1]
 			"Ëlfman-Ysera", -- [2]
@@ -1844,19 +1646,19 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_INSTANCE_CHAT",
 		},
-		["1378583350.471"] = {
-			"for raiding", -- [1]
-			"Anticipate-ShatteredHalls", -- [2]
+		["1378583616.476"] = {
+			"thanks for the fun", -- [1]
+			"Orlight", -- [2]
 			"Common", -- [3]
 			"", -- [4]
-			"Anticipate", -- [5]
+			"Orlight", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			794, -- [11]
-			"0x07000000054E5150", -- [12]
+			844, -- [11]
+			"0x05800000084E2146", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
@@ -1880,23 +1682,41 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_INSTANCE_CHAT",
 		},
-		["1377994045.041"] = {
-			"thanks all", -- [1]
-			"Jeromar-Azuremyst", -- [2]
-			"Common", -- [3]
+		["1370053519.946"] = {
+			"got heals tanks and dps, and idc to swap out on weeks if needed", -- [1]
+			"|Kf5|k000000|k", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Jeromar", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			817, -- [11]
-			"0x07000000054F3DE1", -- [12]
-			0, -- [13]
+			500, -- [11]
+			false, -- [12]
+			5, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1370053477.502"] = {
+			"still generating interest", -- [1]
+			"|Kf5|k000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			483, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
 		["1377993547.347"] = {
 			"jump off here", -- [1]
@@ -1916,59 +1736,77 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_INSTANCE_CHAT",
 		},
-		["1377991775.618"] = {
-			"hey guys :)", -- [1]
-			"Lemen-Zangarmarsh", -- [2]
+		["1377993641.275"] = {
+			"wth?", -- [1]
+			"Ëlfman-Ysera", -- [2]
 			"Common", -- [3]
 			"", -- [4]
-			"Lemen", -- [5]
+			"Ëlfman", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			56, -- [11]
-			"0x0700000005184509", -- [12]
+			714, -- [11]
+			"0x0500000005CCAE72", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+			[20] = "CHAT_MSG_INSTANCE_CHAT",
 		},
-		["1370044903.33"] = {
-			"SAY HI NOW!", -- [1]
-			"Wârison", -- [2]
+		["1378583017.406"] = {
+			"come back to where we were at the start", -- [1]
+			"Orlight", -- [2]
 			"Common", -- [3]
 			"", -- [4]
-			"Wârison", -- [5]
+			"Orlight", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			281, -- [11]
-			"0x058000000851FFDF", -- [12]
+			716, -- [11]
+			"0x05800000084E2146", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_GUILD",
+			[20] = "CHAT_MSG_INSTANCE_CHAT",
 		},
-		["1377993900.717"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:503:058000000864D18A:1:8:31:13:4294967295:4294967295:4294967295:4294967295|h[50 Quests Completed]|h|r!", -- [1]
-			"Ashlleigh", -- [2]
+		["1378582324.499"] = {
+			"sry", -- [1]
+			"Anticipate-ShatteredHalls", -- [2]
+			"Common", -- [3]
+			"", -- [4]
+			"Anticipate", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			505, -- [11]
+			"0x07000000054E5150", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_INSTANCE_CHAT",
+		},
+		["1370053554.843"] = {
+			"monk/pally", -- [1]
+			"|Kf5|k000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Ashlleigh", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			795, -- [11]
-			"0x058000000864D18A", -- [12]
-			0, -- [13]
+			507, -- [11]
+			false, -- [12]
+			5, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[20] = "CHAT_MSG_BN_WHISPER",
 		},
 		["1370053600.654"] = {
 			"yeah, im just worried about how many leather wearers we're gonna have again.. >.>", -- [1]
@@ -2024,23 +1862,41 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD",
 		},
-		["1377994119.894"] = {
-			"Hail to the King Baby! Ding Level 12...just 78 levels to go!", -- [1]
-			"Ashlleigh", -- [2]
-			"Common", -- [3]
+		["1370053738.953"] = {
+			"he's 48 atm", -- [1]
+			"|Kf5|k000000|k", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Ashlleigh", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			834, -- [11]
-			"0x058000000864D18A", -- [12]
-			0, -- [13]
+			533, -- [11]
+			false, -- [12]
+			5, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_GUILD",
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1370053699.916"] = {
+			"me HPally, Kloros Prot War, Azuba RestoDruid, Quit Hunter", -- [1]
+			"|Kf5|k000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			528, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
 		["1378581936.221"] = {
 			"na", -- [1]
@@ -2078,6 +1934,60 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
 		},
+		["1370053852.828"] = {
+			"brb", -- [1]
+			"|Kf5|k000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			547, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1377992650.358"] = {
+			"%s has earned the achievement |cffffff00|Hachievement:645:05800000084E2146:1:8:31:13:4294967295:4294967295:4294967295:4294967295|h[Scholomance]|h|r!", -- [1]
+			"Orlight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Orlight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			410, -- [11]
+			"0x05800000084E2146", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		},
+		["1370053802.685"] = {
+			"well monk is my main", -- [1]
+			"|Kf5|k000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			538, -- [11]
+			false, -- [12]
+			5, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
 		["1378581770.375"] = {
 			"hahaa", -- [1]
 			"|Kf61|k000000000000|k", -- [2]
@@ -2096,10 +2006,10 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
-		["1369785472.341"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:505:05800000084E2146:1:5:28:13:4294967295:4294967295:4294967295:4294967295|h[250 Quests Completed]|h|r!", -- [1]
+		["1378582510.143"] = {
+			"sorry", -- [1]
 			"Orlight", -- [2]
-			"", -- [3]
+			"Common", -- [3]
 			"", -- [4]
 			"Orlight", -- [5]
 			"", -- [6]
@@ -2107,44 +2017,8 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			924, -- [11]
+			556, -- [11]
 			"0x05800000084E2146", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		},
-		["1370054118.728"] = {
-			"dps/tank/heals?", -- [1]
-			"|Kf5|k000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			595, -- [11]
-			false, -- [12]
-			5, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1377991783.452"] = {
-			"and hey :)", -- [1]
-			"Cederius-Arygos", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Cederius", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			61, -- [11]
-			"0x05800000082FB080", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
@@ -2168,8 +2042,98 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		},
-		["1370053508.573"] = {
-			"sweet thanks", -- [1]
+		["1377991783.452"] = {
+			"and hey :)", -- [1]
+			"Cederius-Arygos", -- [2]
+			"Common", -- [3]
+			"", -- [4]
+			"Cederius", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			61, -- [11]
+			"0x05800000082FB080", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_INSTANCE_CHAT",
+		},
+		["1369785472.341"] = {
+			"%s has earned the achievement |cffffff00|Hachievement:505:05800000084E2146:1:5:28:13:4294967295:4294967295:4294967295:4294967295|h[250 Quests Completed]|h|r!", -- [1]
+			"Orlight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Orlight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			924, -- [11]
+			"0x05800000084E2146", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		},
+		["1377994119.894"] = {
+			"Hail to the King Baby! Ding Level 12...just 78 levels to go!", -- [1]
+			"Ashlleigh", -- [2]
+			"Common", -- [3]
+			"", -- [4]
+			"Ashlleigh", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			834, -- [11]
+			"0x058000000864D18A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1377993108.59"] = {
+			"%s has earned the achievement |cffffff00|Hachievement:1999:058000000846863E:1:8:31:13:4294967295:4294967295:4294967295:4294967295|h[10 Cooking Awards]|h|r!", -- [1]
+			"Gerrisan", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Gerrisan", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			510, -- [11]
+			"0x058000000846863E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		},
+		["1370044903.33"] = {
+			"SAY HI NOW!", -- [1]
+			"Wârison", -- [2]
+			"Common", -- [3]
+			"", -- [4]
+			"Wârison", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			281, -- [11]
+			"0x058000000851FFDF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1370053580.117"] = {
+			"well Kloros is going to be the other tank on his warrior who is lvl 50 atm", -- [1]
 			"|Kf5|k000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2179,30 +2143,12 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			498, -- [11]
+			516, -- [11]
 			false, -- [12]
 			5, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1370053852.828"] = {
-			"brb", -- [1]
-			"|Kf5|k000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			547, -- [11]
-			false, -- [12]
-			5, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
 		},
 		["1378582935.313"] = {
 			"how do u do so much dps", -- [1]
@@ -2222,23 +2168,23 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_INSTANCE_CHAT",
 		},
-		["1370053756.332"] = {
-			"we might need another tank as well", -- [1]
-			"|Kf5|k000000|k", -- [2]
+		["1370045364.653"] = {
+			"%s has earned the achievement |cffffff00|Hachievement:637:058000000852911E:1:5:31:13:4294967295:4294967295:4294967295:4294967295|h[Scarlet Monastery]|h|r!", -- [1]
+			"Waríson", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Waríson", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			535, -- [11]
-			false, -- [12]
-			5, -- [13]
+			330, -- [11]
+			"0x058000000852911E", -- [12]
+			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		},
 		["1378582971.575"] = {
 			"true but monk tank over all tanks haha", -- [1]
@@ -2276,6 +2222,42 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_INSTANCE_CHAT",
 		},
+		["1378583350.471"] = {
+			"for raiding", -- [1]
+			"Anticipate-ShatteredHalls", -- [2]
+			"Common", -- [3]
+			"", -- [4]
+			"Anticipate", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			794, -- [11]
+			"0x07000000054E5150", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_INSTANCE_CHAT",
+		},
+		["1377991775.618"] = {
+			"hey guys :)", -- [1]
+			"Lemen-Zangarmarsh", -- [2]
+			"Common", -- [3]
+			"", -- [4]
+			"Lemen", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			56, -- [11]
+			"0x0700000005184509", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		},
 		["1370053632.481"] = {
 			"idk, seems like i've seen a ton of them in my last few raids", -- [1]
 			"|Kf5|k000000|k", -- [2]
@@ -2294,9 +2276,27 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
 		},
-		["1370053477.502"] = {
-			"still generating interest", -- [1]
-			"|Kf5|k000000|k", -- [2]
+		["1378582943.003"] = {
+			";0", -- [1]
+			"Everilm-Kel'Thuzad", -- [2]
+			"Common", -- [3]
+			"", -- [4]
+			"Everilm", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			706, -- [11]
+			"0x058000000865D209", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_INSTANCE_CHAT",
+		},
+		["1378581727.551"] = {
+			"oh god", -- [1]
+			"|Kf61|k000000000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
 			"", -- [5]
@@ -2305,12 +2305,12 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			483, -- [11]
+			416, -- [11]
 			false, -- [12]
-			5, -- [13]
+			61, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[20] = "CHAT_MSG_BN_WHISPER",
 		},
 	},
 }

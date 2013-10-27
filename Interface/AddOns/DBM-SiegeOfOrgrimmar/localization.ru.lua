@@ -20,10 +20,6 @@ L= DBM:GetModLocalization(849)
 ---------------------------
 L= DBM:GetModLocalization(866)
 
-L:SetOptionLocalization({
-	InfoFrame			= "Информационное окно для $journal:8252"
-})
-
 L:SetMiscLocalization({
 	wasteOfTime			= "Хорошо, я создам поле для удерживания порчи."
 })
@@ -34,7 +30,7 @@ L:SetMiscLocalization({
 L= DBM:GetModLocalization(867)
 
 L:SetOptionLocalization({
-	InfoFrame			= "Информационное окно для $journal:8255"
+	SetIconOnFragment	= "Устанавливать метку на Оскверненный осколок"
 })
 
 --------------
@@ -42,16 +38,25 @@ L:SetOptionLocalization({
 --------------
 L= DBM:GetModLocalization(868)
 
+L:SetWarningLocalization({
+	warnTowerGrunt		= "Рубака у башни"
+})
+
 L:SetTimerLocalization({
-	timerTowerCD	= "След. башня"
+	timerTowerCD		= "След. башня",
+	timerTowerGruntCD	= "След. Рубака у башни"
 })
 
 L:SetOptionLocalization({
-	timerTowerCD	= "Отсчет времени до следующего нападения на башню"
+	warnTowerGrunt		= "Объявлять когда появляется новый Рубака у башни",
+	timerTowerCD		= "Отсчет времени до следующего нападения на башню",
+	timerTowerGruntCD	= "Отсчет времени до следующего Рубаки у башни"
 })
 
 L:SetMiscLocalization({
+	Pull		= "Воины Драконьей Пасти! Отбейте пристань и сбросьте врага в море! Во имя Истинной Орды!",
 	newForces1	= "Вот и они!",--Jaina's line, horde may not be same
+	newForces1H	= "Сбейте ее скорее, не терпится взять ее за глотку.",--Sylva's line, horde
 	newForces2	= "Драконья Пасть, вперед!",
 	newForces3	= "За Гарроша!",
 	newForces4	= "Следующий отряд!",
@@ -91,7 +96,8 @@ L:SetMiscLocalization({
 	newForces3					= "Сомкнуть ряды!",
 	newForces4					= "Кор'крон, ко мне!",
 	newForces5					= "Следующий отряд, вперед!",
-	allForces					= "Кор'кронцы... все, кто со мной! Убейте их!"
+	allForces					= "Кор'кронцы... все, кто со мной! Убейте их!",
+	nextAdds					= "След. адды: "
 })
 
 -----------------

@@ -1,12 +1,14 @@
-local mod	= DBM:NewMod(861, "DBM-Pandaria", nil, 322)
+local mod	= DBM:NewMod(861, "DBM-Pandaria", nil, 322, 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 10275 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 10609 $"):sub(12, -3))
 mod:SetCreatureID(72057)
+mod:SetReCombatTime(20)
 mod:SetZone()
+mod:SetMinSyncRevision(10466)
 mod:SetUsedIcons(8, 7, 6)
 
-mod:RegisterCombat("combat")
+mod:RegisterCombat("combat_yell", L.Pull)
 
 mod:RegisterEventsInCombat(
 	"SPELL_CAST_START",
@@ -14,12 +16,8 @@ mod:RegisterEventsInCombat(
 	"SPELL_AURA_REMOVED"
 )
 
---[[
-mod:RegisterEvents(
-	"CHAT_MSG_MONSTER_YELL"
-)--]]
-
 local warnAncientFlame			= mod:NewSpellAnnounce(144695, 2)--probably add a move warning with right DAMAGE event
+local warnMagmaCrush			= mod:NewSpellAnnounce(144688, 3)
 local warnBurningSoul			= mod:NewTargetAnnounce(144689, 3)
 local warnEternalAgony			= mod:NewSpellAnnounce(144696, 4)
 
@@ -31,12 +29,12 @@ local specWarnEternalAgony		= mod:NewSpecialWarningSpell(144696, nil, nil, nil, 
 --local timerAncientFlameCD		= mod:NewCDTimer(43, 144695)--Insufficent logs
 --local timerBurningSoulCD		= mod:NewCDTimer(22, 144689)--22-30 sec variation (maybe larger, small sample size)w
 
---local berserkTimer				= mod:NewBerserkTimer(300)
+local berserkTimer				= mod:NewBerserkTimer(300)
 
-mod:AddBoolOption("SetIconOnBurningSoul", true)
+mod:AddBoolOption("SetIconOnBurningSoul")
 mod:AddBoolOption("RangeFrame", true)
+mod:AddReadyCheckOption(33118, false)
 
---local yellTriggered = false
 local DebuffTargets = {}
 local DebuffIcons = {}
 local DebuffIcon = 8
@@ -57,28 +55,28 @@ do
 			self:SetIcon(v, DebuffIcon)
 			DebuffIcon = DebuffIcon - 1
 		end
+		table.wipe(DebuffIcons)
 	end
 end
 
-function mod:OnCombatStart(delay)
---[[	if yellTriggered then--We know for sure this is an actual pull and not diving into in progress
-		timerPiercingRoarCD:Start(20-delay)
-		timerFrillBlastCD:Start(40-delay)
-		berserkTimer:Start(-delay)
-	end--]]
+function mod:OnCombatStart(delay, yellTriggered)
+	if yellTriggered then--We know for sure this is an actual pull and not diving into in progress
+		berserkTimer:Start()
+	end
 end
 
 function mod:OnCombatEnd()
 	if self.Options.RangeFrame then
 		DBM.RangeCheck:Hide()
 	end
---	yellTriggered = false
 end
 
 function mod:SPELL_CAST_START(args)
 	if args.spellId == 144696 then
 		warnEternalAgony:Show()
 		specWarnEternalAgony:Show()
+	elseif args.spellId == 144688 then
+		warnMagmaCrush:Show()
 	elseif args.spellId == 144695 then
 		warnAncientFlame:Show()
 --		timerAncientFlameCD:Start()
@@ -134,14 +132,3 @@ function mod:SPELL_AURA_REMOVED(args)
 		end
 	end
 end
-
---[[
-function mod:CHAT_MSG_MONSTER_YELL(msg)
-	if msg == L.Pull and not self:IsInCombat() then
-		if self:GetCIDFromGUID(UnitGUID("target")) == 72057 or self:GetCIDFromGUID(UnitGUID("targettarget")) == 72057 then
-			yellTriggered = true
-			DBM:StartCombat(self, 0)
-		end
-	end
-end
---]]

@@ -1,0 +1,255 @@
+------------------------------------------------------------------------
+r1039 | jlam | 2013-09-28 12:50:38 +0000 (Sat, 28 Sep 2013) | 1 line
+Changed paths:
+   A /tags/5.4.2 (from /trunk:1038)
+
+Tagging as 5.4.2 release.
+------------------------------------------------------------------------
+r1038 | jlam | 2013-09-28 12:50:00 +0000 (Sat, 28 Sep 2013) | 4 lines
+Changed paths:
+   M /trunk/Ovale.lua
+   M /trunk/OvaleFrame.lua
+
+Fix ticket 246 - Option to disable in pet battles
+
+Instead of an option, always hide Ovale when the Pet Battle UI is active.
+This should match player expectations.
+------------------------------------------------------------------------
+r1037 | jlam | 2013-09-28 12:49:53 +0000 (Sat, 28 Sep 2013) | 6 lines
+Changed paths:
+   M /trunk/OvaleCondition.lua
+
+Fix ticket 287 - IsFriend() doesn't work correctly
+
+Fix copy and paste error that was causing the IsFriend() condition to
+incorrectly return whether the target was flagged for PvP.
+
+Analysis and fix by @Xeltor.
+------------------------------------------------------------------------
+r1036 | jlam | 2013-09-28 12:49:46 +0000 (Sat, 28 Sep 2013) | 9 lines
+Changed paths:
+   M /trunk/OvaleState.lua
+
+Fix ticket 296 - Ovale double deducting for energy cost
+
+Only apply the power cost of the spell if the spellcast hasn't already
+finished.  A spellcast that has finished in-game has already had the power
+adjusted, which would be picked up when :Reset() is called to reset the
+frame state.
+
+Also, make this more readable by splitting out code from :ApplySpell()
+method to update the power state into a new method :ApplySpellCost().
+------------------------------------------------------------------------
+r1035 | jlam | 2013-09-28 12:49:40 +0000 (Sat, 28 Sep 2013) | 9 lines
+Changed paths:
+   M /trunk/Ovale.toc
+   M /trunk/OvaleBestAction.lua
+   M /trunk/OvaleCondition.lua
+   M /trunk/OvaleData.lua
+   M /trunk/OvalePaperDoll.lua
+   A /trunk/OvalePower.lua
+   M /trunk/OvaleState.lua
+
+Refactor power code into a new module OvalePower.
+
+- Split out power code from OvalePaperDoll and OvaleData into a separate
+  module OvalePower.
+
+- Enhance power code to track the maximum power of all power types.
+
+- Add conditions Max<Power>() that return the maximum power of that power
+  type, e.g., MaxRage, MaxEnergy, MaxChi, etc.  This closes ticket 291.
+------------------------------------------------------------------------
+r1034 | jlam | 2013-09-28 12:49:32 +0000 (Sat, 28 Sep 2013) | 10 lines
+Changed paths:
+   M /trunk/Ovale.toc
+   M /trunk/OvaleAura.lua
+   M /trunk/OvaleBestAction.lua
+   M /trunk/OvaleCompile.lua
+   M /trunk/OvaleCondition.lua
+   M /trunk/OvaleData.lua
+   M /trunk/OvaleFrame.lua
+   M /trunk/OvaleFuture.lua
+   M /trunk/OvaleIcone.lua
+   M /trunk/OvaleOptions.lua
+   A /trunk/OvaleSpellBook.lua
+   M /trunk/OvaleState.lua
+   M /trunk/compiler.pl
+
+Refactor OvaleData module.
+
+- Move the spellbook/talent/glyph-handling to a new module OvaleSpellBook.
+
+- Move methods closer to the place where they are mostly used:
+  - :GetTickLength() moved to OvaleAura.
+  - :GetDuration() moved to OvaleState, with simplifications.
+
+- Simplify OvaleData into a module without dependencies that can be used
+  as a global data store for other modules where needed.
+------------------------------------------------------------------------
+r1032 | jlam | 2013-09-26 05:34:33 +0000 (Thu, 26 Sep 2013) | 1 line
+Changed paths:
+   M /trunk/OvaleAura.lua
+   M /trunk/OvaleFuture.lua
+
+Add a timestamp to the args associated with Ovale_Aura* events.
+------------------------------------------------------------------------
+r1031 | jlam | 2013-09-26 05:34:27 +0000 (Thu, 26 Sep 2013) | 4 lines
+Changed paths:
+   M /trunk/Ovale.lua
+   M /trunk/OvaleAura.lua
+   M /trunk/OvaleDamageTaken.lua
+   M /trunk/OvaleFuture.lua
+   M /trunk/OvalePaperDoll.lua
+
+Enhance :DebugPrintf to automatically add a timestamp if requested.
+
+Simplify the modules that manually add timestamps to their debugging
+output and remove unnecessary calls to API_GetTime().
+------------------------------------------------------------------------
+r1030 | jlam | 2013-09-26 05:34:20 +0000 (Thu, 26 Sep 2013) | 1 line
+Changed paths:
+   M /trunk/Ovale.lua
+   M /trunk/OvaleAura.lua
+   M /trunk/OvaleDamageTaken.lua
+   M /trunk/OvaleEnemies.lua
+   M /trunk/OvaleFrame.lua
+   M /trunk/OvaleFuture.lua
+   M /trunk/OvaleLatency.lua
+   M /trunk/OvalePaperDoll.lua
+   M /trunk/OvaleState.lua
+   M /trunk/OvaleSwing.lua
+
+Use GetTime() directly in modules instead of relying on Ovale.now.
+------------------------------------------------------------------------
+r1029 | jlam | 2013-09-26 05:34:13 +0000 (Thu, 26 Sep 2013) | 1 line
+Changed paths:
+   M /trunk/OvaleBestAction.lua
+
+Allow a "texture" parameter for SpellInfo to use a specific texture.
+------------------------------------------------------------------------
+r1028 | jlam | 2013-09-26 05:34:07 +0000 (Thu, 26 Sep 2013) | 4 lines
+Changed paths:
+   M /trunk/OvaleData.lua
+
+Fix ticket 295 - ShredBang causes Rip to incorrectly re-snapshot stats
+
+Add Shred! spell ID to the buffNoSnapshotSpellList for Rip DoTs.
+Fix from @ShmooDude.
+------------------------------------------------------------------------
+r1027 | jlam | 2013-09-26 05:34:00 +0000 (Thu, 26 Sep 2013) | 8 lines
+Changed paths:
+   M /trunk/OvaleCondition.lua
+
+Fix ticket 293 - TimeToHealthPercent.
+
+Add new script condition TimeToHealthPercent() that returns the number of
+seconds before the target's health percent reaches the given amount, e.g.,
+
+    if target.TimeToHealthPercent(25) <5 UsePotion()
+
+Patch from @ShmooDude.
+------------------------------------------------------------------------
+r1026 | jlam | 2013-09-26 05:33:54 +0000 (Thu, 26 Sep 2013) | 1 line
+Changed paths:
+   M /trunk/OvaleCondition.lua
+
+Note that PowerCost(spellId) can return 0 for some spells.
+------------------------------------------------------------------------
+r1025 | jlam | 2013-09-26 05:33:47 +0000 (Thu, 26 Sep 2013) | 1 line
+Changed paths:
+   M /trunk/OvaleEquipement.lua
+
+Remove pre-MoP armor set lists.
+------------------------------------------------------------------------
+r1024 | jlam | 2013-09-26 05:33:41 +0000 (Thu, 26 Sep 2013) | 3 lines
+Changed paths:
+   M /trunk/OvaleEquipement.lua
+
+Add SimCish armor set names to MoP armor sets.
+
+Append "_melee", "_caster", "_heal", "_tank" to the "T<NN>" names.
+------------------------------------------------------------------------
+r1023 | jlam | 2013-09-26 05:33:34 +0000 (Thu, 26 Sep 2013) | 1 line
+Changed paths:
+   M /trunk/OvaleEquipement.lua
+
+Add T16 tier pieces to armor set database.
+------------------------------------------------------------------------
+r1022 | jlam | 2013-09-26 05:33:28 +0000 (Thu, 26 Sep 2013) | 5 lines
+Changed paths:
+   M /trunk/OvalePaperDoll.lua
+   M /trunk/OvaleState.lua
+
+Clean up pullup request #5 from ShmooDude/master.
+
+- Power type and regen values shouldn't be snapshotted.
+- Remove unnecessary call to GetPowerRegen().
+- Fix energy regen for druids and monks out of DPS stance.
+------------------------------------------------------------------------
+r1021 | jlam | 2013-09-26 05:33:21 +0000 (Thu, 26 Sep 2013) | 4 lines
+Changed paths:
+   M /trunk/OvalePaperDoll.lua
+   M /trunk/OvaleState.lua
+
+Merge pullup request #5 from ShmooDude/master.
+
+Use GetPowerRegen() to get the true power regen rate instead of directly
+computing the value.  This fixes ticket 294.
+------------------------------------------------------------------------
+r1019 | jlam | 2013-09-11 01:34:18 +0000 (Wed, 11 Sep 2013) | 1 line
+Changed paths:
+   M /trunk/Ovale.toc
+
+Update TOC for 5.4.
+------------------------------------------------------------------------
+r1017 | jlam | 2013-09-06 02:47:03 +0000 (Fri, 06 Sep 2013) | 1 line
+Changed paths:
+   M /trunk/OvaleAura.lua
+   M /trunk/OvaleCondition.lua
+   M /trunk/OvaleState.lua
+
+Fix bug with SpellDamageBuff() information not being applied to DoTs.
+------------------------------------------------------------------------
+r1015 | jlam | 2013-09-02 15:41:09 +0000 (Mon, 02 Sep 2013) | 16 lines
+Changed paths:
+   M /trunk/OvaleBestAction.lua
+
+Introduce new spell priority feature ``wait=N''.
+
+Setting wait=N in a Spell() or Item() action will cause that action to
+have priority over later actions if the later actions start within N
+seconds of that action's start time.
+
+In the following example, Crusader Strike will be suggested over later
+actions as long as it is within 0.2 seconds of the Crusader Strike
+cooldown, otherwise Judgment will be suggested within 0.2 seconds of the
+Judgment cooldown, followed by Templars Verdict or Holy Prism using normal
+start time comparisons.
+
+    Spell(crusader_strike wait=0.2)
+    Spell(judgment wait=0.2)
+    Spell(templars_verdict)
+    Spell(holy_prism)
+------------------------------------------------------------------------
+r1014 | jlam | 2013-09-02 15:41:00 +0000 (Mon, 02 Sep 2013) | 10 lines
+Changed paths:
+   M /trunk/defaut/Demoniste.lua
+
+Warlock: Fixes to destruction script for Immolate and Rain of Fire.
+
+- Use the correct spell ID for the instant-cast Rain of Fire gained by
+  destruction warlocks after level 54 (Aftermath).
+
+- Also check for the Immolate debuff applied to targets near an Immolate
+  target when determining whether a fresh Immolate must be cast on the
+  current target.
+
+Fixes from @ShmooDude in ticket 284.
+------------------------------------------------------------------------
+r1013 | jlam | 2013-09-02 15:40:51 +0000 (Mon, 02 Sep 2013) | 1 line
+Changed paths:
+   M /trunk/OvaleCondition.lua
+
+Alias IncomingDamage to DamageTaken to match SimC condition name.
+------------------------------------------------------------------------

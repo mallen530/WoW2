@@ -1,0 +1,77 @@
+local L = LibStub:GetLibrary("AceLocale-3.0"):NewLocale("Ovale", "ruRU", false)
+if not L then return end
+
+L["Affichage numérique"] = "Цифровой дисплей"
+L["Affiche les deux prochains sorts et pas uniquement le suivant"] = "Показать две способности вместо одной"
+L["Affiche le temps de recharge sous forme numérique"] = "Показать отсчет времени в цифровой форме"
+L["Afficher la fenêtre"] = "Показать Ovale"
+L["Afficher les raccourcis clavier dans le coin inférieur gauche des icônes"] = "Показывать сочетания клавиш в левом нижнем углу"
+L["aoe"] = "АОЕ (несколько целей атаки)"
+L["AOE"] = "АОЕ"
+L["Apparence"] = "Внешний вид"
+L["Blood"] = "Кровь"
+L["buff"] = "Баффы"
+L["Cacher bouton vide"] = "Скрыть пустые кнопки"
+L["Cacher dans les véhicules"] = "Скрывать на транспорте"
+L["Cacher la fenêtre"] = "Скрыть Ovale"
+L["Cacher si cible amicale ou morte"] = "Скрывать если союзник или цель мертва"
+L["Caractère de portée"] = "Индикатор дистанции"
+L["cd"] = [=[Способности с большим кулдауном (временем восстановления). 
+Использовать сразу, как только возможно или придерживать для фаз повышенного урона.]=]
+L["Ce caractère est affiché dans un coin de l'icône pour indiquer si la cible est à portée"] = "Этот текст показывается на иконке если цель в радиусе досягаемости"
+L["Cliquer pour afficher/cacher les options"] = "Нажмите, чтобы скрыть/показать опции"
+L["Code"] = "Код"
+L["Copier sur Script personnalisé"] = "Скопировать в Пользовательский скрипт" -- Needs review
+L["Correction de la latence"] = "Коррекция задержки"
+L["Debug aura"] = "Отслеживать управление аурами." -- Needs review
+L["Debug compile"] = "Отслеживать компиляцию скрипта." -- Needs review
+L["Debug enemies"] = "Отслеживать появление противников." -- Needs review
+L["Debug GUID"] = "Отслеживать изменения в парах UnitID/GUID." -- Needs review
+L["Debug missing spells"] = "Предупреждать, если используется ID заклинания отсутствующего в книге заклинаний" -- Needs review
+L["Debug unknown spells"] = "Предупреждать о неизвестном ID заклинания в скрипте." -- Needs review
+L["Décalage horizontal des options"] = "Горизонтальное смещение опций"
+L["Décalage vertical des options"] = "Вертикальное смещение опций"
+L["Défilement"] = "Прокрутка (Скроллинг)"
+L["Ecraser le Script personnalisé préexistant?"] = "Перезаписать существующий Пользовательский скрипт?" -- Needs review
+L["En combat uniquement"] = "Показывать только в бою"
+L["Focus"] = "Фокус"
+L["Groupe d'icônes"] = "Группа иконок" -- Needs review
+L["Icône"] = "Иконка" -- Needs review
+L["Ignorer les clics souris"] = "Игнорировать клики мыши"
+L["Illuminer l'icône"] = "Подсветка иконок"
+L["Illuminer l'icône quand la technique doit être spammée"] = "Подсвечивать иконки когда способность должна \"спамиться\""
+L["Illuminer l'icône quand le temps de recharge est écoulé"] = "Мигать когда способность готова"
+L["Inverser la boîte à cocher "] = "Переключить флажок"
+L["La taille des icônes"] = "Размер иконок"
+L["La taille des petites icônes"] = "Размер маленьких иконок"
+L["La taille des polices"] = "Размер шрифта"
+L["Les icônes se déplacent"] = "Переместить иконки"
+L["main"] = "Основная атака"
+L["mana"] = "Мана (очки маны)"
+L["Marge entre deux icônes"] = "Расстояние между иконками"
+L["Melee"] = "Ближний бой"
+L["moving"] = "Атаки, используемые при движении"
+L["multidot"] = "ДОТы на нескольких целях"
+L["None"] = "Нет"
+L["offgcd"] = [=[Не участвуют в глобальном КД.
+Активируются вне зависимости от Ваших атак.
+]=]
+L["Opacité des icônes"] = "Прозрачность иконок"
+L["Opacité des options"] = "Прозрачность настроек"
+L["Options"] = "Опции" -- Needs review
+L["Prédictif"] = "Две способности"
+L["Raccourcis clavier"] = "Горячие клавиши"
+L["Script"] = "Скрипт" -- Needs review
+L["Script personnalisé"] = "Пользовательский скрипт" -- Needs review
+L["shortcd"] = [=[Способности с малым временем восстановления.
+Используются так часто, как только возможно.]=]
+L["Show the icon of the next spell to cast"] = "Показывать иконку следующего произносимого заклинания"
+L["showwait"] = "Показывать иконку ожидания"
+L["Si cible uniquement"] = "Если выбрана цель"
+L["Taille des icônes"] = "Размер иконки"
+L["Taille des petites icônes"] = "Масштаб маленькой иконки"
+L["Taille des polices"] = "Размер шрифта"
+L["Taille du second icône"] = "Размер второй иконки"
+L["Verrouiller position"] = "Блокировка позиции"
+L["Vertical"] = "Вертикально"
+L["Visibilité"] = "Показывать" -- Needs review

@@ -1,0 +1,16 @@
+## Title: Nerien's Ovale Scripts
+## Notes: Ovale script manager that allows choosing between scripts contributed by various authors.
+##
+## Version: 5.4.4
+## Author: Johnny C. Lam (jlam), Leafkiller
+## X-Contributer: aggixx, Opisthobranch, ShmooDude
+##
+## Interface: 50400
+## Dependencies: Ovale
+## X-Curse-Packaged-Version: 5.4.4
+## X-Curse-Project-Name: Nerien's Ovale Scripts
+## X-Curse-Project-ID: nerien-ovale-scripts
+## X-Curse-Repository-ID: wow/nerien-ovale-scripts/mainline
+
+Core.lua
+class\class.xml

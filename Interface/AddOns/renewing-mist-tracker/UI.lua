@@ -109,23 +109,16 @@ function ui:SetupBaseFrames(  )
 	
 	frame.dragLock.toggleDragable = function()
 		if not ui.parent_frame.drag_disabled then
-			frame.dragLock.stopDraggable()
+			frame.dragLock.texture:SetTexture("Interface\\BUTTONS\\CancelButton-Up")
+			frame.drag_disabled = true
+			if frame:HasScript("OnDragStart") then
+				frame:SetScript("OnDragStart", nil)
+			end
 		else
-			frame.dragLock.startDraggable()
+			frame.dragLock.texture:SetTexture("Interface\\BUTTONS\\CancelButton-Highlight")
+			frame.drag_disabled = false
+			frame:SetScript("OnDragStart", frame.StartMoving)
 		end
-	end
-
-	frame.dragLock.stopDraggable = function()
-		frame.dragLock.texture:SetTexture("Interface\\BUTTONS\\CancelButton-Up")
-		frame.drag_disabled = true
-		if frame:HasScript("OnDragStart") then
-			frame:SetScript("OnDragStart", nil)
-		end
-	end
-	frame.dragLock.startDraggable = function()
-		frame.dragLock.texture:SetTexture("Interface\\BUTTONS\\CancelButton-Highlight")
-		frame.drag_disabled = false
-		frame:SetScript("OnDragStart", frame.StartMoving)
 	end
 	frame.dragLock:SetScript("OnClick", frame.dragLock.toggleDragable)
 	frame.dragLock:Show()
@@ -211,25 +204,6 @@ function ui:SetupBaseFrames(  )
 	compact.avg_hp_icon = texture
 
 	ui.compact_parent_frame = compact
-
-	compact.dragLock.toggleDragable = function()
-		if not ui.compact_parent_frame.drag_disabled then
-			compact.dragLock.stopDraggable()
-		else
-			compact.dragLock.startDraggable()
-		end
-	end
-
-	compact.dragLock.stopDraggable = function()
-		compact.drag_disabled = true
-		if compact:HasScript("OnDragStart") then
-			compact:SetScript("OnDragStart", nil)
-		end
-	end
-	compact.dragLock.startDraggable = function()
-		compact.drag_disabled = false
-		compact:SetScript("OnDragStart", compact.StartMoving)
-	end
 end
 
 function ui:CreateProgressBar( name, frame )

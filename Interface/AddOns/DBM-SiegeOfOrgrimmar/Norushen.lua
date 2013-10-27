@@ -1,9 +1,10 @@
 local mod	= DBM:NewMod(866, "DBM-SiegeOfOrgrimmar", nil, 369)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 10281 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 10630 $"):sub(12, -3))
 mod:SetCreatureID(72276)
 mod:SetZone()
+mod:SetUsedIcons(8, 7, 6, 5, 4, 3, 2, 1)--All CAN be used, but not likely to use more than 3-5 of em
 
 mod:RegisterCombat("combat")
 
@@ -12,11 +13,18 @@ mod:RegisterEventsInCombat(
 	"SPELL_AURA_APPLIED",
 	"SPELL_AURA_REMOVED",
 	"UNIT_DIED",
-	"UNIT_SPELLCAST_SUCCEEDED boss1 boss2 boss3 boss4 boss5"--This boss changes boss ID every time you jump into one of tests, because he gets unregistered as boss1 then registered as boss2 when you leave, etc
+	"UNIT_SPELLCAST_SUCCEEDED boss1 boss2 boss3 boss4 boss5",--This boss can change boss ID any time you jump into one of tests, because he gets unregistered as boss1 then registered as boss2 when you leave, etc
+	"CHAT_MSG_ADDON"
 )
 
 mod:RegisterEvents(
 	"CHAT_MSG_MONSTER_YELL"
+)
+
+local boss = EJ_GetSectionInfo(8216)
+
+mod:SetBossHealthInfo(
+	72276, boss
 )
 
 --Amalgam of Corruption
@@ -37,12 +45,13 @@ local warnPiercingCorruption			= mod:NewSpellAnnounce(144657, 3)
 local specWarnUnleashedAnger			= mod:NewSpecialWarningSpell(145216, mod:IsTank())
 local specWarnBlindHatred				= mod:NewSpecialWarningSpell(145226, nil, nil, nil, 2)
 local specWarnManifestation				= mod:NewSpecialWarningSwitch("ej8232", not mod:IsHealer())--Unleashed Manifestation of Corruption
-local specWarnManifestationSoon			= mod:NewSpecialWarningSoon("ej8232", not mod:IsHealer())--WHen the ones die inside they don't spawn right away, there is like a 5-10 second lag, TODO, add a spawn timer for this once timing is figured out.
+local specWarnManifestationSoon			= mod:NewSpecialWarningSoon("ej8232", not mod:IsHealer(), nil, nil, nil)--WHen the ones die inside they don't spawn right away, there is like a 5 second lag.
 --Test of Serenity (DPS)
 local specWarnTearReality				= mod:NewSpecialWarningMove(144482)
 --Test of Reliance (Healer)
 local specWarnDishearteningLaugh		= mod:NewSpecialWarningSpell(146707, false, nil, nil, 2)
 local specWarnLingeringCorruption		= mod:NewSpecialWarningDispel(144514)
+local specWarnBottomlessPitMove			= mod:NewSpecialWarningMove(146703)
 --Test of Confidence (tank)
 local specWarnTitanicSmash				= mod:NewSpecialWarningMove(144628)
 local specWarnBurstOfCorruption			= mod:NewSpecialWarningSpell(144654, nil, nil, nil, 2)
@@ -66,36 +75,50 @@ local timerTitanicSmashCD				= mod:NewCDTimer(14.5, 144628)--14-17sec variation
 local timerPiercingCorruptionCD			= mod:NewCDTimer(14, 144657)--14-17sec variation
 local timerHurlCorruptionCD				= mod:NewNextTimer(20, 144649)
 
-local berserkTimer						= mod:NewBerserkTimer(420)
+local berserkTimer						= mod:NewBerserkTimer(418)
 
 local countdownLookWithin				= mod:NewCountdownFades(59, "ej8220")
 local countdownLingeringCorruption		= mod:NewCountdown(15.5, 144514, nil, nil, nil, nil, true)
 local countdownHurlCorruption			= mod:NewCountdown(20, 144649, nil, nil, nil, nil, true)
 
---mod:AddBoolOption("InfoFrame", false)--maybe change it ot a simple yes/no for 144452 instead of unit power. unit power is very inaccurate on this fight for some reason
+mod:AddInfoFrameOption("ej8252", false)--May still be buggy but it's needed for heroic.
+--mod:AddSetIconOption("SetIconOnAdds", "ej8232", false, true)
 
 local corruptionLevel = EJ_GetSectionInfo(8252)
 local unleashedAngerCast = 0
 local playerInside = false
+local addsAlive = 0
+
+--May be buggy with two adds spawning at exact same time
+--Two different icon functions end up both marking same mob with 8 and 7 and other mob getting no mark.
+--Not sure if GUID table will be fast enough to prevent, we shall see!
+local function addsDelay()
+	addsAlive = addsAlive + 1
+	specWarnManifestation:Show()
+--[[	if mod.Options.SetIconOnAdds and addsAlive < 9 then--If you have more than 8 addsAlive, wtf are you doing?
+		mod:ScanForMobs(72264, 0, 9-addsAlive, 1, 0.2, 5)
+	end+--]]
+end
 
 function mod:OnCombatStart(delay)
 	playerInside = false
+	addsAlive = 0
 	timerBlindHatredCD:Start(25-delay)
 	if self:IsDifficulty("lfr25") then--Might also be flex as well
-		berserkTimer:Start(600-delay)--Still true?
+		berserkTimer:Start(600-delay)--No log to confirm 8 min, only one report, so changing back to 10 min for now.
 	else
 		berserkTimer:Start(-delay)
 	end
---[[	if self.Options.InfoFrame then
+	if self.Options.InfoFrame then
 		DBM.InfoFrame:SetHeader(corruptionLevel)
 		DBM.InfoFrame:Show(5, "playerpower", 5, ALTERNATE_POWER_INDEX)
-	end--]]
+	end
 end
 
 function mod:OnCombatEnd()
---[[	if self.Options.InfoFrame then
+	if self.Options.InfoFrame then
 		DBM.InfoFrame:Hide()
-	end--]]
+	end
 end
 
 function mod:SPELL_CAST_START(args)
@@ -145,6 +168,8 @@ function mod:SPELL_AURA_APPLIED(args)
 		playerInside = true
 		timerLookWithin:Start()
 		countdownLookWithin:Start()
+	elseif args.spellId == 146703 and args:IsPlayer() and self:AntiSpam(3, 2) then
+		specWarnBottomlessPitMove:Show()
 	end
 end
 
@@ -180,24 +205,24 @@ function mod:UNIT_DIED(args)
 		timerHurlCorruptionCD:Cancel()
 		countdownHurlCorruption:Cancel()
 		timerPiercingCorruptionCD:Cancel()
+	elseif cid == 72264 then--Manifestation of Corruption (Outside)
+		self:SendSync("outsideAddDied", args.destGUID)--To ensure icon markers who go into test keep a valid adds count.
 	end
 end
 
 function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
 	if spellId == 146179 then--Frayed
-		specWarnManifestation:Show()
+		addsDelay()
 	end
 end
 
---"<21:44:39> CHAT_MSG_MONSTER_YELL#Very well, I will create a field to keep your corruption quarantined.#Norushen###Shiramune##0#0##0#837#nil#0#false#false", -- [1]
---"<21:45:04> [UNIT_SPELLCAST_SUCCEEDED] Amalgam of Corruption [[boss1:Icy Fear::0:145733]]", -- [1]
 function mod:CHAT_MSG_MONSTER_YELL(msg)
 	if msg == L.wasteOfTime then
 		self:SendSync("prepull")
 	end
 end
 
-function mod:OnSync(msg)
+function mod:OnSync(msg, guid)
 	if msg == "BlindHatred" then
 		warnBlindHatred:Show()
 		if not playerInside then
@@ -207,9 +232,22 @@ function mod:OnSync(msg)
 	elseif msg == "BlindHatredEnded" then
 		timerBlindHatredCD:Start()
 		unleashedAngerCast = 0
-	elseif msg == "ManifestationDied" and not playerInside then
-		specWarnManifestationSoon:Show()
 	elseif msg == "prepull" then
 		timerCombatStarts:Start()
+	elseif msg == "ManifestationDied" and not playerInside and self:AntiSpam(1) then
+		specWarnManifestationSoon:Show()
+--		self:Schedule(5, addsDelay)
+	elseif msg == "outsideAddDied" then--We don't actually use GUID, just use it to prevent 8 second antispam from ignoring adds
+		addsAlive = addsAlive - 1
+	end
+end
+
+function mod:CHAT_MSG_ADDON(prefix, message, channel, sender)
+	--Because core already registers BigWigs prefix with server, shouldn't need it here
+	if prefix == "BigWigs" and message then
+		local bwPrefix, bwMsg = message:match("^(%u-):(.+)")
+		if bwMsg == "InsideBigAddDeath" and not playerInside and self:AntiSpam(1) then
+			specWarnManifestationSoon:Show()
+		end
 	end
 end

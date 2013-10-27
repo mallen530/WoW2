@@ -1,5 +1,22 @@
 
 Postal3DB = {
+	["profileKeys"] = {
+		["Orran - Thrall"] = "Orran - Thrall",
+		["Khanen - Thrall"] = "Khanen - Thrall",
+		["Quitor - Aerie Peak"] = "Quitor - Aerie Peak",
+		["Orazzle - Thrall"] = "Orazzle - Thrall",
+		["Wrimtok - Aerie Peak"] = "Wrimtok - Aerie Peak",
+		["Brimtok - Thrall"] = "Brimtok - Thrall",
+		["Jains - Thrall"] = "Jains - Thrall",
+		["Orranstout - Aerie Peak"] = "Orranstout - Aerie Peak",
+		["Orsun - Aerie Peak"] = "Orsun - Aerie Peak",
+		["Orbear - Aerie Peak"] = "Orbear - Aerie Peak",
+		["Orstout - Thrall"] = "Orstout - Thrall",
+		["Orstout - Aerie Peak"] = "Orstout - Aerie Peak",
+		["Eammiran - Thrall"] = "Eammiran - Thrall",
+		["Cajamarca - Thrall"] = "Cajamarca - Thrall",
+		["Orlight - Aerie Peak"] = "Orlight - Aerie Peak",
+	},
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
@@ -8,9 +25,9 @@ Postal3DB = {
 				"Eammiran|Thrall|Horde|87|MAGE", -- [3]
 				"Jains|Thrall|Horde|69|MONK", -- [4]
 				"Khanen|Thrall|Horde|90|DEATHKNIGHT", -- [5]
-				"Orazzle|Thrall|Horde|89|SHAMAN", -- [6]
+				"Orazzle|Thrall|Horde|90|SHAMAN", -- [6]
 				"Orbear|Aerie Peak|Alliance|90|DRUID", -- [7]
-				"Orlight|Aerie Peak|Alliance|43|PRIEST", -- [8]
+				"Orlight|Aerie Peak|Alliance|44|PRIEST", -- [8]
 				"Orranstout|Aerie Peak|Alliance|14|MONK", -- [9]
 				"Orran|Thrall|Horde|90|PALADIN", -- [10]
 				"Orstout|Aerie Peak|Alliance|90|MONK", -- [11]
@@ -20,23 +37,6 @@ Postal3DB = {
 				"Wrimtok|Aerie Peak|Alliance|21|DRUID", -- [15]
 			},
 		},
-	},
-	["profileKeys"] = {
-		["Orran - Thrall"] = "Orran - Thrall",
-		["Khanen - Thrall"] = "Khanen - Thrall",
-		["Quitor - Aerie Peak"] = "Quitor - Aerie Peak",
-		["Orlight - Aerie Peak"] = "Orlight - Aerie Peak",
-		["Wrimtok - Aerie Peak"] = "Wrimtok - Aerie Peak",
-		["Brimtok - Thrall"] = "Brimtok - Thrall",
-		["Jains - Thrall"] = "Jains - Thrall",
-		["Orranstout - Aerie Peak"] = "Orranstout - Aerie Peak",
-		["Orsun - Aerie Peak"] = "Orsun - Aerie Peak",
-		["Orbear - Aerie Peak"] = "Orbear - Aerie Peak",
-		["Cajamarca - Thrall"] = "Cajamarca - Thrall",
-		["Orstout - Aerie Peak"] = "Orstout - Aerie Peak",
-		["Eammiran - Thrall"] = "Eammiran - Thrall",
-		["Orstout - Thrall"] = "Orstout - Thrall",
-		["Orazzle - Thrall"] = "Orazzle - Thrall",
 	},
 	["profiles"] = {
 		["Orran - Thrall"] = {
@@ -60,7 +60,12 @@ Postal3DB = {
 		},
 		["Quitor - Aerie Peak"] = {
 		},
-		["Orlight - Aerie Peak"] = {
+		["Orazzle - Thrall"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Eammiran|Thrall|Horde", -- [1]
+				},
+			},
 		},
 		["Wrimtok - Aerie Peak"] = {
 			["BlackBook"] = {
@@ -92,10 +97,11 @@ Postal3DB = {
 				},
 			},
 		},
-		["Cajamarca - Thrall"] = {
+		["Orstout - Thrall"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Orstout|Thrall|Horde", -- [1]
+					"Cajamarca|Thrall|Horde", -- [1]
+					"Eammiran|Thrall|Horde", -- [2]
 				},
 			},
 		},
@@ -103,12 +109,14 @@ Postal3DB = {
 			["BlackBook"] = {
 				["recent"] = {
 					"Orbear|Aerie Peak|Alliance", -- [1]
-					"Kloroseleon|Aerie Peak|Alliance", -- [2]
-					"Kloros|Aerie Peak|Alliance", -- [3]
-					"Quitkrying|Aerie Peak|Alliance", -- [4]
-					"Orlight|Aerie Peak|Alliance", -- [5]
-					"Wrimtok|Aerie Peak|Alliance", -- [6]
-					"Azuba|Aerie Peak|Alliance", -- [7]
+					"Azubette|Aerie Peak|Alliance", -- [2]
+					"Grasshoppaa|Aerie Peak|Alliance", -- [3]
+					"Kloroseleon|Aerie Peak|Alliance", -- [4]
+					"Kloros|Aerie Peak|Alliance", -- [5]
+					"Quitkrying|Aerie Peak|Alliance", -- [6]
+					"Orlight|Aerie Peak|Alliance", -- [7]
+					"Wrimtok|Aerie Peak|Alliance", -- [8]
+					"Azuba|Aerie Peak|Alliance", -- [9]
 				},
 				["AutoCompleteGuild"] = false,
 			},
@@ -121,20 +129,14 @@ Postal3DB = {
 				},
 			},
 		},
-		["Orstout - Thrall"] = {
+		["Cajamarca - Thrall"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Cajamarca|Thrall|Horde", -- [1]
-					"Eammiran|Thrall|Horde", -- [2]
+					"Orstout|Thrall|Horde", -- [1]
 				},
 			},
 		},
-		["Orazzle - Thrall"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Eammiran|Thrall|Horde", -- [1]
-				},
-			},
+		["Orlight - Aerie Peak"] = {
 		},
 	},
 }

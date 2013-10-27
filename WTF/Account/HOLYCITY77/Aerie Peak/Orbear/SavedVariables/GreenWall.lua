@@ -6,8 +6,8 @@ GreenWall = {
 	["ochat"] = false,
 	["roster"] = true,
 	["logsize"] = 2048,
-	["tag"] = true,
-	["version"] = "1.3.2",
+	["tag"] = false,
+	["version"] = "1.3.3",
 	["achievements"] = false,
 	["rank"] = false,
 }

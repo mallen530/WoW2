@@ -125,6 +125,14 @@ function UF:AuraBarFilter(unit, name, rank, icon, count, debuffType, duration, e
 		anotherFilterExists = true
 	end
 
+	if db.maxDuration > 0 then
+		if(duration and (duration > db.maxDuration)) then
+			returnValue = false;
+		end
+
+		anotherFilterExists = true
+	end
+
 	if UF:CheckFilter(db.useBlacklist, isFriend) then
 		local blackList = E.global['unitframe']['aurafilters']['Blacklist'].spells[name]
 		if blackList and blackList.enable then
@@ -187,16 +195,19 @@ function UF:ColorizeAuraBars(event, unit)
 		end
 
 		if UF.db.colors.transparentAurabars and not frame.statusBar.isTransparent then
-			UF:ToggleTransparentStatusBar(true, frame.statusBar, frame.statusBar.bg, nil, true)
+			UF:ToggleTransparentStatusBar(true, frame.statusBar, frame.statusBar.bg, nil, true)	
+		elseif(frame.statusBar.isTransparent and not UF.db.colors.transparentAurabars) then
+			UF:ToggleTransparentStatusBar(false, frame.statusBar, frame.statusBar.bg, nil, true)
+		end	
+
+		if(UF.db.colors.transparentAurabars) then
 			local _, _, _, alpha = frame:GetBackdropColor()
 			if colors then
 				frame:SetBackdropColor(colors.r * 0.58, colors.g * 0.58, colors.b * 0.58, alpha)
 			else
 				local r, g, b = frame.statusBar:GetStatusBarColor()
 				frame:SetBackdropColor(r * 0.58, g * 0.58, b * 0.58, alpha)
-			end			
-		elseif(frame.statusBar.isTransparent) then
-			UF:ToggleTransparentStatusBar(false, frame.statusBar, frame.statusBar.bg, nil, true)
-		end	
+			end		
+		end
 	end
 end

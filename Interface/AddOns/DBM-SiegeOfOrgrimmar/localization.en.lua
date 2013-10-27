@@ -19,10 +19,6 @@ L= DBM:GetModLocalization(849)
 ---------------------------
 L= DBM:GetModLocalization(866)
 
-L:SetOptionLocalization({
-	InfoFrame			= "Show info frame for $journal:8252"
-})
-
 L:SetMiscLocalization({
 	wasteOfTime			= "Very well, I will create a field to keep your corruption quarantined."
 })
@@ -33,8 +29,7 @@ L:SetMiscLocalization({
 L= DBM:GetModLocalization(867)
 
 L:SetOptionLocalization({
-	SetIconOnMark		= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(144351),
-	InfoFrame			= "Show info frame for $journal:8255"
+	SetIconOnFragment	= "Set icon on Corrupted Fragment"
 })
 
 --------------
@@ -42,16 +37,23 @@ L:SetOptionLocalization({
 --------------
 L= DBM:GetModLocalization(868)
 
+L:SetWarningLocalization({
+	warnTowerGrunt		= "Tower Grunt"
+})
+
 L:SetTimerLocalization({
-	timerTowerCD	= "Next Tower"
+	timerTowerCD		= "Next Tower",
+	timerTowerGruntCD	= "Next tower grunt"
 })
 
 L:SetOptionLocalization({
-	timerTowerCD	= "Show timer for next tower assault",
-	FixateIcon		= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(147068)
+	warnTowerGrunt		= "Announce when new tower grunt spawns",
+	timerTowerCD		= "Show timer for next tower assault",
+	timerTowerGruntCD	= "Show timer for next tower grunt"
 })
 
 L:SetMiscLocalization({
+	Pull		= "Dragonmaw clan, retake the docks and push them into the sea!  In the name of Hellscream and the True Horde!",
 	newForces1	= "Here they come!",--Jaina's line, alliance
 	newForces1H	= "Bring her down quick so i can wrap my fingers around her neck.",--Sylva's line, horde
 	newForces2	= "Dragonmaw, advance!",
@@ -67,19 +69,13 @@ L= DBM:GetModLocalization(864)
 
 L:SetOptionLocalization({
 	timerAssaultModeCD		= DBM_CORE_AUTO_TIMER_OPTIONS.next:format("ej8177"),
-	timerSiegeModeCD		= DBM_CORE_AUTO_TIMER_OPTIONS.next:format("ej8178"),
-	RangeFrame				= DBM_CORE_AUTO_RANGE_OPTION_TEXT:format(6, 144154)
+	timerSiegeModeCD		= DBM_CORE_AUTO_TIMER_OPTIONS.next:format("ej8178")
 })
 
 --------------------------
 -- Kor'kron Dark Shaman --
 --------------------------
 L= DBM:GetModLocalization(856)
-
-L:SetOptionLocalization({
-	SetIconOnToxicMists		= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(144089),
-	RangeFrame				= DBM_CORE_AUTO_RANGE_OPTION_TEXT:format(4, 143990)
-})
 
 L:SetMiscLocalization({
 	PrisonYell		= "Prison on %s fades (%d)"
@@ -104,18 +100,19 @@ L:SetMiscLocalization({
 	newForces3					= "Rally the forces!",
 	newForces4					= "Kor'kron, at my side!",
 	newForces5					= "Next squad, to the front!",
-	allForces					= "All Kor'kron... under my command... kill them... NOW!"
+	allForces					= "All Kor'kron... under my command... kill them... NOW!",
+	nextAdds					= "Next Adds: ",
+	mage						= "|c"..RAID_CLASS_COLORS["MAGE"].colorStr..LOCALIZED_CLASS_NAMES_MALE["MAGE"].."|r",
+	shaman						= "|c"..RAID_CLASS_COLORS["SHAMAN"].colorStr..LOCALIZED_CLASS_NAMES_MALE["SHAMAN"].."|r",
+	rogue						= "|c"..RAID_CLASS_COLORS["ROGUE"].colorStr..LOCALIZED_CLASS_NAMES_MALE["ROGUE"].."|r",
+	hunter						= "|c"..RAID_CLASS_COLORS["HUNTER"].colorStr..LOCALIZED_CLASS_NAMES_MALE["HUNTER"].."|r",
+	warrior						= "|c"..RAID_CLASS_COLORS["WARRIOR"].colorStr..LOCALIZED_CLASS_NAMES_MALE["WARRIOR"].."|r"
 })
 
 -----------------
 -- Malkorok -----
 -----------------
 L= DBM:GetModLocalization(846)
-
-L:SetOptionLocalization({
-	SetIconOnDisplacedEnergy= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(142913),
-	RangeFrame				= DBM_CORE_AUTO_RANGE_OPTION_TEXT_SHORT:format("8/5")
-})
 
 ------------------------
 -- Spoils of Pandaria --
@@ -124,7 +121,7 @@ L= DBM:GetModLocalization(870)
 
 L:SetMiscLocalization({
 	Module1 = "Module 1's all prepared for system reset.",
-	Victory	= "Module 2's all prepared for system reset"
+	Victory	= "Module 2's all prepared for system reset."
 })
 
 ---------------------------
@@ -133,8 +130,7 @@ L:SetMiscLocalization({
 L= DBM:GetModLocalization(851)
 
 L:SetOptionLocalization({
-	RangeFrame	= "Show dynamic range frame (10)<br/>(This is a smart range frame that shows when you reach Frenzy threshold)",
-	FixateIcon		= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(143445)
+	RangeFrame	= "Show dynamic range frame (10)<br/>(This is a smart range frame that shows when you reach Frenzy threshold)"
 })
 
 ----------------------------
@@ -161,9 +157,7 @@ L:SetOptionLocalization({
 	warnToxicCatalyst				= DBM_CORE_AUTO_ANNOUNCE_OPTIONS.spell:format("ej8036"),
 	specWarnActivatedVulnerable		= "Show special warning when you are vulnerable to activating paragons",
 	specWarnCriteriaLinked			= "Show special warning when you are linked to $spell:144095",
-	SetIconOnAim					= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(142948),
-	yellToxicCatalyst				= DBM_CORE_AUTO_YELL_OPTION_TEXT:format("ej8036"),
-	RangeFrame						= DBM_CORE_AUTO_RANGE_OPTION_TEXT_SHORT:format("6/5")
+	yellToxicCatalyst				= DBM_CORE_AUTO_YELL_OPTION_TEXT:format("ej8036")
 })
 
 L:SetMiscLocalization({

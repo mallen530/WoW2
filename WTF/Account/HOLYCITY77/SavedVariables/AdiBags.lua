@@ -8,19 +8,20 @@ AdiBagsDB = {
 				["Default"] = {
 					["overrides"] = {
 						[89562] = "Equipment#Red Set",
+						[95567] = "Miscellaneous#Miscellaneous",
 						[98175] = "Equipment#Red Set",
 						[47746] = "Equipment#ToC XMog",
-						[95567] = "Miscellaneous#Miscellaneous",
+						[90347] = "Equipment#ToC XMog",
 						[86763] = "Equipment#Red Set",
 						[95449] = "Miscellaneous#Miscellaneous",
-						[90347] = "Equipment#ToC XMog",
+						[14560] = "Equipment#Red Set",
 						[86136] = "Equipment#Red Set",
 						[47719] = "Equipment#ToC XMog",
 						[47832] = "Equipment#ToC XMog",
-						[2801] = "Trade Goods#Trade Goods",
-						[95350] = "Miscellaneous#Miscellaneous",
 						[15312] = "Equipment#Red Set",
-						[14560] = "Equipment#Red Set",
+						[95350] = "Miscellaneous#Miscellaneous",
+						[2801] = "Trade Goods#Trade Goods",
+						[76652] = "New#New",
 					},
 					["version"] = 2,
 				},
@@ -33,8 +34,8 @@ AdiBagsDB = {
 						["Recipe"] = true,
 						["Consumable"] = true,
 						["Gem"] = true,
-						["Trade Goods"] = false,
 						["Glyph"] = true,
+						["Trade Goods"] = false,
 						["Miscellaneous"] = false,
 					},
 				},
@@ -49,21 +50,20 @@ AdiBagsDB = {
 		},
 		["AdiBags_TooltipInfo"] = {
 		},
-		["Equipment"] = {
+		["DataSource"] = {
+		},
+		["Junk"] = {
 			["profiles"] = {
 				["Default"] = {
-					["armorTypes"] = true,
+					["exclude"] = {
+						[95567] = true,
+						[95568] = true,
+						[94288] = true,
+						[87903] = true,
+						[95491] = true,
+					},
 				},
 			},
-		},
-		["TidyBags"] = {
-			["profiles"] = {
-				["Default"] = {
-					["autoTidy"] = true,
-				},
-			},
-		},
-		["ItemSets"] = {
 		},
 		["CurrencyFrame"] = {
 			["profiles"] = {
@@ -73,8 +73,8 @@ AdiBagsDB = {
 						["Ironpaw Token"] = false,
 						["Justice Points"] = false,
 						["Honor Points"] = false,
-						["Conquest Points"] = false,
 						["Mote of Darkness"] = false,
+						["Conquest Points"] = false,
 					},
 					["text"] = {
 						["name"] = "SSPro - Semibold",
@@ -82,38 +82,39 @@ AdiBagsDB = {
 				},
 			},
 		},
-		["Junk"] = {
+		["ItemSets"] = {
+		},
+		["TidyBags"] = {
 			["profiles"] = {
 				["Default"] = {
-					["exclude"] = {
-						[95567] = true,
-						[95568] = true,
-						[94288] = true,
-						[95491] = true,
-						[87903] = true,
-					},
+					["autoTidy"] = true,
 				},
 			},
 		},
-		["DataSource"] = {
+		["Equipment"] = {
+			["profiles"] = {
+				["Default"] = {
+					["armorTypes"] = true,
+				},
+			},
 		},
 	},
 	["profileKeys"] = {
 		["Orran - Thrall"] = "Default",
 		["Khanen - Thrall"] = "Default",
 		["Quitor - Aerie Peak"] = "Default",
-		["Orlight - Aerie Peak"] = "Default",
+		["Orranstout - Aerie Peak"] = "Default",
 		["Wrimtok - Aerie Peak"] = "Default",
 		["Brimtok - Thrall"] = "Default",
 		["Jains - Thrall"] = "Default",
 		["Orazzle - Thrall"] = "Default",
 		["Orsun - Aerie Peak"] = "Default",
 		["Orbear - Aerie Peak"] = "Default",
-		["Cajamarca - Thrall"] = "Default",
+		["Orstout - Aerie Peak"] = "Default",
 		["Orstout - Thrall"] = "Default",
 		["Eammiran - Thrall"] = "Default",
-		["Orstout - Aerie Peak"] = "Default",
-		["Orranstout - Aerie Peak"] = "Default",
+		["Cajamarca - Thrall"] = "Default",
+		["Orlight - Aerie Peak"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

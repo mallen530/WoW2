@@ -52,94 +52,98 @@ DBM_SavedOptions = {
 	["RangeFrameSound1"] = "none",
 	["HPFrameY"] = 50,
 	["HideWatchFrame"] = false,
+	["RangeFrameRadarY"] = -100,
 	["ShowMinimapButton"] = false,
 	["MoviesSeen"] = {
 	},
+	["ForumsMessageShown"] = 9413,
 	["SettingsMessageShown"] = true,
+	["DebugMode"] = false,
 	["SpecialWarningSound3"] = "Sound\\Creature\\KilJaeden\\KILJAEDEN02.wav",
+	["SpecialWarningFlashDura2"] = 0.4,
 	["ShowWarningsInChat"] = true,
 	["DontSetIcons"] = false,
 	["BigBrotherAnnounceToRaid"] = false,
-	["SpecialWarningFlashDura1"] = 0.4,
-	["CountdownVoice"] = "Corsica",
-	["ForumsMessageShown"] = 9413,
-	["RangeFrameLocked"] = false,
 	["LastRevision"] = 9413,
+	["CountdownVoice"] = "Corsica",
+	["DontSendBossWhispers"] = false,
+	["WarningColors"] = {
+		{
+			["r"] = 0.41,
+			["g"] = 0.8,
+			["b"] = 0.94,
+		}, -- [1]
+		{
+			["r"] = 0.95,
+			["g"] = 0.95,
+			["b"] = 0,
+		}, -- [2]
+		{
+			["r"] = 1,
+			["g"] = 0.5,
+			["b"] = 0,
+		}, -- [3]
+		{
+			["r"] = 1,
+			["g"] = 0.1,
+			["b"] = 0.1,
+		}, -- [4]
+	},
+	["ChatFrame"] = "DEFAULT_CHAT_FRAME",
 	["InfoFrameY"] = -75,
 	["SpecialWarningSound"] = "Sound\\Spells\\PVPFlagTaken.wav",
 	["WarningIconRight"] = true,
 	["HealthFrameGrowUp"] = false,
-	["RangeFrameRadarX"] = 100,
-	["HideBossEmoteFrame"] = false,
 	["ShowCountdownText"] = false,
+	["HideBossEmoteFrame"] = false,
+	["RangeFrameRadarX"] = 100,
 	["ShowBigBrotherOnCombatStart"] = false,
-	["DontSendBossWhispers"] = false,
-	["ChatFrame"] = "DEFAULT_CHAT_FRAME",
-	["SpecialWarningFlashAlph1"] = 0.3,
-	["WarningColors"] = {
-		{
-			["b"] = 0.94,
-			["g"] = 0.8,
-			["r"] = 0.41,
-		}, -- [1]
-		{
-			["b"] = 0,
-			["g"] = 0.95,
-			["r"] = 0.95,
-		}, -- [2]
-		{
-			["b"] = 0,
-			["g"] = 0.5,
-			["r"] = 1,
-		}, -- [3]
-		{
-			["b"] = 0.1,
-			["g"] = 0.1,
-			["r"] = 1,
-		}, -- [4]
-	},
 	["ShowRecoveryMessage"] = true,
-	["DontShowRangeFrame"] = false,
+	["SpecialWarningFlashAlph1"] = 0.3,
+	["PTCountThreshold"] = 5,
 	["DontShowInfoFrame"] = false,
+	["AutoRespond"] = true,
+	["DontShowRangeFrame"] = false,
+	["DontShowPTCountdownText"] = false,
 	["InfoFrameShowSelf"] = false,
 	["SpecialWarningFont"] = "Fonts\\FRIZQT__.TTF",
-	["AutoRespond"] = true,
-	["ShowSpecialWarnings"] = true,
 	["DontShowPT"] = true,
-	["ShowFakedRaidWarnings"] = false,
-	["LatencyThreshold"] = 250,
-	["ShowLoadMessage"] = true,
-	["RangeFrameFrames"] = "radar",
-	["LFDEnhance"] = true,
-	["HPFrameMaxEntries"] = 5,
-	["SetPlayerRole"] = true,
-	["ArrowPosY"] = -150,
-	["RangeFramePoint"] = "CENTER",
-	["WarningIconChat"] = true,
-	["BlockVersionUpdateNotice"] = false,
 	["SpecialWarningFontColor"] = {
 		0, -- [1]
 		0, -- [2]
 		1, -- [3]
 	},
-	["RangeFrameSound2"] = "none",
-	["ShowLHFrame"] = true,
-	["ShowPizzaMessage"] = true,
-	["AdvancedAutologBosses"] = false,
+	["HPFrameMaxEntries"] = 5,
+	["ShowFakedRaidWarnings"] = false,
+	["LatencyThreshold"] = 250,
+	["ShowLoadMessage"] = true,
+	["DontShowBossAnnounces"] = false,
+	["LFDEnhance"] = true,
+	["SpecialWarningFlashDura1"] = 0.4,
+	["SetPlayerRole"] = true,
 	["SpecialWarningFlashCol1"] = {
 		1, -- [1]
 		1, -- [2]
 		0, -- [3]
 	},
-	["RangeFrameRadarY"] = -100,
+	["ArrowPosY"] = -150,
+	["WarningIconChat"] = true,
+	["RangeFrameSound2"] = "none",
+	["RangeFramePoint"] = "CENTER",
+	["DontShowCTCount"] = false,
+	["BlockVersionUpdateNotice"] = false,
+	["ShowPizzaMessage"] = true,
+	["AdvancedAutologBosses"] = false,
+	["ShowLHFrame"] = true,
+	["DontShowPTNoID"] = false,
 	["DontShowPTText"] = false,
 	["Enabled"] = true,
-	["DontShowBossAnnounces"] = false,
+	["RangeFrameFrames"] = "radar",
 	["HealthFrameLocked"] = false,
 	["DisableCinematics"] = false,
 	["MovieFilters"] = {
 	},
-	["DontShowPTCountdownText"] = false,
+	["ShowSpecialWarnings"] = true,
 	["ShowWipeMessage"] = true,
 	["LogOnlyRaidBosses"] = false,
 	["StripServerName"] = true,
@@ -148,7 +152,7 @@ DBM_SavedOptions = {
 	["HPFrameX"] = -50,
 	["ChallengeBest"] = "Realm",
 	["SpamBlockBossWhispers"] = false,
-	["SpecialWarningFlashDura2"] = 0.4,
+	["RangeFrameLocked"] = false,
 	["ShowFlashFrame"] = true,
 }
 DBT_SavedOptions = {

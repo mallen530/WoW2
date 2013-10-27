@@ -29,17 +29,23 @@ AS.MyName = E.myname
 AS.MyRealm = E.myrealm
 AS.Noop = function() return end
 
+local function pack(...)
+	-- pack args
+	local args = {}
+	for i = 1,select('#',...) do
+		local arg = select(i,...)
+		if not arg then break end
+		tinsert(args,arg)
+	end
+	return args
+end
+
 local function GenerateEventFunction(event)
 	local eventHandler = function(self, event, ...)
 		for skin, funcs in pairs(self.skins) do
 			if AS:CheckOption(skin) and self.events[event][skin] then
-				local args = {}
-				for i = 1, select('#', ...) do
-					local arg = select(i, ...)
-					if not arg then break end
-					tinsert(args, arg)
-				end
-				for _, func in ipairs(funcs) do
+				local args = pack(...)
+				for _,func in ipairs(funcs) do
 					AS:CallSkin(skin, func, event, unpack(args))
 				end
 			end
@@ -112,11 +118,25 @@ function AS:Initialize()
 	if self.initialized then return end
 	self.initialized = true
 
-	EP:RegisterPlugin(AddOnName, AS.GenerateOptions)
-	self:CheckConflicts()
-
 	hooksecurefunc(E, 'UpdateMedia', AS.UpdateMedia)
 	E:UpdateMedia()
+
+	local ElvUIVersion, MinElvUIVersion = tonumber(GetAddOnMetadata('ElvUI', 'Version')), 6.54
+	if ElvUIVersion < MinElvUIVersion then
+		local UpdateElvUIFrame = CreateFrame('Button', nil, UIParent)
+		UpdateElvUIFrame:SetPoint('CENTER', UIParent, 'CENTER')
+		UpdateElvUIFrame:SetFrameStrata('DIALOG')
+		UpdateElvUIFrame.Text = UpdateElvUIFrame:CreateFontString(nil, "OVERLAY")
+		UpdateElvUIFrame.Text:SetFont(AS.Font, 18, 'OUTLINE')
+		UpdateElvUIFrame.Text:SetPoint('TOP', UpdateElvUIFrame, 'TOP', 0, -10)
+		UpdateElvUIFrame.Text:SetText(format('%s - Required ElvUI Version is %s. You currently have %s. Download ElvUI @ %s.', AS.Title, MinElvUIVersion, ElvUIVersion, AS:PrintURL('http://www.tukui.org/dl.php')))
+		UpdateElvUIFrame:SetScript('OnClick', function() print(AS:PrintURL('http://www.tukui.org/dl.php')) end)
+		UpdateElvUIFrame:SetSize(UpdateElvUIFrame.Text:GetWidth(), 70)
+		return
+	end
+
+	EP:RegisterPlugin(AddOnName, AS.GenerateOptions)
+	self:CheckConflicts()
 
 	E.private.addonskins['MiscFixes'] = true
 

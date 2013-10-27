@@ -1,9 +1,12 @@
-Auctionator: disabled
-AskMrRobot: disabled
+Auctionator: enabled
+AskMrRobot: enabled
 clcInfo: disabled
 clcInfo_Monk: disabled
 clcInfo_Options: disabled
 DBM-Core: enabled
-GreenWall: disabled
-Omen: disabled
+GreenWall: enabled
+Omen: enabled
 TargetCharms: disabled
+clcInfoClassModulePlugin: disabled
+Nerien_Ovale_Scripts: enabled
+Ovale: enabled

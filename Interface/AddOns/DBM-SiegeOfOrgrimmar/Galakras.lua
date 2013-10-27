@@ -1,14 +1,18 @@
 local mod	= DBM:NewMod(868, "DBM-SiegeOfOrgrimmar", nil, 369)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 10313 $"):sub(12, -3))
-mod:SetCreatureID(72311, 72560, 72249, 73910, 72302)--Boss needs to engage off friendly NCPS, not the boss. I include the boss too so we don't detect a win off losing varian. :)
-mod:SetReCombatTime(120)--fix combat re-starts after killed. Same issue as tsulong. Fires TONS of IEEU for like 1-2 minutes after fight ends.
+mod:SetRevision(("$Revision: 10591 $"):sub(12, -3))
+mod:SetCreatureID(72311, 72560, 72249, 73910, 72302, 72561, 73909)--Boss needs to engage off friendly NCPS, not the boss. I include the boss too so we don't detect a win off losing varian. :)
+mod:SetReCombatTime(180, 15)--fix combat re-starts after killed. Same issue as tsulong. Fires TONS of IEEU for like 1-2 minutes after fight ends.
 mod:SetMainBossID(72249)
 mod:SetZone()
-mod:SetUsedIcons(8)
+mod:SetUsedIcons(8, 7, 2)
 
 mod:RegisterCombat("combat")
+
+mod:RegisterEvents(
+	"CHAT_MSG_MONSTER_YELL"
+)
 
 mod:RegisterEventsInCombat(
 	"SPELL_CAST_START",
@@ -21,18 +25,17 @@ mod:RegisterEventsInCombat(
 	"SPELL_DAMAGE",
 	"SPELL_MISSED",
 	"UNIT_DIED",
-	"UNIT_SPELLCAST_SUCCEEDED target focus boss1",
-	"CHAT_MSG_MONSTER_YELL",
+	"UNIT_SPELLCAST_SUCCEEDED",
+	"UPDATE_WORLD_STATES",
 	"CHAT_MSG_RAID_BOSS_EMOTE"
 )
 
 --Stage 2: Bring Her Down!
-----TODO, don't want this mod to register events in entire zone so it can warn for prelude trash.
-----I'll put duplicate events in trash mod instead since trash mod will be disabled during encounters
 local warnWarBanner					= mod:NewSpellAnnounce(147328, 3)
-local warnFracture					= mod:NewTargetAnnounce(146899, 3)--TODO: see if target scanning works with one of earlier events
+local warnFracture					= mod:NewTargetAnnounce(146899, 3)
 local warnChainHeal					= mod:NewCastAnnounce(146757, 4)
 local warnDemolisher				= mod:NewSpellAnnounce("ej8562", 3, 116040)
+local warnTowerGrunt				= mod:NewAnnounce("warnTowerGrunt", 3, 89253)
 ----Master Cannoneer Dragryn (Tower)
 local warnMuzzleSpray				= mod:NewSpellAnnounce(147824, 3)--147824 spams combat log, 147825 is actual cast but does not show in combat log only UNIT event
 ----Lieutenant General Krugruk (Tower)
@@ -48,8 +51,6 @@ local warnFlamesofGalakrond			= mod:NewStackAnnounce(147029, 2, nil, mod:IsTank(
 
 --Stage 2: Bring Her Down!
 local specWarnWarBanner				= mod:NewSpecialWarningSwitch(147328, not mod:IsHealer())
-local specWarnFractureYou			= mod:NewSpecialWarningYou(146899)
-local yellFracture					= mod:NewYell(146899)
 local specWarnFracture				= mod:NewSpecialWarningTarget(146899, mod:IsHealer())
 local specWarnChainheal				= mod:NewSpecialWarningInterrupt(146757)
 local specWarnFlameArrow			= mod:NewSpecialWarningMove(146764)
@@ -70,7 +71,8 @@ local specWarnFlamesofGalakrondOther= mod:NewSpecialWarningTarget(147029, mod:Is
 
 --Stage 2: Bring Her Down!
 local timerAddsCD					= mod:NewNextTimer(55, "ej8553", nil, nil, nil, 2457)
-local timerTowerCD					= mod:NewTimer(151, "timerTowerCD", 88852)
+local timerTowerCD					= mod:NewTimer(99, "timerTowerCD", 88852)
+local timerTowerGruntCD				= mod:NewTimer(60, "timerTowerGruntCD", 89253)
 local timerDemolisherCD				= mod:NewNextTimer(20, "ej8562", nil, nil, nil, 116040)--EJ is just not complete yet, shouldn't need localizing
 local timerProtoCD					= mod:NewNextTimer(55, "ej8587", nil, nil, nil, 59961)
 ----High Enforcer Thranok (Road)
@@ -81,25 +83,38 @@ local timerCrushersCallCD			= mod:NewNextTimer(30, 146769)
 local timerFlamesofGalakrondCD		= mod:NewCDCountTimer(6, 147068)
 local timerFlamesofGalakrond		= mod:NewTargetTimer(15, 147029, nil, mod:IsTank())
 
-mod:AddBoolOption("FixateIcon", true)
+mod:AddSetIconOption("FixateIcon", 147068)
+mod:AddSetIconOption("SetIconOnAdds", "ej8556", false, true)
 
 local addsCount = 0
-local firstTower = false
+local firstTower = 0--0: first tower not started, 1: first tower started, 2: first tower breached
 local flamesCount = 0
+
+
+local function TowerGrunt()
+	warnTowerGrunt:Show()
+	timerTowerGruntCD:Start()
+	mod:Schedule(60, TowerGrunt)
+end
 
 function mod:OnCombatStart(delay)
 	addsCount = 0
-	firstTower = false
+	firstTower = 0
 	flamesCount = 0
-	timerAddsCD:Start(11-delay)
-	timerTowerCD:Start(116.5-delay)
+	timerAddsCD:Start(6.5-delay)
+	if not self:IsDifficulty("heroic10", "heroic25") then
+		timerTowerCD:Start(116.5-delay)
+	else
+		timerTowerGruntCD:Start(6)
+		mod:Schedule(6, TowerGrunt)
+	end
 end
 
 function mod:SPELL_CAST_START(args)
-	if args.spellId == 147688 and self:checkTankDistance(args.sourceGUID, 60) then--Might be an applied event instead
+	if args.spellId == 147688 and UnitPower("player", ALTERNATE_POWER_INDEX) > 0 then--Tower Spell
 		warnArcingSmash:Show()
 		specWarnArcingSmash:Show()
-	elseif args.spellId == 146757 and self:checkTankDistance(args.sourceGUID, 60) then
+	elseif args.spellId == 146757 and UnitPower("player", ALTERNATE_POWER_INDEX) == 0 then
 		local source = args.sourceName
 		warnChainHeal:Show()
 		if source == UnitName("target") or source == UnitName("focus") then 
@@ -109,11 +124,14 @@ function mod:SPELL_CAST_START(args)
 end
 
 function mod:SPELL_CAST_SUCCESS(args)
-	if args.spellId == 146769 and self:checkTankDistance(args.sourceGUID, 60) then
+	if args.spellId == 147824 and UnitPower("player", ALTERNATE_POWER_INDEX) > 0 and self:AntiSpam(3, 2) then--Tower Spell
+		warnMuzzleSpray:Show()
+		specWarnMuzzleSpray:Show()
+	elseif args.spellId == 146769 and UnitPower("player", ALTERNATE_POWER_INDEX) == 0 then
 		warnCrushersCall:Show()
 		specWarnCrushersCall:Show()
 		timerCrushersCallCD:Start()
-	elseif args.spellId == 146849 and self:checkTankDistance(args.sourceGUID, 60) then
+	elseif args.spellId == 146849 and UnitPower("player", ALTERNATE_POWER_INDEX) == 0 then
 		warnShatteringCleave:Show()
 		timerShatteringCleaveCD:Start()
 	end
@@ -123,6 +141,7 @@ function mod:SPELL_AURA_APPLIED(args)
 	if args.spellId == 147068 then
 		flamesCount = flamesCount + 1
 		warnFlamesofGalakrondTarget:Show(args.destName)
+		timerFlamesofGalakrondCD:Cancel(flamesCount)
 		timerFlamesofGalakrondCD:Start(nil, flamesCount+1)
 		if args:IsPlayer() then
 			specWarnFlamesofGalakrondYou:Show()
@@ -131,35 +150,36 @@ function mod:SPELL_AURA_APPLIED(args)
 			specWarnFlamesofGalakrond:Show(flamesCount)
 		end
 		if self.Options.FixateIcon then
-			self:SetIcon(args.destName, 8)
+			self:SetIcon(args.destName, 2)
 		end
-	elseif args.spellId == 147029 then--Tank debuff version
-		warnFlamesofGalakrond:Show(args.destName, 1)
-		timerFlamesofGalakrond:Start(args.destName)
-	elseif args.spellId == 147328 and self:checkTankDistance(args.sourceGUID, 60) then
+	elseif args.spellId == 147328 and UnitPower("player", ALTERNATE_POWER_INDEX) == 0 then
 		warnWarBanner:Show()
 		specWarnWarBanner:Show()
-	elseif args.spellId == 146899 and self:checkTankDistance(args.sourceGUID, 60) then
+	elseif args.spellId == 146899 and UnitPower("player", ALTERNATE_POWER_INDEX) == 0 then
 		warnFracture:Show(args.destName)
-		if args:IsPlayer() then
-			specWarnFractureYou:Show()
-			yellFracture:Yell()
-		else
-			specWarnFracture:Show(args.destName)
-		end
+		specWarnFracture:Show(args.destName)
 	end
 end
 
 function mod:SPELL_AURA_APPLIED_DOSE(args)
 	if args.spellId == 147029 then--Tank debuff version
-		local amount = args.amount or 1
-		warnFlamesofGalakrond:Show(args.destName, amount)
-		timerFlamesofGalakrond:Start(args.destName)
-		if amount >= 3 then
-			if args:IsPlayer() then
-				specWarnFlamesofGalakrondTank:Show(amount)
-			else
-				specWarnFlamesofGalakrondOther:Show(args.destName)
+		local uId = DBM:GetRaidUnitId(args.destName)
+		for i = 1, 5 do
+			local bossUnitID = "boss"..i
+			if UnitExists(bossUnitID) and UnitGUID(bossUnitID) == args.sourceGUID then
+				if self:IsTanking(uId, bossUnitID) then
+					local amount = args.amount or 1
+					warnFlamesofGalakrond:Show(args.destName, amount)
+					timerFlamesofGalakrond:Start(args.destName)
+					if amount >= 3 then
+						if args:IsPlayer() then
+							specWarnFlamesofGalakrondTank:Show(amount)
+						else
+							specWarnFlamesofGalakrondOther:Show(args.destName)
+						end
+					end
+				end
+				break--break loop if find right boss
 			end
 		end
 	end
@@ -176,14 +196,14 @@ function mod:SPELL_AURA_REMOVED(args)
 end
 
 function mod:SPELL_PERIODIC_DAMAGE(_, _, _, _, destGUID, destName, _, _, spellId)
-	if spellId == 147705 and destGUID == UnitGUID("player") and self:AntiSpam() then
+	if spellId == 147705 and destGUID == UnitGUID("player") and self:AntiSpam(2, 1) then
 		specWarnPoisonCloud:Show()
 	end
 end
 mod.SPELL_PERIODIC_MISSED = mod.SPELL_PERIODIC_DAMAGE
 
 function mod:SPELL_DAMAGE(_, _, _, _, destGUID, destName, _, _, spellId)
-	if spellId == 146764 and destGUID == UnitGUID("player") and self:AntiSpam() then
+	if spellId == 146764 and destGUID == UnitGUID("player") and self:AntiSpam(2, 1) then
 		specWarnFlameArrow:Show()
 	end
 end
@@ -200,19 +220,28 @@ function mod:UNIT_DIED(args)
 end
 
 function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
-	if spellId == 147825 then--Muzzle Spray::0:147825
-		warnMuzzleSpray:Show()
-		specWarnMuzzleSpray:Show()
-	elseif spellId == 50630 then--Eject All Passengers:
+	if spellId == 50630 and self:AntiSpam(2, 3) then--Eject All Passengers:
 		timerAddsCD:Cancel()
+		timerProtoCD:Cancel()
 		warnPhase2:Show()
-		timerFlamesofGalakrondCD:Start(18.6)--TODO, verify consistency since this timing may depend on where drake lands and time it takes to get picked up.
+		timerFlamesofGalakrondCD:Start(18.6, 1)--TODO, verify consistency since this timing may depend on where drake lands and time it takes to get picked up.
 	end
 end
 
 function mod:CHAT_MSG_MONSTER_YELL(msg)
 	if msg == L.newForces1 or msg == L.newForces1H or msg == L.newForces2 or msg == L.newForces3 or msg == L.newForces4 then
 		self:SendSync("Adds")
+	elseif msg == L.Pull and not self:IsInCombat() then
+		DBM:StartCombat(self, 0)
+	end
+end
+
+function mod:UPDATE_WORLD_STATES()
+	local text = select(4, GetWorldStateUIInfo(4))
+	local percent = tonumber(string.match(text or "", "%d+"))
+	if percent == 1 and (firstTower == 0) and not self:IsDifficulty("heroic10", "heroic25") then
+		firstTower = 1
+		timerTowerCD:Start()
 	end
 end
 
@@ -222,23 +251,31 @@ function mod:CHAT_MSG_RAID_BOSS_EMOTE(msg)
 		warnDemolisher:Show()
 	elseif msg:find(L.tower) then
 		timerDemolisherCD:Start()
-		if not firstTower then
-			firstTower = true
-			timerTowerCD:Start()
+		if self:IsDifficulty("heroic10", "heroic25") then
+			timerTowerGruntCD:Cancel()
+			self:Unschedule(TowerGrunt)
+			if firstTower == 1 then
+--				timerTowerGruntCD:Start(x)
+--				self:Schedule(x, TowerGrunt)--TODO, figure x timing out and enable
+				firstTower = 2
+			end
 		end
 	end
 end
 
 function mod:OnSync(msg)
-	if msg == "Adds" and self:AntiSpam(10, 3) then
+	if msg == "Adds" and self:AntiSpam(10, 4) then
 		addsCount = addsCount + 1
 		if addsCount == 1 then
 			timerAddsCD:Start(48)
-		elseif addsCount == 3 then
+		elseif addsCount == 3 or addsCount == 7 or addsCount == 11 then--Verified. Every 4th wave gets a proto. IE waves 4, 8, 12
 			timerProtoCD:Start()
 			timerAddsCD:Start(110)
 		else
 			timerAddsCD:Start()
+		end
+		if self.Options.SetIconOnAdds then
+			self:ScanForMobs(72958, 0, 8, 2, 0.2, 8)
 		end
 	end
 end

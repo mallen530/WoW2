@@ -1,1 +1,9 @@
-GreenWall: enabled
+GreenWall: disabled
+clcInfo: disabled
+clcInfo_Monk: disabled
+clcInfo_Options: disabled
+DBM-Brawlers: disabled
+Elementarist: disabled
+Nerien_Ovale_Scripts: disabled
+Ovale: disabled
+clcInfoClassModulePlugin: disabled

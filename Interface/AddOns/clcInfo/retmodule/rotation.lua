@@ -494,11 +494,12 @@ local actions = {
 	ds_4t16 = {
 		id = dsId,
 		GetCD = function()
-			if s_4t16 >= 0 then return 0 end
+			if ( s_4t16 > 0 ) then return 0 end
 			return 100
 		end,
 		UpdateStatus = function()
 			s_ctime = s_ctime + s_gcd + 1.5
+			s_4t16 = 0
 		end,
 		info = "Divine Storm with 4t16 active",
 	},
@@ -506,11 +507,12 @@ local actions = {
 	ds_4t16_5hp = {
 		id = dsId,
 		GetCD = function()
-			if ( (s_4t16 >= 0) and (s_hp >= 5) ) then return 0 end
+			if ( (s_4t16 > 0) and (s_hp >= 5) ) then return 0 end
 			return 100
 		end,
 		UpdateStatus = function()
 			s_ctime = s_ctime + s_gcd + 1.5
+			s_4t16 = 0
 		end,
 		info = "Divine Storm with 4t16 active and 5HP",
 	},

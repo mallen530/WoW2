@@ -1,0 +1,2 @@
+elvador:
+	- Fixed a bug: Wrong rares getting announced #2

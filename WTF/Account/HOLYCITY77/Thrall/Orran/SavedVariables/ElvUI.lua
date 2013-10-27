@@ -1,11 +1,11 @@
 
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
-		" then it should work", -- [1]
-		" you can changewhat is displayed", -- [2]
-		" it should", -- [3]
-		" ouch", -- [4]
-		"   |cffffd000|Henchant:102167|h[Mining: Smelt Trillium]|h|r", -- [5]
+		"/p haha", -- [1]
+		"/cw Dëzy you lost me a YOLO", -- [2]
+		" no i understood it", -- [3]
+		" just being silly with the whole Yolo being an idiotic phrase ", -- [4]
+		" he isn't online", -- [5]
 	},
 	["ChatLog"] = {
 		["1377659968.793"] = {
@@ -26,59 +26,41 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD",
 		},
-		["1373598817.305"] = {
-			"esp bc the next couple will fall pretty quickly just tortos is a bitch", -- [1]
-			"|Kf101|k00000000|k", -- [2]
-			"", -- [3]
+		["1381798048.024"] = {
+			"No spandextrius.", -- [1]
+			"Dëzy", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Dëzy", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2543, -- [11]
-			false, -- [12]
-			101, -- [13]
+			990, -- [11]
+			"0x05000000041EC973", -- [12]
+			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[20] = "CHAT_MSG_GUILD",
 		},
-		["1373598921.024"] = {
-			"hahahahha", -- [1]
-			"|Kf101|k00000000|k", -- [2]
-			"", -- [3]
+		["1381798039.362"] = {
+			"Yolo Rgbs = Gear don't matter, IVL don't matter, No vent, No voice, anyone can join. If you win, great, if not no big deal.", -- [1]
+			"Dëzy", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Dëzy", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2603, -- [11]
-			false, -- [12]
-			101, -- [13]
+			987, -- [11]
+			"0x05000000041EC973", -- [12]
+			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1373598702.638"] = {
-			"huh", -- [1]
-			"|Kf101|k00000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2473, -- [11]
-			false, -- [12]
-			101, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
+			[20] = "CHAT_MSG_GUILD",
 		},
 		["1378684295.454"] = {
 			":)", -- [1]
@@ -97,24 +79,6 @@ ElvCharacterDB = {
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1373599370.475"] = {
-			"haha", -- [1]
-			"Orran", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Orran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2947, -- [11]
-			"0x05000000032F757F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_PARTY_LEADER",
 		},
 		["1377659906.929"] = {
 			"thats awesome", -- [1]
@@ -152,37 +116,37 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
-		["1373598883.525"] = {
-			"haha", -- [1]
-			"|Kf101|k00000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2597, -- [11]
-			false, -- [12]
-			101, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1377660042.856"] = {
-			"or should I say the gamer lol", -- [1]
-			"Krumn", -- [2]
+		["1381797765.296"] = {
+			"and i have to as tiffany cermak somehow prove i'm tiffany cermaks mother.", -- [1]
+			"Dëzy", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Krumn", -- [5]
+			"Dëzy", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			6768, -- [11]
-			"0x0500000005B87928", -- [12]
+			493, -- [11]
+			"0x05000000041EC973", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_PARTY",
+		},
+		["1381797744.616"] = {
+			"hi", -- [1]
+			"Dorizhong", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Dorizhong", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			465, -- [11]
+			"0x0500000005E28579", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
@@ -224,37 +188,19 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_YELL",
 		},
-		["1373598865.063"] = {
-			"i pulled 180k on tortos", -- [1]
-			"|Kf101|k00000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2591, -- [11]
-			false, -- [12]
-			101, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1373599036.651"] = {
-			"anyone low lvl on want gear from in here? i'm only 22, so it takes a fair bit, but i can kill the bosses in here. all i'm after is the druid of the fang gear. anything else is up for grabs", -- [1]
-			"Gentlehoof", -- [2]
+		["1381798004.918"] = {
+			"lol", -- [1]
+			"Dëzy", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Gentlehoof", -- [5]
+			"Dëzy", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2702, -- [11]
-			"0x0500000005CA0E71", -- [12]
+			945, -- [11]
+			"0x05000000041EC973", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
@@ -296,59 +242,23 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD",
 		},
-		["1373598720.744"] = {
-			"haha how have you been!", -- [1]
-			"|Kf101|k00000000|k", -- [2]
-			"", -- [3]
+		["1377659924.011"] = {
+			"36 for me", -- [1]
+			"Krumn", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Krumn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2485, -- [11]
-			false, -- [12]
-			101, -- [13]
+			6616, -- [11]
+			"0x0500000005B87928", -- [12]
+			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1373598749.82"] = {
-			"how's the WoW raiding going", -- [1]
-			"|Kf101|k00000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2495, -- [11]
-			false, -- [12]
-			101, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1373598680.884"] = {
-			"you stole my trinket", -- [1]
-			"|Kf101|k00000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2457, -- [11]
-			false, -- [12]
-			101, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[20] = "CHAT_MSG_GUILD",
 		},
 		["1378684964.897"] = {
 			"It doesn't even show up in my addons list", -- [1]
@@ -368,23 +278,41 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
 		},
-		["1373599320.405"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:635:0500000005C5DD84:1:7:11:13:4294967295:4294967295:4294967295:4294967295|h[Razorfen Kraul]|h|r!", -- [1]
-			"Dashun", -- [2]
-			"", -- [3]
+		["1381798029.897"] = {
+			"cool. i need to download it now?", -- [1]
+			"Spandextrius", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"Dashun", -- [5]
-			"", -- [6]
+			"Spandextrius", -- [5]
+			"AFK", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2890, -- [11]
-			"0x0500000005C5DD84", -- [12]
+			982, -- [11]
+			"0x0500000003EBD46D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1381797859.854"] = {
+			"ok cool", -- [1]
+			"Spandextrius", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Spandextrius", -- [5]
+			"AFK", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			652, -- [11]
+			"0x0500000003EBD46D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
 		},
 		["1373601315.149"] = {
 			"well i gotta head out", -- [1]
@@ -422,37 +350,37 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_PARTY_LEADER",
 		},
-		["1373599068.481"] = {
-			"still leveling", -- [1]
-			"|Kf101|k00000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2748, -- [11]
-			false, -- [12]
-			101, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1377659815.608"] = {
-			"Paladin only guild", -- [1]
-			"Orran", -- [2]
+		["1381797992.291"] = {
+			"but it automates everything by just clicking wait list, or invite pretty much. For person running it or person joining one. After you can remove everyone from your battletag.", -- [1]
+			"Dëzy", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Orran", -- [5]
+			"Dëzy", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			6517, -- [11]
-			"0x05000000032F757F", -- [12]
+			915, -- [11]
+			"0x05000000041EC973", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1381797851.232"] = {
+			"It's yolo, gear, ilvl, shit like that don't matter.", -- [1]
+			"Dëzy", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Dëzy", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			640, -- [11]
+			"0x05000000041EC973", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
@@ -476,41 +404,41 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
-		["1378683178.667"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:8072:0500000005715EEC:1:9:8:13:4294967295:4294967295:4294967295:4294967295|h[Pinnacle of Storms]|h|r!", -- [1]
-			"Beastarro", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Beastarro", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			4673, -- [11]
-			"0x0500000005715EEC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		},
-		["1373599637.848"] = {
-			"xD", -- [1]
-			"Lalola", -- [2]
+		["1381797878.943"] = {
+			"Do you have oque?", -- [1]
+			"Dëzy", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Lalola", -- [5]
+			"Dëzy", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			3092, -- [11]
-			"0x0500000005BD9A6C", -- [12]
+			677, -- [11]
+			"0x05000000041EC973", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1381797677.815"] = {
+			"add me back to realid! I accidentally turned my parental settings on and lost all my contacts.", -- [1]
+			"Dëzy", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Dëzy", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			394, -- [11]
+			"0x05000000041EC973", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
 		},
 		["1378684209.285"] = {
 			":D", -- [1]
@@ -530,55 +458,73 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
 		},
-		["1373599825.463"] = {
-			"sigh", -- [1]
-			"Lalola", -- [2]
+		["1381797950.111"] = {
+			"I've ran like 20 RBgs in the last day and a half from that thing.", -- [1]
+			"Dëzy", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Lalola", -- [5]
+			"Dëzy", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			3126, -- [11]
-			"0x0500000005BD9A6C", -- [12]
+			820, -- [11]
+			"0x05000000041EC973", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
+			[20] = "CHAT_MSG_GUILD",
 		},
-		["1378684257.657"] = {
-			"okay", -- [1]
-			"|Kf196|k0000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			5188, -- [11]
-			false, -- [12]
-			196, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1377659849.05"] = {
-			"Where did your friend go?", -- [1]
-			"Orran", -- [2]
+		["1381797684.901"] = {
+			"Yeah, have another raid team for off days.. DUH.", -- [1]
+			"Dëzy", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Orran", -- [5]
+			"Dëzy", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			6557, -- [11]
-			"0x05000000032F757F", -- [12]
+			398, -- [11]
+			"0x05000000041EC973", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1381797865.944"] = {
+			"It's just to get quicker conquest for people without all the stress of vent and stuff like that. We win great, we lose, nbd.", -- [1]
+			"Dëzy", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Dëzy", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			663, -- [11]
+			"0x05000000041EC973", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1381797826.666"] = {
+			"I'm gonna run RBgs in a few minutes here, YOLO Rbgs low MMR no voice required.", -- [1]
+			"Dëzy", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Dëzy", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			597, -- [11]
+			"0x05000000041EC973", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
@@ -602,6 +548,24 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
 		},
+		["1381797967.414"] = {
+			"Yeah, if you start the group. Or you just join a group there and they acept you and invite you", -- [1]
+			"Dëzy", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Dëzy", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			865, -- [11]
+			"0x05000000041EC973", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
 		["1378684899.371"] = {
 			"hey aren't you in convert to raid?", -- [1]
 			"|Kf207|k0000000000000|k", -- [2]
@@ -616,24 +580,6 @@ ElvCharacterDB = {
 			5521, -- [11]
 			false, -- [12]
 			207, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1373599056.189"] = {
-			"Wanted to but i hate playing games that has been out a while", -- [1]
-			"|Kf101|k00000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2728, -- [11]
-			false, -- [12]
-			101, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
@@ -674,41 +620,59 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
-		["1378684359.039"] = {
-			"me not like it here", -- [1]
-			"Tánnin", -- [2]
+		["1381797952.092"] = {
+			"you put somethign in your message and it whispers you when ppl ar elookign for RBG groups right?", -- [1]
+			"Restup", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Tánnin", -- [5]
-			"AFK", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			5213, -- [11]
-			"0x05000000044A5522", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_SAY",
-		},
-		["1373598725.028"] = {
-			"Ohh that trinket", -- [1]
-			"|Kf101|k00000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"Restup", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2486, -- [11]
-			false, -- [12]
-			101, -- [13]
+			826, -- [11]
+			"0x0500000005E2641B", -- [12]
+			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1381798153.127"] = {
+			"Wont be on till 3:30ish tomorrow server time", -- [1]
+			"Rotwerm", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Rotwerm", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1026, -- [11]
+			"0x05000000054CDE7E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1381797778.475"] = {
+			"anyone want to do arena?", -- [1]
+			"Spandextrius", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Spandextrius", -- [5]
+			"AFK", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			512, -- [11]
+			"0x0500000003EBD46D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
 		},
 		["1377659825.693"] = {
 			"yeh I just saw that lol", -- [1]
@@ -728,26 +692,62 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD",
 		},
-		["1373598829.934"] = {
-			"no, no rogues on the team atm", -- [1]
-			"|Kf101|k00000000|k", -- [2]
-			"", -- [3]
+		["1381798003.129"] = {
+			"I mean, if you wanna run a shitload of YOLO rbgs it's nice.", -- [1]
+			"Dëzy", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Dëzy", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2559, -- [11]
-			false, -- [12]
-			101, -- [13]
+			942, -- [11]
+			"0x05000000041EC973", -- [12]
+			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[20] = "CHAT_MSG_GUILD",
 		},
-		["1373598655.88"] = {
-			"anyone else", -- [1]
+		["1381798026.802"] = {
+			"you lost me a YOLO", -- [1]
+			"Dëzy", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Dëzy", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			978, -- [11]
+			"0x05000000041EC973", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_WHISPER_INFORM",
+		},
+		["1381798112.321"] = {
+			"sup", -- [1]
+			"Rotwerm", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Rotwerm", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1019, -- [11]
+			"0x05000000054CDE7E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1381797782.346"] = {
+			"haha", -- [1]
 			"Orran", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
@@ -757,30 +757,12 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2435, -- [11]
+			522, -- [11]
 			"0x05000000032F757F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_GUILD",
-		},
-		["1373599639.189"] = {
-			"oops", -- [1]
-			"Lalola", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Lalola", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			3093, -- [11]
-			"0x0500000005BD9A6C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
+			[20] = "CHAT_MSG_PARTY_LEADER",
 		},
 		["1378683859.61"] = {
 			"HIDE", -- [1]
@@ -800,23 +782,41 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
-		["1373601086.653"] = {
-			"i rezed you", -- [1]
-			"Orran", -- [2]
+		["1381797844.304"] = {
+			"?", -- [1]
+			"Spandextrius", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Orran", -- [5]
+			"Spandextrius", -- [5]
+			"AFK", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			628, -- [11]
+			"0x0500000003EBD46D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1381797719.58"] = {
+			"Welcome :)", -- [1]
+			"Dëzy", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Dëzy", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			3367, -- [11]
-			"0x05000000032F757F", -- [12]
+			435, -- [11]
+			"0x05000000041EC973", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
+			[20] = "CHAT_MSG_GUILD",
 		},
 		["1373601344.711"] = {
 			"goodnight guild!", -- [1]
@@ -854,59 +854,41 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_SAY",
 		},
-		["1373600561.422"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:6479:0500000005BD9A6C:1:7:11:13:4294967295:4294967295:4294967295:4294967295|h[Bomberman]|h|r!", -- [1]
-			"Lalola", -- [2]
-			"", -- [3]
+		["1381797636.978"] = {
+			"gross", -- [1]
+			"Orran", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"Lalola", -- [5]
+			"Orran", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			3314, -- [11]
-			"0x0500000005BD9A6C", -- [12]
+			364, -- [11]
+			"0x05000000032F757F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[20] = "CHAT_MSG_GUILD",
 		},
-		["1373599148.961"] = {
-			"oh ok", -- [1]
-			"|Kf101|k00000000|k", -- [2]
-			"", -- [3]
+		["1381797911.44"] = {
+			"Did you ever use Battlemasters?>", -- [1]
+			"Dëzy", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Dëzy", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2789, -- [11]
-			false, -- [12]
-			101, -- [13]
+			726, -- [11]
+			"0x05000000041EC973", -- [12]
+			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1373599085.294"] = {
-			"got it in december", -- [1]
-			"|Kf101|k00000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2766, -- [11]
-			false, -- [12]
-			101, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[20] = "CHAT_MSG_GUILD",
 		},
 		["1377660024.313"] = {
 			"no time for the weary with everyone home", -- [1]
@@ -926,23 +908,59 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD",
 		},
-		["1373599381.905"] = {
-			"well you have two good tanks in the group", -- [1]
-			"Orran", -- [2]
+		["1381797750.749"] = {
+			"It's JillyNilly#1348 my account isn't letting me use my realid", -- [1]
+			"Dëzy", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Orran", -- [5]
+			"Dëzy", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2961, -- [11]
-			"0x05000000032F757F", -- [12]
+			474, -- [11]
+			"0x05000000041EC973", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_PARTY_LEADER",
+			[20] = "CHAT_MSG_PARTY",
+		},
+		["1381798098.812"] = {
+			"Yolo just means, people don' tset any requirements, anyone can join, helps people get their conquest faster.", -- [1]
+			"|Kf193|k0000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1009, -- [11]
+			false, -- [12]
+			193, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1381798164.019"] = {
+			"so goodnight guildies :D\\", -- [1]
+			"Rotwerm", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Rotwerm", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1031, -- [11]
+			"0x05000000054CDE7E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
 		},
 		["1377659882.035"] = {
 			"we've played together for 3 years now", -- [1]
@@ -998,42 +1016,6 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
-		["1373601054.316"] = {
-			"oh maybe he can", -- [1]
-			"Doxa", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Doxa", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			3362, -- [11]
-			"0x05000000058D073B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
-		},
-		["1373601168.981"] = {
-			"yep", -- [1]
-			"Doxa", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Doxa", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			3372, -- [11]
-			"0x05000000058D073B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
-		},
 		["1378683077.817"] = {
 			"Rise and bring death!", -- [1]
 			"Sïnfulstrike", -- [2]
@@ -1052,9 +1034,9 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_YELL",
 		},
-		["1373598813.04"] = {
-			"I am sure you have a rogue replacement...just not as good", -- [1]
-			"|Kf101|k00000000|k", -- [2]
+		["1381798139.545"] = {
+			"he isn't online", -- [1]
+			"|Kf193|k0000000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
 			"", -- [5]
@@ -1063,27 +1045,9 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2539, -- [11]
+			1024, -- [11]
 			false, -- [12]
-			101, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1373599064.581"] = {
-			"oh ive been playing", -- [1]
-			"|Kf101|k00000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2741, -- [11]
-			false, -- [12]
-			101, -- [13]
+			193, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
@@ -1124,41 +1088,23 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD",
 		},
-		["1373598639.935"] = {
-			"lemme finish SM  just got to High Inquis", -- [1]
-			"Lalola", -- [2]
-			"Orcish", -- [3]
+		["1378684940.672"] = {
+			"I was wondering how you set up this greenwall addon", -- [1]
+			"|Kf207|k0000000000000|k", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Lalola", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2428, -- [11]
-			"0x0500000005BD9A6C", -- [12]
-			0, -- [13]
+			5556, -- [11]
+			false, -- [12]
+			207, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_PARTY",
-		},
-		["1373599364.602"] = {
-			"didnt understand los", -- [1]
-			"Lalola", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Lalola", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2937, -- [11]
-			"0x0500000005BD9A6C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_PARTY",
+			[20] = "CHAT_MSG_BN_WHISPER",
 		},
 		["1378683088.949"] = {
 			"Rise and bring death!", -- [1]
@@ -1178,6 +1124,24 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_YELL",
 		},
+		["1381798155.503"] = {
+			"pm", -- [1]
+			"Rotwerm", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Rotwerm", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1027, -- [11]
+			"0x05000000054CDE7E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
 		["1378684203.855"] = {
 			"beach dude?", -- [1]
 			"|Kf196|k0000000|k", -- [2]
@@ -1196,59 +1160,95 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
-		["1373601164.113"] = {
-			"ready", -- [1]
-			"Orran", -- [2]
+		["1381797718.194"] = {
+			"Welcome Restup", -- [1]
+			"Rotwerm", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Orran", -- [5]
+			"Rotwerm", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			3371, -- [11]
-			"0x05000000032F757F", -- [12]
+			434, -- [11]
+			"0x05000000054CDE7E", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
+			[20] = "CHAT_MSG_GUILD",
 		},
-		["1373598650.905"] = {
-			"cool cool", -- [1]
-			"Orran", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Orran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2432, -- [11]
-			"0x05000000032F757F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_PARTY_LEADER",
-		},
-		["1373599247.386"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:4846:0500000005C922B5:1:7:11:13:4294967295:4294967295:4294967295:4294967295|h[The Stonecore]|h|r!", -- [1]
-			"Hamsauce", -- [2]
+		["1381798124.854"] = {
+			"Obviously people with a rating won't do em'. But people with no rating starting out like em'. Or people who don't care about rating.", -- [1]
+			"|Kf193|k0000000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Hamsauce", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2837, -- [11]
-			"0x0500000005C922B5", -- [12]
+			1022, -- [11]
+			false, -- [12]
+			193, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1381798123.917"] = {
+			"just being silly with the whole Yolo being an idiotic phrase ", -- [1]
+			"|Kf193|k0000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1021, -- [11]
+			false, -- [12]
+			193, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+		},
+		["1381797846.996"] = {
+			"Of course.", -- [1]
+			"Dëzy", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Dëzy", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			631, -- [11]
+			"0x05000000041EC973", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1381798109.907"] = {
+			"no i understood it", -- [1]
+			"|Kf193|k0000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1017, -- [11]
+			false, -- [12]
+			193, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
 		["1378683054.778"] = {
 			"Rise and bring death!", -- [1]
@@ -1268,9 +1268,63 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_YELL",
 		},
-		["1373599063.547"] = {
-			"fool noobish", -- [1]
-			"|Kf101|k00000000|k", -- [2]
+		["1381798099.622"] = {
+			"ok", -- [1]
+			"Spandextrius", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Spandextrius", -- [5]
+			"AFK", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1010, -- [11]
+			"0x0500000003EBD46D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1381798086.801"] = {
+			"Welcome Huulprutof", -- [1]
+			"Rotwerm", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Rotwerm", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1006, -- [11]
+			"0x05000000054CDE7E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1381797673.024"] = {
+			"But I have a raid team", -- [1]
+			"Orran", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Orran", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			391, -- [11]
+			"0x05000000032F757F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1381798086.787"] = {
+			"Is Kloros on?", -- [1]
+			"|Kf193|k0000000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
 			"", -- [5]
@@ -1279,48 +1333,66 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2739, -- [11]
+			1005, -- [11]
 			false, -- [12]
-			101, -- [13]
+			193, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
 		},
-		["1373598664.335"] = {
-			"Orrannnn", -- [1]
-			"|Kf101|k00000000|k", -- [2]
+		["1378682965.526"] = {
+			"%s has earned the achievement |cffffff00|Hachievement:1183:05000000032F757F:1:9:8:13:4294967295:4294967295:4294967295:4294967295|h[Brew of the Year]|h|r!", -- [1]
+			"Orran", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Orran", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2438, -- [11]
-			false, -- [12]
-			101, -- [13]
+			4487, -- [11]
+			"0x05000000032F757F", -- [12]
+			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
+			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		},
-		["1373598783.459"] = {
-			"missing our favorite rogue", -- [1]
-			"|Kf101|k00000000|k", -- [2]
-			"", -- [3]
+		["1381798019.534"] = {
+			"erg.... how do I do this quest... |cff808080|Hquest:31014:10|h[Hellscream's Gift]|h|r", -- [1]
+			"Restup", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Restup", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2510, -- [11]
-			false, -- [12]
-			101, -- [13]
+			970, -- [11]
+			"0x0500000005E2641B", -- [12]
+			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1381798018.401"] = {
+			"what is a yolo rbgs", -- [1]
+			"Drathand", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Drathand", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			969, -- [11]
+			"0x0500000005E16B1C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
 		},
 		["1378683080.45"] = {
 			"Rise and bring death!", -- [1]
@@ -1340,23 +1412,41 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_YELL",
 		},
-		["1373598900.927"] = {
-			"ehh prob not i was top dps", -- [1]
-			"|Kf101|k00000000|k", -- [2]
-			"", -- [3]
+		["1381797996.918"] = {
+			"It's very nice.", -- [1]
+			"Dëzy", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Dëzy", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2601, -- [11]
-			false, -- [12]
-			101, -- [13]
+			923, -- [11]
+			"0x05000000041EC973", -- [12]
+			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1381797757.142"] = {
+			"it erased all my battletags and realid", -- [1]
+			"Dëzy", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Dëzy", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			485, -- [11]
+			"0x05000000041EC973", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_PARTY",
 		},
 		["1373601295.652"] = {
 			"yaaay!!", -- [1]
@@ -1376,42 +1466,6 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_PARTY",
 		},
-		["1373601047.45"] = {
-			"we are in combat we cant rez you", -- [1]
-			"Doxa", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Doxa", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			3361, -- [11]
-			"0x05000000058D073B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
-		},
-		["1373600005.324"] = {
-			"Interrupted Flameweaver Koegler's |cff71d5ff|Hspell:113690|h[Pyroblast]|h|r!", -- [1]
-			"Varkgorim-AlteracMountains", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Varkgorim", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			3163, -- [11]
-			"0x05800000081251C0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_SAY",
-		},
 		["1377660005.682"] = {
 			"I wouldn't say lock down.  When she's home with the kids it pretty much locks itself down lol", -- [1]
 			"Krumn", -- [2]
@@ -1430,23 +1484,41 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD",
 		},
-		["1373600601.994"] = {
-			"run thru", -- [1]
-			"Maikell-Mal'Ganis", -- [2]
+		["1381797938.42"] = {
+			"From raids to dungeons to rbgs and random battlegrounds.", -- [1]
+			"Dëzy", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Maikell", -- [5]
+			"Dëzy", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			3325, -- [11]
-			"0x0500000005B1350E", -- [12]
+			788, -- [11]
+			"0x05000000041EC973", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1381798058.863"] = {
+			"I'm gonna form one in a minute here so i'll invite you. just gotta go smoke a cig real fast.", -- [1]
+			"Dëzy", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Dëzy", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			993, -- [11]
+			"0x05000000041EC973", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
 		},
 		["1378684251.445"] = {
 			"aww", -- [1]
@@ -1466,9 +1538,63 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
-		["1373598783.291"] = {
-			"how many you downed in total", -- [1]
-			"|Kf101|k00000000|k", -- [2]
+		["1381797924.288"] = {
+			"Oque is an addon on curse where yu download it and it's like a social option.", -- [1]
+			"Dëzy", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Dëzy", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			755, -- [11]
+			"0x05000000041EC973", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1381797662.245"] = {
+			":( Come back and Raid then!", -- [1]
+			"Dëzy", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Dëzy", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			384, -- [11]
+			"0x05000000041EC973", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1381797916.305"] = {
+			"no", -- [1]
+			"Spandextrius", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Spandextrius", -- [5]
+			"AFK", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			737, -- [11]
+			"0x0500000003EBD46D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1378684257.657"] = {
+			"okay", -- [1]
+			"|Kf196|k0000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
 			"", -- [5]
@@ -1477,12 +1603,12 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2509, -- [11]
+			5188, -- [11]
 			false, -- [12]
-			101, -- [13]
+			196, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
+			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
 		["1378684263.582"] = {
 			"jan is still far away maybe i will", -- [1]
@@ -1502,8 +1628,8 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
 		},
-		["1373599395.668"] = {
-			"neither of which are tanking....", -- [1]
+		["1381797728.24"] = {
+			"what is your email", -- [1]
 			"Orran", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
@@ -1513,84 +1639,138 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2975, -- [11]
+			440, -- [11]
 			"0x05000000032F757F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_PARTY_LEADER",
 		},
-		["1373601170.822"] = {
-			"yeah", -- [1]
-			"Isca-Area52", -- [2]
+		["1381797819.444"] = {
+			"Span don't do that.", -- [1]
+			"Dëzy", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Isca", -- [5]
+			"Dëzy", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			3373, -- [11]
-			"0x07000000051DFD76", -- [12]
+			585, -- [11]
+			"0x05000000041EC973", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+			[20] = "CHAT_MSG_GUILD",
 		},
-		["1373598734.601"] = {
-			"cool cool...", -- [1]
-			"|Kf101|k00000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2489, -- [11]
-			false, -- [12]
-			101, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1373598878.872"] = {
-			"i can't be replaced...i kmnow", -- [1]
-			"|Kf101|k00000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2596, -- [11]
-			false, -- [12]
-			101, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1373601098.68"] = {
-			"hes probly in loading screen", -- [1]
-			"Maikell-Mal'Ganis", -- [2]
+		["1381797875.937"] = {
+			"Remember that anytime you see someone spamming for YOLO rbgs,", -- [1]
+			"Dëzy", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Maikell", -- [5]
+			"Dëzy", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			3368, -- [11]
-			"0x0500000005B1350E", -- [12]
+			673, -- [11]
+			"0x05000000041EC973", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1381797650.524"] = {
+			"What is Thrall?", -- [1]
+			"Orran", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Orran", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			381, -- [11]
+			"0x05000000032F757F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1377659820.826"] = {
+			"finally got my wish", -- [1]
+			"Orran", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Orran", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			6523, -- [11]
+			"0x05000000032F757F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1377659907.991"] = {
+			"ive played with myself for 26 ", -- [1]
+			"Naprolin", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Naprolin", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			6600, -- [11]
+			"0x05000000007BAA94", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1377659849.05"] = {
+			"Where did your friend go?", -- [1]
+			"Orran", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Orran", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			6557, -- [11]
+			"0x05000000032F757F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1377659926.741"] = {
+			"....", -- [1]
+			"Orran", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Orran", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			6620, -- [11]
+			"0x05000000032F757F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
 		},
 		["1378684986.879"] = {
 			"ill try again haha...this thing has been giving me trouble", -- [1]
@@ -1610,37 +1790,37 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER",
 		},
-		["1373598795.996"] = {
-			"nice", -- [1]
-			"|Kf101|k00000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2521, -- [11]
-			false, -- [12]
-			101, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1373598579.218"] = {
-			"ohhh fangtastic", -- [1]
-			"Orran", -- [2]
+		["1377660042.856"] = {
+			"or should I say the gamer lol", -- [1]
+			"Krumn", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Orran", -- [5]
+			"Krumn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2412, -- [11]
-			"0x05000000032F757F", -- [12]
+			6768, -- [11]
+			"0x0500000005B87928", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1377659956.473"] = {
+			"the wife is out of town visiting her parents so I get some wow time lol", -- [1]
+			"Krumn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Krumn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			6659, -- [11]
+			"0x0500000005B87928", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
@@ -1682,27 +1862,9 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD",
 		},
-		["1373598590.254"] = {
-			"Orran, would you like to do Thunder Ilse dialies?  heroics?", -- [1]
-			"Lalola", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Lalola", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2416, -- [11]
-			"0x0500000005BD9A6C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_GUILD",
-		},
-		["1373599000.747"] = {
-			"you play GW2?", -- [1]
-			"|Kf101|k00000000|k", -- [2]
+		["1378684926.478"] = {
+			"why?", -- [1]
+			"|Kf207|k0000000000000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
 			"", -- [5]
@@ -1711,98 +1873,26 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2657, -- [11]
+			5544, -- [11]
 			false, -- [12]
-			101, -- [13]
+			207, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
-		["1378682965.526"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:1183:05000000032F757F:1:9:8:13:4294967295:4294967295:4294967295:4294967295|h[Brew of the Year]|h|r!", -- [1]
-			"Orran", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Orran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			4487, -- [11]
-			"0x05000000032F757F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		},
-		["1377659956.473"] = {
-			"the wife is out of town visiting her parents so I get some wow time lol", -- [1]
-			"Krumn", -- [2]
+		["1381797842.321"] = {
+			"i can join", -- [1]
+			"Spandextrius", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Krumn", -- [5]
-			"", -- [6]
+			"Spandextrius", -- [5]
+			"AFK", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			6659, -- [11]
-			"0x0500000005B87928", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_GUILD",
-		},
-		["1373599246.061"] = {
-			"%s has earned the achievement |cffffff00|Hachievement:5180:0500000005BB56D5:1:7:11:13:4294967295:4294967295:4294967295:4294967295|h[Breaking The Sound Barrier]|h|r!", -- [1]
-			"Grimjin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Grimjin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2835, -- [11]
-			"0x0500000005BB56D5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		},
-		["1373598614.38"] = {
-			"horoics sure, doxa and i were going to do some", -- [1]
-			"Orran", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Orran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2420, -- [11]
-			"0x05000000032F757F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_GUILD",
-		},
-		["1377660051.155"] = {
-			"it's time to be dad when they're home :)", -- [1]
-			"Krumn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Krumn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			6781, -- [11]
-			"0x0500000005B87928", -- [12]
+			623, -- [11]
+			"0x0500000003EBD46D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
@@ -1826,26 +1916,62 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD",
 		},
-		["1377659924.011"] = {
-			"36 for me", -- [1]
-			"Krumn", -- [2]
+		["1381798107.579"] = {
+			"howdy", -- [1]
+			"Huulprutof", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Krumn", -- [5]
+			"Huulprutof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			6616, -- [11]
-			"0x0500000005B87928", -- [12]
+			1016, -- [11]
+			"0x0500000005E29390", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD",
 		},
-		["1373599401.348"] = {
-			"haha", -- [1]
+		["1381797644.132"] = {
+			"COME BACK TO THRALL :( ", -- [1]
+			"Dëzy", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Dëzy", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			373, -- [11]
+			"0x05000000041EC973", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1378684248.049"] = {
+			"nah i doubt", -- [1]
+			"|Kf196|k0000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			5184, -- [11]
+			false, -- [12]
+			196, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_BN_WHISPER",
+		},
+		["1381797634.572"] = {
+			"PvP???", -- [1]
 			"Orran", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
@@ -1855,66 +1981,66 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2987, -- [11]
+			362, -- [11]
 			"0x05000000032F757F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_PARTY_LEADER",
+			[20] = "CHAT_MSG_GUILD",
 		},
-		["1373598762.729"] = {
-			"we downed Tortos tonight", -- [1]
-			"|Kf101|k00000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2498, -- [11]
-			false, -- [12]
-			101, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1373601056.094"] = {
-			"i got u", -- [1]
-			"Maikell-Mal'Ganis", -- [2]
+		["1377659918.796"] = {
+			"ugghhh hahahahahahaha", -- [1]
+			"Naprolin", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Maikell", -- [5]
+			"Naprolin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			3364, -- [11]
-			"0x0500000005B1350E", -- [12]
+			6609, -- [11]
+			"0x05000000007BAA94", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
+			[20] = "CHAT_MSG_GUILD",
 		},
-		["1373598929.921"] = {
-			"all that Veng", -- [1]
-			"|Kf101|k00000000|k", -- [2]
-			"", -- [3]
+		["1381798028.592"] = {
+			"basically anyone can join it.", -- [1]
+			"Restup", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Restup", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2604, -- [11]
-			false, -- [12]
-			101, -- [13]
+			981, -- [11]
+			"0x0500000005E2641B", -- [12]
+			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1381797735.875"] = {
+			"Well Hello there.", -- [1]
+			"Restup", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Restup", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			447, -- [11]
+			"0x0500000005E2641B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
 		},
 		["1378684951.117"] = {
 			"then it should work", -- [1]
@@ -1952,8 +2078,26 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
-		["1377659820.826"] = {
-			"finally got my wish", -- [1]
+		["1381797648.3"] = {
+			"QUIT WITH THE DISGUSTING ALLIANCE", -- [1]
+			"Dëzy", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Dëzy", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			378, -- [11]
+			"0x05000000041EC973", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			[20] = "CHAT_MSG_GUILD",
+		},
+		["1377659815.608"] = {
+			"Paladin only guild", -- [1]
 			"Orran", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
@@ -1963,246 +2107,102 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			6523, -- [11]
+			6517, -- [11]
 			"0x05000000032F757F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD",
 		},
-		["1373599360.286"] = {
-			"the tank was bad", -- [1]
-			"Lalola", -- [2]
+		["1381797641.57"] = {
+			"ORRAN", -- [1]
+			"Dëzy", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Lalola", -- [5]
+			"Dëzy", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2931, -- [11]
-			"0x0500000005BD9A6C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_PARTY",
-		},
-		["1378684248.049"] = {
-			"nah i doubt", -- [1]
-			"|Kf196|k0000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			5184, -- [11]
-			false, -- [12]
-			196, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1373601055.655"] = {
-			"i cant", -- [1]
-			"Doxa", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Doxa", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			3363, -- [11]
-			"0x05000000058D073B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
-		},
-		["1377659926.741"] = {
-			"....", -- [1]
-			"Orran", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Orran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			6620, -- [11]
-			"0x05000000032F757F", -- [12]
+			368, -- [11]
+			"0x05000000041EC973", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD",
 		},
-		["1378684926.478"] = {
-			"why?", -- [1]
-			"|Kf207|k0000000000000|k", -- [2]
+		["1378683178.667"] = {
+			"%s has earned the achievement |cffffff00|Hachievement:8072:0500000005715EEC:1:9:8:13:4294967295:4294967295:4294967295:4294967295|h[Pinnacle of Storms]|h|r!", -- [1]
+			"Beastarro", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Beastarro", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			5544, -- [11]
-			false, -- [12]
-			207, -- [13]
+			4673, -- [11]
+			"0x0500000005715EEC", -- [12]
+			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[20] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		},
-		["1373598788.746"] = {
-			"4", -- [1]
-			"|Kf101|k00000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2516, -- [11]
-			false, -- [12]
-			101, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1373598602.204"] = {
-			"dailies....no", -- [1]
-			"Orran", -- [2]
+		["1377660051.155"] = {
+			"it's time to be dad when they're home :)", -- [1]
+			"Krumn", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Orran", -- [5]
+			"Krumn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2418, -- [11]
-			"0x05000000032F757F", -- [12]
+			6781, -- [11]
+			"0x0500000005B87928", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD",
 		},
-		["1373599354.099"] = {
-			"jeeze", -- [1]
-			"Lalola", -- [2]
+		["1381797905.945"] = {
+			"oque?", -- [1]
+			"Spandextrius", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Lalola", -- [5]
-			"", -- [6]
+			"Spandextrius", -- [5]
+			"AFK", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2924, -- [11]
-			"0x0500000005BD9A6C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_PARTY",
-		},
-		["1377659918.796"] = {
-			"ugghhh hahahahahahaha", -- [1]
-			"Naprolin", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Naprolin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			6609, -- [11]
-			"0x05000000007BAA94", -- [12]
+			716, -- [11]
+			"0x0500000003EBD46D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD",
 		},
-		["1373598800.595"] = {
-			"yeah making great progress", -- [1]
-			"|Kf101|k00000000|k", -- [2]
-			"", -- [3]
+		["1381797932.465"] = {
+			"You can find people cross server for any type of premade.", -- [1]
+			"Dëzy", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Dëzy", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2528, -- [11]
-			false, -- [12]
-			101, -- [13]
+			772, -- [11]
+			"0x05000000041EC973", -- [12]
+			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1373598708.703"] = {
-			"on orstout", -- [1]
-			"|Kf101|k00000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2477, -- [11]
-			false, -- [12]
-			101, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
-		},
-		["1373599121.705"] = {
-			"i had part 1 when it first came out then switched to WoW", -- [1]
-			"|Kf101|k00000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2786, -- [11]
-			false, -- [12]
-			101, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
-		},
-		["1373598891.792"] = {
-			"that means i would be doing twice that", -- [1]
-			"|Kf101|k00000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2600, -- [11]
-			false, -- [12]
-			101, -- [13]
-			false, -- [14]
-			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
+			[20] = "CHAT_MSG_GUILD",
 		},
 		["1373601213.756"] = {
 			"Wait. how the fuck does my play time expire in 30 minutes? i have a subsciption", -- [1]
@@ -2222,41 +2222,41 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD",
 		},
-		["1377659907.991"] = {
-			"ive played with myself for 26 ", -- [1]
-			"Naprolin", -- [2]
+		["1381797565.508"] = {
+			"ty", -- [1]
+			"Rotwerm", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Naprolin", -- [5]
+			"Rotwerm", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			6600, -- [11]
-			"0x05000000007BAA94", -- [12]
+			321, -- [11]
+			"0x05000000054CDE7E", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			[20] = "CHAT_MSG_GUILD",
 		},
-		["1373599368.637"] = {
-			"okay lets do this", -- [1]
-			"Lalola", -- [2]
+		["1378684359.039"] = {
+			"me not like it here", -- [1]
+			"Tánnin", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Lalola", -- [5]
-			"", -- [6]
+			"Tánnin", -- [5]
+			"AFK", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2943, -- [11]
-			"0x0500000005BD9A6C", -- [12]
+			5213, -- [11]
+			"0x05000000044A5522", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_PARTY",
+			[20] = "CHAT_MSG_SAY",
 		},
 		["1378854322.43"] = {
 			"  |Henchant:102167|h[Mining: Smelt Trillium]|h", -- [1]
@@ -2276,41 +2276,41 @@ ElvCharacterDB = {
 			false, -- [15]
 			[20] = "CHAT_MSG_BN_WHISPER_INFORM",
 		},
-		["1373601111.157"] = {
-			"yeah those are the wrost", -- [1]
-			"Orran", -- [2]
+		["1381797714.904"] = {
+			"Welcome Dorizhong", -- [1]
+			"Rotwerm", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Orran", -- [5]
+			"Rotwerm", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			3370, -- [11]
-			"0x05000000032F757F", -- [12]
+			428, -- [11]
+			"0x05000000054CDE7E", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_INSTANCE_CHAT",
+			[20] = "CHAT_MSG_GUILD",
 		},
-		["1378684940.672"] = {
-			"I was wondering how you set up this greenwall addon", -- [1]
-			"|Kf207|k0000000000000|k", -- [2]
-			"", -- [3]
+		["1381797990.71"] = {
+			"Yeah i had an addon like that 3 months ago.", -- [1]
+			"Restup", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Restup", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			5556, -- [11]
-			false, -- [12]
-			207, -- [13]
+			910, -- [11]
+			"0x0500000005E2641B", -- [12]
+			0, -- [13]
 			false, -- [14]
 			false, -- [15]
-			[20] = "CHAT_MSG_BN_WHISPER",
+			[20] = "CHAT_MSG_GUILD",
 		},
 	},
 }

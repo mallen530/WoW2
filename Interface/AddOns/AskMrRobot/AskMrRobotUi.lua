@@ -1,3 +1,5 @@
+local _, AskMrRobot = ...
+
 local showImportDetailsError = nil
 local showImportErrorTab = nil
 
@@ -29,9 +31,9 @@ function AskMrRobot.AmrUI:displayImportItems()
 	if self.hasImportError then
 		showImportDetailsError()
 	else
-		self.gemTab:showBadGems()
+		self.gemTab:Update()
 		self.enchantTab:showBadEnchants()
-		self.reforgeTab:showBadReforges()
+		self.reforgeTab:Render()
 		self.shoppingTab:Update()
 	end
 end
@@ -55,9 +57,12 @@ function AskMrRobot.AmrUI:showImportWarning(text, ...)
 end
 
 function AskMrRobot.AmrUI:validateInput(input)
+
 	self.importedItems = nil
 	self.mostlySuccess = false
+
 	local parsed = AskMrRobot.parseAmr(input)
+
 	if not parsed.realm then
 		self:showImportError("Oops, you didn't have proper import text", "Please go back to AskMrRobot.com and grab optimizations for this character")
 	elseif not AskMrRobot.validateCharacterName(parsed.name) then
@@ -178,7 +183,7 @@ function AskMrRobot.AmrUI:createTabButtons()
 	createButton("Reforges", 0, true)
 	createButton("Shopping List", 0, true)
 	createButton("Best in Bags", -20, false)
-	--createButton("Help", -20, false)
+	createButton("Help", -20, false)
 
 	return buttons
 end
@@ -225,7 +230,7 @@ function AskMrRobot.AmrUI:new()
 	tinsert(UISpecialFrames, o:GetName())
 
 	-- title
-	o.title:SetText("Ask Mr Robot")
+	o.title:SetText("Ask Mr Robot " .. GetAddOnMetadata(AskMrRobot.AddonName, "Version"))
 
 	-- create the tab buttons
 	o.buttons = o:createTabButtons()
@@ -276,7 +281,9 @@ function AskMrRobot.AmrUI:new()
 
 	o.exportTab = AskMrRobot.ExportTab:new(tabArea)
 	o.buttons[7].element = o.exportTab
-	--o.buttons[7].element = HelpTab:new(tabArea)
+
+	o.helpTab = AskMrRobot.HelpTab:new(tabArea)
+	o.buttons[8].element = o.helpTab
 
 	o.isSocketWindowVisible = false
 	o.isReforgeVisible = false
